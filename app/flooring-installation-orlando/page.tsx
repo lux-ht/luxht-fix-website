@@ -1,0 +1,366 @@
+import Navbar from '@/components/Navbar';
+import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
+import Link from 'next/link';
+import {
+  ArrowRight, Hammer, Wrench, Droplets, CheckCircle,
+  Phone, Mail, Star, MapPin,
+  Ruler, Tv, Grid, Paintbrush, Calendar,
+  Bath, Utensils, DoorOpen, Monitor, Shield, Zap
+} from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Flooring Installation Orlando | Hardwood, LVP, Tile - LUXHT Fix',
+  description: 'Expert flooring installation in Orlando. Hardwood, laminate, vinyl, and tile. Starting at $3/sq ft. Licensed & Insured. Call today!',
+};
+
+export default function FlooringPage() {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LUXHT Fix - Flooring Installation Orlando",
+    "image": "https://luxhtfix.com/images/flooring-installation.jpg",
+    "url": "https://luxhtfix.com/flooring-installation-orlando",
+    "telephone": "+1-407-288-0832",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Street",
+      "addressLocality": "Orlando",
+      "addressRegion": "FL",
+      "postalCode": "32801",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.5383,
+      "longitude": -81.3792
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/luxhtfix"
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What's the best flooring installation service in Orlando?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LUXHT Fix specializes in professional flooring installation with 200+ projects completed in Orlando, including hardwood, laminate, vinyl, and tile."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How much does flooring installation cost in Orlando?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Installation ranges from $3/sq ft for laminate to $6/sq ft for tile. Material costs are additional."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Which flooring is best for Orlando humidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luxury vinyl plank (LVP) and engineered hardwood perform best in Orlando's humidity."
+      }
+    }]
+  };
+
+  const flooringReviews: Review[] = [
+    { text: "Our new hardwood floors look incredible! They finished our entire first floor in 3 days with zero mess left behind.", name: "Jennifer S.", loc: "Winter Park", rating: 5 },
+    { text: "Professional installation of our LVP flooring. The team was efficient and the transitions look perfect.", name: "Mark D.", loc: "Lake Nona", rating: 5 },
+    { text: "Great pricing and even better work. They removed our old carpet and installed laminate in two bedrooms.", name: "Ashley T.", loc: "Altamonte Springs", rating: 5 },
+    { text: "Licensed and insured, which was important to me. The tile work in our kitchen is flawless.", name: "Robert K.", loc: "Dr. Phillips", rating: 5 },
+    { text: "Best flooring experience I've had. Fast quote and same-week installation.", name: "Sarah M.", loc: "Oviedo", rating: 5 }
+  ];
+
+  return (
+    <main className="min-h-screen bg-slate-50 text-slate-800 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <Navbar />
+
+      {/* HERO SECTION */}
+      <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
+        <div className="relative z-10 container mx-auto max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Expert Flooring Installation in Orlando
+          </h1>
+          <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
+            Hardwood, laminate, vinyl, and tile flooring installed with precision.
+          </p>
+          <p className="text-lg text-blue-200 mb-8">
+            Transform your home's foundation with professional results.
+          </p>
+
+          <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
+            <CheckCircle size={16} /> Licensed • Insured • 200+ Orlando Floors Installed
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={24} /> Call Now
+            </a>
+            <a href="#contact" className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2 transform hover:scale-105 duration-200">
+              <Mail size={24} /> Contact Us
+            </a>
+          </div>
+
+          <div className="text-blue-200 text-sm opacity-90">
+            <p className="font-bold">Professional installation starts at $3 per sq ft</p>
+            <p>Send room photos for detailed estimate</p>
+          </div>
+        </div>
+      </header>
+
+      {/* SECTION 1: Flooring Types */}
+      <section className="py-20 px-4 container mx-auto">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#584D94] mb-6">Flooring Installation Services</h2>
+          <p className="text-lg text-slate-600 leading-relaxed mb-4">
+            LUXHT Fix provides professional flooring installation for Orlando homeowners. We install:
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {[
+            { title: "Hardwood Flooring", desc: "Solid and engineered wood options.", icon: Grid },
+            { title: "Laminate Flooring", desc: "Durable, cost-effective styles.", icon: Grid },
+            { title: "Luxury Vinyl Plank", desc: "Waterproof LVP for any room.", icon: Droplets },
+            { title: "Ceramic & Porcelain", desc: "Tile installation for kitchens/baths.", icon: Grid },
+            { title: "Wood-Look Tile", desc: "The look of wood, durability of tile.", icon: Grid },
+            { title: "Floating Floors", desc: "Quick installation over existing floors.", icon: Grid },
+          ].map((item, i) => (
+            <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all h-64 flex flex-col justify-center group hover:-translate-y-1">
+              <div className="w-14 h-14 bg-[#584D94]/10 rounded-full flex items-center justify-center text-[#584D94] mb-6 group-hover:bg-[#584D94] group-hover:text-white transition-colors">
+                <item.icon size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">{item.title}</h3>
+              <p className="text-slate-500">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-slate-500 mt-8 italic">Every installation includes proper subfloor preparation, precise measurements, and clean finishing work.</p>
+      </section>
+
+      {/* SECTION 2: Our Process */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">How We Install Your Flooring</h2>
+
+          <div className="space-y-6 max-w-3xl mx-auto relative pl-8 border-l-2 border-[#584D94]/20">
+            {[
+              "Measure room dimensions and assess subfloor condition",
+              "Remove existing flooring if needed (quoted separately)",
+              "Prepare and level subfloor for proper installation",
+              "Acclimate materials to room temperature and humidity",
+              "Install flooring with proper spacing and alignment",
+              "Install trim, transitions, and finishing touches",
+              "Clean workspace completely and protect new floor"
+            ].map((step, i) => (
+              <div key={i} className="relative pl-8">
+                <span className="absolute -left-[41px] top-0 w-8 h-8 rounded-full bg-[#64CEBB] text-white flex items-center justify-center font-bold text-sm border-4 border-white">
+                  {i + 1}
+                </span>
+                <p className="text-lg text-slate-700 font-medium">{step}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-slate-600 mb-8 font-medium">We follow manufacturer specifications for every material to ensure warranty compliance.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="btn-gradient-primary btn-gradient-shimmer">
+                Get Free Estimate
+              </button>
+              <a href="tel:4072880832" className="btn-gradient-secondary">
+                <Phone size={18} /> Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: Why LUXHT Fix */}
+      <section className="py-20 px-4 container mx-auto bg-[#584D94]/5 rounded-3xl my-8 max-w-6xl">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 className="text-xl md:text-3xl font-bold text-[#584D94] mb-8">Why Orlando Homeowners Choose Us for Flooring</h2>
+            <ul className="space-y-4">
+              {[
+                "Flooring installation specialists with 200+ projects",
+                "All materials: hardwood, laminate, vinyl, tile",
+                "Proper subfloor preparation included",
+                "Warranty-compliant installation methods",
+                "Clean execution with minimal disruption",
+                "Licensed, insured, and background-checked"
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-700 text-sm md:text-base">
+                  <span className="text-[#64CEBB] mt-1 flex-shrink-0"><CheckCircle size={20} /></span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="w-full overflow-hidden">
+            <TestimonialCarousel customReviews={flooringReviews} />
+            <div className="text-center mt-4">
+              <div className="flex justify-center text-[#64CEBB] mb-2">
+                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={20} fill="currentColor" />)}
+              </div>
+              <p className="text-sm text-slate-500 font-medium">Rated 4.9/5 from 127 Orlando customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: What Affects Your Cost */}
+      <section className="py-20 px-4 container mx-auto max-w-5xl text-center">
+        <h2 className="text-3xl font-bold text-[#584D94] mb-4">What Affects Your Flooring Installation Cost?</h2>
+        <p className="text-slate-600 mb-12 max-w-2xl mx-auto">Every floor project is unique. Here are the key factors we consider when providing your personalized estimate.</p>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {[
+            { title: "Material Type", desc: "Laminate vs. hardwood vs. tile — each material has different installation requirements and costs.", icon: Grid },
+            { title: "Square Footage", desc: "Room size directly impacts materials and labor — we measure precisely for accurate quotes.", icon: Ruler },
+            { title: "Subfloor Condition", desc: "Level floors vs. repairs needed — we assess and prepare for optimal results.", icon: Hammer },
+            { title: "Old Flooring Removal", desc: "Keep existing vs. full removal — quoted separately based on material type.", icon: Wrench },
+          ].map((factor, i) => (
+            <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg hover:border-[#64CEBB]/50 transition-all group">
+              <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4 mx-auto group-hover:bg-[#584D94] group-hover:text-white transition-colors">
+                <factor.icon size={24} />
+              </div>
+              <h3 className="text-lg font-bold text-slate-800 mb-2">{factor.title}</h3>
+              <p className="text-sm text-slate-500 leading-relaxed">{factor.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-[#584D94]/5 p-6 rounded-2xl max-w-3xl mx-auto mb-12 border border-[#584D94]/10">
+          <h3 className="font-bold text-[#584D94] mb-3">Materials We Install</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {["Hardwood", "Engineered Wood", "Laminate", "Luxury Vinyl Plank", "Ceramic Tile", "Porcelain Tile"].map((material, i) => (
+              <span key={i} className="bg-white px-4 py-2 rounded-full text-sm font-medium text-slate-700 border border-slate-200">
+                {material}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-[#584D94] to-[#453A75] text-white p-8 md:p-10 rounded-2xl max-w-3xl mx-auto shadow-xl">
+          <h3 className="text-xl md:text-2xl font-bold mb-4">Get Your Personalized Quote</h3>
+          <p className="mb-6 opacity-90 max-w-xl mx-auto">Send us photos of your space and measurements — or explore our detailed pricing guide.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/costs/flooring-installation" className="btn-gradient-glass">
+              <ArrowRight size={18} /> View Full Pricing Guide
+            </Link>
+            <button className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={18} /> Send Photos for Quote
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: FAQ */}
+      <section className="py-20 bg-slate-50 px-4">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Flooring Installation FAQs - Orlando</h2>
+          <div className="space-y-4">
+            {[
+              { q: "What's the best flooring installation service in Orlando?", a: "LUXHT Fix specializes in professional flooring installation with 200+ completed projects in Orlando. We handle hardwood, laminate, vinyl, and tile with warranty-compliant methods." },
+              { q: "Which flooring type is best for Orlando homes?", a: "For Orlando's humidity, luxury vinyl plank (LVP) and engineered hardwood perform best. We'll recommend the right material based on your room type, budget, and lifestyle." },
+              { q: "How long does flooring installation take?", a: "Most single-room installations take 1-2 days. Whole-home projects typically require 3-5 days depending on square footage and material type." },
+              { q: "Do you remove old flooring?", a: "Yes. Old flooring removal is available and quoted separately based on material type and condition." },
+              { q: "How much does flooring installation cost in Orlando?", a: "Pricing varies based on material type and square footage. Visit our detailed pricing guide for typical costs, or contact us for a personalized quote." },
+              { q: "Can you install flooring in kitchens and bathrooms?", a: "Yes. We install water-resistant materials like tile, LVP, and vinyl sheet in kitchens and bathrooms with proper moisture barriers." }
+            ].map((faq, i) => (
+              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
+                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
+                  {faq.q}
+                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
+                </summary>
+                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6: Service Area */}
+      <section className="py-20 px-4 container mx-auto max-w-4xl text-center">
+        <h2 className="text-3xl font-bold text-[#584D94] mb-8">Flooring Installation Service Areas</h2>
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {["Winter Park", "Maitland", "Altamonte Springs", "Lake Nona", "Dr. Phillips", "Windermere", "Ocoee", "Apopka", "Winter Garden", "College Park", "Baldwin Park"].map((area, i) => (
+            <span key={i} className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium border border-slate-200 inline-flex items-center gap-1">
+              <MapPin size={14} className="text-[#64CEBB]" /> {area}
+            </span>
+          ))}
+        </div>
+        <p className="text-slate-500">Not sure if we serve your area? Call or message - we'll confirm quickly.</p>
+      </section>
+
+      {/* SECTION 7: Other Services */}
+      <section className="py-20 bg-white px-4 border-t border-slate-100">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+            {[
+              { title: "Drywall Repair", icon: Hammer },
+              { title: "TV Mounting", icon: Tv },
+              { title: "Door, Lock & Trim", icon: DoorOpen },
+              { title: "Deck Building", icon: Calendar },
+              { title: "Kitchen Refacing", icon: Utensils },
+              { title: "Bath Remodel", icon: Bath }
+            ].map((service, i) => (
+              <div key={i} className="p-4 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer group">
+                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 mx-auto mb-3 group-hover:bg-[#584D94]/10 group-hover:text-[#584D94] transition-colors">
+                  <service.icon size={24} />
+                </div>
+                <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="py-24 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white text-center px-4">
+        <div className="container mx-auto max-w-2xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Flooring Installation This Month?</h2>
+          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+            Professional installation that transforms your home.<br />Orlando's trusted flooring experts.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={20} /> Call Now: (407) 288-0832
+            </a>
+            <a href="#contact" className="btn-gradient-glass">
+              <Mail size={20} /> Contact Us
+            </a>
+          </div>
+          <p className="text-sm opacity-75">Licensed • Insured • Quality Materials • Expert Installation</p>
+        </div>
+      </section>
+
+    </main>
+  );
+}

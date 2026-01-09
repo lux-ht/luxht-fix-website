@@ -1,0 +1,509 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-glass-bg: rgba(255, 255, 255, 0.05);
+  --color-primary: #0ea5e9;
+  /* Sky 500 */
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  --animate-scroll: scroll 40s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  --animate-gradient-flow: gradient-flow 3s ease infinite;
+
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  /* Dark Slate for text */
+  --background-start-rgb: 255, 255, 255;
+  /* White */
+  --background-end-rgb: 248, 250, 252;
+  /* Slate 50 */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom right,
+      #FFFFFF,
+      #F3F0FF);
+  /* Very subtle purple tint at bottom */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glass Utilities */
+.glass-panel {
+  @apply backdrop-blur-2xl bg-black/10 border border-black/10 shadow-xl;
+}
+
+.glass-button {
+  @apply backdrop-blur-md bg-black/5 border border-black/10 hover:bg-black/10 transition-all duration-300 text-slate-800;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-violet-400;
+}
+
+.animate-gradient {
+  @apply bg-[length:200%_200%] animate-gradient-flow;
+}
+
+.pause {
+  animation-play-state: paused;
+}
+
+/* ==============================================
+   BREATHING & SPEECH BUBBLE ANIMATIONS
+   ============================================== */
+
+/* Subtle breathing/scale animation for character mascots */
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+/* Speech bubble pop-up animation 1 (Man - Hello) */
+@keyframes speech-bubble-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+
+  30% {
+    transform: scale(1) translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-3px);
+  }
+}
+
+.animate-speech-bubble-1 {
+  animation: speech-bubble-1 0.6s ease-out forwards,
+    float-subtle-1 3s ease-in-out 0.6s infinite;
+}
+
+/* Speech bubble pop-up animation 2 (Woman - How can we help) */
+@keyframes speech-bubble-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+
+  30% {
+    transform: scale(1) translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-speech-bubble-2 {
+  animation: speech-bubble-2 0.6s ease-out 0.3s forwards,
+    float-subtle-2 3.5s ease-in-out 0.9s infinite;
+  opacity: 0;
+}
+
+/* Subtle floating for speech bubbles */
+@keyframes float-subtle-1 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes float-subtle-2 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ==============================================
+   ULTRA-MODERN MOVING GRADIENT BUTTONS
+   ============================================== */
+
+/* Primary Gradient Button - Full gradient background */
+.btn-gradient-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg,
+      #64CEBB 0%,
+      #4BC0AD 25%,
+      #584D94 50%,
+      #7B6FBF 75%,
+      #64CEBB 100%);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: gradient-flow-smooth 4s ease infinite;
+  box-shadow:
+    0 4px 20px rgba(100, 206, 187, 0.35),
+    0 0 40px rgba(88, 77, 148, 0.1);
+}
+
+.btn-gradient-primary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg,
+      #64CEBB 0%,
+      #4BC0AD 25%,
+      #584D94 50%,
+      #7B6FBF 75%,
+      #64CEBB 100%);
+  background-size: 300% 300%;
+  border-radius: 9999px;
+  z-index: -1;
+  animation: gradient-flow-smooth 4s ease infinite;
+  filter: blur(8px);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-gradient-primary:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 8px 30px rgba(100, 206, 187, 0.5),
+    0 0 60px rgba(88, 77, 148, 0.2);
+}
+
+.btn-gradient-primary:hover::before {
+  opacity: 1;
+  filter: blur(12px);
+}
+
+.btn-gradient-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Gradient Button - Outline with gradient border */
+.btn-gradient-secondary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-weight: 700;
+  color: #584D94;
+  background: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  overflow: visible;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.btn-gradient-secondary::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(135deg,
+      #64CEBB 0%,
+      #4BC0AD 25%,
+      #584D94 50%,
+      #7B6FBF 75%,
+      #64CEBB 100%);
+  background-size: 300% 300%;
+  border-radius: 9999px;
+  z-index: -2;
+  animation: gradient-flow-smooth 4s ease infinite;
+}
+
+.btn-gradient-secondary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 9999px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-secondary:hover {
+  color: white;
+  transform: scale(1.05);
+  box-shadow:
+    0 4px 25px rgba(100, 206, 187, 0.4),
+    0 0 50px rgba(88, 77, 148, 0.15);
+}
+
+.btn-gradient-secondary:hover::after {
+  opacity: 0;
+}
+
+.btn-gradient-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Glass Gradient Button - For dark/image backgrounds */
+.btn-gradient-glass {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+  overflow: visible;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.btn-gradient-glass::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg,
+      rgba(100, 206, 187, 0.8) 0%,
+      rgba(75, 192, 173, 0.8) 25%,
+      rgba(88, 77, 148, 0.8) 50%,
+      rgba(123, 111, 191, 0.8) 75%,
+      rgba(100, 206, 187, 0.8) 100%);
+  background-size: 300% 300%;
+  border-radius: 9999px;
+  z-index: -1;
+  animation: gradient-flow-smooth 4s ease infinite;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  padding: 2px;
+}
+
+.btn-gradient-glass:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 0 30px rgba(100, 206, 187, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.btn-gradient-glass:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Gradient Button - Full width variant */
+.btn-gradient-mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg,
+      #64CEBB 0%,
+      #4BC0AD 25%,
+      #584D94 50%,
+      #7B6FBF 75%,
+      #64CEBB 100%);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: gradient-flow-smooth 4s ease infinite;
+  box-shadow: 0 4px 20px rgba(100, 206, 187, 0.3);
+}
+
+.btn-gradient-mobile:hover {
+  box-shadow: 0 8px 30px rgba(100, 206, 187, 0.5);
+}
+
+.btn-gradient-mobile:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Secondary Button - Outlined gradient border */
+.btn-gradient-mobile-secondary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  color: #584D94;
+  background: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  overflow: visible;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.btn-gradient-mobile-secondary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg,
+      #64CEBB 0%,
+      #4BC0AD 25%,
+      #584D94 50%,
+      #7B6FBF 75%,
+      #64CEBB 100%);
+  background-size: 300% 300%;
+  border-radius: 0.85rem;
+  z-index: -2;
+  animation: gradient-flow-smooth 4s ease infinite;
+}
+
+.btn-gradient-mobile-secondary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 0.75rem;
+  z-index: -1;
+}
+
+/* Smooth flowing gradient animation */
+@keyframes gradient-flow-smooth {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Shimmer effect for extra pizzazz */
+.btn-gradient-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
