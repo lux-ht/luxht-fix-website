@@ -60,8 +60,7 @@ export default function Home() {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-                            Premium Home Services.<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Done Right. Priced Fairly.</span>
+                            suli is a burden
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">

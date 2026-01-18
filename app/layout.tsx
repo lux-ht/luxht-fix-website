@@ -5,6 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://fix.luxht.com'),
   title: 'LUXHT Fix | Premium Home Repairs in Orlando',
   description: 'Professional handyman services in Orlando. Drywall repair, painting, and home maintenance with a premium touch.',
   openGraph: {
