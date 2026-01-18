@@ -198,9 +198,9 @@ export default function ServicesPage() {
                         <a href="tel:4072880832" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
                             (407) 288-0832
                         </a>
-                        <a href="/#contact" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all">
+                        <Link href="/#contact" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all">
                             Get Free Quote
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
