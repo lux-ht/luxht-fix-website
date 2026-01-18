@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -156,6 +157,28 @@ export default function DeckBuildingPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every deck is built with quality materials, proper structural support, and attention to detail.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/deck/custom-deck-design.jpg", title: "Custom Deck Design", subtitle: "Tailored to Your Home" },
+            { src: "/images/services/deck/composite-and-wood.jpg", title: "Material Options", subtitle: "Composite & Wood" },
+            { src: "/images/services/deck/multi-level-decks.jpg", title: "Multi-Level Decks", subtitle: "maximize Space" },
+            { src: "/images/services/deck/pergolas-and-shade.jpg", title: "Pergolas & Shade", subtitle: "Cool Comfort" },
+            { src: "/images/services/deck/stairs-and-railings.jpg", title: "Stairs & Railings", subtitle: "Safe & Stylish" },
+            { src: "/images/services/deck/ground-level-decks.jpg", title: "Ground Level", subtitle: "Seamless Transition" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix deck building projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

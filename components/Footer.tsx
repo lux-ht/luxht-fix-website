@@ -55,7 +55,7 @@ export default function Footer() {
                         <li><Link href="/pricing-transparency" className="hover:text-[#64CEBB] transition-colors">Why Transparent Pricing?</Link></li>
                         <li><Link href="/services" className="hover:text-[#64CEBB] transition-colors">Process</Link></li>
                         <li><Link href="/#contact" className="hover:text-[#64CEBB] transition-colors">Contact</Link></li>
-                        <li><Link href="/privacy" className="hover:text-[#64CEBB] transition-colors">Privacy Policy</Link></li>
+
                     </ul>
                 </div>
 
@@ -89,7 +89,16 @@ export default function Footer() {
             </div>
 
             <div className="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-blue-200 text-xs relative z-10">
-                <p>© {new Date().getFullYear()} LUXHT Fix. All rights reserved. Licensed & Insured.</p>
+                <p className="mb-3">© {new Date().getFullYear()} LUXHT Fix. All rights reserved. Licensed & Insured.</p>
+                <div className="flex flex-wrap justify-center gap-4 text-slate-400">
+                    <Link href="/privacy-policy" className="hover:text-[#64CEBB] transition-colors">Privacy Policy</Link>
+                    <span className="text-white/20">|</span>
+                    <Link href="/terms-of-service" className="hover:text-[#64CEBB] transition-colors">Terms of Service</Link>
+                    <span className="text-white/20">|</span>
+                    <Link href="/cookie-policy" className="hover:text-[#64CEBB] transition-colors">Cookie Policy</Link>
+                    <span className="text-white/20">|</span>
+                    <Link href="/accessibility" className="hover:text-[#64CEBB] transition-colors">Accessibility</Link>
+                </div>
             </div>
         </footer>
     );

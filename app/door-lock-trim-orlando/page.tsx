@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -158,6 +159,37 @@ export default function DoorLockPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every service is completed with precision for smooth operation, enhanced security, and a polished appearance.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/door-lock/door-adjustment-before.jpg", title: "Door Adjustment", subtitle: "Before: Misaligned" },
+            { src: "/images/services/door-lock/door-adjustment-after.jpg", title: "Door Adjustment", subtitle: "After: Smooth Operation" },
+            { src: "/images/services/door-lock/crown-molding-before.jpg", title: "Crown Molding", subtitle: "Before: Installation" },
+            { src: "/images/services/door-lock/crown-molding-after.jpg", title: "Crown Molding", subtitle: "After: Elegant Finish" },
+            { src: "/images/services/door-lock/door-repair-before.jpg", title: "Door Repair", subtitle: "Before: Damaged" },
+            { src: "/images/services/door-lock/door-repair-after.jpg", title: "Door Repair", subtitle: "After: Restored" },
+            { src: "/images/services/door-lock/frame-repair-before.jpg", title: "Frame Repair", subtitle: "Before: Compromised" },
+            { src: "/images/services/door-lock/frame-repair-after.jpg", title: "Frame Repair", subtitle: "After: Secure & Solid" },
+            { src: "/images/services/door-lock/lock-install-in-progress-before.jpg", title: "Lock Install", subtitle: "Before: Preparation" },
+            { src: "/images/services/door-lock/lock-install-in-progress-after.jpg", title: "Lock Install", subtitle: "After: Secure Installation" },
+            { src: "/images/services/door-lock/basboard-before.jpg", title: "Baseboard", subtitle: "Before: Replacement" },
+            { src: "/images/services/door-lock/basboard-after.jpg", title: "Baseboard", subtitle: "After: Clean Finish" },
+            { src: "/images/services/door-lock/handle-install-before.jpg", title: "Handle Install", subtitle: "Before: Old Hardware" },
+            { src: "/images/services/door-lock/handle-install-close-door-fully-technician-slightly-out-of-frame.jpg", title: "Handle Install", subtitle: "After: Modern Hardware" },
+            { src: "/images/services/door-lock/handle-install-technician-stepping-back-half-a-step-hands-relaxed.jpg", title: "Professional Service", subtitle: "Expert Installation" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix door, lock & trim projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

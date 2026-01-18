@@ -29,10 +29,13 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className={clsx(
-            "fixed w-full z-50 transition-all duration-300",
-            isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
-        )}>
+        <nav
+            className={clsx(
+                "fixed w-full z-50 transition-all duration-300",
+                isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+            )}
+            aria-label="Main navigation"
+        >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center gap-3">
@@ -191,16 +194,23 @@ export default function Navbar() {
                 <button
                     className={clsx("md:hidden p-2 rounded-lg transition-colors", useDarkText ? "text-[#584D94]" : "text-white")}
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={isOpen}
+                    aria-controls="mobile-menu"
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
-            <div className={clsx(
-                "md:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl transition-all duration-300 overflow-hidden",
-                isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
-            )}>
+            <div
+                id="mobile-menu"
+                className={clsx(
+                    "md:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl transition-all duration-300 overflow-hidden",
+                    isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                )}
+                aria-hidden={!isOpen}
+            >
                 <div className="p-6 space-y-4">
                     <Link href="/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Home</Link>
 

@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -156,6 +157,28 @@ export default function FlooringPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every installation includes proper subfloor preparation, precise measurements, and clean finishing work.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/flooring/ceramic-and-porcelain-before.jpg", title: "Tile Installation", subtitle: "Before: Preparation" },
+            { src: "/images/services/flooring/ceramic-and-porcelain-after.jpg", title: "Tile Installation", subtitle: "After: Precision Grout" },
+            { src: "/images/services/flooring/laminate-flooring-before.jpg", title: "Laminate Install", subtitle: "Before: Subfloor Prep" },
+            { src: "/images/services/flooring/laminate-flooring-after.jpg", title: "Laminate Install", subtitle: "After: Seamless Finish" },
+            { src: "/images/services/flooring/hardwood-flooring-in-progress.jpg", title: "Hardwood", subtitle: "In Progress: Installation" },
+            { src: "/images/services/flooring/hardwood-flooring-complete.jpg", title: "Hardwood", subtitle: "Sample: Finished Look" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix flooring installation projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

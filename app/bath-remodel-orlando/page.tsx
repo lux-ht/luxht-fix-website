@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -158,6 +159,31 @@ export default function BathRemodelPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every remodel is completed with attention to detail, quality materials, and clean execution for a bathroom that combines style and function.</p>
+      </section>
+
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/bathroom-remodel/shower-and-tub-before.jpg", title: "Shower & Tub", subtitle: "Before: Dated Tile" },
+            { src: "/images/services/bathroom-remodel/shower-and-tub-after.jpg", title: "Shower & Tub", subtitle: "After: Modern Spa" },
+            { src: "/images/services/bathroom-remodel/vanity-install-before.jpg", title: "Vanity Install", subtitle: "Before: Old Cabinet" },
+            { src: "/images/services/bathroom-remodel/vanity-install-after.jpg", title: "Vanity Install", subtitle: "After: Floating Vanity" },
+            { src: "/images/services/bathroom-remodel/tile-work-before.jpg", title: "Tile Work", subtitle: "Before: Worn Floors" },
+            { src: "/images/services/bathroom-remodel/tile-work-after.jpg", title: "Tile Work", subtitle: "After: Premium Porcelain" },
+            { src: "/images/services/bathroom-remodel/design-and-planning-before.jpg", title: "Design Process", subtitle: "Before: Small Layout" },
+            { src: "/images/services/bathroom-remodel/design-and-planning-after.jpg", title: "Design Process", subtitle: "After: Optimized Space" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix bathroom remodel projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

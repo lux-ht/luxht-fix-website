@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -158,6 +159,29 @@ export default function FurnitureAssemblyPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every assembly is completed correctly with attention to stability, alignment, and manufacturer specifications. No missing parts. No wobbly results.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/furniture-assembly/ikea-furniture.jpg", title: "IKEA Furniture", subtitle: "Expert Assembly" },
+            { src: "/images/services/furniture-assembly/office-furniture.jpg", title: "Office Setup", subtitle: "Productive Workspaces" },
+            { src: "/images/services/furniture-assembly/bedroom-sets.jpg", title: "Bedroom Suites", subtitle: "Rest Easy" },
+            { src: "/images/services/furniture-assembly/dining-sets.jpg", title: "Dining Sets", subtitle: "Ready for Gathering" },
+            { src: "/images/services/furniture-assembly/bookcases.jpg", title: "Bookcases & Storage", subtitle: "Organized Living" },
+            { src: "/images/services/furniture-assembly/outdoor-patio.jpg", title: "Outdoor Patio", subtitle: "Weather-Ready" },
+            { src: "/images/services/furniture-assembly/amazon-and-wayfair.jpg", title: "Online Retailers", subtitle: "Amazon & Wayfair" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix furniture assembly projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

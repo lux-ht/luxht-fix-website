@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -158,6 +159,34 @@ export default function KitchenRefacingPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every project delivers a dramatic transformation at a fraction of full remodel costs while keeping your existing cabinet boxes.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/kitchen-refacing/box-refinishing-before.jpg", title: "Box Refinishing", subtitle: "Before: Worn Finish" },
+            { src: "/images/services/kitchen-refacing/box-refinishing-after.jpg", title: "Box Refinishing", subtitle: "After: Fresh Look" },
+            { src: "/images/services/kitchen-refacing/door-replacement-before.jpg", title: "Door Replacement", subtitle: "Before: Dated Style" },
+            { src: "/images/services/kitchen-refacing/door-replacement-after.jpg", title: "Door Replacement", subtitle: "After: Modern Shaker" },
+            { src: "/images/services/kitchen-refacing/door-replacement-before-2.jpg", title: "Cabinet Update", subtitle: "Before: Old Design" },
+            { src: "/images/services/kitchen-refacing/door-replacement-after-2.jpg", title: "Cabinet Update", subtitle: "After: Sleek Finish" },
+            { src: "/images/services/kitchen-refacing/soft-close-hinges-before.jpg", title: "Hinge Upgrade", subtitle: "Before: Standard Hinges" },
+            { src: "/images/services/kitchen-refacing/soft-close-hinges-after.jpg", title: "Hinge Upgrade", subtitle: "After: Soft-Close" },
+            { src: "/images/services/kitchen-refacing/drawer-fronts-before.jpg", title: "Drawer Fronts", subtitle: "Before: Worn Edges" },
+            { src: "/images/services/kitchen-refacing/drawer-fronts-after.jpg", title: "Drawer Fronts", subtitle: "After: Clean Lines" },
+            { src: "/images/services/kitchen-refacing/new-hardware-before.jpg", title: "Hardware", subtitle: "Before: Basic Knobs" },
+            { src: "/images/services/kitchen-refacing/new-hardware-after.jpg", title: "Hardware", subtitle: "After: Premium Pulls" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix kitchen refacing projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

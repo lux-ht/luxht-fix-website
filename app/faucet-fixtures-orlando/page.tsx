@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -158,6 +159,38 @@ export default function FaucetPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every installation includes leak testing, proper connections, and clean finishes for long-lasting, reliable performance.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/faucet-fixtures/vanity-upgrades-before.jpg", title: "Vanity Upgrade", subtitle: "Before: Outdated" },
+            { src: "/images/services/faucet-fixtures/vanity-upgrades-after.jpg", title: "Vanity Upgrade", subtitle: "After: Modern & Clean" },
+            { src: "/images/services/faucet-fixtures/water-filtration-before.jpg", title: "Filtration System", subtitle: "Before: Standard Pipe" },
+            { src: "/images/services/faucet-fixtures/water-filtration-after.jpg", title: "Filtration System", subtitle: "After: Pure Water" },
+            { src: "/images/services/faucet-fixtures/bathroom-faucet-before.jpg", title: "Bathroom Faucet", subtitle: "Before: Old Fixture" },
+            { src: "/images/services/faucet-fixtures/bathroom-faucet-after.jpg", title: "Bathroom Faucet", subtitle: "After: Sleek Upgrade" },
+            { src: "/images/services/faucet-fixtures/kitchen-faucet-before.jpg", title: "Kitchen Faucet", subtitle: "Before: Standard" },
+            { src: "/images/services/faucet-fixtures/kitchen-faucet-after.jpg", title: "Kitchen Faucet", subtitle: "After: Pull-Down Spray" },
+            { src: "/images/services/faucet-fixtures/supply-lines-before.jpg", title: "Supply Lines", subtitle: "Before: Risk of Leak" },
+            { src: "/images/services/faucet-fixtures/supply-lines-after.jpg", title: "Supply Lines", subtitle: "After: Secure Braided" },
+            { src: "/images/services/faucet-fixtures/bathub-spout-before.jpg", title: "Tub Spout", subtitle: "Before: Corroded" },
+            { src: "/images/services/faucet-fixtures/bathtub-spout-after.jpg", title: "Tub Spout", subtitle: "After: Shiny New" },
+            { src: "/images/services/faucet-fixtures/garbage-disposal-before.jpg", title: "Disposal", subtitle: "Before: Broken Unit" },
+            { src: "/images/services/faucet-fixtures/garbage-disposal-after.jpg", title: "Disposal", subtitle: "After: Powerful & Quiet" },
+            { src: "/images/services/faucet-fixtures/shower-head-before.jpg", title: "Shower Head", subtitle: "Before: Low Pressure" },
+            { src: "/images/services/faucet-fixtures/shower-head-after.jpg", title: "Shower Head", subtitle: "After: Spa-Like Flow" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix faucet & fixture projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

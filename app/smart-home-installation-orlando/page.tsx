@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -97,44 +98,34 @@ export default function SmartHomePage() {
 
       {/* HERO SECTION */}
       {/* HERO SECTION */}
-      <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 overflow-hidden">
-        <div className="relative z-10 container mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Smart Home Installation in Orlando
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
-                Ring doorbells, Nest thermostats, cameras, and smart locks installed and integrated.
-              </p>
-              <p className="text-lg text-blue-200 mb-8">
-                Control your home seamlessly from your smartphone.
-              </p>
+      <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
+        <div className="relative z-10 container mx-auto max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Smart Home Installation in Orlando
+          </h1>
+          <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
+            Ring doorbells, Nest thermostats, cameras, and smart locks installed and integrated.
+          </p>
+          <p className="text-lg text-blue-200 mb-8">
+            Control your home seamlessly from your smartphone.
+          </p>
 
-              <div className="flex items-center justify-center lg:justify-start gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-                <CheckCircle size={16} /> Licensed • Insured • 250+ Devices Installed
-              </div>
+          <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
+            <CheckCircle size={16} /> Licensed • Insured • 250+ Devices Installed
+          </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
-                  <Phone size={24} /> Call Now
-                </a>
-                <a href="#contact" className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2 transform hover:scale-105 duration-200">
-                  <Mail size={24} /> Contact Us
-                </a>
-              </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={24} /> Call Now
+            </a>
+            <a href="#contact" className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2 transform hover:scale-105 duration-200">
+              <Mail size={24} /> Contact Us
+            </a>
+          </div>
 
-              <div className="text-blue-200 text-sm opacity-90">
-                <p className="font-bold">Smart device installation starts at $95</p>
-                <p>Send a photo for instant estimate</p>
-              </div>
-            </div>
-
-            {/* Character Image */}
-            {/* Character Image Removed */}
-            <div className="lg:w-1/2 flex justify-center lg:justify-end">
-              {/* Image removed as requested */}
-            </div>
+          <div className="text-blue-200 text-sm opacity-90">
+            <p className="font-bold">Smart device installation starts at $95</p>
+            <p>Send a photo for instant estimate</p>
           </div>
         </div>
       </header>
@@ -169,6 +160,30 @@ export default function SmartHomePage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every installation includes device setup, smartphone integration, and training so you can control your home with confidence.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/smart-home/video-doorbells.jpg", title: "Video Doorbell", subtitle: "Clear & Connected" },
+            { src: "/images/services/smart-home/smart-locks.jpg", title: "Smart Lock Install", subtitle: "Keyless Security" },
+            { src: "/images/services/smart-home/security-cameras.jpg", title: "Security Cameras", subtitle: "24/7 Monitoring" },
+            { src: "/images/services/smart-home/smart-thermostats.jpg", title: "Smart Thermostat", subtitle: "Efficient Climate Control" },
+            { src: "/images/services/smart-home/automation-hubs.jpg", title: "Automation Hub", subtitle: "Central Control" },
+            { src: "/images/services/smart-home/smart-lighting.jpg", title: "Smart Lighting", subtitle: "Automated Ambiance" },
+            { src: "/images/services/smart-home/safety-detectors.jpg", title: "Safety Detectors", subtitle: "Smoke & CO" },
+            { src: "/images/services/smart-home/garage-controllers.jpg", title: "Garage Control", subtitle: "Remote Access" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix smart home installation projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}

@@ -28,7 +28,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ModalProvider>
-          {children}
+          {/* Skip to main content link for accessibility */}
+          <a
+            href="#main-content"
+            className="skip-to-content"
+          >
+            Skip to main content
+          </a>
+          <div id="main-content" tabIndex={-1}>
+            {children}
+          </div>
           <QuoteModal />
           <Footer />
         </ModalProvider>

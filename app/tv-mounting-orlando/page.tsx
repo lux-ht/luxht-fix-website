@@ -1,3 +1,4 @@
+import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
@@ -142,6 +143,28 @@ export default function TVMountingPage() {
           ))}
         </div>
         <p className="text-center text-slate-500 mt-8 italic">Every installation includes proper anchoring, level placement, and organized cables.</p>
+      </section>
+
+      {/* SECTION 1.5: Recent Work Gallery */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+
+          {/* Grid of Project Images */}
+          <GalleryGrid images={[
+            { src: "/images/services/tv-mounting/flat-screen-tvs.jpg", title: "Flat Screen Mount", subtitle: "Clean & Level" },
+            { src: "/images/services/tv-mounting/cable-management.jpg", title: "Cable Management", subtitle: "Hidden Wires" },
+            { src: "/images/services/tv-mounting/soundbar-installation.jpg", title: "Soundbar Setup", subtitle: "Immersive Audio" },
+            { src: "/images/services/tv-mounting/mount-types.jpg", title: "Mount Types", subtitle: "Full Motion or Fixed" },
+            { src: "/images/services/tv-mounting/any-wall-type.jpg", title: "Any Wall Surface", subtitle: "Secure Installation" },
+            { src: "/images/services/tv-mounting/outdoor-tv.jpg", title: "Outdoor TV", subtitle: "Weather-Safe Setup" },
+          ]}
+          />
+
+          <div className="text-center mt-12">
+            <p className="text-slate-500 italic">Real photos of LUXHT Fix TV mounting projects in Orlando.</p>
+          </div>
+        </div>
       </section>
 
       {/* SECTION 2: Our Process */}
