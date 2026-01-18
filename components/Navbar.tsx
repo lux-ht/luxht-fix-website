@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-3">
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 shadow-lg relative bg-white group-hover:scale-105 transition-transform">
-                            <img src="/fix/luxht-logo.jpg" alt="LUXHT Fix Logo" className="w-full h-full object-cover" />
+                            <img src="/luxht-logo.jpg" alt="LUXHT Fix Logo" className="w-full h-full object-cover" />
                         </div>
                         <div className="font-bold text-xl tracking-tight hidden sm:block">
                             <span className={clsx("transition-colors", useDarkText ? "text-[#584D94]" : "text-white")}>LUXHT</span>

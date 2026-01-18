@@ -11,7 +11,7 @@ export default function Footer() {
                 <div>
                     <div className="flex items-center gap-2 mb-6">
                         <div className="w-10 h-10 rounded-full border-2 border-white/20 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="/fix/luxht-logo.jpg" alt="LUXHT Fix" className="w-full h-full object-cover" />
+                            <img src="/luxht-logo.jpg" alt="LUXHT Fix" className="w-full h-full object-cover" />
                         </div>
                         <div className="font-bold text-xl tracking-tight text-white">
                             LUXHT<span className="text-[#64CEBB]">Fix</span>

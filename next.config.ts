@@ -4,9 +4,6 @@ const nextConfig: NextConfig = {
   // Output configuration for static export (Cloudflare Pages)
   output: 'export',
 
-  // Base path for serving the site under /fix
-  basePath: '/fix',
-
   // Disable image optimization for static export
   images: {
     unoptimized: true,
