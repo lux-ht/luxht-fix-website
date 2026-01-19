@@ -128,7 +128,7 @@ export default function DeckBuildingPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Decks start at $8,000</p>
-          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send photos for free consultation</a>
+          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20deck%20project..." className="hover:text-white underline underline-offset-2">💬 Send photos for free consultation</a>
         </div>
       </header>
 

@@ -128,7 +128,7 @@ export default function FlooringPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Professional installation starts at $3 per sq ft</p>
-          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send room photos for detailed estimate</a>
+          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20flooring..." className="hover:text-white underline underline-offset-2">💬 Send room photos for detailed estimate</a>
         </div>
       </header>
 

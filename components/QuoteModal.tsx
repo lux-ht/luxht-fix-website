@@ -238,7 +238,7 @@ export default function QuoteModal() {
                                         >
                                             {mode === 'schedule'
                                                 ? "We're taking you to our scheduling calendar."
-                                                : <>Thanks, {formData.name.split(' ')[0]}.<br />We'll review your project and get back to you shortly.</>
+                                                : <>We got your message and we are taking care of the issue.<br />We will be back to you shortly.</>
                                             }
                                         </motion.p>
                                         {mode !== 'schedule' && (

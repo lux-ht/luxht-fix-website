@@ -114,7 +114,7 @@ export default function TVMountingPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">TV mounting starts at $120</p>
-          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send a photo for instant estimate</a>
+          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20TV%20mounting..." className="hover:text-white underline underline-offset-2">💬 Send a photo for instant estimate</a>
         </div>
       </header>
 

@@ -128,7 +128,7 @@ export default function FaucetPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Faucet installations start at $95</p>
-          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send a photo for instant estimate</a>
+          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20faucet%2Ffixture..." className="hover:text-white underline underline-offset-2">💬 Send a photo for instant estimate</a>
         </div>
       </header>
 
