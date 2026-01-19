@@ -238,6 +238,7 @@ export default function Navbar() {
 
                     <Link href="/about" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>About</Link>
                     <Link href="/faq" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>FAQ</Link>
+                    <Link href="/costs" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Costs</Link>
 
                     <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                         <div className="grid grid-cols-2 gap-3">
