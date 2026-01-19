@@ -139,12 +139,20 @@ export default function CostsPage() {
                             </div>
                         </div>
 
-                        <button
-                            onClick={() => openModal('quote')}
-                            className="btn-gradient-primary btn-gradient-shimmer"
-                        >
-                            <Phone size={20} /> Get a Free Quote
-                        </button>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button
+                                onClick={() => openModal('quote')}
+                                className="btn-gradient-primary btn-gradient-shimmer"
+                            >
+                                <Phone size={20} /> Get a Free Quote
+                            </button>
+                            <a href="sms:4077207476" className="btn-glass text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                                <span>💬</span> Text Us
+                            </a>
+                            <a href="mailto:info@luxht.com" className="btn-glass text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                                <span className="text-xl">✉️</span> Email Us
+                            </a>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -290,10 +298,16 @@ export default function CostsPage() {
                             <CheckCircle size={20} /> Get Free Quote
                         </button>
                         <a
+                            href="sms:4077207476"
+                            className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
+                        >
+                            <span>💬</span> Text Us
+                        </a>
+                        <a
                             href="tel:4077207476"
                             className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
                         >
-                            <Phone size={20} /> (407) 720-7476
+                            <Phone size={20} /> Call Now
                         </a>
                     </div>
                 </div>

@@ -119,7 +119,7 @@ export default function Home() {
                                 ))}
                             </ul>
                             <Link href="/drywall-orlando" className="btn-gradient-glass btn-gradient-shimmer">
-                                See Drywall Services <ArrowRight size={18} />
+                                Fix My Drywall <ArrowRight size={18} />
                             </Link>
                         </div>
                         {/* Visual for Drywall Image */}
@@ -217,8 +217,11 @@ export default function Home() {
                         <a href="tel:4077207476" className="btn-gradient-glass btn-gradient-shimmer">
                             <Phone size={20} /> Call Now: (407) 720-7476
                         </a>
+                        <a href="sms:4077207476" className="btn-gradient-glass">
+                            <span>💬</span> Text Us
+                        </a>
                         <a href="mailto:info@luxht.com" className="btn-gradient-glass">
-                            <Mail size={20} /> Contact Us
+                            <Mail size={20} /> Email Us
                         </a>
                     </div>
                 </div>

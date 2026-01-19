@@ -54,7 +54,7 @@ export default function Footer() {
                         <li><Link href="/faq" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
                         <li><Link href="/pricing-transparency" className="hover:text-[#64CEBB] transition-colors">Why Transparent Pricing?</Link></li>
                         <li><Link href="/services" className="hover:text-[#64CEBB] transition-colors">Process</Link></li>
-                        <li><Link href="/#contact" className="hover:text-[#64CEBB] transition-colors">Contact</Link></li>
+                        <li><Link href="/#contact" className="hover:text-[#64CEBB] transition-colors">Email Us</Link></li>
 
                     </ul>
                 </div>
@@ -71,9 +71,16 @@ export default function Footer() {
                             </div>
                         </li>
                         <li className="flex items-start gap-3">
+                            <span className="text-[#64CEBB] mt-1">💬</span>
+                            <div>
+                                <div className="font-bold text-white">Text Us</div>
+                                <a href="sms:4077207476" className="hover:text-[#64CEBB]">(407) 720-7476</a>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
                             <Mail size={18} className="text-[#64CEBB] mt-1" />
                             <div>
-                                <div className="font-bold text-white">Email</div>
+                                <div className="font-bold text-white">Email Us</div>
                                 <a href="mailto:info@luxht.com" className="hover:text-[#64CEBB]">info@luxht.com</a>
                             </div>
                         </li>

@@ -429,8 +429,11 @@ export default function PricingTransparencyPage() {
                                     <Eye size={20} /> View All Pricing
                                 </Link>
                                 <button onClick={() => openModal('quote')} className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                                    <Phone size={20} /> Get Free Quote
+                                    <Phone size={20} /> Free Quote
                                 </button>
+                                <a href="sms:4077207476" className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
+                                    <span>💬</span> Text Us
+                                </a>
                             </div>
                         </section>
 

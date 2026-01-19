@@ -103,15 +103,18 @@ export default function TVMountingPage() {
             <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
             </a>
-            <a href="#contact" className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2 transform hover:scale-105 duration-200">
-              <Mail size={24} /> Contact Us
+            <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+              <span className="text-xl">💬</span> Text Us
+            </a>
+            <a href="mailto:info@luxht.com" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+              <Mail size={24} /> Email Us
             </a>
           </div>
+        </div>
 
-          <div className="text-blue-200 text-sm opacity-90">
-            <p className="font-bold">TV mounting starts at $120</p>
-            <p>Send a photo for instant estimate</p>
-          </div>
+        <div className="text-blue-200 text-sm opacity-90">
+          <p className="font-bold">TV mounting starts at $120</p>
+          <p>Send a photo for instant estimate</p>
         </div>
       </header>
 
@@ -196,8 +199,8 @@ export default function TVMountingPage() {
               <button className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Estimate
               </button>
-              <a href="tel:4077207476" className="btn-gradient-secondary">
-                <Phone size={18} /> Call Now
+              <a href="sms:4077207476" className="btn-gradient-secondary">
+                <span>💬</span> Text Us
               </a>
             </div>
           </div>
@@ -361,14 +364,17 @@ export default function TVMountingPage() {
             <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={20} /> Call Now: (407) 720-7476
             </a>
-            <a href="#contact" className="btn-gradient-glass">
-              <Mail size={20} /> Contact Us
+            <a href="sms:4077207476" className="btn-gradient-glass">
+              <span>💬</span> Text Us
+            </a>
+            <a href="mailto:info@luxht.com" className="btn-gradient-glass">
+              <Mail size={20} /> Email Us
             </a>
           </div>
           <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service</p>
         </div>
       </section>
 
-    </main>
+    </main >
   );
 }

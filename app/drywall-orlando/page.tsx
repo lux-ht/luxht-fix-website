@@ -104,19 +104,22 @@ export default function DrywallPage() {
             <CheckCircle size={16} /> Licensed • Insured • 500+ Orlando Homes Served
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-            <button className="btn-gradient-primary btn-gradient-shimmer">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
-            </button>
-            <button className="btn-gradient-glass">
-              <Mail size={24} /> Contact Us
-            </button>
+            </a>
+            <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+              <span className="text-xl">💬</span> Text Us
+            </a>
+            <a href="mailto:info@luxht.com" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+              <Mail size={24} /> Email Us
+            </a>
           </div>
+        </div>
 
-          <div className="text-blue-200 text-sm opacity-90">
-            <p className="font-bold">Most small repairs start at $150</p>
-            <p>Send a photo for instant estimate</p>
-          </div>
+        <div className="text-blue-200 text-sm opacity-90">
+          <p className="font-bold">Most small repairs start at $150</p>
+          <p>Send a photo for instant estimate</p>
         </div>
       </header>
 
@@ -219,9 +222,9 @@ export default function DrywallPage() {
               <button className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Estimate
               </button>
-              <button className="btn-gradient-secondary">
-                <Phone size={18} /> Call Now
-              </button>
+              <a href="sms:4077207476" className="btn-gradient-secondary">
+                <span>💬</span> Text Us
+              </a>
             </div>
           </div>
         </div>
@@ -373,14 +376,17 @@ export default function DrywallPage() {
             <button className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={20} /> Call Now: (407) 720-7476
             </button>
+            <a href="sms:4077207476" className="btn-gradient-glass">
+              <span>💬</span> Text Us
+            </a>
             <button className="btn-gradient-glass">
-              <Mail size={20} /> Contact Us
+              <Mail size={20} /> Email Us
             </button>
           </div>
           <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service</p>
         </div>
       </section>
 
-    </main>
+    </main >
   );
 }

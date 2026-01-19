@@ -109,11 +109,14 @@ export default function FAQPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="tel:4077207476" className="bg-[#584D94] text-white font-bold py-4 px-8 rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                            <Phone size={20} /> Call (407) 720-7476
+                            <Phone size={20} /> Call Now
                         </a>
-                        <Link href="/#contact" className="bg-slate-100 text-slate-800 font-bold py-4 px-8 rounded-full hover:bg-slate-200 transition-all border border-slate-200 flex items-center gap-2">
-                            <Mail size={20} /> Contact Us
-                        </Link>
+                        <a href="sms:4077207476" className="bg-slate-100 text-slate-800 font-bold py-4 px-8 rounded-full hover:bg-slate-200 transition-all border border-slate-200 flex items-center gap-2">
+                            <span>💬</span> Text Us
+                        </a>
+                        <a href="mailto:info@luxht.com" className="bg-slate-100 text-slate-800 font-bold py-4 px-8 rounded-full hover:bg-slate-200 transition-all border border-slate-200 flex items-center gap-2">
+                            <Mail size={20} /> Email Us
+                        </a>
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import {
-    CheckCircle, Users, Shield, Clock, Heart, Wrench, Phone, Hammer, HardHat, MapPin, Star
+    CheckCircle, Users, Shield, Clock, Heart, Wrench, Phone, Hammer, HardHat, MapPin, Star, Mail
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -254,11 +254,14 @@ export default function AboutPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
-                            <Phone size={20} /> Call Now: (407) 720-7476
+                            <Phone size={20} /> Call Now
                         </a>
-                        <Link href="/services" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all">
-                            Request a Quote
-                        </Link>
+                        <a href="sms:4077207476" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all flex items-center gap-2">
+                            <span>💬</span> Text Us
+                        </a>
+                        <a href="mailto:info@luxht.com" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all flex items-center gap-2">
+                            <Mail size={20} /> Email Us
+                        </a>
                     </div>
                     <p className="text-sm text-white/60 font-medium tracking-widest uppercase">
                         Licensed • Insured • Construction-Grade Expertise
