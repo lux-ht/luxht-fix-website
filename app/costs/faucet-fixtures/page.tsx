@@ -1,5 +1,6 @@
 "use client";
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { ArrowLeft, DollarSign, CheckCircle, Lightbulb, Phone, Clock, Shield, ChevronDown, ChevronUp, Droplets } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
@@ -117,13 +118,13 @@ export default function FaucetFixturesCostPage() {
                     </section>
                     <section className="mb-16 bg-gradient-to-br from-[#584D94] to-[#7B6FCC] rounded-2xl p-8 text-white">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-3"><Shield className="w-6 h-6" /> Why LUXHT Fix?</h2>
-                        <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB]" /><div><h4 className="font-semibold">Leak-Free Guarantee</h4></div></div>
-                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB]" /><div><h4 className="font-semibold">Same-Day Service</h4></div></div>
+                        <div className="grid md:grid-cols-2 gap-4 mb-8">
+                            <div className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-[#64CEBB] flex-shrink-0" /><span className="font-semibold">Leak-Free Guarantee</span></div>
+                            <div className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-[#64CEBB] flex-shrink-0" /><span className="font-semibold">Same-Day Service</span></div>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <button onClick={() => openModal('quote')} className="bg-white text-[#584D94] font-bold py-3 px-6 rounded-full"><CheckCircle size={20} /> Get Free Quote</button>
-                            <a href="tel:4077207476" className="border-2 border-white text-white font-bold py-3 px-6 rounded-full"><Phone size={20} /> (407) 720-7476</a>
+                        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start">
+                            <button onClick={() => openModal('quote')} className="bg-white text-[#584D94] font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 w-full sm:w-auto"><CheckCircle size={18} /> Get Free Quote</button>
+                            <a href="tel:4077207476" className="border-2 border-white text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 w-full sm:w-auto"><Phone size={18} /> (407) 720-7476</a>
                         </div>
                     </section>
                     <section className="mb-16">
@@ -140,12 +141,7 @@ export default function FaucetFixturesCostPage() {
                     </section>
                 </div>
             </article>
-            <footer className="bg-slate-900 text-white py-12 px-4">
-                <div className="container mx-auto max-w-6xl text-center">
-                    <div className="font-bold text-xl mb-2"><span className="text-[#64CEBB]">LUXHT</span> Fix</div>
-                    <p className="text-slate-400 text-sm">© 2026 LUXHT Fix. All rights reserved.</p>
-                </div>
-            </footer>
+            <Footer />
         </main>
     );
 }

@@ -123,7 +123,7 @@ export default function Home() {
                             </Link>
                         </div>
                         {/* Visual for Drywall Image */}
-                        <div className="md:w-1/2 h-64 md:h-full min-h-[300px] w-full rounded-2xl border-2 border-white/20 overflow-hidden relative shadow-lg group">
+                        <div className="md:w-1/2 h-64 md:h-full min-h-[300px] w-full rounded-2xl border border-white/30 overflow-hidden relative shadow-lg group">
                             <img
                                 src="/drywall-before-after.jpg"
                                 alt="Drywall Repair Before and After"

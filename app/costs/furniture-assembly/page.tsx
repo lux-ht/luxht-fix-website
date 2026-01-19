@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { ArrowLeft, DollarSign, CheckCircle, Lightbulb, Phone, Clock, Shield, ChevronDown, ChevronUp, Sofa } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
@@ -169,15 +170,14 @@ export default function FurnitureAssemblyCostPage() {
                 </div>
             </article>
 
-            <footer className="bg-slate-900 text-white py-12 px-4">
+            
+            <Footer />
                 <div className="container mx-auto max-w-6xl">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                        <div className="text-center md:text-left"><div className="font-bold text-xl mb-2"><span className="text-[#64CEBB]">LUXHT</span> Fix</div><p className="text-slate-400 text-sm">Professional Home Services in Orlando</p></div>
                         <div className="flex gap-6 text-slate-400 text-sm"><Link href="/" className="hover:text-white transition-colors">Home</Link><Link href="/services" className="hover:text-white transition-colors">Services</Link><Link href="/costs" className="hover:text-white transition-colors">Costs</Link><Link href="/about" className="hover:text-white transition-colors">About</Link></div>
                     </div>
                     <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500 text-sm">© 2026 LUXHT Fix. All rights reserved.</div>
                 </div>
-            </footer>
         </main>
     );
 }

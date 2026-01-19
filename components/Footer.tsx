@@ -3,13 +3,13 @@ import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react'
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-[#584D94] to-[#453A75] text-slate-100 py-16 text-sm relative overflow-hidden">
+        <footer className="bg-gradient-to-b from-[#584D94] to-[#453A75] text-slate-100 py-10 md:py-16 text-sm relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#584D94] rounded-full blur-3xl -mr-40 -mt-40 opacity-50"></div>
-            <div className="container mx-auto px-4 grid md:grid-cols-4 gap-12 relative z-10">
+            <div className="container mx-auto px-4 relative z-10">
 
-                {/* Brand Column */}
-                <div>
-                    <div className="flex items-center gap-2 mb-6">
+                {/* Brand Row - Always full width */}
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
+                    <div className="flex items-center gap-2">
                         <div className="w-10 h-10 rounded-full border-2 border-white/20 bg-white flex items-center justify-center overflow-hidden">
                             <img src="/luxht-logo.jpg" alt="LUXHT Fix" className="w-full h-full object-cover" />
                         </div>
@@ -17,79 +17,74 @@ export default function Footer() {
                             LUXHT<span className="text-[#64CEBB]">Fix</span>
                         </div>
                     </div>
-                    <p className="mb-6 leading-relaxed text-slate-400">
-                        Professional home repairs and renovations in Orlando. Licensed, insured, and dedicated to craftsmanship.
-                    </p>
-                    <div className="flex gap-4">
-                        <a href="#" className="w-10 h-10 rounded-full bg-slate-800/50 flex items-center justify-center hover:bg-[#64CEBB] hover:text-white transition-colors">
-                            <Instagram size={18} />
+                    <div className="flex gap-3">
+                        <a href="#" className="w-9 h-9 rounded-full bg-slate-800/50 flex items-center justify-center hover:bg-[#64CEBB] hover:text-white transition-colors">
+                            <Instagram size={16} />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-slate-800/50 flex items-center justify-center hover:bg-[#64CEBB] hover:text-white transition-colors">
-                            <Facebook size={18} />
+                        <a href="#" className="w-9 h-9 rounded-full bg-slate-800/50 flex items-center justify-center hover:bg-[#64CEBB] hover:text-white transition-colors">
+                            <Facebook size={16} />
                         </a>
                     </div>
                 </div>
 
-                {/* Services Column */}
-                <div>
-                    <h3 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Services</h3>
-                    <ul className="space-y-3">
-                        <li><Link href="/drywall-orlando" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
-                        <li><Link href="/tv-mounting-orlando" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
-                        <li><Link href="/flooring-installation-orlando" className="hover:text-[#64CEBB] transition-colors">Flooring Installation</Link></li>
-                        <li><Link href="/deck-building-orlando" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
-                        <li><Link href="/kitchen-refacing-orlando" className="hover:text-[#64CEBB] transition-colors">Kitchen Refacing</Link></li>
-                        <li><Link href="/bath-remodel-orlando" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
-                        <li><Link href="/services" className="font-bold text-[#64CEBB] hover:text-white transition-colors mt-2 inline-block">View All Services →</Link></li>
-                    </ul>
-                </div>
+                {/* Links Grid - 2 cols on mobile, 4 cols on desktop */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
 
-                {/* Company Column */}
-                <div>
-                    <h3 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Company</h3>
-                    <ul className="space-y-3">
-                        <li><Link href="/about" className="hover:text-[#64CEBB] transition-colors">About Us</Link></li>
-                        <li><Link href="/portfolio" className="hover:text-[#64CEBB] transition-colors">Portfolio</Link></li>
-                        <li><Link href="/testimonials" className="hover:text-[#64CEBB] transition-colors">Testimonials</Link></li>
-                        <li><Link href="/faq" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
-                        <li><Link href="/pricing-transparency" className="hover:text-[#64CEBB] transition-colors">Why Transparent Pricing?</Link></li>
-                        <li><Link href="/services" className="hover:text-[#64CEBB] transition-colors">Process</Link></li>
-                    </ul>
-                </div>
+                    {/* Services Column */}
+                    <div>
+                        <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Services</h3>
+                        <ul className="space-y-2 text-xs md:text-sm">
+                            <li><Link href="/drywall-orlando" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
+                            <li><Link href="/tv-mounting-orlando" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
+                            <li><Link href="/flooring-installation-orlando" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
+                            <li><Link href="/deck-building-orlando" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
+                            <li><Link href="/services" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
+                        </ul>
+                    </div>
 
-                {/* Contact Column */}
-                <div>
-                    <h3 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Contact Us</h3>
-                    <ul className="space-y-4">
-                        <li className="flex items-start gap-3">
-                            <Phone size={18} className="text-[#64CEBB] mt-1" />
+                    {/* Company Column */}
+                    <div>
+                        <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Company</h3>
+                        <ul className="space-y-2 text-xs md:text-sm">
+                            <li><Link href="/about" className="hover:text-[#64CEBB] transition-colors">About Us</Link></li>
+                            <li><Link href="/portfolio" className="hover:text-[#64CEBB] transition-colors">Portfolio</Link></li>
+                            <li><Link href="/testimonials" className="hover:text-[#64CEBB] transition-colors">Testimonials</Link></li>
+                            <li><Link href="/faq" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
+                            <li><Link href="/costs" className="hover:text-[#64CEBB] transition-colors">Costs</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Contact Column - spans 2 cols on mobile */}
+                    <div className="col-span-2 md:col-span-2 grid grid-cols-2 gap-4 mt-4 md:mt-0">
+                        <div className="flex items-center gap-2">
+                            <Phone size={16} className="text-[#64CEBB]" />
                             <div>
-                                <div className="font-bold text-white">Call Us</div>
-                                <a href="tel:4077207476" className="hover:text-[#64CEBB]">(407) 720-7476</a>
+                                <div className="text-xs text-white/60">Call</div>
+                                <a href="tel:4077207476" className="hover:text-[#64CEBB] text-xs md:text-sm font-medium">(407) 720-7476</a>
                             </div>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <span className="text-[#64CEBB] mt-1">💬</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="text-[#64CEBB]">💬</span>
                             <div>
-                                <div className="font-bold text-white">Text Us</div>
-                                <a href="sms:4077207476" className="hover:text-[#64CEBB]">(407) 720-7476</a>
+                                <div className="text-xs text-white/60">Text</div>
+                                <a href="sms:4077207476" className="hover:text-[#64CEBB] text-xs md:text-sm font-medium">(407) 720-7476</a>
                             </div>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <Mail size={18} className="text-[#64CEBB] mt-1" />
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Mail size={16} className="text-[#64CEBB]" />
                             <div>
-                                <div className="font-bold text-white">Email Us</div>
-                                <a href="mailto:info@luxht.com" className="hover:text-[#64CEBB]">info@luxht.com</a>
+                                <div className="text-xs text-white/60">Email</div>
+                                <a href="mailto:info@luxht.com" className="hover:text-[#64CEBB] text-xs md:text-sm font-medium">info@luxht.com</a>
                             </div>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <MapPin size={18} className="text-[#64CEBB] mt-1" />
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <MapPin size={16} className="text-[#64CEBB]" />
                             <div>
-                                <div className="font-bold text-white">Service Area</div>
-                                <span>Orlando, Winter Park, & Surrounding FL Areas</span>
+                                <div className="text-xs text-white/60">Area</div>
+                                <span className="text-xs md:text-sm">Orlando, FL</span>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
