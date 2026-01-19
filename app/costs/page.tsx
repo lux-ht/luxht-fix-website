@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
     ArrowRight, DollarSign, Hammer, Tv, Home, Utensils,
     Fence, Lightbulb, Sofa, Droplets, DoorOpen, CheckCircle,
-    TrendingUp, Users, Clock, Phone, Eye
+    TrendingUp, Users, Clock, Phone, Eye, Mail
 } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
 
@@ -144,13 +144,13 @@ export default function CostsPage() {
                                 onClick={() => openModal('quote')}
                                 className="btn-gradient-primary btn-gradient-shimmer"
                             >
-                                <Phone size={20} /> Get a Free Quote
+                                Get a Free Quote
                             </button>
-                            <a href="sms:4077207476" className="btn-glass text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                            <a href="sms:4077207476" className="btn-gradient-secondary">
                                 <span>💬</span> Text Us
                             </a>
-                            <a href="mailto:info@luxht.com" className="btn-glass text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
-                                <span className="text-xl">✉️</span> Email Us
+                            <a href="mailto:info@luxht.com?subject=Quote%20Request" className="btn-gradient-secondary">
+                                <Mail size={20} /> Email Us
                             </a>
                         </div>
                     </div>

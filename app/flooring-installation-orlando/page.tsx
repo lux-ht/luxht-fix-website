@@ -120,7 +120,7 @@ export default function FlooringPage() {
             <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <span className="text-xl">💬</span> Text Us
             </a>
-            <a href="mailto:info@luxht.com" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+            <a href="mailto:info@luxht.com?subject=Flooring%20Installation%20Quote%20Request" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <Mail size={24} /> Email Us
             </a>
           </div>
@@ -128,7 +128,7 @@ export default function FlooringPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Professional installation starts at $3 per sq ft</p>
-          <p>Send room photos for detailed estimate</p>
+          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send room photos for detailed estimate</a>
         </div>
       </header>
 
@@ -211,9 +211,9 @@ export default function FlooringPage() {
           <div className="text-center mt-12">
             <p className="text-slate-600 mb-8 font-medium">We follow manufacturer specifications for every material to ensure warranty compliance.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-gradient-primary btn-gradient-shimmer">
+              <a href="/#contact" className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Estimate
-              </button>
+              </a>
               <a href="sms:4077207476" className="btn-gradient-secondary">
                 <span>💬</span> Text Us
               </a>

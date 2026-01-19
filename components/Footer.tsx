@@ -54,8 +54,6 @@ export default function Footer() {
                         <li><Link href="/faq" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
                         <li><Link href="/pricing-transparency" className="hover:text-[#64CEBB] transition-colors">Why Transparent Pricing?</Link></li>
                         <li><Link href="/services" className="hover:text-[#64CEBB] transition-colors">Process</Link></li>
-                        <li><Link href="/#contact" className="hover:text-[#64CEBB] transition-colors">Email Us</Link></li>
-
                     </ul>
                 </div>
 

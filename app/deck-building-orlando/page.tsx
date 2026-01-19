@@ -120,7 +120,7 @@ export default function DeckBuildingPage() {
             <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <span className="text-xl">💬</span> Text Us
             </a>
-            <a href="mailto:info@luxht.com" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+            <a href="mailto:info@luxht.com?subject=Deck%20Building%20Quote%20Request" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <Mail size={24} /> Email Us
             </a>
           </div>
@@ -128,7 +128,7 @@ export default function DeckBuildingPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Decks start at $8,000</p>
-          <p>Send a photo for instant estimate</p>
+          <a href="sms:4077207476" className="hover:text-white underline underline-offset-2">📸 Send photos for free consultation</a>
         </div>
       </header>
 
@@ -212,9 +212,9 @@ export default function DeckBuildingPage() {
           <div className="text-center mt-12">
             <p className="text-slate-600 mb-8 font-medium">We handle every detail from permits to cleanup so you can enjoy your new outdoor space stress-free.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-gradient-primary btn-gradient-shimmer">
+              <a href="/#contact" className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Design Consultation
-              </button>
+              </a>
               <a href="sms:4077207476" className="btn-gradient-secondary">
                 <span>💬</span> Text Us
               </a>

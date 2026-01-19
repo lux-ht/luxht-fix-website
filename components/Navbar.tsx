@@ -176,23 +176,10 @@ export default function Navbar() {
                     {/* Text Us - Desktop */}
                     <a
                         href="sms:4077207476"
-                        className={clsx(
-                            "font-bold flex items-center gap-2 transition-colors px-3 py-2 rounded-lg border",
-                            useDarkText
-                                ? "text-[#584D94] border-[#584D94]/20 hover:bg-[#584D94]/5"
-                                : "text-white border-white/20 hover:bg-white/10"
-                        )}
-                    >
-                        <span className="text-xs font-black uppercase tracking-wider">Text Us</span>
-                    </a>
-
-                    {/* Schedule Now */}
-                    <button
-                        onClick={() => openModal('schedule')}
                         className="btn-gradient-secondary"
                     >
-                        Schedule Now
-                    </button>
+                        <span>💬</span> Text Us
+                    </a>
 
                     {/* Get Quote */}
                     <button
@@ -261,15 +248,6 @@ export default function Navbar() {
                                 <span>💬</span> Text Us
                             </a>
                         </div>
-                        <button
-                            onClick={() => {
-                                setIsOpen(false);
-                                openModal('schedule');
-                            }}
-                            className="btn-gradient-mobile-secondary"
-                        >
-                            Schedule Now
-                        </button>
                         <button
                             onClick={() => {
                                 setIsOpen(false);
