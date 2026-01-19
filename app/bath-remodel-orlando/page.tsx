@@ -4,7 +4,7 @@ import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
   ArrowRight, Hammer, Wrench, Droplets, CheckCircle,
-  Phone, Mail, Star, MapPin,
+  Phone, Mail, MessageSquare, Star, MapPin,
   Ruler, Tv, Grid, Paintbrush, Calendar,
   Bath, Utensils, DoorOpen, Monitor, Shield, Zap
 } from 'lucide-react';
@@ -304,9 +304,9 @@ export default function BathRemodelPage() {
             <Link href="/costs/bathroom-remodel" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
-            <button className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={18} /> Schedule Consultation
-            </button>
+            <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20bathroom%20remodel..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
+              <MessageSquare size={18} /> Send Photo for Quote
+            </a>
           </div>
         </div>
       </section>
