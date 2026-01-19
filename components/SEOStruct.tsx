@@ -16,8 +16,8 @@ export default function SEOStruct() {
             latitude: '28.5383',
             longitude: '-81.3792',
         },
-        url: 'https://luxhtfix.com', // Placeholder
-        telephone: '+15555555555', // Placeholder
+        url: 'https://www.luxht.com',
+        telephone: '+14077207476',
         priceRange: '$$',
         openingHoursSpecification: [
             {

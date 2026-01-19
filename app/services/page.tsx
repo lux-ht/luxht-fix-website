@@ -32,7 +32,7 @@ export default function ServicesPage() {
         "name": "LUXHT Fix",
         "image": "https://luxhtfix.com/logo-new.jpg",
         "url": "https://luxhtfix.com/services",
-        "telephone": "+1-407-288-0832",
+        "telephone": "+1-407-720-7476",
         "priceRange": "$$-$$$",
         "address": {
             "@type": "PostalAddress",
@@ -77,8 +77,8 @@ export default function ServicesPage() {
                         <CheckCircle size={18} /> Licensed • Insured • 500+ Orlando Homes Served
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4072880832" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
-                            (407) 288-0832
+                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
+                            (407) 720-7476
                         </a>
                         <a href="#all-services" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all">
                             View All Services
@@ -195,8 +195,8 @@ export default function ServicesPage() {
                         From small repairs to complete renovations, LUXHT Fix delivers professional results you can trust.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4072880832" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
-                            (407) 288-0832
+                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
+                            (407) 720-7476
                         </a>
                         <a href="/#contact" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all">
                             Get Free Quote

@@ -21,7 +21,7 @@ export default function DrywallPage() {
     "name": "LUXHT Fix - Drywall Repair Orlando",
     "image": "https://luxhtfix.com/images/drywall-repair.jpg",
     "url": "https://luxhtfix.com/drywall-repair-orlando",
-    "telephone": "+1-407-288-0832",
+    "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -371,7 +371,7 @@ export default function DrywallPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <button className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={20} /> Call Now: (407) 288-0832
+              <Phone size={20} /> Call Now: (407) 720-7476
             </button>
             <button className="btn-gradient-glass">
               <Mail size={20} /> Contact Us

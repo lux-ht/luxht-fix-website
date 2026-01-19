@@ -108,8 +108,8 @@ export default function FAQPage() {
                         We're happy to help. Give us a call or send a message and we'll get back to you quickly.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4072880832" className="bg-[#584D94] text-white font-bold py-4 px-8 rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                            <Phone size={20} /> Call (407) 288-0832
+                        <a href="tel:4077207476" className="bg-[#584D94] text-white font-bold py-4 px-8 rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            <Phone size={20} /> Call (407) 720-7476
                         </a>
                         <Link href="/#contact" className="bg-slate-100 text-slate-800 font-bold py-4 px-8 rounded-full hover:bg-slate-200 transition-all border border-slate-200 flex items-center gap-2">
                             <Mail size={20} /> Contact Us

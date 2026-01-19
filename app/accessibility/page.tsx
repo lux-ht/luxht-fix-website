@@ -180,7 +180,7 @@ export default function AccessibilityPage() {
                                 <div className="bg-[#64CEBB]/10 rounded-xl p-6 border border-[#64CEBB]/20">
                                     <p className="text-white font-semibold mb-2">Contact Us About Accessibility</p>
                                     <p className="text-slate-300">Email: info@luxht.com</p>
-                                    <p className="text-slate-300">Phone: (407) 288-0832</p>
+                                    <p className="text-slate-300">Phone: (407) 720-7476</p>
                                     <p className="text-slate-400 text-sm mt-3">
                                         We aim to respond to accessibility feedback within 5 business days.
                                     </p>

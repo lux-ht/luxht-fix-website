@@ -30,7 +30,7 @@ export default function AboutPage() {
                             "addressRegion": "FL",
                             "addressCountry": "US"
                         },
-                        "telephone": "+1-407-288-0832",
+                        "telephone": "+1-407-720-7476",
                         "areaServed": {
                             "@type": "City",
                             "name": "Orlando"
@@ -253,8 +253,8 @@ export default function AboutPage() {
                         Looking for more than a typical handyman in Orlando? Work with construction professionals who treat your home with the care it deserves.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                        <a href="tel:4072880832" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
-                            <Phone size={20} /> Call Now: (407) 288-0832
+                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
+                            <Phone size={20} /> Call Now: (407) 720-7476
                         </a>
                         <Link href="/services" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all">
                             Request a Quote

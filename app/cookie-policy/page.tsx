@@ -167,7 +167,7 @@ export default function CookiePolicyPage() {
                             {/* Contact */}
                             <div className="bg-[#64CEBB]/10 rounded-xl p-6 border border-[#64CEBB]/20">
                                 <h3 className="text-lg font-bold mb-3">Questions About Our Cookie Policy?</h3>
-                                <p className="text-slate-300">Contact us at info@luxht.com or call (407) 288-0832</p>
+                                <p className="text-slate-300">Contact us at info@luxht.com or call (407) 720-7476</p>
                             </div>
 
                         </div>

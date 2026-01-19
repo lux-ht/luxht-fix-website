@@ -22,7 +22,7 @@ export default function SmartHomePage() {
     "name": "LUXHT Fix - Smart Home Installation Orlando",
     "image": "https://luxhtfix.com/images/smart-home-installation.jpg",
     "url": "https://luxhtfix.com/smart-home-installation-orlando",
-    "telephone": "+1-407-288-0832",
+    "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -115,7 +115,7 @@ export default function SmartHomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
+            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
             </a>
             <a href="#contact" className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2 transform hover:scale-105 duration-200">
@@ -217,7 +217,7 @@ export default function SmartHomePage() {
               <button className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Estimate
               </button>
-              <a href="tel:4072880832" className="btn-gradient-secondary">
+              <a href="tel:4077207476" className="btn-gradient-secondary">
                 <Phone size={18} /> Call Now
               </a>
             </div>
@@ -379,8 +379,8 @@ export default function SmartHomePage() {
             Professional installation with complete smartphone setup.<br />Orlando's trusted smart home experts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={20} /> Call Now: (407) 288-0832
+            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={20} /> Call Now: (407) 720-7476
             </a>
             <a href="#contact" className="btn-gradient-glass">
               <Mail size={20} /> Contact Us

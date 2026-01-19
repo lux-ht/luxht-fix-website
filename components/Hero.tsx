@@ -66,7 +66,7 @@ export default function Hero({ imageSrc, imageAlt, imageOpacity = "opacity-10", 
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a
-                            href="tel:5555555555"
+                            href="tel:4077207476"
                             className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-semibold text-lg transition-all shadow-lg shadow-blue-500/30 flex items-center justify-center gap-2"
                         >
                             Call Now

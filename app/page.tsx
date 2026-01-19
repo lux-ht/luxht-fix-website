@@ -85,8 +85,8 @@ export default function Home() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a href="tel:4072880832" className="btn-gradient-primary btn-gradient-shimmer">
-                                <Phone size={20} /> (407) 288-0832
+                            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+                                <Phone size={20} /> (407) 720-7476
                             </a>
                             <Link href="/services" className="btn-gradient-secondary">
                                 Browse All Services <ArrowRight size={18} />
@@ -214,8 +214,8 @@ export default function Home() {
                         From small fixes to major upgrades, let's make your home better together.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4072880832" className="btn-gradient-glass btn-gradient-shimmer">
-                            <Phone size={20} /> Call Now: (407) 288-0832
+                        <a href="tel:4077207476" className="btn-gradient-glass btn-gradient-shimmer">
+                            <Phone size={20} /> Call Now: (407) 720-7476
                         </a>
                         <a href="mailto:info@luxht.com" className="btn-gradient-glass">
                             <Mail size={20} /> Contact Us
