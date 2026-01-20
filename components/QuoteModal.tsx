@@ -5,11 +5,13 @@ import { useModal } from '@/context/ModalContext';
 import { X, CheckCircle, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AddressAutocomplete from './AddressAutocomplete';
+import { supabase } from '@/lib/supabase';
 
 export default function QuoteModal() {
     const { isOpen, closeModal, mode } = useModal();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<File | null>(null);
 
     // Form State
     const [formData, setFormData] = useState({
@@ -42,50 +44,77 @@ export default function QuoteModal() {
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files && e.target.files[0]) {
+            setSelectedImage(e.target.files[0]);
+        }
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call (In a real app, send to API/Email service)
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        try {
+            let imageUrl = null;
 
-        console.log("Form Submitted:", formData);
+            // 1. Upload Image if exists
+            if (selectedImage) {
+                const fileExt = selectedImage.name.split('.').pop();
+                const fileName = `${Date.now()}_${Math.random().toString(36).substr(2, 9)}.${fileExt}`;
+                const { data: uploadData, error: uploadError } = await supabase.storage
+                    .from('quote-images')
+                    .upload(fileName, selectedImage);
 
-        setIsSubmitting(false);
-        setIsSuccess(true);
+                if (uploadError) {
+                    console.error("Image Upload Error:", uploadError);
+                } else if (uploadData) {
+                    // Get public URL
+                    const { data: { publicUrl } } = supabase.storage
+                        .from('quote-images')
+                        .getPublicUrl(uploadData.path);
+                    imageUrl = publicUrl;
+                }
+            }
 
-        if (mode === 'schedule') {
-            // Wait briefly then redirect (simulated for now)
-            setTimeout(() => {
-                // In production: window.location.href = "YOUR_CALENDAR_LINK";
-                console.log("Redirecting to calendar...");
-                closeModal();
-                setIsSuccess(false); // Reset for next time
-                setFormData({
-                    name: '',
-                    email: '',
-                    phone: '',
-                    address: '',
-                    service: 'General Repair',
-                    referral: '',
-                    comments: ''
-                });
-            }, 2000);
-        } else {
-            // Reset after showing success for Quote mode
+            // 2. Insert Lead Data
+            const { error: insertError } = await supabase
+                .from('leads')
+                .insert([
+                    {
+                        name: formData.name,
+                        email: formData.email,
+                        phone: formData.phone,
+                        address: formData.address,
+                        service: formData.service,
+                        referral_source: formData.referral,
+                        details: formData.comments, // mapped 'comments' to 'details' based on table schema
+                        image_url: imageUrl
+                    }
+                ]);
+
+            if (insertError) throw insertError;
+
+            console.log("Form Submitted Successfully");
+            setIsSuccess(true);
+
+            // Clean up form
+            setFormData({
+                name: '', email: '', phone: '', address: '',
+                service: 'General Repair', referral: '', comments: ''
+            });
+            setSelectedImage(null);
+
+            // Close after delay
             setTimeout(() => {
                 closeModal();
                 setIsSuccess(false);
-                setFormData({
-                    name: '',
-                    email: '',
-                    phone: '',
-                    address: '',
-                    service: 'General Repair',
-                    referral: '',
-                    comments: ''
-                });
-            }, 3000);
+            }, mode === 'schedule' ? 2000 : 3000);
+
+        } catch (error) {
+            console.error("Submission Error:", error);
+            alert("Something went wrong submitting your quote. Please try again or call us.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -387,14 +416,12 @@ export default function QuoteModal() {
                                                     type="file"
                                                     accept="image/*"
                                                     className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                                                    onChange={(e) => {
-                                                        if (e.target.files && e.target.files[0]) {
-                                                            console.log("File selected:", e.target.files[0].name);
-                                                        }
-                                                    }}
+                                                    onChange={handleImageChange}
                                                 />
                                                 <div className="text-slate-400 group-hover:text-[#64CEBB] transition-colors pointer-events-none">
-                                                    <p className="text-sm font-medium">Click to upload or drag and drop</p>
+                                                    <p className="text-sm font-medium">
+                                                        {selectedImage ? `Selected: ${selectedImage.name}` : "Click to upload or drag and drop"}
+                                                    </p>
                                                     <p className="text-[10px] mt-1 opacity-70">PNG, JPG up to 5MB</p>
                                                 </div>
                                             </div>
