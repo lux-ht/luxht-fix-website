@@ -119,7 +119,7 @@ export default function DrywallPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Most small repairs start at $150</p>
-          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20drywall%20repair..." className="hover:text-white underline underline-offset-2">💬 Send a photo for instant estimate</a>
+          <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20drywall%20repair..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
         </div>
       </header>
 
@@ -293,8 +293,8 @@ export default function DrywallPage() {
             <Link href="/costs/drywall-repair" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
-            <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20drywall%20repair..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
-              <MessageSquare size={18} /> Send Photo for Quote
+            <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20drywall%20repair..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
+              <MessageSquare size={18} /> Text Us - Get Instant Reply
             </a>
           </div>
         </div>

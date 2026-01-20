@@ -5,6 +5,7 @@ import {
     DoorOpen, CheckCircle, Zap, Star, Phone, Mail, PaintRoller
 } from 'lucide-react';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
+import DrywallGallery from '@/components/DrywallGallery';
 import Image from 'next/image';
 
 export default function Home() {
@@ -69,7 +70,25 @@ export default function Home() {
                         </p>
 
                         {/* Trust Stats */}
-                        <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
+                        {/* Trust Stats */}
+                        {/* Mobile Stats (UI 2026) */}
+                        <div className="grid grid-cols-3 gap-2 border-y border-slate-100 py-4 mb-8 bg-white/50 backdrop-blur-sm md:hidden">
+                            <div className="flex flex-col items-center justify-center p-2">
+                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">500+</span>
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Projects</span>
+                            </div>
+                            <div className="flex flex-col items-center justify-center p-2 border-x border-slate-100">
+                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">40yr</span>
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Exp.</span>
+                            </div>
+                            <div className="flex flex-col items-center justify-center p-2">
+                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">100%</span>
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Sat.</span>
+                            </div>
+                        </div>
+
+                        {/* Desktop Stats (Original) */}
+                        <div className="hidden md:flex flex-wrap justify-center gap-6 mb-8 text-sm">
                             <div className="flex items-center gap-2 text-slate-600">
                                 <CheckCircle size={18} className="text-[#64CEBB]" />
                                 <span><strong className="text-slate-800">500+</strong> Projects Completed</span>
@@ -98,7 +117,29 @@ export default function Home() {
 
             {/* FEATURED SPECIALTY: DRYWALL */}
             <section className="pt-48 pb-20 px-4 container mx-auto">
-                <div className="bg-[#584D94] rounded-3xl p-8 md:p-16 text-white overflow-hidden relative shadow-2xl">
+                {/* Mobile Layout (UI 2026) */}
+                <div className="md:hidden bg-[#584D94] rounded-3xl overflow-hidden relative shadow-2xl mb-4">
+                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div className="p-6">
+                        <div className="inline-block bg-[#64CEBB] text-white text-[10px] font-bold py-1 px-3 rounded-full mb-4 uppercase tracking-wider animate-pulse">
+                            Most Popular
+                        </div>
+                        <h2 className="text-2xl font-bold mb-4 text-white">Expert Drywall Repair</h2>
+                        <p className="text-blue-100 text-sm mb-6">
+                            We make holes and water damage disappear. Perfect texture matching.
+                        </p>
+
+                        {/* Integrated Gallery */}
+                        <DrywallGallery />
+
+                        <Link href="/drywall-orlando" className="btn-gradient-glass btn-gradient-shimmer w-full justify-center text-sm">
+                            Fix My Drywall <ArrowRight size={16} />
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Desktop Layout (Original) */}
+                <div className="hidden md:block bg-[#584D94] rounded-3xl p-8 md:p-16 text-white overflow-hidden relative shadow-2xl">
                     <PaintRoller className="absolute bottom-0 left-0 w-48 h-48 text-white/10 -ml-12 -mb-12 animate-float -rotate-12" />
                     <Paintbrush className="absolute top-0 right-0 w-32 h-32 text-white/10 -mr-4 -mt-4 animate-float rotate-12" />
 
@@ -142,7 +183,27 @@ export default function Home() {
                         <h3 className="text-3xl md:text-4xl font-bold text-slate-800">Popular Home Services</h3>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* Mobile Grid (Square Glass Cards) */}
+                    <div className="grid grid-cols-2 gap-3 md:hidden">
+                        {[
+                            { title: "TV Mounting", icon: Tv, link: "/tv-mounting-orlando" },
+                            { title: "Flooring", icon: Grid, link: "/flooring-installation-orlando" },
+                            { title: "Deck Build", icon: Ruler, link: "/deck-building-orlando" },
+                            { title: "Door & Lock", icon: DoorOpen, link: "/door-lock-trim-orlando" },
+                            { title: "Faucets", icon: Wrench, link: "/faucet-fixtures-orlando" },
+                            { title: "Smart Home", icon: Zap, link: "/smart-home-installation-orlando" },
+                        ].map((s, i) => (
+                            <Link key={i} href={s.link} className="group bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center aspect-square active:scale-95 transition-transform">
+                                <div className="w-10 h-10 bg-[#584D94]/5 rounded-full flex items-center justify-center text-[#584D94] mb-2">
+                                    <s.icon size={20} />
+                                </div>
+                                <h4 className="font-bold text-slate-800 text-xs leading-tight">{s.title}</h4>
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Desktop Grid (Original) */}
+                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             { title: "TV Mounting", desc: "Secure mounting on any wall type.", icon: Tv, link: "/tv-mounting-orlando" },
                             { title: "Flooring", desc: "Hardwood, LVP, and tile install.", icon: Grid, link: "/flooring-installation-orlando" },

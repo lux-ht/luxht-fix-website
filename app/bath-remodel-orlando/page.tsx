@@ -128,7 +128,7 @@ export default function BathRemodelPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Bathroom remodels start at $8,500</p>
-          <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20bathroom%20remodel..." className="hover:text-white underline underline-offset-2">� Send photos for free consultation</a>
+          <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
         </div>
       </header>
 
@@ -304,8 +304,8 @@ export default function BathRemodelPage() {
             <Link href="/costs/bathroom-remodel" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
-            <a href="sms:4077207476?body=Attached%20photos%20for%20quote%20for%20my%20bathroom%20remodel..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
-              <MessageSquare size={18} /> Send Photo for Quote
+            <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
+              <MessageSquare size={18} /> Text Us - Get Instant Reply
             </a>
           </div>
         </div>
