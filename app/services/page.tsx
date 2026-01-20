@@ -80,10 +80,10 @@ export default function ServicesPage() {
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
                             Call Now
                         </a>
-                        <a href="sms:4077207476" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                        <a href="sms:4077207476" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                             <span>💬</span> Text Us
                         </a>
-                        <a href="#all-services" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all">
+                        <a href="#all-services" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center justify-center">
                             View All Services
                         </a>
                     </div>
@@ -201,10 +201,10 @@ export default function ServicesPage() {
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
                             Call Now
                         </a>
-                        <a href="sms:4077207476" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                        <a href="sms:4077207476" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                             <span>💬</span> Text Us
                         </a>
-                        <a href="mailto:info@luxht.com" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+                        <a href="mailto:info@luxht.com" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                             <span className="text-xl">✉️</span> Email Us
                         </a>
                     </div>
