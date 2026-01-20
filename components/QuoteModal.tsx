@@ -110,9 +110,15 @@ export default function QuoteModal() {
                 setIsSuccess(false);
             }, mode === 'schedule' ? 2000 : 3000);
 
-        } catch (error) {
+        } catch (error: any) {
             console.error("Submission Error:", error);
-            alert("Something went wrong submitting your quote. Please try again or call us.");
+
+            // Helpful error for production debugging
+            if (error?.message?.includes("Supabase") || !process.env.NEXT_PUBLIC_SUPABASE_URL) {
+                alert("Configuration Error: Database connection failed. Please ensure the 'NEXT_PUBLIC_SUPABASE_URL' and 'NEXT_PUBLIC_SUPABASE_ANON_KEY' environment variables are set in your deployment settings.");
+            } else {
+                alert(`Error sending quote: ${error.message || "Please check your connection and try again."}`);
+            }
         } finally {
             setIsSubmitting(false);
         }
@@ -415,11 +421,11 @@ export default function QuoteModal() {
                                                 <input
                                                     type="file"
                                                     accept="image/*"
-                                                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                                                     onChange={handleImageChange}
                                                 />
                                                 <div className="text-slate-400 group-hover:text-[#64CEBB] transition-colors pointer-events-none">
-                                                    <p className="text-sm font-medium">
+                                                    <p className="text-sm font-medium truncate px-4">
                                                         {selectedImage ? `Selected: ${selectedImage.name}` : "Click to upload or drag and drop"}
                                                     </p>
                                                     <p className="text-[10px] mt-1 opacity-70">PNG, JPG up to 5MB</p>
