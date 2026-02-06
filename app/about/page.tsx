@@ -67,15 +67,11 @@ export default function AboutPage() {
                     <div className="md:w-1/2 space-y-8">
                         <div>
                             <h2 className="text-3xl font-bold text-[#584D94] mb-4">Built From Luxury Construction.<br />Designed for Ongoing Home Care.</h2>
-                            <p className="text-slate-600 leading-relaxed text-lg">
-                                <span className="inline-flex items-center gap-1 font-bold text-[#584D94] bg-[#584D94]/10 px-2 py-0.5 rounded-md">LUXHT<span className="text-[#64CEBB]">Fix</span></span> is the professional home services division of
-                                <span className="inline-flex items-center gap-1 font-bold bg-gradient-to-r from-[#584D94] to-[#7B6FCC] bg-clip-text text-transparent">LUXHT</span> – <span className="italic text-[#64CEBB] font-medium">Luxury Home Transformations</span>, one of Orlando's trusted names in high-end residential construction and renovation.
+                            <p className="text-slate-600 leading-relaxed text-xl">
+                                <span className="inline-flex items-center gap-1 font-bold text-[#584D94] bg-[#584D94]/10 px-2 py-0.5 rounded-md">LUXHT<span className="text-[#64CEBB]">Fix</span></span> is a full service handyman company specializing in drywall repair, TV mounting, flooring, deck work, and general home repairs.
                             </p>
-                            <p className="text-slate-600 leading-relaxed mt-4">
-                                After years of completing full-scale kitchen remodels and custom home transformations, we recognized a consistent need: our clients wanted the same level of construction expertise for ongoing maintenance and smaller improvements.
-                            </p>
-                            <p className="text-slate-600 leading-relaxed mt-4 font-medium text-[#64CEBB]">
-                                That's why we created <span className="font-bold text-[#584D94]">LUXHT</span><span className="font-bold text-[#64CEBB]">Fix</span> — to bring builder-level craftsmanship to everyday home services.
+                            <p className="text-slate-600 leading-relaxed mt-4 text-xl">
+                                We help homeowners keep their homes functional, safe, and looking great.
                             </p>
                         </div>
 
