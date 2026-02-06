@@ -50,7 +50,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">About LUXHT Fix</h1>
                     <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-12">
-                        LUXHT Fix is a full service handyman company specializing in drywall repair, TV mounting, flooring, deck work, and general home repairs. We help homeowners keep their homes functional, safe, and looking great.
+                        LUXHT Fix is a full service handyman company in Orlando specializing in drywall repair, TV mounting, flooring, deck work, and general home repairs. We help homeowners keep their homes functional, safe, and looking great.
                     </p>
 
                     {/* Character Team Portrait */}
