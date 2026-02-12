@@ -1,0 +1,5 @@
+# Robots.txt for LUXHT Fix
+User-agent: *
+Allow: /
+
+Sitemap: https://fix.luxht.com/sitemap.xml

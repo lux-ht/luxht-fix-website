@@ -7,10 +7,12 @@ import {
 import HomePageTestimonials from '@/components/HomePageTestimonials';
 import DrywallGallery from '@/components/DrywallGallery';
 import Image from 'next/image';
+import SEOStruct from '@/components/SEOStruct';
 
 export default function Home() {
     return (
         <main className="min-h-screen bg-white text-slate-800 font-sans">
+            <SEOStruct />
             <Navbar />
 
             {/* HERO SECTION */}

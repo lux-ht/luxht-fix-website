@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         description: 'No hidden fees, no surprises. See our upfront pricing for home services in Orlando.'
     },
     alternates: {
-        canonical: 'https://luxhtfix.com/pricing-transparency'
+        canonical: 'https://fix.luxht.com/pricing-transparency'
     },
     robots: {
         index: true,
