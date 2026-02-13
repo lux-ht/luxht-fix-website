@@ -12,6 +12,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Professional Drywall Repair Orlando | LUXHT Fix - Same Week Service',
   description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching. Starting at $150. Call for same-week service!',
+  alternates: { canonical: 'https://fix.luxht.com/drywall-orlando/' },
 };
 
 export default function DrywallPage() {
@@ -19,16 +20,16 @@ export default function DrywallPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Drywall Repair Orlando",
-    "image": "https://luxhtfix.com/images/drywall-repair.jpg",
-    "url": "https://luxhtfix.com/drywall-repair-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/drywall-repair-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Deck Building Orlando | Custom Deck Design & Construction - LUXHT Fix',
   description: 'Professional deck building in Orlando. Custom designs with durable materials and expert craftsmanship. Free estimates. Transform your outdoor space today!',
+  alternates: { canonical: 'https://fix.luxht.com/deck-building-orlando/' },
 };
 
 export default function DeckBuildingPage() {
@@ -20,16 +21,16 @@ export default function DeckBuildingPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Deck Building Orlando",
-    "image": "https://luxhtfix.com/images/deck-building.jpg",
-    "url": "https://luxhtfix.com/deck-building-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/deck-building-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

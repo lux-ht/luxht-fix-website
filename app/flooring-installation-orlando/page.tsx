@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Flooring Installation Orlando | Hardwood, LVP, Tile - LUXHT Fix',
   description: 'Expert flooring installation in Orlando. Hardwood, laminate, vinyl, and tile. Starting at $3/sq ft. Licensed & Insured. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/flooring-installation-orlando/' },
 };
 
 export default function FlooringPage() {
@@ -20,16 +21,16 @@ export default function FlooringPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Flooring Installation Orlando",
-    "image": "https://luxhtfix.com/images/flooring-installation.jpg",
-    "url": "https://luxhtfix.com/flooring-installation-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/flooring-installation-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

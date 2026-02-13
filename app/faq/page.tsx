@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | LUXHT Fix Orlando',
     description: 'Common questions about pricing, scheduling, and our services. Learn how LUXHT Fix provides transparent, vital home repairs in Orlando.',
+    alternates: { canonical: 'https://fix.luxht.com/faq/' },
 };
 
 export default function FAQPage() {

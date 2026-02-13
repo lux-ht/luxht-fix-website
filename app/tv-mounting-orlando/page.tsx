@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'TV Mounting Orlando | Professional Installation - LUXHT Fix',
   description: 'Expert TV mounting in Orlando. Secure installation with concealed cables on any wall type. Starting at $120. Same-week service. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/tv-mounting-orlando/' },
 };
 
 export default function TVMountingPage() {
@@ -20,16 +21,16 @@ export default function TVMountingPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - TV Mounting Orlando",
-    "image": "https://luxhtfix.com/images/tv-mounting.jpg",
-    "url": "https://luxhtfix.com/tv-mounting-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/tv-mounting-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     }
   };

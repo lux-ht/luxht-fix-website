@@ -2,9 +2,16 @@ export default function SEOStruct() {
     const organizationSchema = {
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: 'Luxht',
+        '@id': 'https://fix.luxht.com/#organization',
+        name: 'LUXHT Fix',
+        alternateName: 'LUXHT Fix Orlando',
         url: 'https://fix.luxht.com',
-        logo: 'https://fix.luxht.com/luxht-logo.jpg',
+        logo: {
+            '@type': 'ImageObject',
+            url: 'https://fix.luxht.com/luxht-logo.jpg',
+            width: 800,
+            height: 800,
+        },
         sameAs: [
             'https://www.facebook.com/luxht',
             'https://www.instagram.com/luxht',
@@ -21,8 +28,10 @@ export default function SEOStruct() {
 
     const localBusinessSchema = {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
+        '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
+        '@id': 'https://fix.luxht.com/#localbusiness',
         name: 'LUXHT Fix',
+        alternateName: 'LUXHT Fix Orlando',
         image: 'https://fix.luxht.com/luxht-logo.jpg',
         description:
             'Professional handyman and home repair services in Orlando, FL. Specializing in drywall repair, TV mounting, flooring, deck building, and more.',

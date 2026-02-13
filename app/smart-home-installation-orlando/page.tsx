@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Smart Home Installation Orlando | Ring, Nest, Camera & Smart Lock Setup - LUXHT Fix',
   description: 'Professional smart home installation in Orlando. Ring doorbells, Nest thermostats, cameras, and smart locks integrated with your smartphone. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/smart-home-installation-orlando/' },
 };
 
 export default function SmartHomePage() {
@@ -20,16 +21,16 @@ export default function SmartHomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Smart Home Installation Orlando",
-    "image": "https://luxhtfix.com/images/smart-home-installation.jpg",
-    "url": "https://luxhtfix.com/smart-home-installation-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/smart-home-installation-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

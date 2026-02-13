@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Faucet & Fixture Installation Orlando | Kitchen & Bath Plumbing - LUXHT Fix',
   description: 'Professional faucet and fixture installation in Orlando. Kitchen and bathroom faucets, shower heads, and fixtures installed with leak-free results. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/faucet-fixtures-orlando/' },
 };
 
 export default function FaucetPage() {
@@ -20,16 +21,16 @@ export default function FaucetPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Faucet & Fixture Installation Orlando",
-    "image": "https://luxhtfix.com/images/faucet-fixtures.jpg",
-    "url": "https://luxhtfix.com/faucet-fixtures-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/faucet-fixtures-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

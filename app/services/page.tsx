@@ -10,6 +10,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Home Services in Orlando | LUXHT Fix - Complete Handyman Solutions',
     description: 'Professional home services in Orlando. Drywall repair, flooring, decks, kitchens, baths, TV mounting & more. Licensed, insured, trusted by 500+ homeowners.',
+    alternates: { canonical: 'https://fix.luxht.com/services/' },
 };
 
 export default function ServicesPage() {
@@ -30,8 +31,8 @@ export default function ServicesPage() {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "LUXHT Fix",
-        "image": "https://luxhtfix.com/logo-new.jpg",
-        "url": "https://luxhtfix.com/services",
+        "image": "https://fix.luxht.com/luxht-logo.jpg",
+        "url": "https://fix.luxht.com/services/",
         "telephone": "+1-407-720-7476",
         "priceRange": "$$-$$$",
         "address": {
@@ -52,7 +53,7 @@ export default function ServicesPage() {
                 "itemOffered": {
                     "@type": "Service",
                     "name": s.title,
-                    "url": `https://luxhtfix.com${s.link}`
+                    "url": `https://fix.luxht.com${s.link}`
                 }
             }))
         }

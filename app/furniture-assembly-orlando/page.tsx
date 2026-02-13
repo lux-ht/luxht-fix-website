@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Furniture Assembly Orlando | Fast Professional Assembly Service - LUXHT Fix',
   description: 'Professional furniture assembly in Orlando. Fast, correct assembly from any retailer. Save your weekend! IKEA, Amazon, Wayfair & more. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/furniture-assembly-orlando/' },
 };
 
 export default function FurnitureAssemblyPage() {
@@ -20,16 +21,16 @@ export default function FurnitureAssemblyPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Furniture Assembly Orlando",
-    "image": "https://luxhtfix.com/images/furniture-assembly.jpg",
-    "url": "https://luxhtfix.com/furniture-assembly-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/furniture-assembly-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

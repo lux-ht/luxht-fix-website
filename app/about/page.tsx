@@ -8,6 +8,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'About LUXHT Fix | Professional Home Services in Orlando - Construction Experts',
     description: 'LUXHT Fix brings construction-level expertise to home repairs and maintenance in Orlando. Not typical handymen - real builders serving luxury homeowners.',
+    alternates: { canonical: 'https://fix.luxht.com/about/' },
 };
 
 export default function AboutPage() {
@@ -21,8 +22,8 @@ export default function AboutPage() {
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "LUXHT Fix",
-                        "url": "https://luxhtfix.com",
-                        "logo": "https://luxhtfix.com/images/logo.png",
+                        "url": "https://fix.luxht.com",
+                        "logo": "https://fix.luxht.com/luxht-logo.jpg",
                         "description": "Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.",
                         "address": {
                             "@type": "PostalAddress",

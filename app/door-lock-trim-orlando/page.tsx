@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Door, Lock & Trim Repair Orlando | Fix Squeaky Doors & Install Locks - LUXHT Fix',
   description: 'Professional door, lock, and trim services in Orlando. Fix squeaky doors, install new locks, replace handles and trim. Same-week service. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/door-lock-trim-orlando/' },
 };
 
 export default function DoorLockPage() {
@@ -20,16 +21,16 @@ export default function DoorLockPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Door, Lock & Trim Orlando",
-    "image": "https://luxhtfix.com/images/door-lock-trim.jpg",
-    "url": "https://luxhtfix.com/door-lock-trim-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/door-lock-trim-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

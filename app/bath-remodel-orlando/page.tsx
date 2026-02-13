@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Bathroom Remodel Orlando | Complete Bath Renovations - LUXHT Fix',
   description: 'Professional bathroom remodeling in Orlando. Complete renovations including vanities, showers, tubs, tile, and fixtures. Free design consultation. Call today!',
+  alternates: { canonical: 'https://fix.luxht.com/bath-remodel-orlando/' },
 };
 
 export default function BathRemodelPage() {
@@ -20,16 +21,16 @@ export default function BathRemodelPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Bathroom Remodel Orlando",
-    "image": "https://luxhtfix.com/images/bath-remodel.jpg",
-    "url": "https://luxhtfix.com/bath-remodel-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/bath-remodel-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {

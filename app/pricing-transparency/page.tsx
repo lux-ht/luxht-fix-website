@@ -51,7 +51,7 @@ const organizationSchema = {
     "@type": "LocalBusiness",
     "name": "LUXHT Fix",
     "description": "Professional handyman and home repair services in Orlando with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
-    "url": "https://luxhtfix.com",
+    "url": "https://fix.luxht.com",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {

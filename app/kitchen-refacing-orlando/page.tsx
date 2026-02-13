@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Kitchen Refacing Orlando | Cabinet Door & Hardware Upgrades - LUXHT Fix',
   description: 'Professional kitchen refacing in Orlando. Upgrade cabinet doors, finishes, and hardware for a fresh modern look without full remodel. Free estimates!',
+  alternates: { canonical: 'https://fix.luxht.com/kitchen-refacing-orlando/' },
 };
 
 export default function KitchenRefacingPage() {
@@ -20,16 +21,16 @@ export default function KitchenRefacingPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Kitchen Refacing Orlando",
-    "image": "https://luxhtfix.com/images/kitchen-refacing.jpg",
-    "url": "https://luxhtfix.com/kitchen-refacing-orlando",
+    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "url": "https://fix.luxht.com/kitchen-refacing-orlando",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street",
+
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-      "postalCode": "32801",
+
       "addressCountry": "US"
     },
     "geo": {
