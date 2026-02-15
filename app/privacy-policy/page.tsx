@@ -1,7 +1,12 @@
-'use client';
-
 import Navbar from '@/components/Navbar';
 import { Shield, Lock, Eye, Database, Mail, UserCheck } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Privacy Policy | LUXHT Fix Orlando',
+    description: 'Learn how LUXHT Fix collects, uses, and protects your personal information. Our privacy policy explains our data practices for home repair services in Orlando.',
+    alternates: { canonical: 'https://fix.luxht.com/privacy-policy/' },
+};
 
 export default function PrivacyPolicyPage() {
     return (

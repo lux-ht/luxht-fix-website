@@ -22,7 +22,7 @@ export default function AboutPage() {
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "LUXHT Fix",
-                        "url": "https://fix.luxht.com",
+                        "url": "https://fix.luxht.com/",
                         "logo": "https://fix.luxht.com/luxht-logo.jpg",
                         "description": "Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.",
                         "address": {
@@ -230,14 +230,14 @@ export default function AboutPage() {
                         { name: 'Smart Home', desc: 'Automation & device integration' },
                         { name: 'Furniture Assembly', desc: 'Expert assembly for any brand' },
                     ].map((service, i) => (
-                        <Link key={i} href="/services" className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
+                        <Link key={i} href="/services/" className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
                             <h3 className="font-bold text-lg text-slate-800 group-hover:text-[#584D94] transition-colors mb-2 ">{service.name}</h3>
                             <p className="text-slate-500 text-sm">{service.desc}</p>
                         </Link>
                     ))}
                 </div>
                 <div className="text-center mt-12">
-                    <Link href="/services" className="text-[#584D94] font-bold text-lg hover:text-[#64CEBB] transition-colors inline-flex items-center gap-2">
+                    <Link href="/services/" className="text-[#584D94] font-bold text-lg hover:text-[#64CEBB] transition-colors inline-flex items-center gap-2">
                         View All Services <span className="text-2xl">→</span>
                     </Link>
                 </div>

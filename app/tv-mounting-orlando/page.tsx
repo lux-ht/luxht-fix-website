@@ -22,7 +22,7 @@ export default function TVMountingPage() {
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - TV Mounting Orlando",
     "image": "https://fix.luxht.com/luxht-logo.jpg",
-    "url": "https://fix.luxht.com/tv-mounting-orlando",
+    "url": "https://fix.luxht.com/tv-mounting-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
@@ -279,7 +279,7 @@ export default function TVMountingPage() {
           <h3 className="text-xl md:text-2xl font-bold mb-4">Get Your Personalized Quote</h3>
           <p className="mb-6 opacity-90 max-w-xl mx-auto">Send us a photo of your wall and TV for a fast estimate — or explore our detailed pricing guide.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/costs/tv-mounting" className="btn-gradient-glass">
+            <Link href="/costs/tv-mounting/" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
             <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20TV%20mounting..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
@@ -349,7 +349,7 @@ export default function TVMountingPage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
+            <Link href="/services/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
           </div>
         </div>
       </section>

@@ -15,16 +15,16 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
     const allServices = [
-        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-orlando" },
-        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-orlando" },
-        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-orlando" },
-        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-orlando" },
-        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-orlando" },
-        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-orlando" },
-        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-orlando" },
-        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-orlando" },
-        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-orlando" },
-        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-orlando" },
+        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-orlando/" },
+        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
+        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-orlando/" },
+        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-orlando/" },
+        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-orlando/" },
+        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-orlando/" },
+        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-orlando/" },
+        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-orlando/" },
+        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-orlando/" },
+        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-orlando/" },
     ];
 
     const serviceSchema = {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
                         </p>
                         <div className="flex items-center gap-4">
                             <span className="text-2xl font-bold text-slate-800">Starting at $150</span>
-                            <Link href="/drywall-orlando" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
+                            <Link href="/drywall-orlando/" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
                                 Learn More <ArrowRight size={18} />
                             </Link>
                         </div>

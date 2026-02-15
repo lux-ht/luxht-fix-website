@@ -100,28 +100,28 @@ export default function Navbar() {
                                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">Home Repairs</h3>
                                 <ul className="space-y-3">
                                     <li>
-                                        <Link href="/drywall-orlando" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
+                                        <Link href="/drywall-orlando/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
                                             Drywall Repair <span className="text-xs font-normal text-slate-400 ml-1">★ Popular</span>
                                         </Link>
                                     </li>
-                                    <li><Link href="/door-lock-trim-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Door, Lock & Trim</Link></li>
-                                    <li><Link href="/faucet-fixtures-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Faucet & Fixtures</Link></li>
-                                    <li><Link href="/tv-mounting-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
-                                    <li><Link href="/furniture-assembly-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Furniture Assembly</Link></li>
-                                    <li><Link href="/smart-home-installation-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Smart Home</Link></li>
+                                    <li><Link href="/door-lock-trim-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Door, Lock & Trim</Link></li>
+                                    <li><Link href="/faucet-fixtures-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Faucet & Fixtures</Link></li>
+                                    <li><Link href="/tv-mounting-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
+                                    <li><Link href="/furniture-assembly-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Furniture Assembly</Link></li>
+                                    <li><Link href="/smart-home-installation-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Smart Home</Link></li>
                                 </ul>
                             </div>
 
                             <div>
                                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">Renovations</h3>
                                 <ul className="space-y-3">
-                                    <li><Link href="/flooring-installation-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring Installation</Link></li>
-                                    <li><Link href="/deck-building-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Deck Building</Link></li>
-                                    <li><Link href="/kitchen-refacing-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Kitchen Refacing</Link></li>
-                                    <li><Link href="/bath-remodel-orlando" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
+                                    <li><Link href="/flooring-installation-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring Installation</Link></li>
+                                    <li><Link href="/deck-building-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Deck Building</Link></li>
+                                    <li><Link href="/kitchen-refacing-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Kitchen Refacing</Link></li>
+                                    <li><Link href="/bath-remodel-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
                                 </ul>
                                 <div className="mt-6 pt-4 border-t border-slate-100">
-                                    <Link href="/services" className="text-sm font-bold text-[#64CEBB] hover:text-[#4daea0] flex items-center gap-1">
+                                    <Link href="/services/" className="text-sm font-bold text-[#64CEBB] hover:text-[#4daea0] flex items-center gap-1">
                                         View All Services →
                                     </Link>
                                 </div>
@@ -130,7 +130,7 @@ export default function Navbar() {
                     </div>
 
                     <Link
-                        href="/about"
+                        href="/about/"
                         className={clsx(
                             "font-medium transition-all relative",
                             pathname === "/about" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-white/80")
@@ -142,7 +142,7 @@ export default function Navbar() {
                         )}
                     </Link>
                     <Link
-                        href="/costs"
+                        href="/costs/"
                         className={clsx(
                             "font-medium transition-all relative",
                             pathname.startsWith("/costs") ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-white/80")
@@ -154,7 +154,7 @@ export default function Navbar() {
                         )}
                     </Link>
                     <Link
-                        href="/faq"
+                        href="/faq/"
                         className={clsx(
                             "font-medium transition-all relative",
                             pathname === "/faq" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-white/80")
@@ -222,23 +222,23 @@ export default function Navbar() {
                             Services <ChevronDown size={16} className={clsx("transition-transform", isServicesOpen ? "rotate-180" : "")} />
                         </button>
                         <div className={clsx("space-y-3 pl-4 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all", isServicesOpen ? "max-h-[500px] mt-2" : "max-h-0")}>
-                            <Link href="/drywall-orlando" className="block text-[#584D94] font-medium" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
-                            <Link href="/door-lock-trim-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Door, Lock & Trim</Link>
-                            <Link href="/faucet-fixtures-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Faucet & Fixtures</Link>
-                            <Link href="/tv-mounting-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
-                            <Link href="/furniture-assembly-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Furniture Assembly</Link>
-                            <Link href="/smart-home-installation-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Smart Home</Link>
-                            <Link href="/flooring-installation-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Flooring Installation</Link>
-                            <Link href="/deck-building-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Deck Building</Link>
-                            <Link href="/kitchen-refacing-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Kitchen Refacing</Link>
-                            <Link href="/bath-remodel-orlando" className="block text-slate-600" onClick={() => setIsOpen(false)}>Bath Remodel</Link>
-                            <Link href="/services" className="block text-[#64CEBB] font-bold mt-2" onClick={() => setIsOpen(false)}>View All Services</Link>
+                            <Link href="/drywall-orlando/" className="block text-[#584D94] font-medium" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
+                            <Link href="/door-lock-trim-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Door, Lock & Trim</Link>
+                            <Link href="/faucet-fixtures-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Faucet & Fixtures</Link>
+                            <Link href="/tv-mounting-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
+                            <Link href="/furniture-assembly-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Furniture Assembly</Link>
+                            <Link href="/smart-home-installation-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Smart Home</Link>
+                            <Link href="/flooring-installation-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Flooring Installation</Link>
+                            <Link href="/deck-building-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Deck Building</Link>
+                            <Link href="/kitchen-refacing-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Kitchen Refacing</Link>
+                            <Link href="/bath-remodel-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Bath Remodel</Link>
+                            <Link href="/services/" className="block text-[#64CEBB] font-bold mt-2" onClick={() => setIsOpen(false)}>View All Services</Link>
                         </div>
                     </div>
 
-                    <Link href="/about" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>About</Link>
-                    <Link href="/faq" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>FAQ</Link>
-                    <Link href="/costs" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Costs</Link>
+                    <Link href="/about/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>About</Link>
+                    <Link href="/faq/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>FAQ</Link>
+                    <Link href="/costs/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Costs</Link>
 
                     <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                         <div className="grid grid-cols-2 gap-3">

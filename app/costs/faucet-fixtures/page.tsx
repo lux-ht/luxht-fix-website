@@ -32,7 +32,7 @@ export default function FaucetFixturesCostPage() {
             <Navbar />
             <header className="relative bg-gradient-to-br from-[#584D94] to-[#7B6FCC] pt-32 pb-16 overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
-                    <Link href="/costs" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6"><ArrowLeft size={18} /> Back to Cost Guides</Link>
+                    <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6"><ArrowLeft size={18} /> Back to Cost Guides</Link>
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 py-2 px-4 rounded-full text-sm text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">How Much Does Faucet & Fixture Installation Cost?</h1>
@@ -134,9 +134,9 @@ export default function FaucetFixturesCostPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-[#584D94] mb-6">Related Guides</h2>
                         <div className="grid md:grid-cols-3 gap-4">
-                            <Link href="/costs/bathroom-remodel" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Bathroom Remodel</h3><p className="text-sm text-slate-500">$3,000 - $50,000+</p></Link>
-                            <Link href="/costs/drywall-repair" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Drywall Repair</h3><p className="text-sm text-slate-500">$75 - $1,200</p></Link>
-                            <Link href="/costs/door-lock-trim" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Door & Lock</h3><p className="text-sm text-slate-500">$100 - $1,500</p></Link>
+                            <Link href="/costs/bathroom-remodel/" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Bathroom Remodel</h3><p className="text-sm text-slate-500">$3,000 - $50,000+</p></Link>
+                            <Link href="/costs/drywall-repair/" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Drywall Repair</h3><p className="text-sm text-slate-500">$75 - $1,200</p></Link>
+                            <Link href="/costs/door-lock-trim/" className="border rounded-xl p-4 hover:border-[#64CEBB]"><h3 className="font-semibold">Door & Lock</h3><p className="text-sm text-slate-500">$100 - $1,500</p></Link>
                         </div>
                     </section>
                 </div>

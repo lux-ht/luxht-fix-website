@@ -176,7 +176,7 @@ export default function CostsPage() {
                             return (
                                 <Link
                                     key={index}
-                                    href={`/costs/${category.slug}`}
+                                    href={`/costs/${category.slug}/`}
                                     className="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-[#64CEBB]/50 transition-all duration-300 hover:-translate-y-1"
                                 >
                                     {category.popular && (
@@ -225,7 +225,7 @@ export default function CostsPage() {
                             "request a quote" buttons and phone-first sales tactics. We believe you deserve better.
                         </p>
                         <Link
-                            href="/pricing-transparency"
+                            href="/pricing-transparency/"
                             className="inline-flex items-center gap-2 bg-white text-[#584D94] font-bold py-3 px-8 rounded-full hover:shadow-xl transition-all"
                         >
                             <Eye size={20} /> Read Our Pricing Philosophy

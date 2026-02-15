@@ -22,7 +22,7 @@ export default function DeckBuildingPage() {
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Deck Building Orlando",
     "image": "https://fix.luxht.com/luxht-logo.jpg",
-    "url": "https://fix.luxht.com/deck-building-orlando",
+    "url": "https://fix.luxht.com/deck-building-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",
     "address": {
@@ -295,7 +295,7 @@ export default function DeckBuildingPage() {
           <h3 className="text-xl md:text-2xl font-bold mb-4">Get a Free Design Consultation</h3>
           <p className="mb-6 opacity-90 max-w-xl mx-auto">Every project receives a detailed written estimate after our free consultation — or explore our pricing guide.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/costs/deck-building" className="btn-gradient-glass">
+            <Link href="/costs/deck-building/" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
             <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20deck%20project..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
@@ -365,7 +365,7 @@ export default function DeckBuildingPage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
+            <Link href="/services/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
           </div>
         </div>
       </section>

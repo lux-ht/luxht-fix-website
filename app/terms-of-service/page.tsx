@@ -1,7 +1,12 @@
-'use client';
-
 import Navbar from '@/components/Navbar';
 import { FileText, AlertTriangle, Scale, Handshake, Ban, Clock } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Terms of Service | LUXHT Fix Orlando',
+    description: 'Read the terms of service for LUXHT Fix. Learn about our service agreements, estimates, scheduling, and warranty policies for home repairs in Orlando.',
+    alternates: { canonical: 'https://fix.luxht.com/terms-of-service/' },
+};
 
 export default function TermsOfServicePage() {
     return (

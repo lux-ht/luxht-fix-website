@@ -5,7 +5,7 @@ export default function SEOStruct() {
         '@id': 'https://fix.luxht.com/#organization',
         name: 'LUXHT Fix',
         alternateName: 'LUXHT Fix Orlando',
-        url: 'https://fix.luxht.com',
+        url: 'https://fix.luxht.com/',
         logo: {
             '@type': 'ImageObject',
             url: 'https://fix.luxht.com/luxht-logo.jpg',
@@ -46,7 +46,7 @@ export default function SEOStruct() {
             latitude: '28.5383',
             longitude: '-81.3792',
         },
-        url: 'https://fix.luxht.com',
+        url: 'https://fix.luxht.com/',
         telephone: '+14077207476',
         priceRange: '$$',
         openingHoursSpecification: [

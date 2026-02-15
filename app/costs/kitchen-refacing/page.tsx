@@ -36,7 +36,7 @@ export default function KitchenRefacingCostPage() {
             <header className="relative bg-gradient-to-br from-[#584D94] to-[#7B6FCC] pt-32 pb-16 overflow-hidden">
                 <div className="absolute inset-0 opacity-10"><div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div><div className="absolute bottom-10 right-10 w-96 h-96 bg-[#64CEBB] rounded-full blur-3xl"></div></div>
                 <div className="container mx-auto px-4 relative z-10">
-                    <Link href="/costs" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors"><ArrowLeft size={18} /> Back to Cost Guides</Link>
+                    <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors"><ArrowLeft size={18} /> Back to Cost Guides</Link>
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Kitchen Cabinet Refacing Cost?</h1>
@@ -134,22 +134,16 @@ export default function KitchenRefacingCostPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-[#584D94] mb-6">Related Cost Guides</h2>
                         <div className="grid md:grid-cols-3 gap-4">
-                            <Link href="/costs/bathroom-remodel" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Bathroom Remodel</h3><p className="text-sm text-slate-500">$3,000 - $50,000+</p></Link>
-                            <Link href="/costs/flooring-installation" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Flooring Installation</h3><p className="text-sm text-slate-500">$3 - $20/sq ft</p></Link>
-                            <Link href="/costs/faucet-fixtures" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Faucet & Fixtures</h3><p className="text-sm text-slate-500">$75 - $400</p></Link>
+                            <Link href="/costs/bathroom-remodel/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Bathroom Remodel</h3><p className="text-sm text-slate-500">$3,000 - $50,000+</p></Link>
+                            <Link href="/costs/flooring-installation/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Flooring Installation</h3><p className="text-sm text-slate-500">$3 - $20/sq ft</p></Link>
+                            <Link href="/costs/faucet-fixtures/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Faucet & Fixtures</h3><p className="text-sm text-slate-500">$75 - $400</p></Link>
                         </div>
                     </section>
                 </div>
             </article>
 
-            
+
             <Footer />
-                <div className="container mx-auto max-w-6xl">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                        <div className="flex gap-6 text-slate-400 text-sm"><Link href="/" className="hover:text-white transition-colors">Home</Link><Link href="/services" className="hover:text-white transition-colors">Services</Link><Link href="/costs" className="hover:text-white transition-colors">Costs</Link><Link href="/about" className="hover:text-white transition-colors">About</Link></div>
-                    </div>
-                    <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500 text-sm">© 2026 LUXHT Fix. All rights reserved.</div>
-                </div>
         </main>
     );
 }

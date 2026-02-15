@@ -221,7 +221,7 @@ export default function TestimonialsPage() {
                         Join hundreds of satisfied Orlando homeowners. Get transparent pricing and quality craftsmanship.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/portfolio" className="bg-white text-[#584D94] font-bold py-4 px-8 rounded-full hover:shadow-xl transition-all inline-flex items-center justify-center gap-2">
+                        <Link href="/portfolio/" className="bg-white text-[#584D94] font-bold py-4 px-8 rounded-full hover:shadow-xl transition-all inline-flex items-center justify-center gap-2">
                             <Eye size={20} /> View Our Portfolio
                         </Link>
                         <button onClick={() => openModal('quote')} className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">

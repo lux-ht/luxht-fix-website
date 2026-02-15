@@ -22,7 +22,7 @@ export default function DoorLockPage() {
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Door, Lock & Trim Orlando",
     "image": "https://fix.luxht.com/luxht-logo.jpg",
-    "url": "https://fix.luxht.com/door-lock-trim-orlando",
+    "url": "https://fix.luxht.com/door-lock-trim-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
@@ -305,7 +305,7 @@ export default function DoorLockPage() {
           <h3 className="text-xl md:text-2xl font-bold mb-4">Get Your Personalized Quote</h3>
           <p className="mb-6 opacity-90 max-w-xl mx-auto">Tell us what you need — or explore our detailed pricing guide for typical project costs.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/costs/door-lock-trim" className="btn-gradient-glass">
+            <Link href="/costs/door-lock-trim/" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
             <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20door%2Flock%20issue..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
@@ -375,7 +375,7 @@ export default function DoorLockPage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
+            <Link href="/services/" className="text-[#64CEBB] font-bold underline hover:text-[#53b0a0]">View All Services</Link>
           </div>
         </div>
       </section>

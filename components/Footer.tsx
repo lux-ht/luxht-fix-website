@@ -34,11 +34,11 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Services</h3>
                         <ul className="space-y-2 text-xs md:text-sm">
-                            <li><Link href="/drywall-orlando" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
-                            <li><Link href="/tv-mounting-orlando" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
-                            <li><Link href="/flooring-installation-orlando" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
-                            <li><Link href="/deck-building-orlando" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
-                            <li><Link href="/services" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
+                            <li><Link href="/drywall-orlando/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
+                            <li><Link href="/tv-mounting-orlando/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
+                            <li><Link href="/flooring-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
+                            <li><Link href="/deck-building-orlando/" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
+                            <li><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
                         </ul>
                     </div>
 
@@ -46,11 +46,11 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Company</h3>
                         <ul className="space-y-2 text-xs md:text-sm">
-                            <li><Link href="/about" className="hover:text-[#64CEBB] transition-colors">About Us</Link></li>
-                            <li><Link href="/portfolio" className="hover:text-[#64CEBB] transition-colors">Portfolio</Link></li>
-                            <li><Link href="/testimonials" className="hover:text-[#64CEBB] transition-colors">Testimonials</Link></li>
-                            <li><Link href="/faq" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
-                            <li><Link href="/costs" className="hover:text-[#64CEBB] transition-colors">Costs</Link></li>
+                            <li><Link href="/about/" className="hover:text-[#64CEBB] transition-colors">About Us</Link></li>
+                            <li><Link href="/portfolio/" className="hover:text-[#64CEBB] transition-colors">Portfolio</Link></li>
+                            <li><Link href="/testimonials/" className="hover:text-[#64CEBB] transition-colors">Testimonials</Link></li>
+                            <li><Link href="/faq/" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
+                            <li><Link href="/costs/" className="hover:text-[#64CEBB] transition-colors">Costs</Link></li>
                         </ul>
                     </div>
 
@@ -91,13 +91,13 @@ export default function Footer() {
             <div className="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-blue-200 text-xs relative z-10">
                 <p className="mb-3">© {new Date().getFullYear()} LUXHT Fix. All rights reserved. Licensed & Insured.</p>
                 <div className="flex flex-wrap justify-center gap-4 text-slate-400">
-                    <Link href="/privacy-policy" className="hover:text-[#64CEBB] transition-colors">Privacy Policy</Link>
+                    <Link href="/privacy-policy/" className="hover:text-[#64CEBB] transition-colors">Privacy Policy</Link>
                     <span className="text-white/20">|</span>
-                    <Link href="/terms-of-service" className="hover:text-[#64CEBB] transition-colors">Terms of Service</Link>
+                    <Link href="/terms-of-service/" className="hover:text-[#64CEBB] transition-colors">Terms of Service</Link>
                     <span className="text-white/20">|</span>
-                    <Link href="/cookie-policy" className="hover:text-[#64CEBB] transition-colors">Cookie Policy</Link>
+                    <Link href="/cookie-policy/" className="hover:text-[#64CEBB] transition-colors">Cookie Policy</Link>
                     <span className="text-white/20">|</span>
-                    <Link href="/accessibility" className="hover:text-[#64CEBB] transition-colors">Accessibility</Link>
+                    <Link href="/accessibility/" className="hover:text-[#64CEBB] transition-colors">Accessibility</Link>
                 </div>
             </div>
         </footer>

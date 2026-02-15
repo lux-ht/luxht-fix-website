@@ -68,7 +68,7 @@ export default function Home() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
-                            Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando" className="text-[#584D94] font-medium hover:underline">decks</Link>, and <Link href="/services" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                            Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                         </p>
 
                         {/* Trust Stats */}
@@ -109,7 +109,7 @@ export default function Home() {
                             <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
                                 <Phone size={20} /> (407) 720-7476
                             </a>
-                            <Link href="/services" className="btn-gradient-secondary">
+                            <Link href="/services/" className="btn-gradient-secondary">
                                 Browse All Services <ArrowRight size={18} />
                             </Link>
                         </div>
@@ -134,7 +134,7 @@ export default function Home() {
                         {/* Integrated Gallery */}
                         <DrywallGallery />
 
-                        <Link href="/drywall-orlando" className="btn-gradient-glass btn-gradient-shimmer w-full justify-center text-sm">
+                        <Link href="/drywall-orlando/" className="btn-gradient-glass btn-gradient-shimmer w-full justify-center text-sm">
                             Fix My Drywall <ArrowRight size={16} />
                         </Link>
                     </div>
@@ -161,7 +161,7 @@ export default function Home() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="/drywall-orlando" className="btn-gradient-glass btn-gradient-shimmer">
+                            <Link href="/drywall-orlando/" className="btn-gradient-glass btn-gradient-shimmer">
                                 Fix My Drywall <ArrowRight size={18} />
                             </Link>
                         </div>
@@ -188,12 +188,12 @@ export default function Home() {
                     {/* Mobile Grid (Square Glass Cards) */}
                     <div className="grid grid-cols-2 gap-3 md:hidden">
                         {[
-                            { title: "TV Mounting", icon: Tv, link: "/tv-mounting-orlando" },
-                            { title: "Flooring", icon: Grid, link: "/flooring-installation-orlando" },
-                            { title: "Deck Build", icon: Ruler, link: "/deck-building-orlando" },
-                            { title: "Door & Lock", icon: DoorOpen, link: "/door-lock-trim-orlando" },
-                            { title: "Faucets", icon: Wrench, link: "/faucet-fixtures-orlando" },
-                            { title: "Smart Home", icon: Zap, link: "/smart-home-installation-orlando" },
+                            { title: "TV Mounting", icon: Tv, link: "/tv-mounting-orlando/" },
+                            { title: "Flooring", icon: Grid, link: "/flooring-installation-orlando/" },
+                            { title: "Deck Build", icon: Ruler, link: "/deck-building-orlando/" },
+                            { title: "Door & Lock", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
+                            { title: "Faucets", icon: Wrench, link: "/faucet-fixtures-orlando/" },
+                            { title: "Smart Home", icon: Zap, link: "/smart-home-installation-orlando/" },
                         ].map((s, i) => (
                             <Link key={i} href={s.link} className="group bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center aspect-square active:scale-95 transition-transform">
                                 <div className="w-10 h-10 bg-[#584D94]/5 rounded-full flex items-center justify-center text-[#584D94] mb-2">
@@ -207,12 +207,12 @@ export default function Home() {
                     {/* Desktop Grid (Original) */}
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
-                            { title: "TV Mounting", desc: "Secure mounting on any wall type.", icon: Tv, link: "/tv-mounting-orlando" },
-                            { title: "Flooring", desc: "Hardwood, LVP, and tile install.", icon: Grid, link: "/flooring-installation-orlando" },
-                            { title: "Deck Building", desc: "Custom outdoor living spaces.", icon: Ruler, link: "/deck-building-orlando" },
-                            { title: "Door & Lock", desc: "Security upgrades and repairs.", icon: DoorOpen, link: "/door-lock-trim-orlando" },
-                            { title: "Faucets", desc: "Kitchen and bath upgrades.", icon: Wrench, link: "/faucet-fixtures-orlando" },
-                            { title: "Smart Home", desc: "Automation and cameras.", icon: Zap, link: "/smart-home-installation-orlando" },
+                            { title: "TV Mounting", desc: "Secure mounting on any wall type.", icon: Tv, link: "/tv-mounting-orlando/" },
+                            { title: "Flooring", desc: "Hardwood, LVP, and tile install.", icon: Grid, link: "/flooring-installation-orlando/" },
+                            { title: "Deck Building", desc: "Custom outdoor living spaces.", icon: Ruler, link: "/deck-building-orlando/" },
+                            { title: "Door & Lock", desc: "Security upgrades and repairs.", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
+                            { title: "Faucets", desc: "Kitchen and bath upgrades.", icon: Wrench, link: "/faucet-fixtures-orlando/" },
+                            { title: "Smart Home", desc: "Automation and cameras.", icon: Zap, link: "/smart-home-installation-orlando/" },
                         ].map((s, i) => (
                             <Link key={i} href={s.link} className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#584D94]/20 transition-all flex items-start gap-4">
                                 <div className="w-12 h-12 bg-[#584D94]/5 rounded-xl flex items-center justify-center text-[#584D94] group-hover:bg-[#584D94] group-hover:text-white transition-colors flex-shrink-0">
@@ -230,7 +230,7 @@ export default function Home() {
                     </div>
 
                     <div className="text-center mt-12">
-                        <Link href="/services" className="text-[#584D94] font-bold border-b-2 border-[#584D94]/20 hover:border-[#584D94] transition-all pb-1">
+                        <Link href="/services/" className="text-[#584D94] font-bold border-b-2 border-[#584D94]/20 hover:border-[#584D94] transition-all pb-1">
                             View All 10 Services
                         </Link>
                     </div>

@@ -43,7 +43,7 @@ export default function TVMountingCostPage() {
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#64CEBB] rounded-full blur-3xl"></div>
                 </div>
                 <div className="container mx-auto px-4 relative z-10">
-                    <Link href="/costs" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors">
+                    <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors">
                         <ArrowLeft size={18} /> Back to Cost Guides
                     </Link>
                     <div className="max-w-4xl">
@@ -283,27 +283,16 @@ export default function TVMountingCostPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-[#584D94] mb-6">Related Cost Guides</h2>
                         <div className="grid md:grid-cols-3 gap-4">
-                            <Link href="/costs/smart-home-installation" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Smart Home Installation</h3><p className="text-sm text-slate-500">$150 - $5,000+</p></Link>
-                            <Link href="/costs/furniture-assembly" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Furniture Assembly</h3><p className="text-sm text-slate-500">$40 - $400</p></Link>
-                            <Link href="/costs/drywall-repair" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Drywall Repair</h3><p className="text-sm text-slate-500">$75 - $1,200</p></Link>
+                            <Link href="/costs/smart-home-installation/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Smart Home Installation</h3><p className="text-sm text-slate-500">$150 - $5,000+</p></Link>
+                            <Link href="/costs/furniture-assembly/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Furniture Assembly</h3><p className="text-sm text-slate-500">$40 - $400</p></Link>
+                            <Link href="/costs/drywall-repair/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors"><h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Drywall Repair</h3><p className="text-sm text-slate-500">$75 - $1,200</p></Link>
                         </div>
                     </section>
                 </div>
             </article>
 
-            
+
             <Footer />
-                <div className="container mx-auto max-w-6xl">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                        <div className="flex gap-6 text-slate-400 text-sm">
-                            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
-                            <Link href="/costs" className="hover:text-white transition-colors">Costs</Link>
-                            <Link href="/about" className="hover:text-white transition-colors">About</Link>
-                        </div>
-                    </div>
-                    <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500 text-sm">© 2026 LUXHT Fix. All rights reserved.</div>
-                </div>
         </main>
     );
 }

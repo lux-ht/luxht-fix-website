@@ -1,7 +1,12 @@
-'use client';
-
 import Navbar from '@/components/Navbar';
 import { Cookie, Settings, BarChart3, Target, Shield, ToggleRight } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Cookie Policy | LUXHT Fix Orlando',
+    description: 'Our cookie policy explains how LUXHT Fix uses cookies to improve your experience on our website. Learn about the types of cookies we use and how to manage them.',
+    alternates: { canonical: 'https://fix.luxht.com/cookie-policy/' },
+};
 
 export default function CookiePolicyPage() {
     return (

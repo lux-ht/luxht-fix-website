@@ -72,7 +72,7 @@ export default function DrywallRepairCostPage() {
 
                 <div className="container mx-auto px-4 relative z-10">
                     {/* Breadcrumb */}
-                    <Link href="/costs" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors">
+                    <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors">
                         <ArrowLeft size={18} /> Back to Cost Guides
                     </Link>
 
@@ -435,15 +435,15 @@ export default function DrywallRepairCostPage() {
                         </h2>
 
                         <div className="grid md:grid-cols-3 gap-4">
-                            <Link href="/costs/flooring-installation" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
+                            <Link href="/costs/flooring-installation/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
                                 <h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Flooring Installation</h3>
                                 <p className="text-sm text-slate-500">$3 - $20/sq ft</p>
                             </Link>
-                            <Link href="/costs/bathroom-remodel" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
+                            <Link href="/costs/bathroom-remodel/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
                                 <h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Bathroom Remodel</h3>
                                 <p className="text-sm text-slate-500">$3,000 - $50,000+</p>
                             </Link>
-                            <Link href="/costs/faucet-fixtures" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
+                            <Link href="/costs/faucet-fixtures/" className="group border border-slate-200 rounded-xl p-4 hover:border-[#64CEBB] transition-colors">
                                 <h3 className="font-semibold group-hover:text-[#584D94] transition-colors">Faucet & Fixtures</h3>
                                 <p className="text-sm text-slate-500">$75 - $400</p>
                             </Link>
