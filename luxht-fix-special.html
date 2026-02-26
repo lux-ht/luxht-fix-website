@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXHT Fix — Exclusive Offers for Winter Park & Maitland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #5B2D8E;
+    --purple-mid: #7B3FBE;
+    --purple-light: #9B59D0;
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --cream: #FAF7F2;
+    --dark: #1A1020;
+    --text: #2D1F3D;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--purple);
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(91,45,142,0.4);
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--gold);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--purple);
+    letter-spacing: -1px;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .logo-text .brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 2px;
+  }
+
+  .logo-text .sub {
+    font-size: 11px;
+    color: var(--gold-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .call-btn {
+    background: var(--gold);
+    color: var(--purple);
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s;
+  }
+
+  .call-btn:hover {
+    background: var(--gold-light);
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(201,168,76,0.5);
+  }
+
+  .call-btn svg { width: 16px; height: 16px; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--purple) 0%, #3D1A6E 50%, #2A0F50 100%);
+    padding: 60px 32px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(155,89,208,0.2) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .exclusive-badge {
+    display: inline-block;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 58px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 700px;
+    margin: 0 auto 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 span { color: var(--gold-light); }
+
+  .hero-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    max-width: 500px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mascot-row {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+  }
+
+  .mascot-placeholder {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .mascot-figure {
+    width: 140px;
+    height: 210px;
+    border-radius: 80px 80px 0 0;
+    background: linear-gradient(180deg, rgba(155,89,208,0.3), rgba(91,45,142,0.5));
+    border: 2px solid rgba(201,168,76,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mascot-figure::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('/api/placeholder/140/210') center/cover;
+    opacity: 0.1;
+  }
+
+  .mascot-shirt {
+    width: 70px;
+    height: 50px;
+    background: var(--purple-light);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .mascot-head {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgba(255,220,180,0.6);
+    border: 2px solid rgba(201,168,76,0.4);
+  }
+
+  /* Use actual image from upload */
+  .hero-mascot-img {
+    height: 260px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.4));
+  }
+
+  /* OFFERS SECTION */
+  .offers {
+    padding: 70px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--purple-light);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 50px;
+  }
+
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+  }
+
+  .offer-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 36px 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(91,45,142,0.08);
+    border: 1px solid rgba(91,45,142,0.08);
+    transition: all 0.3s;
+  }
+
+  .offer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(91,45,142,0.16);
+  }
+
+  .offer-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--purple), var(--gold));
+  }
+
+  .offer-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .offer-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 700;
+    letter-radius: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  .offer-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+
+  .offer-card p {
+    font-size: 15px;
+    color: #6B5F7A;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* FORM SECTION */
+  .form-section {
+    background: linear-gradient(135deg, var(--purple) 0%, #3D1A6E 100%);
+    padding: 70px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .form-section::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .form-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .form-section .section-label { color: var(--gold-light); }
+  .form-section .section-title { color: var(--white); }
+
+  .form-box {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .field label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .field input, .field select {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 15px;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    -webkit-appearance: none;
+  }
+
+  .field input::placeholder { color: rgba(255,255,255,0.35); }
+
+  .field input:focus, .field select:focus {
+    border-color: var(--gold);
+    background: rgba(255,255,255,0.15);
+  }
+
+  .field select option { color: var(--dark); background: white; }
+
+  .submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--purple);
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.5px;
+    transition: all 0.25s;
+    margin-top: 8px;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(201,168,76,0.4);
+  }
+
+  /* TRUST BAR */
+  .trust-bar {
+    background: var(--dark);
+    padding: 28px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .trust-item span.icon {
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0E0818;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  footer p {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  footer strong { color: rgba(255,255,255,0.7); }
+
+  footer a { color: var(--gold-light); text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    header { padding: 12px 18px; }
+    .hero { padding: 40px 20px 0; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-box { padding: 28px 20px; }
+    .trust-bar { gap: 24px; }
+  }
+
+  /* Animation */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-content { animation: fadeUp 0.7s ease both; }
+  .offer-card:nth-child(1) { animation: fadeUp 0.5s 0.1s ease both; }
+  .offer-card:nth-child(2) { animation: fadeUp 0.5s 0.2s ease both; }
+  .offer-card:nth-child(3) { animation: fadeUp 0.5s 0.3s ease both; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-area">
+    <div class="logo-icon">LH</div>
+    <div class="logo-text">
+      <span class="brand">LUXHT</span>
+      <span class="sub">Fix</span>
+    </div>
+  </div>
+  <a href="tel:4072880832" class="call-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.7 10.5 19.79 19.79 0 01.67 2a2 2 0 011.99-2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7 7a16 16 0 006 6l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+    Call Now: (407) 288-0832
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="exclusive-badge">✦ Exclusive Magazine Reader Offer ✦</div>
+    <h1>Welcome, <span>Winter Park &amp; Maitland</span> Neighbors!</h1>
+    <p class="hero-sub">You've unlocked 3 exclusive offers reserved just for our local community. Zero stress, zero obligation.</p>
+    <!-- Mascots visual area -->
+    <div class="mascot-row">
+      <svg width="340" height="240" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stylized mascot silhouettes -->
+        <!-- Man (grey beard) -->
+        <ellipse cx="120" cy="60" rx="38" ry="42" fill="rgba(255,220,180,0.6)" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <ellipse cx="120" cy="56" rx="22" ry="18" fill="rgba(180,180,180,0.5)"/>
+        <rect x="82" y="96" width="76" height="90" rx="12" fill="#7B3FBE" opacity="0.85"/>
+        <text x="120" y="148" text-anchor="middle" fill="white" font-size="9" font-family="DM Sans" font-weight="600" letter-spacing="1">LUXHT FIX</text>
+        <!-- Tool belt -->
+        <rect x="84" y="183" width="72" height="10" rx="3" fill="rgba(201,168,76,0.7)"/>
+        <!-- Legs -->
+        <rect x="92" y="186" width="26" height="52" rx="6" fill="#2D5082" opacity="0.85"/>
+        <rect x="122" y="186" width="26" height="52" rx="6" fill="#2D5082" opacity="0.85"/>
+
+        <!-- Woman (bun) -->
+        <ellipse cx="220" cy="58" rx="34" ry="38" fill="rgba(255,220,180,0.65)" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <!-- Bun -->
+        <ellipse cx="220" cy="22" rx="14" ry="12" fill="rgba(80,50,30,0.7)"/>
+        <rect x="188" y="90" width="66" height="80" rx="10" fill="#9B59D0" opacity="0.85"/>
+        <text x="220" y="138" text-anchor="middle" fill="white" font-size="9" font-family="DM Sans" font-weight="600" letter-spacing="1">LUXHT FIX</text>
+        <rect x="190" y="168" width="62" height="9" rx="3" fill="rgba(201,168,76,0.7)"/>
+        <rect x="198" y="172" width="22" height="66" rx="6" fill="#2D5082" opacity="0.85"/>
+        <rect x="224" y="172" width="22" height="66" rx="6" fill="#2D5082" opacity="0.85"/>
+
+        <!-- Star accents -->
+        <text x="60" y="50" fill="rgba(201,168,76,0.6)" font-size="18">✦</text>
+        <text x="290" y="80" fill="rgba(201,168,76,0.4)" font-size="12">✦</text>
+        <text x="160" y="30" fill="rgba(255,255,255,0.2)" font-size="22">✦</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="offers">
+  <p class="section-label">Your Exclusive Perks</p>
+  <h2 class="section-title">3 Offers. Zero Strings Attached.</h2>
+
+  <div class="offers-grid">
+    <div class="offer-card">
+      <div class="offer-icon">🏠</div>
+      <span class="offer-tag">100% Free</span>
+      <h3>Free In-Home Consultation</h3>
+      <p>A professional LUXHT Fix technician visits your home, diagnoses the issue, and walks you through a clear plan — with absolutely no obligation to book.</p>
+    </div>
+
+    <div class="offer-card">
+      <div class="offer-icon">💰</div>
+      <span class="offer-tag">Instant Savings</span>
+      <h3>$50 Off Any Project Over $250</h3>
+      <p>Valid on any home service we offer — drywall, flooring, bath remodel, deck building, and more. One simple discount, no fine print games.</p>
+    </div>
+
+    <div class="offer-card">
+      <div class="offer-icon">⚡</div>
+      <span class="offer-tag">Instant Upgrade</span>
+      <h3>10 Free Outlet Refresh</h3>
+      <p>We replace 10 old, yellowed outlets to modernize your home instantly. Covers labor &amp; standard 15A/20A residential outlets. New residential clients in Winter Park &amp; Maitland only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+  <div class="form-wrap">
+    <p class="section-label">Claim Your Offer</p>
+    <h2 class="section-title" style="margin-bottom: 30px;">Lock In Your Deal Today</h2>
+
+    <div class="form-box">
+      <form id="leadForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="field">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="First & Last Name" required>
+          </div>
+          <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="(407) 000-0000" required>
+          </div>
+        </div>
+        <div class="field">
+          <label>Zip Code</label>
+          <input type="text" name="zip" placeholder="32789, 32751, etc." maxlength="5" required>
+        </div>
+        <div class="field">
+          <label>Select Your Offer</label>
+          <select name="offer" required>
+            <option value="" disabled selected>— Choose an offer —</option>
+            <option value="consultation">Free In-Home Consultation</option>
+            <option value="50off">$50 Off Any Project Over $250</option>
+            <option value="outlets">10 Free Outlet Refresh</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">✓ Claim My Offer Now — It's Free</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="icon">✓</span> 100% Satisfaction Guaranteed</div>
+  <div class="trust-item"><span class="icon">📍</span> Serving Winter Park &amp; Maitland</div>
+  <div class="trust-item"><span class="icon">⚡</span> 2-Hour Response Pledge</div>
+  <div class="trust-item"><span class="icon">🔒</span> No Obligation. Ever.</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>100% Satisfaction Guaranteed.</strong></p>
+  <p style="margin-top: 6px;">A subdivision of <strong>LUXURY HOME TRANSFORMATIONS LLC</strong></p>
+  <p style="margin-top: 10px;">
+    <a href="tel:4072880832">(407) 288-0832</a> &nbsp;·&nbsp;
+    <a href="https://fix.luxht.com">fix.luxht.com</a>
+  </p>
+  <p style="margin-top: 16px; font-size: 11px;">
+    *Outlet offer includes labor &amp; standard white 15A/20A residential outlets only. No GFCIs, dimmers, or smart outlets. Existing wiring must be up to code. Valid for new residential clients in Winter Park/Maitland. One per household.
+  </p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  // Redirect to thank you page
+  window.location.href = 'luxht-fix-thankyou.html';
+}
+</script>
+</body>
+</html>
