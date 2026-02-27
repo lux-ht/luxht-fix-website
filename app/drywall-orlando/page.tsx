@@ -334,19 +334,19 @@ export default function DrywallPage() {
           <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {[
-              { title: "Doors & Locks", icon: DoorOpen },
-              { title: "TV Mounting", icon: Tv },
-              { title: "Flooring", icon: Grid },
-              { title: "Deck Build", icon: Hammer },
-              { title: "Kitchens", icon: Utensils },
-              { title: "Baths", icon: Bath }
+              { title: "Doors & Locks", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
+              { title: "TV Mounting", icon: Tv, link: "/tv-mounting-orlando/" },
+              { title: "Flooring", icon: Grid, link: "/flooring-installation-orlando/" },
+              { title: "Deck Build", icon: Hammer, link: "/deck-building-orlando/" },
+              { title: "Kitchens", icon: Utensils, link: "/kitchen-refacing-orlando/" },
+              { title: "Baths", icon: Bath, link: "/bath-remodel-orlando/" }
             ].map((service, i) => (
-              <div key={i} className="p-4 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer group">
+              <Link key={i} href={service.link} className="p-4 rounded-xl hover:bg-slate-50 transition-colors group block">
                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 mx-auto mb-3 group-hover:bg-[#584D94]/10 group-hover:text-[#584D94] transition-colors">
                   <service.icon size={24} />
                 </div>
                 <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-10">

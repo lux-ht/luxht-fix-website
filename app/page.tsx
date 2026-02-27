@@ -70,7 +70,7 @@ export default function Home() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
-                            Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                            Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, <Link href="/bath-remodel-orlando/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-orlando/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                         </p>
 
                         {/* Trust Stats */}
@@ -200,6 +200,9 @@ export default function Home() {
                             { title: "Door & Lock", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
                             { title: "Faucets", icon: Wrench, link: "/faucet-fixtures-orlando/" },
                             { title: "Smart Home", icon: Zap, link: "/smart-home-installation-orlando/" },
+                            { title: "Bath Remodel", icon: Paintbrush, link: "/bath-remodel-orlando/" },
+                            { title: "Kitchen", icon: PaintRoller, link: "/kitchen-refacing-orlando/" },
+                            { title: "Furniture", icon: Hammer, link: "/furniture-assembly-orlando/" },
                         ].map((s, i) => (
                             <Link key={i} href={s.link} className="group bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center aspect-square active:scale-95 transition-transform">
                                 <div className="w-10 h-10 bg-[#584D94]/5 rounded-full flex items-center justify-center text-[#584D94] mb-2">
@@ -219,6 +222,9 @@ export default function Home() {
                             { title: "Door & Lock", desc: "Security upgrades and repairs.", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
                             { title: "Faucets", desc: "Kitchen and bath upgrades.", icon: Wrench, link: "/faucet-fixtures-orlando/" },
                             { title: "Smart Home", desc: "Automation and cameras.", icon: Zap, link: "/smart-home-installation-orlando/" },
+                            { title: "Bath Remodel", desc: "Complete bathroom renovations.", icon: Paintbrush, link: "/bath-remodel-orlando/" },
+                            { title: "Kitchen Refacing", desc: "Cabinet door & hardware upgrades.", icon: PaintRoller, link: "/kitchen-refacing-orlando/" },
+                            { title: "Furniture Assembly", desc: "IKEA, Amazon, Wayfair & more.", icon: Hammer, link: "/furniture-assembly-orlando/" },
                         ].map((s, i) => (
                             <Link key={i} href={s.link} className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#584D94]/20 transition-all flex items-start gap-4">
                                 <div className="w-12 h-12 bg-[#584D94]/5 rounded-xl flex items-center justify-center text-[#584D94] group-hover:bg-[#584D94] group-hover:text-white transition-colors flex-shrink-0">

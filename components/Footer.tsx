@@ -38,6 +38,12 @@ export default function Footer() {
                             <li><Link href="/tv-mounting-orlando/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
                             <li><Link href="/flooring-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
                             <li><Link href="/deck-building-orlando/" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
+                            <li><Link href="/bath-remodel-orlando/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
+                            <li><Link href="/kitchen-refacing-orlando/" className="hover:text-[#64CEBB] transition-colors">Kitchen Refacing</Link></li>
+                            <li><Link href="/door-lock-trim-orlando/" className="hover:text-[#64CEBB] transition-colors">Door, Lock & Trim</Link></li>
+                            <li><Link href="/faucet-fixtures-orlando/" className="hover:text-[#64CEBB] transition-colors">Faucet & Fixtures</Link></li>
+                            <li><Link href="/smart-home-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Smart Home</Link></li>
+                            <li><Link href="/furniture-assembly-orlando/" className="hover:text-[#64CEBB] transition-colors">Furniture Assembly</Link></li>
                             <li><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
                         </ul>
                     </div>
