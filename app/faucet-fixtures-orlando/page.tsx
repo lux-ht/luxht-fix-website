@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Faucet & Fixture Installation Orlando | Kitchen & Bath Plumbing - LUXHT Fix',
   description: 'Professional faucet and fixture installation in Orlando. Kitchen and bathroom faucets, shower heads, and fixtures installed with leak-free results. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/faucet-fixtures-orlando/' },
+  openGraph: {
+    title: 'Faucet & Fixtures Orlando | LUXHT Fix',
+    description: 'Professional faucet and fixture installation in Orlando. Kitchen, bathroom & shower fixtures. Starting at $95.',
+    url: 'https://fix.luxht.com/faucet-fixtures-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Faucet & Fixtures Orlando | LUXHT Fix',
+    description: 'Professional faucet and fixture installation in Orlando. Starting at $95.',
+  },
 };
 
 export default function FaucetPage() {
@@ -49,32 +62,6 @@ export default function FaucetPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who installs faucets in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in faucet and fixture installation with 300+ installations completed in Orlando, handling kitchen, bathroom, and shower fixtures."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does faucet installation cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kitchen faucet installation starts at $125. Bathroom faucets start at $95, including installation and leak testing."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Do you guarantee leak-free installation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, every installation includes thorough leak testing and a workmanship guarantee. We return at no charge if leaks develop from our installation."
-      }
-    }]
-  };
 
   const faucetReviews: Review[] = [
     { text: "Replaced our kitchen faucet and bathroom fixtures in one visit. Everything works perfectly with zero leaks. Super professional!", name: "Chris & Amy D.", loc: "Maitland", rating: 5 },
@@ -90,12 +77,10 @@ export default function FaucetPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Faucet & Fixtures', href: '/faucet-fixtures-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

@@ -90,6 +90,10 @@ export default function AboutPage() {
                         <img
                             src="/luxht-team-vertical.jpg"
                             alt="The LUXHT Fix Team"
+                            width={600}
+                            height={800}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 block"
                         />
                     </div>
@@ -219,18 +223,18 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Comprehensive Home Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
-                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching' },
-                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile' },
-                        { name: 'Deck Building', desc: 'Custom outdoor living spaces' },
-                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization' },
-                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations' },
-                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements' },
-                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations' },
-                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups' },
-                        { name: 'Smart Home', desc: 'Automation & device integration' },
-                        { name: 'Furniture Assembly', desc: 'Expert assembly for any brand' },
+                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-orlando/' },
+                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile', href: '/flooring-installation-orlando/' },
+                        { name: 'Deck Building', desc: 'Custom outdoor living spaces', href: '/deck-building-orlando/' },
+                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization', href: '/kitchen-refacing-orlando/' },
+                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations', href: '/bath-remodel-orlando/' },
+                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements', href: '/door-lock-trim-orlando/' },
+                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations', href: '/faucet-fixtures-orlando/' },
+                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups', href: '/tv-mounting-orlando/' },
+                        { name: 'Smart Home', desc: 'Automation & device integration', href: '/smart-home-installation-orlando/' },
+                        { name: 'Furniture Assembly', desc: 'Expert assembly for any brand', href: '/furniture-assembly-orlando/' },
                     ].map((service, i) => (
-                        <Link key={i} href="/services/" className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
+                        <Link key={i} href={service.href} className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
                             <h3 className="font-bold text-lg text-slate-800 group-hover:text-[#584D94] transition-colors mb-2 ">{service.name}</h3>
                             <p className="text-slate-500 text-sm">{service.desc}</p>
                         </Link>

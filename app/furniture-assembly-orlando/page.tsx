@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Furniture Assembly Orlando | Fast Professional Assembly Service - LUXHT Fix',
   description: 'Professional furniture assembly in Orlando. Fast, correct assembly from any retailer. Save your weekend! IKEA, Amazon, Wayfair & more. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/furniture-assembly-orlando/' },
+  openGraph: {
+    title: 'Furniture Assembly Orlando | LUXHT Fix',
+    description: 'Professional furniture assembly in Orlando. IKEA, Amazon, Wayfair & more. Starting at $75.',
+    url: 'https://fix.luxht.com/furniture-assembly-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Furniture Assembly Orlando | LUXHT Fix',
+    description: 'Professional furniture assembly in Orlando. IKEA, Amazon, Wayfair & more. Starting at $75.',
+  },
 };
 
 export default function FurnitureAssemblyPage() {
@@ -49,32 +62,6 @@ export default function FurnitureAssemblyPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who does furniture assembly in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in professional furniture assembly with 600+ items assembled in Orlando from all major retailers including IKEA, Amazon, and Wayfair."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does furniture assembly cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small items start at $75, medium items like desks start at $100, and large items like beds start at $150."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Do you assemble IKEA furniture?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, IKEA furniture is one of our specialties with hundreds of IKEA items assembled. We're familiar with all their product lines."
-      }
-    }]
-  };
 
   const assemblyReviews: Review[] = [
     { text: "Assembled our entire IKEA bedroom set in 3 hours! Everything is solid and perfect. So worth not spending my whole Saturday struggling with instructions.", name: "Brian K.", loc: "College Park", rating: 5 },
@@ -90,12 +77,10 @@ export default function FurnitureAssemblyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Furniture Assembly', href: '/furniture-assembly-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

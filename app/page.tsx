@@ -47,6 +47,8 @@ export default function Home() {
                                     <img
                                         src="/luxht-logo.jpg"
                                         alt="LUXHT Fix Logo - Professional Home Repair Team"
+                                        width={176}
+                                        height={176}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -170,6 +172,10 @@ export default function Home() {
                             <img
                                 src="/drywall-before-after.jpg"
                                 alt="Drywall Repair Before and After"
+                                width={600}
+                                height={400}
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                         </div>

@@ -40,25 +40,10 @@ export default function FAQPage() {
         }
     ];
 
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqs.flatMap(cat => cat.items.map(item => ({
-            "@type": "Question",
-            "name": item.q,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": item.a
-            }
-        })))
-    };
 
     return (
         <main className="min-h-screen bg-slate-50 text-slate-800 font-sans">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+
             <Navbar />
 
             {/* Hero */}

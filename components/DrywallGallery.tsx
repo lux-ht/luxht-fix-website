@@ -56,6 +56,10 @@ export default function DrywallGallery() {
                         <img
                             src={src}
                             alt={`Drywall Project ${i + 1}`}
+                            loading="lazy"
+                            decoding="async"
+                            width={256}
+                            height={192}
                             className="w-full h-full object-cover"
                         />
                     </div>

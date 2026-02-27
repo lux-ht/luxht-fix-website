@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Smart Home Installation Orlando | Ring, Nest, Camera & Smart Lock Setup - LUXHT Fix',
   description: 'Professional smart home installation in Orlando. Ring doorbells, Nest thermostats, cameras, and smart locks integrated with your smartphone. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/smart-home-installation-orlando/' },
+  openGraph: {
+    title: 'Smart Home Installation Orlando | LUXHT Fix',
+    description: 'Professional smart home installation in Orlando. Ring, Nest, smart locks, cameras & more. Starting at $95.',
+    url: 'https://fix.luxht.com/smart-home-installation-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Smart Home Installation Orlando | LUXHT Fix',
+    description: 'Professional smart home installation in Orlando. Ring, Nest, smart locks & cameras.',
+  },
 };
 
 export default function SmartHomePage() {
@@ -49,32 +62,6 @@ export default function SmartHomePage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who installs Ring doorbells and smart home devices in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in smart home installation with 250+ devices installed in Orlando, handling Ring, Nest, August, Schlage, and all major brands."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does smart home installation cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Video doorbells and smart locks start at $95. Smart thermostats start at $125. Security cameras start at $85 each."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Do you provide training on how to use smart devices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, every installation includes complete smartphone app setup and hands-on training for confident device operation."
-      }
-    }]
-  };
 
   const smartReviews: Review[] = [
     { text: "They installed our Ring doorbell and two cameras in under 2 hours. Everything works perfectly and they showed us how to use all the features. Great service!", name: "Jason & Nicole B.", loc: "Windermere", rating: 5 },
@@ -90,12 +77,10 @@ export default function SmartHomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Smart Home Installation', href: '/smart-home-installation-orlando/' }]} />
 
       {/* HERO SECTION */}
       {/* HERO SECTION */}

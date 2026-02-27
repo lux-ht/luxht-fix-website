@@ -28,6 +28,10 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                         <img
                             src={project.src}
                             alt={`${project.title} - ${project.subtitle}`}
+                            loading="lazy"
+                            decoding="async"
+                            width={400}
+                            height={256}
                             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
                         />
                         {/* Hover Overlay */}

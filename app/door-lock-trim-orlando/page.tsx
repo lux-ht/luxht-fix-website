@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Door, Lock & Trim Repair Orlando | Fix Squeaky Doors & Install Locks - LUXHT Fix',
   description: 'Professional door, lock, and trim services in Orlando. Fix squeaky doors, install new locks, replace handles and trim. Same-week service. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/door-lock-trim-orlando/' },
+  openGraph: {
+    title: 'Door, Lock & Trim Orlando | LUXHT Fix',
+    description: 'Professional door repair, lock installation & trim work in Orlando. Smart locks, deadbolts & more. Starting at $95.',
+    url: 'https://fix.luxht.com/door-lock-trim-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Door, Lock & Trim Orlando | LUXHT Fix',
+    description: 'Professional door repair, lock installation & trim work in Orlando.',
+  },
 };
 
 export default function DoorLockPage() {
@@ -49,32 +62,6 @@ export default function DoorLockPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who fixes squeaky doors in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in door repair and adjustment, having fixed 400+ squeaky doors in Orlando through hinge tightening and hardware replacement."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does lock installation cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lock installation starts at $95 for standard deadbolts. Smart lock installation ranges from $150-$250."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Can you install smart locks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, LUXHT Fix installs all major smart lock brands including August, Schlage Encode, Yale, and Kwikset with full smartphone integration."
-      }
-    }]
-  };
 
   const doorReviews: Review[] = [
     { text: "Fixed three squeaky doors and installed new deadbolts in under 2 hours. No more annoying sounds and we feel much more secure!", name: "Rachel T.", loc: "Winter Park", rating: 5 },
@@ -90,12 +77,10 @@ export default function DoorLockPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Door, Lock & Trim', href: '/door-lock-trim-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

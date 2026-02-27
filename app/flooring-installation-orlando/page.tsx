@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Flooring Installation Orlando | Hardwood, LVP, Tile - LUXHT Fix',
   description: 'Expert flooring installation in Orlando. Hardwood, laminate, vinyl, and tile. Starting at $3/sq ft. Licensed & Insured. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/flooring-installation-orlando/' },
+  openGraph: {
+    title: 'Flooring Installation Orlando | LUXHT Fix',
+    description: 'Professional flooring installation in Orlando. Hardwood, laminate, vinyl & tile. Starting at $3/sq ft.',
+    url: 'https://fix.luxht.com/flooring-installation-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Flooring Installation Orlando | LUXHT Fix',
+    description: 'Professional flooring installation in Orlando. Hardwood, laminate, vinyl & tile.',
+  },
 };
 
 export default function FlooringPage() {
@@ -49,32 +62,6 @@ export default function FlooringPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What's the best flooring installation service in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in professional flooring installation with 200+ projects completed in Orlando, including hardwood, laminate, vinyl, and tile."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does flooring installation cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Installation ranges from $3/sq ft for laminate to $6/sq ft for tile. Material costs are additional."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Which flooring is best for Orlando humidity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Luxury vinyl plank (LVP) and engineered hardwood perform best in Orlando's humidity."
-      }
-    }]
-  };
 
   const flooringReviews: Review[] = [
     { text: "Our new hardwood floors look incredible! They finished our entire first floor in 3 days with zero mess left behind.", name: "Jennifer S.", loc: "Winter Park", rating: 5 },
@@ -90,12 +77,10 @@ export default function FlooringPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Flooring Installation', href: '/flooring-installation-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

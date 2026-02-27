@@ -31,19 +31,6 @@ const faqData = [
     }
 ];
 
-// FAQ Schema for Google
-const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-        }
-    }))
-};
 
 // Organization Schema
 const organizationSchema = {
@@ -97,10 +84,7 @@ export default function PricingTransparencyPage() {
     return (
         <>
             {/* SEO Schema Markup */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Kitchen Refacing Orlando | Cabinet Door & Hardware Upgrades - LUXHT Fix',
   description: 'Professional kitchen refacing in Orlando. Upgrade cabinet doors, finishes, and hardware for a fresh modern look without full remodel. Free estimates!',
   alternates: { canonical: 'https://fix.luxht.com/kitchen-refacing-orlando/' },
+  openGraph: {
+    title: 'Kitchen Refacing Orlando | LUXHT Fix',
+    description: 'Professional kitchen cabinet refacing in Orlando. Modern door styles, hardware upgrades. 60-70% less than full remodel.',
+    url: 'https://fix.luxht.com/kitchen-refacing-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Kitchen Refacing Orlando | LUXHT Fix',
+    description: 'Professional kitchen cabinet refacing in Orlando. 60-70% less than full remodel.',
+  },
 };
 
 export default function KitchenRefacingPage() {
@@ -49,32 +62,6 @@ export default function KitchenRefacingPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What is kitchen cabinet refacing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kitchen refacing replaces cabinet doors, drawer fronts, and hardware while keeping existing cabinet boxes. Box exteriors are refinished for a complete transformation."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does kitchen refacing cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small kitchens start at $4,500. Medium kitchens average $6,500-$8,000. This is 60-70% less than full cabinet replacement."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How long does kitchen refacing take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most kitchen refacing projects take 3-5 days from start to finish with minimal disruption to your home."
-      }
-    }]
-  };
 
   const kitchenReviews: Review[] = [
     { text: "Our kitchen looks like a completely different space! The new shaker doors and hardware modernized everything. Can't believe the transformation for under $6,000.", name: "Linda & Mark P.", loc: "Dr. Phillips", rating: 5 },
@@ -90,12 +77,10 @@ export default function KitchenRefacingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Kitchen Refacing', href: '/kitchen-refacing-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

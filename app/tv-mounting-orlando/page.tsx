@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'TV Mounting Orlando | Professional Installation - LUXHT Fix',
   description: 'Expert TV mounting in Orlando. Secure installation with concealed cables on any wall type. Starting at $120. Same-week service. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/tv-mounting-orlando/' },
+  openGraph: {
+    title: 'TV Mounting Orlando | LUXHT Fix',
+    description: 'Professional TV mounting in Orlando. Wall mounting, cable concealment & soundbar installation. Starting at $150.',
+    url: 'https://fix.luxht.com/tv-mounting-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'TV Mounting Orlando | LUXHT Fix',
+    description: 'Professional TV mounting in Orlando. Wall mounting, cable concealment & soundbar installation.',
+  },
 };
 
 export default function TVMountingPage() {
@@ -35,32 +48,6 @@ export default function TVMountingPage() {
     }
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What's the best TV mounting service in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in professional TV mounting with 300+ installations in Orlando and concealed cable solutions."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does TV mounting cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small TVs start at $120, medium TVs at $150, large TVs at $200. Pricing depends on size and wall type."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Do you hide the cables?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Cable concealment is included in every installation. We route cables behind walls or use professional cable covers."
-      }
-    }]
-  };
 
   const tvReviews: Review[] = [
     { text: "Mounted our 75\" TV perfectly with all cables hidden. Looks like it was built into the wall!", name: "Mike R.", loc: "Lake Nona", rating: 5 },
@@ -76,12 +63,10 @@ export default function TVMountingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'TV Mounting', href: '/tv-mounting-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

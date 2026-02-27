@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -13,6 +14,18 @@ export const metadata: Metadata = {
   title: 'Professional Drywall Repair Orlando | LUXHT Fix - Same Week Service',
   description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching. Starting at $150. Call for same-week service!',
   alternates: { canonical: 'https://fix.luxht.com/drywall-orlando/' },
+  openGraph: {
+    title: 'Professional Drywall Repair Orlando | LUXHT Fix',
+    description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching. Starting at $150.',
+    url: 'https://fix.luxht.com/drywall-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Drywall Repair Orlando | LUXHT Fix',
+    description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage. Starting at $150.',
+  },
 };
 
 export default function DrywallPage() {
@@ -48,32 +61,6 @@ export default function DrywallPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What's the best drywall repair service in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix ranks as one of Orlando's top-rated drywall specialists with 500+ repairs completed and seamless texture matching."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does drywall repair cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small repairs start at $150, medium repairs at $250. Exact pricing depends on size and complexity."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Can you match my wall texture perfectly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, texture matching is our specialty using professional techniques for orange peel, knockdown, and smooth finishes."
-      }
-    }]
-  };
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-800 font-sans">
@@ -81,12 +68,10 @@ export default function DrywallPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Drywall Repair', href: '/drywall-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
@@ -177,6 +162,10 @@ export default function DrywallPage() {
                 <img
                   src={project.src}
                   alt={`${project.title} - ${project.subtitle}`}
+                  width={400}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 {/* Hover Overlay */}

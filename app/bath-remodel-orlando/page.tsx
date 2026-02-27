@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Bathroom Remodel Orlando | Complete Bath Renovations - LUXHT Fix',
   description: 'Professional bathroom remodeling in Orlando. Complete renovations including vanities, showers, tubs, tile, and fixtures. Free design consultation. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/bath-remodel-orlando/' },
+  openGraph: {
+    title: 'Bathroom Remodel Orlando | LUXHT Fix',
+    description: 'Professional bathroom remodeling in Orlando. Full renovations from design to completion. Licensed & Insured.',
+    url: 'https://fix.luxht.com/bath-remodel-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Bathroom Remodel Orlando | LUXHT Fix',
+    description: 'Professional bathroom remodeling in Orlando. Full renovations from design to completion.',
+  },
 };
 
 export default function BathRemodelPage() {
@@ -49,32 +62,6 @@ export default function BathRemodelPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who does the best bathroom remodels in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in complete bathroom renovations with 35+ projects completed in Orlando, handling everything from design to installation."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does a bathroom remodel cost in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small bathroom refreshes start at $8,500. Full remodels range from $12,000-$18,000. Master bathrooms average $18,000-$25,000."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How long does a bathroom remodel take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most bathroom remodels take 2-3 weeks from demolition to completion."
-      }
-    }]
-  };
 
   const bathReviews: Review[] = [
     { text: "Our master bathroom went from outdated to spa-like in 3 weeks! The tile work is flawless and they stayed on budget. Best decision we made for our home.", name: "Karen & Steve M.", loc: "Lake Nona", rating: 5 },
@@ -90,12 +77,10 @@ export default function BathRemodelPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Bathroom Remodel', href: '/bath-remodel-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

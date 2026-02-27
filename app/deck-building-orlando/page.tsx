@@ -1,5 +1,6 @@
 import GalleryGrid from '@/components/GalleryGrid';
 import Navbar from '@/components/Navbar';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import TestimonialCarousel, { Review } from '@/components/TestimonialCarousel';
 import Link from 'next/link';
 import {
@@ -14,6 +15,18 @@ export const metadata: Metadata = {
   title: 'Deck Building Orlando | Custom Deck Design & Construction - LUXHT Fix',
   description: 'Professional deck building in Orlando. Custom designs with durable materials and expert craftsmanship. Free estimates. Transform your outdoor space today!',
   alternates: { canonical: 'https://fix.luxht.com/deck-building-orlando/' },
+  openGraph: {
+    title: 'Deck Building Orlando | LUXHT Fix',
+    description: 'Custom deck design and construction in Orlando. Composite & wood decks with permits included. Starting at $8,000.',
+    url: 'https://fix.luxht.com/deck-building-orlando/',
+    type: 'website',
+    siteName: 'LUXHT Fix',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Deck Building Orlando | LUXHT Fix',
+    description: 'Custom deck design and construction in Orlando. Composite & wood decks with permits included.',
+  },
 };
 
 export default function DeckBuildingPage() {
@@ -49,32 +62,6 @@ export default function DeckBuildingPage() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Who builds the best custom decks in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LUXHT Fix specializes in custom deck design and construction with 50+ decks built in Orlando, handling everything from design to permits."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much does it cost to build a deck in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Basic decks start at $8,000. Mid-size decks average $15,000-$20,000. Pricing depends on size, materials, and complexity."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Do I need a permit to build a deck in Orlando?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, most decks require permits in Orlando. LUXHT Fix handles all permitting and ensures code compliance."
-      }
-    }]
-  };
 
   const deckReviews: Review[] = [
     { text: "Our new deck completely transformed our backyard! The design process was easy and the quality is outstanding. Worth every penny.", name: "Tom & Maria L.", loc: "Lake Nona", rating: 5 },
@@ -90,12 +77,10 @@ export default function DeckBuildingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
 
       <Navbar />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Deck Building', href: '/deck-building-orlando/' }]} />
 
       {/* HERO SECTION */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">

@@ -74,6 +74,22 @@ export default function SEOStruct() {
         },
     };
 
+    const websiteSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        '@id': 'https://fix.luxht.com/#website',
+        name: 'LUXHT Fix',
+        url: 'https://fix.luxht.com/',
+        publisher: {
+            '@id': 'https://fix.luxht.com/#organization',
+        },
+        potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://fix.luxht.com/?s={search_term_string}',
+            'query-input': 'required name=search_term_string',
+        },
+    };
+
     return (
         <>
             <script
@@ -86,6 +102,12 @@ export default function SEOStruct() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(localBusinessSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(websiteSchema),
                 }}
             />
         </>
