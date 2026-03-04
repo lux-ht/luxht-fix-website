@@ -34,7 +34,7 @@ export default function KitchenRefacingPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Kitchen Refacing Orlando",
-    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/kitchen-refacing-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$$",

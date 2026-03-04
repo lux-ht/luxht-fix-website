@@ -34,7 +34,7 @@ export default function DoorLockPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Door, Lock & Trim Orlando",
-    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/door-lock-trim-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",

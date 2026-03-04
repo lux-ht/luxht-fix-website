@@ -31,7 +31,7 @@ export default function ServicesPage() {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "LUXHT Fix",
-        "image": "https://fix.luxht.com/luxht-logo.jpg",
+        "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
         "url": "https://fix.luxht.com/services/",
         "telephone": "+1-407-720-7476",
         "priceRange": "$$-$$$",

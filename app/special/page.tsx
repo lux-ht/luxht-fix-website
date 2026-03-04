@@ -472,7 +472,7 @@ export default function SpecialPage() {
             <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <div className="sp-logo-icon">
                 <Image
-                  src="/luxht-logo.jpg"
+                  src="/images/logo-wide-hammers.png"
                   alt="LUXHT Fix Logo"
                   width={42}
                   height={42}

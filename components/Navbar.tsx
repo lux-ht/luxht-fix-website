@@ -40,13 +40,14 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="flex items-center gap-3">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 shadow-lg relative bg-white group-hover:scale-105 transition-transform">
-                            <img src="/luxht-logo.jpg" alt="LUXHT Fix Logo" className="w-full h-full object-cover" />
-                        </div>
-                        <div className="font-bold text-xl tracking-tight hidden sm:block">
-                            <span className={clsx("transition-colors", useDarkText ? "text-[#584D94]" : "text-white")}>LUXHT</span>
-                            <span className="text-[#64CEBB] ml-1">Fix</span>
-                        </div>
+                        <img
+                            src="/images/logo-wide-hammers.png"
+                            alt="LUXHT Fix Logo"
+                            className={clsx(
+                                "h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105",
+                                !useDarkText && "brightness-0 invert"
+                            )}
+                        />
                     </Link>
 
                     {/* Main Site Link */}

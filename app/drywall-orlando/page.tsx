@@ -33,7 +33,7 @@ export default function DrywallPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Drywall Repair Orlando",
-    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/drywall-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",

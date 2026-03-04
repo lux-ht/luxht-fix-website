@@ -34,7 +34,7 @@ export default function FurnitureAssemblyPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Furniture Assembly Orlando",
-    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/furniture-assembly-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/luxht-logo.jpg',
+        url: '/images/logo-wide-hammers.png',
         width: 800,
         height: 800,
         alt: 'LUXHT Fix - Premium Home Repair Services in Orlando',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'LUXHT Fix | Premium Home Repairs in Orlando',
     description:
       'Expert home repair and handyman services in Orlando, FL. Licensed & Insured. Call (407) 720-7476.',
-    images: ['/luxht-logo.jpg'],
+    images: ['/images/logo-wide-hammers.png'],
   },
   robots: {
     index: true,
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/luxht-logo.jpg',
-    apple: '/luxht-logo.jpg',
+    icon: '/images/logo-wide-hammers.png',
+    apple: '/images/logo-wide-hammers.png',
   },
 };
 

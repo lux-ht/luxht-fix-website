@@ -34,7 +34,7 @@ export default function SmartHomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix - Smart Home Installation Orlando",
-    "image": "https://fix.luxht.com/luxht-logo.jpg",
+    "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/smart-home-installation-orlando/",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",

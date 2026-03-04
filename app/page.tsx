@@ -22,41 +22,7 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#64CEBB]/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
 
                 <div className="container mx-auto px-4 relative z-10">
-                    {/* Round Logo with Speech Bubbles - Positioned on the left */}
-                    <div className="hidden lg:block absolute left-8 xl:left-16 top-1/2 -translate-y-1/2 z-20">
-                        <div className="relative">
-                            {/* Speech Bubble - Hello! - positioned above left */}
-                            <div className="absolute -top-4 -left-12 z-20 animate-speech-bubble-1">
-                                <div className="bg-white rounded-2xl shadow-lg px-3 py-2 relative border border-slate-100">
-                                    <p className="text-sm font-bold text-[#584D94]">Hello! 👋</p>
-                                    <div className="absolute -bottom-2 right-4 w-3 h-3 bg-white border-b border-r border-slate-100 transform rotate-45"></div>
-                                </div>
-                            </div>
 
-                            {/* Speech Bubble - How can we help? - positioned above right */}
-                            <div className="absolute -top-4 -right-20 z-20 animate-speech-bubble-2">
-                                <div className="bg-gradient-to-r from-[#64CEBB] to-[#4BC0AD] rounded-2xl shadow-lg px-3 py-2 relative">
-                                    <p className="text-sm font-bold text-white">How can we help?</p>
-                                    <div className="absolute -bottom-2 left-4 w-3 h-3 bg-[#64CEBB] transform rotate-45"></div>
-                                </div>
-                            </div>
-
-                            {/* Round Logo with Breathing Animation */}
-                            <div className="relative mt-10 animate-breathe">
-                                <div className="w-36 h-36 xl:w-44 xl:h-44 rounded-full overflow-hidden shadow-2xl border-4 border-white/50 relative">
-                                    <img
-                                        src="/luxht-logo.jpg"
-                                        alt="LUXHT Fix Logo - Professional Home Repair Team"
-                                        width={176}
-                                        height={176}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#64CEBB]/30 to-[#584D94]/30 rounded-full blur-3xl -z-10 scale-110"></div>
-                                <div className="absolute inset-0 rounded-full border-2 border-[#64CEBB]/20 animate-pulse scale-110"></div>
-                            </div>
-                        </div>
-                    </div>
 
                     {/* Centered Text Content */}
                     <div className="text-center max-w-4xl mx-auto">
@@ -65,8 +31,8 @@ export default function Home() {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-                            Premium Home Services.<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Done Right. Priced Fairly.</span>
+                            Handyman Services in<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">

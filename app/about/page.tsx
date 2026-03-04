@@ -23,7 +23,7 @@ export default function AboutPage() {
                         "@type": "Organization",
                         "name": "LUXHT Fix",
                         "url": "https://fix.luxht.com/",
-                        "logo": "https://fix.luxht.com/luxht-logo.jpg",
+                        "logo": "https://fix.luxht.com/images/logo-wide-hammers.png",
                         "description": "Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.",
                         "address": {
                             "@type": "PostalAddress",

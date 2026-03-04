@@ -8,7 +8,7 @@ export default function SEOStruct() {
         url: 'https://fix.luxht.com/',
         logo: {
             '@type': 'ImageObject',
-            url: 'https://fix.luxht.com/luxht-logo.jpg',
+            url: 'https://fix.luxht.com/images/logo-wide-hammers.png',
             width: 800,
             height: 800,
         },
@@ -32,7 +32,7 @@ export default function SEOStruct() {
         '@id': 'https://fix.luxht.com/#localbusiness',
         name: 'LUXHT Fix',
         alternateName: 'LUXHT Fix Orlando',
-        image: 'https://fix.luxht.com/luxht-logo.jpg',
+        image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
         description:
             'Professional handyman and home repair services in Orlando, FL. Specializing in drywall repair, TV mounting, flooring, deck building, and more.',
         address: {

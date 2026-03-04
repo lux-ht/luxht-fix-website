@@ -10,12 +10,7 @@ export default function Footer() {
                 {/* Brand Row - Always full width */}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
                     <div className="flex items-center gap-2">
-                        <div className="w-10 h-10 rounded-full border-2 border-white/20 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="/luxht-logo.jpg" alt="LUXHT Fix" className="w-full h-full object-cover" />
-                        </div>
-                        <div className="font-bold text-xl tracking-tight text-white">
-                            LUXHT<span className="text-[#64CEBB]">Fix</span>
-                        </div>
+                        <img src="/images/logo-wide-hammers.png" alt="LUXHT Fix" className="h-8 md:h-10 w-auto object-contain brightness-0 invert" />
                     </div>
                     <div className="flex gap-3">
                         <a href="#" className="w-9 h-9 rounded-full bg-slate-800/50 flex items-center justify-center hover:bg-[#64CEBB] hover:text-white transition-colors">
