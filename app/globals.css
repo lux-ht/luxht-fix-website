@@ -561,3 +561,41 @@ select:focus-visible {
     left: 100%;
   }
 }
+
+/* ==============================================
+   MASCOTS — Breathing & Sway Animations
+   ============================================== */
+
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: scaleY(1) translateY(0px);
+  }
+
+  50% {
+    transform: scaleY(1.015) translateY(-4px);
+  }
+}
+
+@keyframes subtle-sway {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0.4deg);
+  }
+}
+
+.mascots-img {
+  animation: breathe 4s ease-in-out infinite, subtle-sway 6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.mascots-img-mobile {
+  animation: breathe 6s ease-in-out infinite, subtle-sway 8s ease-in-out infinite;
+  transform-origin: bottom center;
+}

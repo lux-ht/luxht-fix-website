@@ -21,28 +21,85 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#584D94]/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#64CEBB]/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
 
+                {/* Mobile mini mascot — bottom-right */}
+                <img
+                    src="/images/assets/mascots-real.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="block md:hidden absolute bottom-0 right-0 h-[130px] w-auto z-[1] pointer-events-none opacity-90 mascots-img-mobile"
+                />
+
                 <div className="container mx-auto px-4 relative z-10">
 
+                    {/* Two-column layout: mascots left, text right */}
+                    <div className="hidden md:flex items-center gap-8 max-w-7xl mx-auto">
+                        {/* Left column — mascots */}
+                        <div className="flex-shrink-0 w-[38%] flex items-end justify-center">
+                            <img
+                                src="/images/assets/mascots-real.png"
+                                alt="LUXHT Fix handyman team"
+                                className="mascots-img w-full max-w-[420px] h-auto"
+                                style={{ filter: 'drop-shadow(4px 4px 16px rgba(0,0,0,0.2))' }}
+                            />
+                        </div>
 
-                    {/* Centered Text Content */}
-                    <div className="text-center max-w-4xl mx-auto">
+                        {/* Right column — text content (desktop) */}
+                        <div className="flex-1 text-center md:text-left">
+                            <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 py-2 px-4 rounded-full text-sm font-semibold text-slate-500 mb-8 animate-fade-in-up">
+                                <span className="w-2 h-2 rounded-full bg-[#64CEBB] animate-pulse"></span> Proudly Serving Orlando & Central Florida
+                            </div>
+
+                            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
+                                Handyman Services in<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl font-light leading-relaxed">
+                                Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, <Link href="/bath-remodel-orlando/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-orlando/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                            </p>
+
+                            <div className="hidden md:flex flex-wrap gap-6 mb-8 text-sm">
+                                <div className="flex items-center gap-2 text-slate-600">
+                                    <CheckCircle size={18} className="text-[#64CEBB]" />
+                                    <span><strong className="text-slate-800">500+</strong> Projects Completed</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-600">
+                                    <CheckCircle size={18} className="text-[#64CEBB]" />
+                                    <span><strong className="text-slate-800">40+ Years</strong> Construction Experience</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-600">
+                                    <CheckCircle size={18} className="text-[#64CEBB]" />
+                                    <span><strong className="text-slate-800">100%</strong> Satisfaction Guarantee</span>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row gap-4 items-start">
+                                <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+                                    <Phone size={20} /> (407) 720-7476
+                                </a>
+                                <Link href="/services/" className="btn-gradient-secondary">
+                                    Browse All Services <ArrowRight size={18} />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Mobile text content — single column, centered */}
+                    <div className="md:hidden text-center">
                         <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 py-2 px-4 rounded-full text-sm font-semibold text-slate-500 mb-8 animate-fade-in-up">
                             <span className="w-2 h-2 rounded-full bg-[#64CEBB] animate-pulse"></span> Proudly Serving Orlando & Central Florida
                         </div>
 
-                        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
+                        <h1 className="text-5xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Handyman Services in<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
                             Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, <Link href="/bath-remodel-orlando/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-orlando/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                         </p>
 
-                        {/* Trust Stats */}
-                        {/* Trust Stats */}
-                        {/* Mobile Stats (UI 2026) */}
-                        <div className="grid grid-cols-3 gap-2 border-y border-slate-100 py-4 mb-8 bg-white/50 backdrop-blur-sm md:hidden">
+                        <div className="grid grid-cols-3 gap-2 border-y border-slate-100 py-4 mb-8 bg-white/50 backdrop-blur-sm">
                             <div className="flex flex-col items-center justify-center p-2">
                                 <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">500+</span>
                                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Projects</span>
@@ -57,23 +114,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        {/* Desktop Stats (Original) */}
-                        <div className="hidden md:flex flex-wrap justify-center gap-6 mb-8 text-sm">
-                            <div className="flex items-center gap-2 text-slate-600">
-                                <CheckCircle size={18} className="text-[#64CEBB]" />
-                                <span><strong className="text-slate-800">500+</strong> Projects Completed</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-slate-600">
-                                <CheckCircle size={18} className="text-[#64CEBB]" />
-                                <span><strong className="text-slate-800">40+ Years</strong> Construction Experience</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-slate-600">
-                                <CheckCircle size={18} className="text-[#64CEBB]" />
-                                <span><strong className="text-slate-800">100%</strong> Satisfaction Guarantee</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <div className="flex flex-col gap-4 justify-center items-center">
                             <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
                                 <Phone size={20} /> (407) 720-7476
                             </a>
@@ -82,6 +123,7 @@ export default function Home() {
                             </Link>
                         </div>
                     </div>
+
                 </div>
             </header>
 
