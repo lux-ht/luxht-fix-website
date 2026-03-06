@@ -90,6 +90,19 @@ export default function SEOStruct() {
         },
     };
 
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'LUXHT Fix',
+                item: 'https://fix.luxht.com/',
+            },
+        ],
+    };
+
     return (
         <>
             <script
@@ -108,6 +121,12 @@ export default function SEOStruct() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(websiteSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(breadcrumbSchema),
                 }}
             />
         </>

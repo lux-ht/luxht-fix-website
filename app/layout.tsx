@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://fix.luxht.com/',
   },
   openGraph: {
-    title: 'LUXHT Fix | Premium Home Repairs in Orlando',
+    title: 'LUXHT Fix | Handyman Services in Orlando, FL',
     description:
       'Expert home repair and handyman services in Orlando, FL. Drywall, flooring, TV mounting, decks & more. Licensed & Insured.',
     url: 'https://fix.luxht.com/',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LUXHT Fix | Premium Home Repairs in Orlando',
+    title: 'LUXHT Fix | Handyman Services in Orlando, FL',
     description:
       'Expert home repair and handyman services in Orlando, FL. Licensed & Insured. Call (407) 720-7476.',
     images: ['/images/logo-wide-hammers.png'],
