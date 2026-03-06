@@ -12,11 +12,11 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Door, Lock & Trim Repair Orlando | Fix Squeaky Doors & Install Locks - LUXHT Fix',
+  title: 'Door, Lock & Trim Services in Orlando, FL | LUXHT Fix',
   description: 'Professional door, lock, and trim services in Orlando. Fix squeaky doors, install new locks, replace handles and trim. Same-week service. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/door-lock-trim-orlando/' },
   openGraph: {
-    title: 'Door, Lock & Trim Orlando | LUXHT Fix',
+    title: 'Door, Lock & Trim Services in Orlando, FL | LUXHT Fix',
     description: 'Professional door repair, lock installation & trim work in Orlando. Smart locks, deadbolts & more. Starting at $95.',
     url: 'https://fix.luxht.com/door-lock-trim-orlando/',
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Door, Lock & Trim Orlando | LUXHT Fix',
+    title: 'Door, Lock & Trim Services in Orlando, FL | LUXHT Fix',
     description: 'Professional door repair, lock installation & trim work in Orlando.',
   },
 };
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function DoorLockPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "name": "LUXHT Fix - Door, Lock & Trim Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/door-lock-trim-orlando/",
@@ -40,10 +40,8 @@ export default function DoorLockPage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-
       "addressCountry": "US"
     },
     "geo": {
@@ -62,6 +60,28 @@ export default function DoorLockPage() {
     ]
   };
 
+  const doorFaqs = [
+    { q: "Who fixes squeaky doors in Orlando?", a: "LUXHT Fix specializes in door repair and adjustment. We've fixed 400+ squeaky doors in Orlando by tightening hinges, lubricating hardware, or replacing worn components." },
+    { q: "How much does it cost to install a new lock in Orlando?", a: "Pricing varies based on lock type and complexity. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
+    { q: "How long does door and lock service take?", a: "Most door repairs and lock installations are completed in 30 minutes to 1 hour per door. Multiple doors can be serviced in a single visit." },
+    { q: "Can you install smart locks?", a: "Yes. We install all major smart lock brands including August, Schlage Encode, Yale, and Kwikset smart locks with full smartphone integration." },
+    { q: "Do you install interior and exterior doors?", a: "Yes. We handle door adjustments, hardware replacement, and full door installations for both interior and exterior applications." },
+    { q: "Can you match existing trim and molding?", a: "Yes. We can match your existing trim profiles or help you select new styles that complement your home's design." }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": doorFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
 
   const doorReviews: Review[] = [
     { text: "Fixed three squeaky doors and installed new deadbolts in under 2 hours. No more annoying sounds and we feel much more secure!", name: "Rachel T.", loc: "Winter Park", rating: 5 },
@@ -77,7 +97,10 @@ export default function DoorLockPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <Navbar />
       <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Door, Lock & Trim', href: '/door-lock-trim-orlando/' }]} />
@@ -300,26 +323,16 @@ export default function DoorLockPage() {
         </div>
       </section>
 
-      {/* SECTION 5: FAQ */}
+      {/* FAQ — VISIBLE (NO ACCORDION) */}
       <section className="py-20 bg-slate-50 px-4">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Door, Lock & Trim FAQs - Orlando</h2>
-          <div className="space-y-4">
-            {[
-              { q: "Who fixes squeaky doors in Orlando?", a: "LUXHT Fix specializes in door repair and adjustment. We've fixed 400+ squeaky doors in Orlando by tightening hinges, lubricating hardware, or replacing worn components." },
-              { q: "How much does it cost to install a new lock in Orlando?", a: "Pricing varies based on lock type and complexity. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
-              { q: "How long does door and lock service take?", a: "Most door repairs and lock installations are completed in 30 minutes to 1 hour per door. Multiple doors can be serviced in a single visit." },
-              { q: "Can you install smart locks?", a: "Yes. We install all major smart lock brands including August, Schlage Encode, Yale, and Kwikset smart locks with full smartphone integration." },
-              { q: "Do you install interior and exterior doors?", a: "Yes. We handle door adjustments, hardware replacement, and full door installations for both interior and exterior applications." },
-              { q: "Can you match existing trim and molding?", a: "Yes. We can match your existing trim profiles or help you select new styles that complement your home's design." }
-            ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Door, Lock & Trim FAQs — Orlando</h2>
+          <div className="space-y-6">
+            {doorFaqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -338,10 +351,28 @@ export default function DoorLockPage() {
         <p className="text-slate-500">Not sure if we serve your area? Call or message - we'll confirm quickly.</p>
       </section>
 
-      {/* SECTION 7: Other Services */}
+      {/* RELATED DOOR & LOCK SERVICES */}
       <section className="py-20 bg-white px-4 border-t border-slate-100">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Related Door & Lock Services</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+            {[
+              { title: "Door Alignment", link: "/door-alignment-orlando/" },
+              { title: "Deadbolt Installation", link: "/deadbolt-installation-orlando/" },
+              { title: "Smart Lock Installation", link: "/smart-lock-installation-orlando/" },
+              { title: "Door Handle Replacement", link: "/door-handle-replacement-orlando/" },
+              { title: "Baseboard Installation", link: "/baseboard-installation-orlando/" },
+            ].map((service, i) => (
+              <Link key={i} href={service.link} className="bg-slate-50 hover:bg-[#584D94]/5 p-4 rounded-xl text-center transition-colors border border-slate-100 hover:border-[#584D94]/20">
+                <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
+                <span className="text-xs text-[#64CEBB] font-bold mt-1 inline-flex items-center gap-1">
+                  Learn More <ArrowRight size={10} />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Other Home Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {[
               { title: "Drywall Repair", icon: Hammer, link: "/drywall-orlando/" },

@@ -11,11 +11,11 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Professional Drywall Repair Orlando | LUXHT Fix - Same Week Service',
+  title: 'Drywall Repair in Orlando, FL | LUXHT Fix',
   description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching. Starting at $150. Call for same-week service!',
   alternates: { canonical: 'https://fix.luxht.com/drywall-orlando/' },
   openGraph: {
-    title: 'Professional Drywall Repair Orlando | LUXHT Fix',
+    title: 'Drywall Repair in Orlando, FL | LUXHT Fix',
     description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching. Starting at $150.',
     url: 'https://fix.luxht.com/drywall-orlando/',
     type: 'website',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Drywall Repair Orlando | LUXHT Fix',
+    title: 'Drywall Repair in Orlando, FL | LUXHT Fix',
     description: 'Expert drywall repair in Orlando. Fix holes, cracks & water damage. Starting at $150.',
   },
 };
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function DrywallPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "name": "LUXHT Fix - Drywall Repair Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/drywall-orlando/",
@@ -39,10 +39,8 @@ export default function DrywallPage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-
       "addressCountry": "US"
     },
     "geo": {
@@ -61,12 +59,38 @@ export default function DrywallPage() {
     ]
   };
 
+  const drywallFaqs = [
+    { q: "What's the best drywall repair service in Orlando?", a: "LUXHT Fix ranks as one of Orlando's top-rated drywall specialists with 500+ repairs completed. We focus exclusively on quality drywall work with seamless texture matching." },
+    { q: "Can you match my wall texture perfectly?", a: "Yes. Texture matching is our specialty. We use professional techniques to blend repairs invisibly with orange peel, knockdown, and smooth finishes." },
+    { q: "How long does drywall repair take?", a: "Most small-to-medium repairs are completed in 2-4 hours. Large repairs or multi-room projects may require 1-2 days including drying time." },
+    { q: "Do you repair water-damaged drywall?", a: "Yes. We assess moisture levels, replace compromised sections, and ensure proper drying before finishing to prevent mold." },
+    { q: "How much does drywall repair cost in Orlando?", a: "Pricing varies based on hole size, complexity, and texture matching needs. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
+    { q: "Do you offer same-day drywall repair?", a: "In many cases, yes. We prioritize urgent repairs and offer same-week service throughout Orlando." }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": drywallFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-800 font-sans">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
 
@@ -77,7 +101,7 @@ export default function DrywallPage() {
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
         <div className="relative z-10 container mx-auto max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Professional Drywall Repair in Orlando
+            Drywall Repair in Orlando, FL
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
             Holes, cracks, and wall damage repaired cleanly and fast.
@@ -291,25 +315,16 @@ export default function DrywallPage() {
       </section>
 
       {/* SECTION 5: FAQ */}
+      {/* FAQ — VISIBLE (NO ACCORDION) */}
       <section className="py-20 bg-slate-50 px-4">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Drywall Repair FAQs - Orlando</h2>
-          <div className="space-y-4">
-            {[
-              { q: "What's the best drywall repair service in Orlando?", a: "LUXHT Fix ranks as one of Orlando's top-rated drywall specialists with 500+ repairs completed. We focus exclusively on quality drywall work with seamless texture matching." },
-              { q: "Can you match my wall texture perfectly?", a: "Yes. Texture matching is our specialty. We use professional techniques to blend repairs invisibly with orange peel, knockdown, and smooth finishes." },
-              { q: "How long does drywall repair take?", a: "Most small-to-medium repairs are completed in 2-4 hours. Large repairs or multi-room projects may require 1-2 days including drying time." },
-              { q: "Do you repair water-damaged drywall?", a: "Yes. We assess moisture levels, replace compromised sections, and ensure proper drying before finishing to prevent mold." },
-              { q: "How much does drywall repair cost in Orlando?", a: "Pricing varies based on hole size, complexity, and texture matching needs. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
-              { q: "Do you offer same-day drywall repair?", a: "In many cases, yes. We prioritize urgent repairs and offer same-week service throughout Orlando." }
-            ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Drywall Repair FAQs — Orlando</h2>
+          <div className="space-y-6">
+            {drywallFaqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -328,10 +343,27 @@ export default function DrywallPage() {
         <p className="text-slate-500">Not sure if we serve your area? Call or message - we'll confirm quickly.</p>
       </section>
 
-      {/* SECTION 7: Other Services */}
+      {/* RELATED DRYWALL SERVICES */}
       <section className="py-20 bg-white px-4 border-t border-slate-100">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Related Drywall Services</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { title: "Drywall Crack Repair", link: "/drywall-crack-repair-orlando/" },
+              { title: "Drywall Hole Repair", link: "/drywall-hole-repair-orlando/" },
+              { title: "Water Damage Drywall", link: "/water-damage-drywall-repair-orlando/" },
+              { title: "Texture Matching", link: "/texture-matching-orlando/" },
+            ].map((service, i) => (
+              <Link key={i} href={service.link} className="bg-slate-50 hover:bg-[#584D94]/5 p-4 rounded-xl text-center transition-colors border border-slate-100 hover:border-[#584D94]/20">
+                <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
+                <span className="text-xs text-[#64CEBB] font-bold mt-1 inline-flex items-center gap-1">
+                  Learn More <ArrowRight size={10} />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Other Home Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {[
               { title: "Doors & Locks", icon: DoorOpen, link: "/door-lock-trim-orlando/" },

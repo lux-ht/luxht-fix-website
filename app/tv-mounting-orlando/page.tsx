@@ -12,11 +12,11 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TV Mounting Orlando | Professional Installation - LUXHT Fix',
+  title: 'TV Mounting in Orlando, FL | LUXHT Fix',
   description: 'Expert TV mounting in Orlando. Secure installation with concealed cables on any wall type. Starting at $120. Same-week service. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/tv-mounting-orlando/' },
   openGraph: {
-    title: 'TV Mounting Orlando | LUXHT Fix',
+    title: 'TV Mounting in Orlando, FL | LUXHT Fix',
     description: 'Professional TV mounting in Orlando. Wall mounting, cable concealment & soundbar installation. Starting at $150.',
     url: 'https://fix.luxht.com/tv-mounting-orlando/',
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'TV Mounting Orlando | LUXHT Fix',
+    title: 'TV Mounting in Orlando, FL | LUXHT Fix',
     description: 'Professional TV mounting in Orlando. Wall mounting, cable concealment & soundbar installation.',
   },
 };
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function TVMountingPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "name": "LUXHT Fix - TV Mounting Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/tv-mounting-orlando/",
@@ -40,12 +40,32 @@ export default function TVMountingPage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-
       "addressCountry": "US"
     }
+  };
+
+  const tvFaqs = [
+    { q: "What's the best TV mounting service in Orlando?", a: "LUXHT Fix specializes in professional TV mounting with 300+ installations in Orlando. We handle all wall types and provide concealed cable solutions." },
+    { q: "Can you mount a TV on any wall?", a: "Yes. We mount on drywall (with studs or anchors), brick, concrete, and outdoor surfaces using the correct hardware for each material." },
+    { q: "How long does TV mounting take?", a: "Most TV mounting jobs are completed in 1-2 hours, including cable management." },
+    { q: "Do you hide the cables?", a: "Yes. Cable concealment is included in every installation. We route cables behind walls or use professional cable covers." },
+    { q: "How much does TV mounting cost in Orlando?", a: "Pricing varies based on TV size, wall type, and cable management needs. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
+    { q: "Can you mount TVs above fireplaces?", a: "Yes. We specialize in fireplace TV mounting with proper heat considerations and adjustable mounts for optimal viewing." }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": tvFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
   };
 
 
@@ -63,6 +83,10 @@ export default function TVMountingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
 
       <Navbar />
@@ -72,7 +96,7 @@ export default function TVMountingPage() {
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
         <div className="relative z-10 container mx-auto max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Professional TV Mounting in Orlando
+            TV Mounting in Orlando, FL
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
             Secure installation with concealed cables and optimized viewing angles.
@@ -275,25 +299,16 @@ export default function TVMountingPage() {
       </section>
 
       {/* SECTION 5: FAQ */}
+      {/* FAQ — VISIBLE (NO ACCORDION) */}
       <section className="py-20 bg-slate-50 px-4">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">TV Mounting FAQs - Orlando</h2>
-          <div className="space-y-4">
-            {[
-              { q: "What's the best TV mounting service in Orlando?", a: "LUXHT Fix specializes in professional TV mounting with 300+ installations in Orlando. We handle all wall types and provide concealed cable solutions." },
-              { q: "Can you mount a TV on any wall?", a: "Yes. We mount on drywall (with studs or anchors), brick, concrete, and outdoor surfaces using the correct hardware for each material." },
-              { q: "How long does TV mounting take?", a: "Most TV mounting jobs are completed in 1-2 hours, including cable management." },
-              { q: "Do you hide the cables?", a: "Yes. Cable concealment is included in every installation. We route cables behind walls or use professional cable covers." },
-              { q: "How much does TV mounting cost in Orlando?", a: "Pricing varies based on TV size, wall type, and cable management needs. Visit our detailed pricing guide for typical costs, or send us a photo for a personalized quote." },
-              { q: "Can you mount TVs above fireplaces?", a: "Yes. We specialize in fireplace TV mounting with proper heat considerations and adjustable mounts for optimal viewing." }
-            ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">TV Mounting FAQs — Orlando</h2>
+          <div className="space-y-6">
+            {tvFaqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -313,9 +328,27 @@ export default function TVMountingPage() {
       </section>
 
       {/* SECTION 7: Other Services */}
+      {/* RELATED TV MOUNTING SERVICES */}
       <section className="py-20 bg-white px-4 border-t border-slate-100">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Related TV Mounting Services</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { title: "TV Cable Concealment", link: "/tv-cable-concealment-orlando/" },
+              { title: "Fireplace TV Mounting", link: "/fireplace-tv-mounting-orlando/" },
+              { title: "Soundbar Mounting", link: "/soundbar-mounting-orlando/" },
+              { title: "Outdoor TV Mounting", link: "/outdoor-tv-mounting-orlando/" },
+            ].map((service, i) => (
+              <Link key={i} href={service.link} className="bg-slate-50 hover:bg-[#584D94]/5 p-4 rounded-xl text-center transition-colors border border-slate-100 hover:border-[#584D94]/20">
+                <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
+                <span className="text-xs text-[#64CEBB] font-bold mt-1 inline-flex items-center gap-1">
+                  Learn More <ArrowRight size={10} />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Other Home Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {[
               { title: "Drywall Repair", icon: Hammer, link: "/drywall-orlando/" },

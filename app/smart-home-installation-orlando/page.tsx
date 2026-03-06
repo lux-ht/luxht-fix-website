@@ -12,11 +12,11 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Smart Home Installation Orlando | Ring, Nest, Camera & Smart Lock Setup - LUXHT Fix',
+  title: 'Smart Home Installation in Orlando, FL | LUXHT Fix',
   description: 'Professional smart home installation in Orlando. Ring doorbells, Nest thermostats, cameras, and smart locks integrated with your smartphone. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/smart-home-installation-orlando/' },
   openGraph: {
-    title: 'Smart Home Installation Orlando | LUXHT Fix',
+    title: 'Smart Home Installation in Orlando, FL | LUXHT Fix',
     description: 'Professional smart home installation in Orlando. Ring, Nest, smart locks, cameras & more. Starting at $95.',
     url: 'https://fix.luxht.com/smart-home-installation-orlando/',
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Smart Home Installation Orlando | LUXHT Fix',
+    title: 'Smart Home Installation in Orlando, FL | LUXHT Fix',
     description: 'Professional smart home installation in Orlando. Ring, Nest, smart locks & cameras.',
   },
 };
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function SmartHomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "name": "LUXHT Fix - Smart Home Installation Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/smart-home-installation-orlando/",
@@ -40,10 +40,8 @@ export default function SmartHomePage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-
       "addressLocality": "Orlando",
       "addressRegion": "FL",
-
       "addressCountry": "US"
     },
     "geo": {
@@ -62,6 +60,28 @@ export default function SmartHomePage() {
     ]
   };
 
+  const smartFaqs = [
+    { q: "Who installs Ring doorbells and smart home devices in Orlando?", a: "LUXHT Fix specializes in smart home installation with 250+ devices installed in Orlando. We handle Ring, Nest, August, Schlage, Arlo, and all major smart home brands." },
+    { q: "How much does smart home installation cost in Orlando?", a: "Pricing varies based on device type and quantity. Visit our detailed pricing guide for typical costs, or contact us for a personalized quote." },
+    { q: "How long does smart home installation take?", a: "Most single device installations take 30-60 minutes including smartphone setup. Multi-device installations typically take 2-3 hours depending on complexity." },
+    { q: "Do I need special Wi-Fi for smart home devices?", a: "Most modern Wi-Fi routers work well with smart devices. We can assess your network during installation and recommend upgrades if needed for optimal performance." },
+    { q: "Can you install devices I purchased online?", a: "Yes. We install smart home devices from any retailer including Amazon, Best Buy, Home Depot, and manufacturer websites." },
+    { q: "Do you provide training on how to use the devices?", a: "Absolutely. Every installation includes complete smartphone app setup and hands-on training so you're confident using all device features." }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": smartFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
 
   const smartReviews: Review[] = [
     { text: "They installed our Ring doorbell and two cameras in under 2 hours. Everything works perfectly and they showed us how to use all the features. Great service!", name: "Jason & Nicole B.", loc: "Windermere", rating: 5 },
@@ -77,7 +97,10 @@ export default function SmartHomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <Navbar />
       <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }, { name: 'Smart Home Installation', href: '/smart-home-installation-orlando/' }]} />
@@ -295,26 +318,16 @@ export default function SmartHomePage() {
         </div>
       </section>
 
-      {/* SECTION 5: FAQ */}
+      {/* FAQ — VISIBLE (NO ACCORDION) */}
       <section className="py-20 bg-slate-50 px-4">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Smart Home Installation FAQs - Orlando</h2>
-          <div className="space-y-4">
-            {[
-              { q: "Who installs Ring doorbells and smart home devices in Orlando?", a: "LUXHT Fix specializes in smart home installation with 250+ devices installed in Orlando. We handle Ring, Nest, August, Schlage, Arlo, and all major smart home brands." },
-              { q: "How much does smart home installation cost in Orlando?", a: "Pricing varies based on device type and quantity. Visit our detailed pricing guide for typical costs, or contact us for a personalized quote." },
-              { q: "How long does smart home installation take?", a: "Most single device installations take 30-60 minutes including smartphone setup. Multi-device installations typically take 2-3 hours depending on complexity." },
-              { q: "Do I need special Wi-Fi for smart home devices?", a: "Most modern Wi-Fi routers work well with smart devices. We can assess your network during installation and recommend upgrades if needed for optimal performance." },
-              { q: "Can you install devices I purchased online?", a: "Yes. We install smart home devices from any retailer including Amazon, Best Buy, Home Depot, and manufacturer websites." },
-              { q: "Do you provide training on how to use the devices?", a: "Absolutely. Every installation includes complete smartphone app setup and hands-on training so you're confident using all device features." }
-            ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Smart Home Installation FAQs — Orlando</h2>
+          <div className="space-y-6">
+            {smartFaqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -333,10 +346,26 @@ export default function SmartHomePage() {
         <p className="text-slate-500">Not sure if we serve your area? Call or message - we'll confirm quickly.</p>
       </section>
 
-      {/* SECTION 7: Other Services */}
+      {/* RELATED SMART HOME SERVICES */}
       <section className="py-20 bg-white px-4 border-t border-slate-100">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-12">Additional Home Services Available</h2>
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Related Smart Home Services</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+            {[
+              { title: "Smart Lock Installation", link: "/smart-lock-installation-orlando/" },
+              { title: "Smart Doorbell Installation", link: "/smart-doorbell-installation-orlando/" },
+              { title: "TV Cable Concealment", link: "/tv-cable-concealment-orlando/" },
+            ].map((service, i) => (
+              <Link key={i} href={service.link} className="bg-slate-50 hover:bg-[#584D94]/5 p-4 rounded-xl text-center transition-colors border border-slate-100 hover:border-[#584D94]/20">
+                <h3 className="font-semibold text-slate-700 text-sm">{service.title}</h3>
+                <span className="text-xs text-[#64CEBB] font-bold mt-1 inline-flex items-center gap-1">
+                  Learn More <ArrowRight size={10} />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#584D94] text-center mb-8">Other Home Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {[
               { title: "Drywall Repair", icon: Hammer, link: "/drywall-orlando/" },

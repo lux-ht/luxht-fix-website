@@ -191,67 +191,139 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* QUICK SERVICES GRID */}
+            {/* SERVICE CATEGORIES — 9 H2 SECTIONS */}
             <section className="py-20 bg-slate-50 px-4">
-                <div className="container mx-auto max-w-7xl">
+                <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Comprehensive Care</h2>
-                        <h3 className="text-3xl md:text-4xl font-bold text-slate-800">Popular Home Services</h3>
+                        <p className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Our Service Categories</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Expert Home Services in Orlando</h2>
                     </div>
 
-                    {/* Mobile Grid (Square Glass Cards) */}
-                    <div className="grid grid-cols-2 gap-3 md:hidden">
-                        {[
-                            { title: "TV Mounting", icon: Tv, link: "/tv-mounting-orlando/" },
-                            { title: "Flooring", icon: Grid, link: "/flooring-installation-orlando/" },
-                            { title: "Deck Build", icon: Ruler, link: "/deck-building-orlando/" },
-                            { title: "Door & Lock", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
-                            { title: "Faucets", icon: Wrench, link: "/faucet-fixtures-orlando/" },
-                            { title: "Smart Home", icon: Zap, link: "/smart-home-installation-orlando/" },
-                            { title: "Bath Remodel", icon: Paintbrush, link: "/bath-remodel-orlando/" },
-                            { title: "Kitchen", icon: PaintRoller, link: "/kitchen-refacing-orlando/" },
-                            { title: "Furniture", icon: Hammer, link: "/furniture-assembly-orlando/" },
-                        ].map((s, i) => (
-                            <Link key={i} href={s.link} className="group bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center aspect-square active:scale-95 transition-transform">
-                                <div className="w-10 h-10 bg-[#584D94]/5 rounded-full flex items-center justify-center text-[#584D94] mb-2">
-                                    <s.icon size={20} />
-                                </div>
-                                <h4 className="font-bold text-slate-800 text-xs leading-tight">{s.title}</h4>
-                            </Link>
-                        ))}
-                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* 1. Drywall */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Hammer size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/drywall-orlando/" className="hover:text-[#584D94] transition-colors">Drywall Services in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/drywall-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Drywall Repair</Link></li>
+                                <li><Link href="/drywall-crack-repair-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Drywall Crack Repair</Link></li>
+                                <li><Link href="/drywall-hole-repair-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Drywall Hole Repair</Link></li>
+                                <li><Link href="/water-damage-drywall-repair-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Water Damage Drywall Repair</Link></li>
+                                <li><Link href="/texture-matching-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Texture Matching</Link></li>
+                            </ul>
+                        </div>
 
-                    {/* Desktop Grid (Original) */}
-                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            { title: "TV Mounting", desc: "Secure mounting on any wall type.", icon: Tv, link: "/tv-mounting-orlando/" },
-                            { title: "Flooring", desc: "Hardwood, LVP, and tile install.", icon: Grid, link: "/flooring-installation-orlando/" },
-                            { title: "Deck Building", desc: "Custom outdoor living spaces.", icon: Ruler, link: "/deck-building-orlando/" },
-                            { title: "Door & Lock", desc: "Security upgrades and repairs.", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
-                            { title: "Faucets", desc: "Kitchen and bath upgrades.", icon: Wrench, link: "/faucet-fixtures-orlando/" },
-                            { title: "Smart Home", desc: "Automation and cameras.", icon: Zap, link: "/smart-home-installation-orlando/" },
-                            { title: "Bath Remodel", desc: "Complete bathroom renovations.", icon: Paintbrush, link: "/bath-remodel-orlando/" },
-                            { title: "Kitchen Refacing", desc: "Cabinet door & hardware upgrades.", icon: PaintRoller, link: "/kitchen-refacing-orlando/" },
-                            { title: "Furniture Assembly", desc: "IKEA, Amazon, Wayfair & more.", icon: Hammer, link: "/furniture-assembly-orlando/" },
-                        ].map((s, i) => (
-                            <Link key={i} href={s.link} className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#584D94]/20 transition-all flex items-start gap-4">
-                                <div className="w-12 h-12 bg-[#584D94]/5 rounded-xl flex items-center justify-center text-[#584D94] group-hover:bg-[#584D94] group-hover:text-white transition-colors flex-shrink-0">
-                                    <s.icon size={24} />
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-slate-800 mb-1 group-hover:text-[#584D94] transition-colors">{s.title}</h4>
-                                    <p className="text-sm text-slate-500 mb-2">{s.desc}</p>
-                                    <span className="text-xs font-bold text-[#64CEBB] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0">
-                                        Learn More <ArrowRight size={12} />
-                                    </span>
-                                </div>
-                            </Link>
-                        ))}
+                        {/* 2. TV Mounting */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Tv size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/tv-mounting-orlando/" className="hover:text-[#584D94] transition-colors">TV Mounting in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/tv-mounting-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> TV Mounting</Link></li>
+                                <li><Link href="/tv-cable-concealment-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> TV Cable Concealment</Link></li>
+                                <li><Link href="/fireplace-tv-mounting-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Fireplace TV Mounting</Link></li>
+                                <li><Link href="/soundbar-mounting-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Soundbar Mounting</Link></li>
+                                <li><Link href="/outdoor-tv-mounting-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Outdoor TV Mounting</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 3. Door & Lock */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><DoorOpen size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/door-lock-trim-orlando/" className="hover:text-[#584D94] transition-colors">Door and Lock Services in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/door-lock-trim-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Door, Lock & Trim</Link></li>
+                                <li><Link href="/door-alignment-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Door Alignment</Link></li>
+                                <li><Link href="/deadbolt-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Deadbolt Installation</Link></li>
+                                <li><Link href="/smart-lock-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Smart Lock Installation</Link></li>
+                                <li><Link href="/door-handle-replacement-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Door Handle Replacement</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 4. Trim & Molding */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Ruler size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/baseboard-installation-orlando/" className="hover:text-[#584D94] transition-colors">Trim and Molding in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/baseboard-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Baseboard Installation</Link></li>
+                                <li><Link href="/crown-molding-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Crown Molding Installation</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 5. Faucets & Fixtures */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Wrench size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/faucet-fixtures-orlando/" className="hover:text-[#584D94] transition-colors">Faucets and Fixtures in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/faucet-fixtures-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Faucets & Fixtures</Link></li>
+                                <li><Link href="/faucet-replacement-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Faucet Replacement</Link></li>
+                                <li><Link href="/shower-head-replacement-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Shower Head Replacement</Link></li>
+                                <li><Link href="/garbage-disposal-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Garbage Disposal Installation</Link></li>
+                                <li><Link href="/toilet-repair-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Toilet Repair</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 6. Smart Home */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Zap size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/smart-home-installation-orlando/" className="hover:text-[#584D94] transition-colors">Smart Home Installation in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/smart-home-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Smart Home Installation</Link></li>
+                                <li><Link href="/smart-lock-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Smart Lock Installation</Link></li>
+                                <li><Link href="/smart-doorbell-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Smart Doorbell Installation</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 7. Flooring */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Grid size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/flooring-installation-orlando/" className="hover:text-[#584D94] transition-colors">Flooring Installation in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/flooring-installation-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Hardwood, LVP & Tile</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 8. Kitchen & Bath */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><Paintbrush size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/bath-remodel-orlando/" className="hover:text-[#584D94] transition-colors">Kitchen and Bath in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/bath-remodel-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Bath Remodel</Link></li>
+                                <li><Link href="/kitchen-refacing-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Kitchen Cabinet Refacing</Link></li>
+                            </ul>
+                        </div>
+
+                        {/* 9. Deck & Outdoor */}
+                        <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+                            <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><PaintRoller size={24} /></div>
+                            <h2 className="text-xl font-bold text-slate-800 mb-3">
+                                <Link href="/deck-building-orlando/" className="hover:text-[#584D94] transition-colors">Deck Building and Outdoor in Orlando</Link>
+                            </h2>
+                            <ul className="space-y-2 text-sm">
+                                <li><Link href="/deck-building-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Custom Deck Building</Link></li>
+                                <li><Link href="/furniture-assembly-orlando/" className="text-slate-600 hover:text-[#584D94] flex items-center gap-2"><ArrowRight size={12} className="text-[#64CEBB]" /> Furniture Assembly</Link></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div className="text-center mt-12">
                         <Link href="/services/" className="text-[#584D94] font-bold border-b-2 border-[#584D94]/20 hover:border-[#584D94] transition-all pb-1">
-                            View All 10 Services
+                            View All Services
                         </Link>
                     </div>
                 </div>
