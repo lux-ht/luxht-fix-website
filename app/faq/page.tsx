@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
-import { Phone, ChevronDown, HelpCircle, DollarSign, Calendar, Shield, Mail } from 'lucide-react';
+import { Phone, HelpCircle, DollarSign, Calendar, Mail } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -69,17 +69,10 @@ export default function FAQPage() {
 
                         <div className="space-y-4">
                             {section.items.map((item, i) => (
-                                <details key={i} className="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer open:ring-1 open:ring-[#584D94]/20 open:shadow-md transition-all">
-                                    <summary className="flex justify-between items-center p-6 font-bold text-slate-700 list-none select-none hover:bg-slate-50 transition-colors">
-                                        {item.q}
-                                        <span className="text-[#64CEBB] transform transition-transform duration-200 group-open:rotate-180">
-                                            <ChevronDown size={20} />
-                                        </span>
-                                    </summary>
-                                    <div className="px-6 pb-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50 mt-2 pt-4">
-                                        {item.a}
-                                    </div>
-                                </details>
+                                <div key={i} className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden p-6">
+                                    <h3 className="font-bold text-slate-700 text-lg mb-3">{item.q}</h3>
+                                    <p className="text-slate-600 leading-relaxed">{item.a}</p>
+                                </div>
                             ))}
                         </div>
                     </section>

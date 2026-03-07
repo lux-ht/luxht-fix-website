@@ -312,13 +312,10 @@ export default function KitchenRefacingPage() {
               { q: "Is refacing better than replacing cabinets?", a: "Refacing is ideal when cabinet boxes are structurally sound but doors and finish are outdated. You save 60-70% compared to full replacement while achieving a brand-new look." },
               { q: "Do you handle countertops too?", a: "While our specialty is cabinet refacing, we can coordinate countertop replacement with trusted partners or work with your existing countertops." }
             ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>

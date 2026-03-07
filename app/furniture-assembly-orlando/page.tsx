@@ -306,13 +306,10 @@ export default function FurnitureAssemblyPage() {
               { q: "What if parts are missing from my furniture?", a: "We inventory all parts before starting assembly. If parts are missing, we'll identify them and help you contact the retailer for replacements before completing the build." },
               { q: "Can you assemble furniture delivered by Amazon or Wayfair?", a: "Absolutely. We assemble furniture from all online retailers. Just send us the product link or take photos of the boxes for accurate estimates." }
             ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>

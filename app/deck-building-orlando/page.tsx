@@ -303,13 +303,10 @@ export default function DeckBuildingPage() {
               { q: "What's better - wood or composite decking?", a: "Composite requires less maintenance and lasts longer but costs more upfront. Pressure-treated wood is more economical but needs regular staining. We'll help you choose based on your budget and maintenance preferences." },
               { q: "Can you add a roof or pergola to my deck?", a: "Yes. We design and build pergolas, shade structures, and covered deck areas as part of your custom deck project." }
             ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>

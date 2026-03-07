@@ -310,13 +310,10 @@ export default function BathRemodelPage() {
               { q: "Do you handle permits for bathroom remodels?", a: "Yes. We obtain all necessary permits for plumbing, electrical, and structural work to ensure your remodel meets Orlando building codes." },
               { q: "Can I use my bathroom during the remodel?", a: "Not typically. Most remodels require the bathroom to be out of service for 2-3 weeks. We work efficiently to minimize disruption and can discuss timeline strategies." }
             ].map((faq, i) => (
-              <details key={i} className="group bg-white border border-slate-200 rounded-lg p-6 cursor-pointer open:ring-1 open:ring-[#584D94]/20">
-                <summary className="font-bold text-slate-800 flex justify-between items-center list-none select-none">
-                  {faq.q}
-                  <span className="transform transition-transform group-open:rotate-180 text-[#584D94]">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 leading-relaxed">{faq.a}</p>
-              </details>
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
+                <h3 className="font-bold text-slate-800 text-lg mb-3">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
