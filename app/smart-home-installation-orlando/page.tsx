@@ -84,11 +84,11 @@ export default function SmartHomePage() {
 
 
   const smartReviews: Review[] = [
-    { text: "They installed our Ring doorbell and two cameras in under 2 hours. Everything works perfectly and they showed us how to use all the features. Great service!", name: "Jason & Nicole B.", loc: "Windermere", rating: 5 },
-    { text: "Upgraded our home with Nest thermostats and smoke detectors. The team made sure everything was connected to our Wi-Fi properly.", name: "David L.", loc: "Lake Nona", rating: 5 },
-    { text: "Love our new smart lock. It's so convenient to open the door with my phone, and the installation looks clean.", name: "Emily R.", loc: "Winter Park", rating: 5 },
-    { text: "Installed 4 outdoor security cameras. The technician helped me position them perfectly for the best view.", name: "Michael S.", loc: "Baldwin Park", rating: 5 },
-    { text: "Very knowledgeable about home automation. Helped me set up a hub that controls my lights and locks together.", name: "Robert K.", loc: "Dr. Phillips", rating: 5 }
+    { text: "They installed our Ring doorbell and two cameras in under 2 hours. Everything works perfectly and they showed us how to use all the features. Great service!", name: "Jason & Nicole B.", loc: "Windermere", rating: 5, date: "Jan 2025" },
+    { text: "Upgraded our home with Nest thermostats and smoke detectors. The team made sure everything was connected to our Wi-Fi properly.", name: "David L.", loc: "Lake Nona", rating: 5, date: "Dec 2024" },
+    { text: "Love our new smart lock. It's so convenient to open the door with my phone, and the installation looks clean.", name: "Emily R.", loc: "Winter Park", rating: 5, date: "Feb 2025" },
+    { text: "Installed 4 outdoor security cameras. The technician helped me position them perfectly for the best view.", name: "Michael S.", loc: "Baldwin Park", rating: 5, date: "Nov 2024" },
+    { text: "Very knowledgeable about home automation. Helped me set up a hub that controls my lights and locks together.", name: "Robert K.", loc: "Dr. Phillips", rating: 5, date: "Mar 2025" }
   ];
 
   return (

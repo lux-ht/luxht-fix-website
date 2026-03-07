@@ -64,11 +64,11 @@ export default function FurnitureAssemblyPage() {
 
 
   const assemblyReviews: Review[] = [
-    { text: "Assembled our entire IKEA bedroom set in 3 hours! Everything is solid and perfect. So worth not spending my whole Saturday struggling with instructions.", name: "Brian K.", loc: "College Park", rating: 5 },
-    { text: "Hired them to assemble 6 office desks for our new startup in downtown. Fast, professional, and cleaned up all the boxes.", name: "Sarah J.", loc: "Downtown Orlando", rating: 5 },
-    { text: "Put together a huge Wayfair entertainment center. It looks amazing and feels much sturdier than if I had done it myself.", name: "Mike T.", loc: "Winter Garden", rating: 5 },
-    { text: "Very polite and careful with our floors. They anchored the bookshelves to the wall for safety too.", name: "Amanda L.", loc: "Oviedo", rating: 5 },
-    { text: "Saved my marriage! We tried to build the bed ourselves and gave up. LUXHT fixed our mistakes and finished it quickly.", name: "Chris & Jess", loc: "Baldwin Park", rating: 5 }
+    { text: "Assembled our entire IKEA bedroom set in 3 hours! Everything is solid and perfect. So worth not spending my whole Saturday struggling with instructions.", name: "Brian K.", loc: "College Park", rating: 5, date: "Feb 2025" },
+    { text: "Hired them to assemble 6 office desks for our new startup in downtown. Fast, professional, and cleaned up all the boxes.", name: "Sarah J.", loc: "Downtown Orlando", rating: 5, date: "Jan 2025" },
+    { text: "Put together a huge Wayfair entertainment center. It looks amazing and feels much sturdier than if I had done it myself.", name: "Mike T.", loc: "Winter Garden", rating: 5, date: "Dec 2024" },
+    { text: "Very polite and careful with our floors. They anchored the bookshelves to the wall for safety too.", name: "Amanda L.", loc: "Oviedo", rating: 5, date: "Nov 2024" },
+    { text: "Saved my marriage! We tried to build the bed ourselves and gave up. LUXHT fixed our mistakes and finished it quickly.", name: "Chris & Jess", loc: "Baldwin Park", rating: 5, date: "Mar 2025" }
   ];
 
   return (

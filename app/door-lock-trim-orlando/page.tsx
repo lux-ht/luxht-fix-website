@@ -84,11 +84,11 @@ export default function DoorLockPage() {
 
 
   const doorReviews: Review[] = [
-    { text: "Fixed three squeaky doors and installed new deadbolts in under 2 hours. No more annoying sounds and we feel much more secure!", name: "Rachel T.", loc: "Winter Park", rating: 5 },
-    { text: "Installed a Schlage smart lock for us. It works perfectly and the installation was very clean.", name: "Michael B.", loc: "Lake Nona", rating: 5 },
-    { text: "Great job replacing our baseboards after new flooring was put in. The cuts are precise and the caulking is neat.", name: "Sophia L.", loc: "Baldwin Park", rating: 5 },
-    { text: "Came out the same day to fix a door that wouldn't latch. Simple fix but huge relief.", name: "David K.", loc: "Altamonte Springs", rating: 5 },
-    { text: "Very professional. Replaced all our old gold doorknobs with modern black ones. Looks like a new house.", name: "Jessica M.", loc: "Dr. Phillips", rating: 5 }
+    { text: "Fixed three squeaky doors and installed new deadbolts in under 2 hours. No more annoying sounds and we feel much more secure!", name: "Rachel T.", loc: "Winter Park", rating: 5, date: "Dec 2024" },
+    { text: "Installed a Schlage smart lock for us. It works perfectly and the installation was very clean.", name: "Michael B.", loc: "Lake Nona", rating: 5, date: "Jan 2025" },
+    { text: "Great job replacing our baseboards after new flooring was put in. The cuts are precise and the caulking is neat.", name: "Sophia L.", loc: "Baldwin Park", rating: 5, date: "Nov 2024" },
+    { text: "Came out the same day to fix a door that wouldn't latch. Simple fix but huge relief.", name: "David K.", loc: "Altamonte Springs", rating: 5, date: "Feb 2025" },
+    { text: "Very professional. Replaced all our old gold doorknobs with modern black ones. Looks like a new house.", name: "Jessica M.", loc: "Dr. Phillips", rating: 5, date: "Mar 2025" }
   ];
 
   return (

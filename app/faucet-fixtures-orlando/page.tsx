@@ -64,11 +64,11 @@ export default function FaucetPage() {
 
 
   const faucetReviews: Review[] = [
-    { text: "Replaced our kitchen faucet and bathroom fixtures in one visit. Everything works perfectly with zero leaks. Super professional!", name: "Chris & Amy D.", loc: "Maitland", rating: 5 },
-    { text: "Installed a new modern shower system for us with a rain head. The pressure is great and it looks amazing.", name: "Jason W.", loc: "Winter Park", rating: 5 },
-    { text: "Fast service when our kitchen faucet started leaking. Replaced it with a pull-down model I bought online.", name: "Linda G.", loc: "College Park", rating: 5 },
-    { text: "Installed a garbage disposal and new sink faucet. Very clean work, didn't leave a mess under the sink.", name: "Mark R.", loc: "Oviedo", rating: 5 },
-    { text: "Knowledgeable and friendly. helped me choose the right fixtures for my bathroom renovation.", name: "Sarah P.", loc: "Lake Nona", rating: 5 }
+    { text: "Replaced our kitchen faucet and bathroom fixtures in one visit. Everything works perfectly with zero leaks. Super professional!", name: "Chris & Amy D.", loc: "Maitland", rating: 5, date: "Jan 2025" },
+    { text: "Installed a new modern shower system for us with a rain head. The pressure is great and it looks amazing.", name: "Jason W.", loc: "Winter Park", rating: 5, date: "Dec 2024" },
+    { text: "Fast service when our kitchen faucet started leaking. Replaced it with a pull-down model I bought online.", name: "Linda G.", loc: "College Park", rating: 5, date: "Nov 2024" },
+    { text: "Installed a garbage disposal and new sink faucet. Very clean work, didn't leave a mess under the sink.", name: "Mark R.", loc: "Oviedo", rating: 5, date: "Feb 2025" },
+    { text: "Knowledgeable and friendly. helped me choose the right fixtures for my bathroom renovation.", name: "Sarah P.", loc: "Lake Nona", rating: 5, date: "Mar 2025" }
   ];
 
   return (

@@ -64,11 +64,11 @@ export default function KitchenRefacingPage() {
 
 
   const kitchenReviews: Review[] = [
-    { text: "Our kitchen looks like a completely different space! The new shaker doors and hardware modernized everything. Can't believe the transformation for under $6,000.", name: "Linda & Mark P.", loc: "Dr. Phillips", rating: 5 },
-    { text: "We were quoted $25k for a full remodel. LUXHT Fix refaced our cabinets for a fraction of that and it looks brand new.", name: "James T.", loc: "Winter Garden", rating: 5 },
-    { text: "The team was professional, clean, and fast. Finished in just 4 days. The soft-close hinges are a game changer.", name: "Sarah M.", loc: "Baldwin Park", rating: 5 },
-    { text: "High quality painting and installation. They matched the crown molding perfectly to the new doors.", name: "Robert L.", loc: "Lake Nona", rating: 5 },
-    { text: "Updated our 90s golden oak kitchen to a modern white shaker style. Best investment we've made in our home.", name: "Emily K.", loc: "Oviedo", rating: 5 }
+    { text: "Our kitchen looks like a completely different space! The new shaker doors and hardware modernized everything. Can't believe the transformation for under $6,000.", name: "Linda & Mark P.", loc: "Dr. Phillips", rating: 5, date: "Dec 2024" },
+    { text: "We were quoted $25k for a full remodel. LUXHT Fix refaced our cabinets for a fraction of that and it looks brand new.", name: "James T.", loc: "Winter Garden", rating: 5, date: "Jan 2025" },
+    { text: "The team was professional, clean, and fast. Finished in just 4 days. The soft-close hinges are a game changer.", name: "Sarah M.", loc: "Baldwin Park", rating: 5, date: "Nov 2024" },
+    { text: "High quality painting and installation. They matched the crown molding perfectly to the new doors.", name: "Robert L.", loc: "Lake Nona", rating: 5, date: "Feb 2025" },
+    { text: "Updated our 90s golden oak kitchen to a modern white shaker style. Best investment we've made in our home.", name: "Emily K.", loc: "Oviedo", rating: 5, date: "Mar 2025" }
   ];
 
   return (

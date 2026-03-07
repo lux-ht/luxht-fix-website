@@ -70,11 +70,11 @@ export default function TVMountingPage() {
 
 
   const tvReviews: Review[] = [
-    { text: "Mounted our 75\" TV perfectly with all cables hidden. Looks like it was built into the wall!", name: "Mike R.", loc: "Lake Nona", rating: 5 },
-    { text: "Professional, quick, and clean. They mounted my TV on a brick fireplace with no issues.", name: "Sarah J.", loc: "Winter Park", rating: 5 },
-    { text: "Excellent cable management. My setup looks so clean now.", name: "David L.", loc: "Downtown Orlando", rating: 5 },
-    { text: "Arrived on time and did a fantastic job mounting two TVs in my new home.", name: "Emily W.", loc: "Baldwin Park", rating: 5 },
-    { text: "Highly recommend for anyone needing secure TV installation. Very knowledgeable.", name: "Chris P.", loc: "Altamonte Springs", rating: 5 }
+    { text: "Mounted our 75\" TV perfectly with all cables hidden. Looks like it was built into the wall!", name: "Mike R.", loc: "Lake Nona", rating: 5, date: "Jan 2025" },
+    { text: "Professional, quick, and clean. They mounted my TV on a brick fireplace with no issues.", name: "Sarah J.", loc: "Winter Park", rating: 5, date: "Nov 2024" },
+    { text: "Excellent cable management. My setup looks so clean now.", name: "David L.", loc: "Downtown Orlando", rating: 5, date: "Feb 2025" },
+    { text: "Arrived on time and did a fantastic job mounting two TVs in my new home.", name: "Emily W.", loc: "Baldwin Park", rating: 5, date: "Dec 2024" },
+    { text: "Highly recommend for anyone needing secure TV installation. Very knowledgeable.", name: "Chris P.", loc: "Altamonte Springs", rating: 5, date: "Mar 2025" }
   ];
 
   return (

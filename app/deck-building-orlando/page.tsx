@@ -64,11 +64,11 @@ export default function DeckBuildingPage() {
 
 
   const deckReviews: Review[] = [
-    { text: "Our new deck completely transformed our backyard! The design process was easy and the quality is outstanding. Worth every penny.", name: "Tom & Maria L.", loc: "Lake Nona", rating: 5 },
-    { text: "Built a solid composite deck for our pool area. The team was respectful, on time, and cleaned up perfectly.", name: "James P.", loc: "Windermere", rating: 5 },
-    { text: "We love our new pergola and deck extension. It feels like an outdoor living room now.", name: "Sarah K.", loc: "Winter Park", rating: 5 },
-    { text: "Professional from start to finish. They handled the HOA approval and permits without me doing a thing.", name: "Robert M.", loc: "Baldwin Park", rating: 5 },
-    { text: "High quality craftsmanship. You can tell they take pride in their work. Highly recommend.", name: "David B.", loc: "Dr. Phillips", rating: 5 }
+    { text: "Our new deck completely transformed our backyard! The design process was easy and the quality is outstanding. Worth every penny.", name: "Tom & Maria L.", loc: "Lake Nona", rating: 5, date: "Jan 2025" },
+    { text: "Built a solid composite deck for our pool area. The team was respectful, on time, and cleaned up perfectly.", name: "James P.", loc: "Windermere", rating: 5, date: "Nov 2024" },
+    { text: "We love our new pergola and deck extension. It feels like an outdoor living room now.", name: "Sarah K.", loc: "Winter Park", rating: 5, date: "Dec 2024" },
+    { text: "Professional from start to finish. They handled the HOA approval and permits without me doing a thing.", name: "Robert M.", loc: "Baldwin Park", rating: 5, date: "Feb 2025" },
+    { text: "High quality craftsmanship. You can tell they take pride in their work. Highly recommend.", name: "David B.", loc: "Dr. Phillips", rating: 5, date: "Mar 2025" }
   ];
 
   return (

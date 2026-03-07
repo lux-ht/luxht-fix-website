@@ -64,11 +64,11 @@ export default function BathRemodelPage() {
 
 
   const bathReviews: Review[] = [
-    { text: "Our master bathroom went from outdated to spa-like in 3 weeks! The tile work is flawless and they stayed on budget. Best decision we made for our home.", name: "Karen & Steve M.", loc: "Lake Nona", rating: 5 },
-    { text: "Converted our old tub to a walk-in shower. The glass installation is beautiful and the team was so respectful of our home.", name: "Patricia D.", loc: "Winter Park", rating: 5 },
-    { text: "Full guest bath renovation. They handled the permits and plumbing perfectly. Highly recommended.", name: "Michael T.", loc: "Maitland", rating: 5 },
-    { text: "Love our new double vanity and LED mirrors. The design advice was spot on.", name: "Jennifer K.", loc: "Oviedo", rating: 5 },
-    { text: "Cleanest contractors we've ever hired. They protected our floors and cleaned up every day.", name: "Brian R.", loc: "Dr. Phillips", rating: 5 }
+    { text: "Our master bathroom went from outdated to spa-like in 3 weeks! The tile work is flawless and they stayed on budget. Best decision we made for our home.", name: "Karen & Steve M.", loc: "Lake Nona", rating: 5, date: "Jan 2025" },
+    { text: "Converted our old tub to a walk-in shower. The glass installation is beautiful and the team was so respectful of our home.", name: "Patricia D.", loc: "Winter Park", rating: 5, date: "Dec 2024" },
+    { text: "Full guest bath renovation. They handled the permits and plumbing perfectly. Highly recommended.", name: "Michael T.", loc: "Maitland", rating: 5, date: "Feb 2025" },
+    { text: "Love our new double vanity and LED mirrors. The design advice was spot on.", name: "Jennifer K.", loc: "Oviedo", rating: 5, date: "Nov 2024" },
+    { text: "Cleanest contractors we've ever hired. They protected our floors and cleaned up every day.", name: "Brian R.", loc: "Dr. Phillips", rating: 5, date: "Mar 2025" }
   ];
 
   return (

@@ -64,11 +64,11 @@ export default function FlooringPage() {
 
 
   const flooringReviews: Review[] = [
-    { text: "Our new hardwood floors look incredible! They finished our entire first floor in 3 days with zero mess left behind.", name: "Jennifer S.", loc: "Winter Park", rating: 5 },
-    { text: "Professional installation of our LVP flooring. The team was efficient and the transitions look perfect.", name: "Mark D.", loc: "Lake Nona", rating: 5 },
-    { text: "Great pricing and even better work. They removed our old carpet and installed laminate in two bedrooms.", name: "Ashley T.", loc: "Altamonte Springs", rating: 5 },
-    { text: "Licensed and insured, which was important to me. The tile work in our kitchen is flawless.", name: "Robert K.", loc: "Dr. Phillips", rating: 5 },
-    { text: "Best flooring experience I've had. Fast quote and same-week installation.", name: "Sarah M.", loc: "Oviedo", rating: 5 }
+    { text: "Our new hardwood floors look incredible! They finished our entire first floor in 3 days with zero mess left behind.", name: "Jennifer S.", loc: "Winter Park", rating: 5, date: "Jan 2025" },
+    { text: "Professional installation of our LVP flooring. The team was efficient and the transitions look perfect.", name: "Mark D.", loc: "Lake Nona", rating: 5, date: "Dec 2024" },
+    { text: "Great pricing and even better work. They removed our old carpet and installed laminate in two bedrooms.", name: "Ashley T.", loc: "Altamonte Springs", rating: 5, date: "Feb 2025" },
+    { text: "Licensed and insured, which was important to me. The tile work in our kitchen is flawless.", name: "Robert K.", loc: "Dr. Phillips", rating: 5, date: "Nov 2024" },
+    { text: "Best flooring experience I've had. Fast quote and same-week installation.", name: "Sarah M.", loc: "Oviedo", rating: 5, date: "Mar 2025" }
   ];
 
   return (
