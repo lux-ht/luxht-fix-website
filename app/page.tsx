@@ -45,33 +45,32 @@ export default function Home() {
 
                         {/* Right column — text content (desktop) */}
                         <div className="flex-1 text-center md:text-left">
-                            <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 py-2 px-4 rounded-full text-sm font-semibold text-slate-500 mb-8 animate-fade-in-up">
-                                <span className="w-2 h-2 rounded-full bg-[#64CEBB] animate-pulse"></span> Proudly Serving Orlando & Central Florida
+                            {/* Stats strip — replaces the badge */}
+                            <div className="flex items-center gap-7 mb-8 justify-center md:justify-start">
+                                <div>
+                                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">500+</div>
+                                    <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Projects Done</div>
+                                </div>
+                                <div className="w-px h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                                <div>
+                                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">40+</div>
+                                    <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Years Exp.</div>
+                                </div>
+                                <div className="w-px h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                                <div>
+                                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none">100%</div>
+                                    <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Satisfaction</div>
+                                </div>
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-                                Handyman Services in<br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
+                                Handyman Services<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">in Orlando, FL</span>
                             </h1>
 
-                            <p className="text-xl md:text-2xl text-slate-600 mb-6 max-w-2xl font-light leading-relaxed">
+                            <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl font-light leading-relaxed">
                                 Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, <Link href="/bath-remodel-orlando/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-orlando/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                             </p>
-
-                            <div className="hidden md:flex flex-wrap gap-6 mb-8 text-sm">
-                                <div className="flex items-center gap-2 text-slate-600">
-                                    <CheckCircle size={18} className="text-[#64CEBB]" />
-                                    <span><strong className="text-slate-800">500+</strong> Projects Completed</span>
-                                </div>
-                                <div className="flex items-center gap-2 text-slate-600">
-                                    <CheckCircle size={18} className="text-[#64CEBB]" />
-                                    <span><strong className="text-slate-800">40+ Years</strong> Construction Experience</span>
-                                </div>
-                                <div className="flex items-center gap-2 text-slate-600">
-                                    <CheckCircle size={18} className="text-[#64CEBB]" />
-                                    <span><strong className="text-slate-800">100%</strong> Satisfaction Guarantee</span>
-                                </div>
-                            </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 items-start">
                                 <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
@@ -86,33 +85,32 @@ export default function Home() {
 
                     {/* Mobile text content — single column, centered */}
                     <div className="md:hidden text-center">
-                        <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 py-2 px-4 rounded-full text-sm font-semibold text-slate-500 mb-8 animate-fade-in-up">
-                            <span className="w-2 h-2 rounded-full bg-[#64CEBB] animate-pulse"></span> Proudly Serving Orlando & Central Florida
+                        {/* Stats strip — replaces badge */}
+                        <div className="flex items-center justify-center gap-6 border-b border-slate-100 pb-5 mb-6">
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">500+</span>
+                                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Projects</span>
+                            </div>
+                            <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">40+</span>
+                                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Yrs Exp.</span>
+                            </div>
+                            <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none">100%</span>
+                                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Sat.</span>
+                            </div>
                         </div>
 
-                        <h1 className="text-5xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-                            Handyman Services in<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
+                        <h1 className="text-[2.75rem] font-bold text-slate-900 mb-5 tracking-tight leading-tight">
+                            Handyman Services<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">in Orlando, FL</span>
                         </h1>
 
                         <p className="text-lg text-slate-600 mb-6 font-light leading-relaxed">
                             Professional handyman services in Orlando — fast, clean, and guaranteed.
                         </p>
-
-                        <div className="grid grid-cols-3 gap-2 border-y border-slate-100 py-4 mb-8 bg-white/50 backdrop-blur-sm">
-                            <div className="flex flex-col items-center justify-center p-2">
-                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">500+</span>
-                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Projects</span>
-                            </div>
-                            <div className="flex flex-col items-center justify-center p-2 border-x border-slate-100">
-                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">40yr</span>
-                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Exp.</span>
-                            </div>
-                            <div className="flex flex-col items-center justify-center p-2">
-                                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC]">100%</span>
-                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Sat.</span>
-                            </div>
-                        </div>
 
                         <div className="flex flex-col gap-3 justify-center items-stretch px-4 pb-4">
                             <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer justify-center py-4 text-base">
@@ -131,7 +129,7 @@ export default function Home() {
             </header>
 
             {/* FEATURED SPECIALTY: DRYWALL */}
-            <section className="pt-48 pb-20 px-4 container mx-auto">
+            <section className="pt-8 md:pt-48 pb-20 px-4 container mx-auto">
                 {/* Mobile Layout (UI 2026) */}
                 <div className="md:hidden bg-[#584D94] rounded-3xl overflow-hidden relative shadow-2xl mb-4">
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
