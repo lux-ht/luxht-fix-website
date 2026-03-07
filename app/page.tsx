@@ -95,8 +95,8 @@ export default function Home() {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">Orlando, FL</span>
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
-                            Expert craftsmanship with transparent pricing for Orlando's discerning homeowners. Specializing in <Link href="/drywall-orlando/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-orlando/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-orlando/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/deck-building-orlando/" className="text-[#584D94] font-medium hover:underline">decks</Link>, <Link href="/bath-remodel-orlando/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-orlando/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                        <p className="text-lg text-slate-600 mb-6 font-light leading-relaxed">
+                            Professional handyman services in Orlando — fast, clean, and guaranteed.
                         </p>
 
                         <div className="grid grid-cols-3 gap-2 border-y border-slate-100 py-4 mb-8 bg-white/50 backdrop-blur-sm">
@@ -114,12 +114,15 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-4 justify-center items-center">
-                            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+                        <div className="flex flex-col gap-3 justify-center items-stretch px-4 pb-4">
+                            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer justify-center py-4 text-base">
                                 <Phone size={20} /> (407) 720-7476
                             </a>
-                            <Link href="/services/" className="btn-gradient-secondary">
-                                Browse All Services <ArrowRight size={18} />
+                            <a href="sms:4077207476" className="flex items-center justify-center gap-2 py-4 rounded-full font-bold text-sm border-2 border-[#584D94] text-[#584D94] bg-white">
+                                <span>💬</span> Text Us for a Quick Quote
+                            </a>
+                            <Link href="/services/" className="flex items-center justify-center gap-1 text-sm text-slate-500 font-medium pt-1">
+                                Browse All Services <ArrowRight size={14} />
                             </Link>
                         </div>
                     </div>

@@ -57,6 +57,7 @@ export const metadata: Metadata = {
 };
 
 import Footer from '@/components/Footer';
+import MobileBottomBar from '@/components/MobileBottomBar';
 import { ModalProvider } from '@/context/ModalContext';
 import QuoteModal from '@/components/QuoteModal';
 
@@ -81,6 +82,8 @@ export default function RootLayout({
           </div>
           <QuoteModal />
           <Footer />
+          {/* Sticky mobile bottom CTA bar — always visible on phones */}
+          <MobileBottomBar />
         </ModalProvider>
       </body>
     </html>

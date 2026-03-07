@@ -168,7 +168,9 @@ export default function ServicePageTemplate({
 
                     {/* Neighborhood mentions */}
                     <p className="text-slate-600 leading-relaxed mb-8">
-                        We proudly serve homeowners in <strong>{neighborhoods.slice(0, -1).join(', ')}</strong>{neighborhoods.length > 1 ? `, and <strong>${neighborhoods[neighborhoods.length - 1]}</strong>` : ''} with expert {serviceName.toLowerCase()} services. Whether you{"'"}re in a historic home in {neighborhoods[0]} or a newer community in {neighborhoods[neighborhoods.length - 1]}, LUXHT Fix delivers the same high-quality results.
+                        We proudly serve homeowners in <strong>{neighborhoods.slice(0, -1).join(', ')}</strong>
+                        {neighborhoods.length > 1 && <>, and <strong>{neighborhoods[neighborhoods.length - 1]}</strong></>}
+                        {' '}with expert {serviceName.toLowerCase()} services. Whether you&apos;re in a historic home in {neighborhoods[0]} or a newer community in {neighborhoods[neighborhoods.length - 1]}, LUXHT Fix delivers the same high-quality results.
                     </p>
 
                     {serviceDetails.length > 0 && (
