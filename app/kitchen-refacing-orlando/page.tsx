@@ -32,7 +32,8 @@ export const metadata: Metadata = {
 export default function KitchenRefacingPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://fix.luxht.com/#localbusiness",
     "name": "LUXHT Fix - Kitchen Refacing Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/kitchen-refacing-orlando/",
@@ -40,16 +41,15 @@ export default function KitchenRefacingPage() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-
-      "addressLocality": "Orlando",
+      "addressLocality": "Maitland",
       "addressRegion": "FL",
-
+      "postalCode": "32751",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5383,
-      "longitude": -81.3792
+      "latitude": 28.6256,
+      "longitude": -81.3631
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -58,8 +58,24 @@ export default function KitchenRefacingPage() {
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.instagram.com/luxhtfix"
+      "https://www.facebook.com/luxht",
+      "https://www.instagram.com/luxht",
+      "https://www.linkedin.com/company/luxht"
     ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kitchen Refacing",
+    "description": "Professional kitchen refacing in Orlando. Upgrade cabinet doors, finishes, and hardware.",
+    "provider": {
+      "@id": "https://fix.luxht.com/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Orlando"
+    }
   };
 
 
@@ -76,6 +92,10 @@ export default function KitchenRefacingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
 

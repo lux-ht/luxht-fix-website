@@ -32,7 +32,8 @@ export const metadata: Metadata = {
 export default function BathRemodelPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://fix.luxht.com/#localbusiness",
     "name": "LUXHT Fix - Bathroom Remodel Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/bath-remodel-orlando/",
@@ -40,16 +41,15 @@ export default function BathRemodelPage() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-
-      "addressLocality": "Orlando",
+      "addressLocality": "Maitland",
       "addressRegion": "FL",
-
+      "postalCode": "32751",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5383,
-      "longitude": -81.3792
+      "latitude": 28.6256,
+      "longitude": -81.3631
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -57,9 +57,31 @@ export default function BathRemodelPage() {
       "opens": "08:00",
       "closes": "18:00"
     },
+    "areaServed": [
+      { "@type": "City", "name": "Orlando" },
+      { "@type": "City", "name": "Winter Park" },
+      { "@type": "City", "name": "Maitland" },
+      { "@type": "City", "name": "Lake Nona" }
+    ],
     "sameAs": [
-      "https://www.instagram.com/luxhtfix"
+      "https://www.facebook.com/luxht",
+      "https://www.instagram.com/luxht",
+      "https://www.linkedin.com/company/luxht"
     ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Bathroom Remodeling",
+    "description": "Professional bathroom remodeling in Orlando. Complete renovations including vanities, showers, tubs, tile, and fixtures.",
+    "provider": {
+      "@id": "https://fix.luxht.com/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Orlando"
+    }
   };
 
 
@@ -76,6 +98,10 @@ export default function BathRemodelPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
 

@@ -32,6 +32,7 @@ export default function DrywallPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://fix.luxht.com/#localbusiness",
     "name": "LUXHT Fix - Drywall Repair Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/drywall-orlando/",
@@ -39,14 +40,15 @@ export default function DrywallPage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Orlando",
+      "addressLocality": "Maitland",
       "addressRegion": "FL",
+      "postalCode": "32351",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5383,
-      "longitude": -81.3792
+      "latitude": 28.6256,
+      "longitude": -81.3631
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -55,8 +57,24 @@ export default function DrywallPage() {
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.instagram.com/luxhtfix"
+      "https://www.facebook.com/luxht",
+      "https://www.instagram.com/luxht",
+      "https://www.linkedin.com/company/luxht"
     ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Drywall Repair",
+    "description": "Expert drywall repair in Orlando. Fix holes, cracks & water damage with seamless texture matching.",
+    "provider": {
+      "@id": "https://fix.luxht.com/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Orlando"
+    }
   };
 
   const drywallFaqs = [
@@ -87,6 +105,10 @@ export default function DrywallPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"

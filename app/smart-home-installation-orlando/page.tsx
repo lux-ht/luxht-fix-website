@@ -33,6 +33,7 @@ export default function SmartHomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://fix.luxht.com/#localbusiness",
     "name": "LUXHT Fix - Smart Home Installation Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/smart-home-installation-orlando/",
@@ -40,14 +41,15 @@ export default function SmartHomePage() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Orlando",
+      "addressLocality": "Maitland",
       "addressRegion": "FL",
+      "postalCode": "32751",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5383,
-      "longitude": -81.3792
+      "latitude": 28.6256,
+      "longitude": -81.3631
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -56,8 +58,24 @@ export default function SmartHomePage() {
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.instagram.com/luxhtfix"
+      "https://www.facebook.com/luxht",
+      "https://www.instagram.com/luxht",
+      "https://www.linkedin.com/company/luxht"
     ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Smart Home Installation",
+    "description": "Professional smart home installation in Orlando. Ring doorbells, Nest thermostats, cameras, and smart locks integrated.",
+    "provider": {
+      "@id": "https://fix.luxht.com/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Orlando"
+    }
   };
 
   const smartFaqs = [
@@ -96,6 +114,10 @@ export default function SmartHomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"

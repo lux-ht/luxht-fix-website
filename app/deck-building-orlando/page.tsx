@@ -32,7 +32,8 @@ export const metadata: Metadata = {
 export default function DeckBuildingPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://fix.luxht.com/#localbusiness",
     "name": "LUXHT Fix - Deck Building Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/deck-building-orlando/",
@@ -40,16 +41,15 @@ export default function DeckBuildingPage() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-
-      "addressLocality": "Orlando",
+      "addressLocality": "Maitland",
       "addressRegion": "FL",
-
+      "postalCode": "32751",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5383,
-      "longitude": -81.3792
+      "latitude": 28.6256,
+      "longitude": -81.3631
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -58,8 +58,24 @@ export default function DeckBuildingPage() {
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.instagram.com/luxhtfix"
+      "https://www.facebook.com/luxht",
+      "https://www.instagram.com/luxht",
+      "https://www.linkedin.com/company/luxht"
     ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Deck Building",
+    "description": "Professional deck building in Orlando. Custom designs with durable materials and expert craftsmanship.",
+    "provider": {
+      "@id": "https://fix.luxht.com/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Orlando"
+    }
   };
 
 
@@ -76,6 +92,10 @@ export default function DeckBuildingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
 
