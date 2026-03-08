@@ -15,36 +15,6 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen bg-white text-slate-800 font-sans">
             <Navbar />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "LUXHT Fix",
-                        "url": "https://fix.luxht.com/",
-                        "logo": "https://fix.luxht.com/images/logo-wide-hammers.png",
-                        "description": "Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Orlando",
-                            "addressRegion": "FL",
-                            "addressCountry": "US"
-                        },
-                        "telephone": "+1-407-720-7476",
-                        "areaServed": {
-                            "@type": "City",
-                            "name": "Orlando"
-                        },
-                        "parentOrganization": {
-                            "@type": "Organization",
-                            "name": "LUXHT - Luxury Home Transformations"
-                        },
-                        "foundingDate": "2024",
-                        "slogan": "Construction professionals. Not just handymen."
-                    })
-                }}
-            />
 
             {/* HERO SECTION */}
             <header className="pt-32 pb-20 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white text-center px-4">

@@ -12,6 +12,13 @@ export default function SEOStruct() {
             width: 800,
             height: 800,
         },
+        description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.',
+        slogan: 'Construction professionals. Not just handymen.',
+        foundingDate: '2024',
+        parentOrganization: {
+            '@type': 'Organization',
+            name: 'LUXHT - Luxury Home Transformations'
+        },
         sameAs: [
             'https://www.facebook.com/luxht',
             'https://www.instagram.com/luxht',
@@ -37,14 +44,15 @@ export default function SEOStruct() {
             'Professional handyman and home repair services in Orlando, FL. Specializing in drywall repair, TV mounting, flooring, deck building, and more.',
         address: {
             '@type': 'PostalAddress',
-            addressLocality: 'Orlando',
+            addressLocality: 'Maitland',
             addressRegion: 'FL',
+            postalCode: '32751',
             addressCountry: 'US',
         },
         geo: {
             '@type': 'GeoCoordinates',
-            latitude: '28.5383',
-            longitude: '-81.3792',
+            latitude: '28.6256',
+            longitude: '-81.3631',
         },
         url: 'https://fix.luxht.com/',
         telephone: '+14077207476',
@@ -67,8 +75,8 @@ export default function SEOStruct() {
             '@type': 'GeoCircle',
             geoMidpoint: {
                 '@type': 'GeoCoordinates',
-                latitude: '28.5383',
-                longitude: '-81.3792',
+                latitude: '28.6256',
+                longitude: '-81.3631',
             },
             geoRadius: '50000',
         },
@@ -93,6 +101,7 @@ export default function SEOStruct() {
     const breadcrumbSchema = {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
+        '@id': 'https://fix.luxht.com/#breadcrumb',
         itemListElement: [
             {
                 '@type': 'ListItem',

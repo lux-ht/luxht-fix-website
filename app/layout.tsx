@@ -60,6 +60,7 @@ import Footer from '@/components/Footer';
 import MobileBottomBar from '@/components/MobileBottomBar';
 import { ModalProvider } from '@/context/ModalContext';
 import QuoteModal from '@/components/QuoteModal';
+import SEOStruct from '@/components/SEOStruct';
 
 export default function RootLayout({
   children,
@@ -69,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <SEOStruct />
         <ModalProvider>
           {/* Skip to main content link for accessibility */}
           <a

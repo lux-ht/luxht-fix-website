@@ -53,6 +53,7 @@ export default function ServicePageTemplate({
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": "https://fix.luxht.com/#localbusiness",
         "name": `LUXHT Fix - ${serviceName} Orlando`,
         "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
         "url": `https://fix.luxht.com/${slug}/`,
@@ -60,14 +61,15 @@ export default function ServicePageTemplate({
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Orlando",
+            "addressLocality": "Maitland",
             "addressRegion": "FL",
+            "postalCode": "32751",
             "addressCountry": "US"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 28.5383,
-            "longitude": -81.3792
+            "latitude": 28.6256,
+            "longitude": -81.3631
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -80,8 +82,35 @@ export default function ServicePageTemplate({
             "name": n
         })),
         "sameAs": [
-            "https://www.instagram.com/luxhtfix"
+            "https://www.facebook.com/luxht",
+            "https://www.instagram.com/luxht",
+            "https://www.linkedin.com/company/luxht",
         ]
+    };
+
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": serviceName,
+        "description": heroDescription || heroSubtitle,
+        "provider": {
+            "@id": "https://fix.luxht.com/#localbusiness"
+        },
+        "areaServed": neighborhoods.map(n => ({
+            "@type": "City",
+            "name": n
+        })),
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": serviceName,
+            "itemListElement": serviceDetails.map((detail, i) => ({
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": detail
+                }
+            }))
+        }
     };
 
     const faqSchema = {
@@ -102,6 +131,10 @@ export default function ServicePageTemplate({
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
             />
             <script
                 type="application/ld+json"
