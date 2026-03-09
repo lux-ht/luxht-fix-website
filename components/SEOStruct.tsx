@@ -1,8 +1,8 @@
 export default function SEOStruct() {
-    const organizationSchema = {
+    const mainBusinessSchema = {
         '@context': 'https://schema.org',
-        '@type': 'Organization',
-        '@id': 'https://fix.luxht.com/#organization',
+        '@type': ['LocalBusiness', 'HomeAndConstructionBusiness', 'Organization'],
+        '@id': 'https://fix.luxht.com/#localbusiness',
         name: 'LUXHT Fix',
         alternateName: 'LUXHT Fix Orlando',
         url: 'https://fix.luxht.com/',
@@ -12,36 +12,12 @@ export default function SEOStruct() {
             width: 800,
             height: 800,
         },
-        description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando.',
-        slogan: 'Construction professionals. Not just handymen.',
-        foundingDate: '2024',
-        parentOrganization: {
-            '@type': 'Organization',
-            name: 'LUXHT - Luxury Home Transformations'
-        },
-        sameAs: [
-            'https://www.facebook.com/luxht',
-            'https://www.instagram.com/luxht',
-            'https://www.linkedin.com/company/luxht',
-        ],
-        contactPoint: {
-            '@type': 'ContactPoint',
-            telephone: '+1-407-720-7476',
-            contactType: 'customer service',
-            areaServed: 'US',
-            availableLanguage: ['English', 'Spanish'],
-        },
-    };
-
-    const localBusinessSchema = {
-        '@context': 'https://schema.org',
-        '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
-        '@id': 'https://fix.luxht.com/#localbusiness',
-        name: 'LUXHT Fix',
-        alternateName: 'LUXHT Fix Orlando',
         image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
-        description:
-            'Professional handyman and home repair services in Orlando, FL. Specializing in drywall repair, TV mounting, flooring, deck building, and more.',
+        description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando, FL.',
+        slogan: 'Construction professionals. Not just handymen.',
+        telePresencePage: 'https://fix.luxht.com/',
+        telephone: '+1-407-720-7476',
+        priceRange: '$$',
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Maitland',
@@ -54,9 +30,6 @@ export default function SEOStruct() {
             latitude: '28.6256',
             longitude: '-81.3631',
         },
-        url: 'https://fix.luxht.com/',
-        telephone: '+14077207476',
-        priceRange: '$$',
         openingHoursSpecification: [
             {
                 '@type': 'OpeningHoursSpecification',
@@ -80,6 +53,23 @@ export default function SEOStruct() {
             },
             geoRadius: '50000',
         },
+        sameAs: [
+            'https://www.facebook.com/luxht',
+            'https://www.instagram.com/luxht',
+            'https://www.linkedin.com/company/luxht',
+        ],
+        parentOrganization: {
+            '@type': 'Organization',
+            name: 'LUXHT - Luxury Home Transformations',
+            url: 'https://luxht.com/'
+        },
+        contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+1-407-720-7476',
+            contactType: 'customer service',
+            areaServed: 'US',
+            availableLanguage: ['English', 'Spanish'],
+        },
     };
 
     const websiteSchema = {
@@ -89,7 +79,7 @@ export default function SEOStruct() {
         name: 'LUXHT Fix',
         url: 'https://fix.luxht.com/',
         publisher: {
-            '@id': 'https://fix.luxht.com/#organization',
+            '@id': 'https://fix.luxht.com/#localbusiness',
         },
         potentialAction: {
             '@type': 'SearchAction',
@@ -117,13 +107,7 @@ export default function SEOStruct() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(organizationSchema),
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(localBusinessSchema),
+                    __html: JSON.stringify(mainBusinessSchema),
                 }}
             />
             <script
