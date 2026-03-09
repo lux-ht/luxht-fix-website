@@ -15,7 +15,8 @@ export default function SEOStruct() {
         image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
         description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando, FL.',
         slogan: 'Construction professionals. Not just handymen.',
-        telePresencePage: 'https://fix.luxht.com/',
+        foundingDate: '2024',
+        email: 'info@luxht.com',
         telephone: '+1-407-720-7476',
         priceRange: '$$',
         address: {
@@ -60,6 +61,7 @@ export default function SEOStruct() {
         ],
         parentOrganization: {
             '@type': 'Organization',
+            '@id': 'https://luxht.com/#organization',
             name: 'LUXHT - Luxury Home Transformations',
             url: 'https://luxht.com/'
         },
@@ -67,7 +69,10 @@ export default function SEOStruct() {
             '@type': 'ContactPoint',
             telephone: '+1-407-720-7476',
             contactType: 'customer service',
-            areaServed: 'US',
+            areaServed: {
+                '@type': 'Country',
+                name: 'US'
+            },
             availableLanguage: ['English', 'Spanish'],
         },
     };
