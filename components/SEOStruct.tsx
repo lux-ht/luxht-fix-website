@@ -5,6 +5,7 @@ export default function SEOStruct() {
         '@id': 'https://fix.luxht.com/#localbusiness',
         name: 'LUXHT Fix',
         alternateName: 'LUXHT Fix Orlando',
+        legalName: 'LUXURY HOME TRANSFORMATIONS LLC',
         url: 'https://fix.luxht.com/',
         logo: {
             '@type': 'ImageObject',
@@ -19,6 +20,7 @@ export default function SEOStruct() {
         email: 'info@luxht.com',
         telephone: '+1-407-720-7476',
         priceRange: '$$',
+        knowsAbout: ['Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation'],
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Maitland',
@@ -60,9 +62,7 @@ export default function SEOStruct() {
             'https://www.linkedin.com/company/luxht',
         ],
         parentOrganization: {
-            '@type': 'Organization',
-            '@id': 'https://luxht.com/#organization',
-            name: 'LUXHT - Luxury Home Transformations',
+            name: 'LUXURY HOME TRANSFORMATIONS LLC',
             url: 'https://luxht.com/'
         },
         contactPoint: {
