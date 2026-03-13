@@ -21,7 +21,7 @@ export default function Home() {
 
                 {/* Mobile mini mascot — bottom-right */}
                 <img
-                    src="/images/assets/mascots-real.png"
+                    src="/images/assets/mascots-new.png"
                     alt=""
                     aria-hidden="true"
                     className="block md:hidden absolute bottom-0 right-0 h-[130px] w-auto z-[1] pointer-events-none opacity-90 mascots-img-mobile"
@@ -34,7 +34,7 @@ export default function Home() {
                         {/* Left column — mascots */}
                         <div className="flex-shrink-0 w-[38%] flex items-end justify-center">
                             <img
-                                src="/images/assets/mascots-real.png"
+                                src="/images/assets/mascots-new.png"
                                 alt="LUXHT Fix handyman team"
                                 className="mascots-img w-full max-w-[420px] h-auto"
                                 style={{ filter: 'drop-shadow(4px 4px 16px rgba(0,0,0,0.2))' }}
