@@ -85,45 +85,52 @@ export default function Navbar() {
                     <div className="relative group">
                         <button className={clsx(
                             "flex items-center gap-1 font-medium transition-colors",
-                            pathname.includes("-orlando") || pathname === "/services" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-[#64CEBB]")
+                            pathname.includes("-orlando") || pathname.includes("-miami") || pathname === "/services" || pathname === "/south-florida" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-[#64CEBB]")
                         )}>
                             Services <ChevronDown size={14} />
-                            {(pathname.includes("-orlando") || pathname === "/services") && (
+                            {(pathname.includes("-orlando") || pathname.includes("-miami") || pathname === "/services" || pathname === "/south-florida") && (
                                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#64CEBB] rounded-full"></span>
                             )}
                         </button>
 
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-6 grid grid-cols-2 gap-8 z-50">
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[700px] bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-6 grid grid-cols-3 gap-6 z-50">
                             {/* Arrow */}
                             <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white transform rotate-45 border-t border-l border-slate-100"></div>
 
                             <div>
-                                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">Home Repairs</h3>
+                                <h3 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-4 border-b border-[#584D94]/20 pb-2">South Florida ✨</h3>
                                 <ul className="space-y-3">
                                     <li>
-                                        <Link href="/drywall-orlando/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
+                                        <Link href="/drywall-miami/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
                                             Drywall Repair <span className="text-xs font-normal text-slate-400 ml-1">★ Popular</span>
                                         </Link>
                                     </li>
+                                    <li><Link href="/tv-mounting-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
+                                    <li><Link href="/flooring-installation-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring</Link></li>
+                                    <li><Link href="/bath-remodel-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
+                                    <li><Link href="/hurricane-damage-repair-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Hurricane Repair</Link></li>
+                                    <li><Link href="/stucco-repair-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Stucco Repair</Link></li>
+                                </ul>
+                                <div className="mt-4 pt-3 border-t border-slate-100">
+                                    <Link href="/south-florida/" className="text-sm font-bold text-[#64CEBB] hover:text-[#4daea0] flex items-center gap-1">
+                                        All South FL Services →
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">Central Florida</h3>
+                                <ul className="space-y-3">
+                                    <li><Link href="/drywall-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Drywall Repair</Link></li>
                                     <li><Link href="/door-lock-trim-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Door, Lock & Trim</Link></li>
                                     <li><Link href="/faucet-fixtures-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Faucet & Fixtures</Link></li>
                                     <li><Link href="/tv-mounting-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
                                     <li><Link href="/furniture-assembly-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Furniture Assembly</Link></li>
                                     <li><Link href="/smart-home-installation-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Smart Home</Link></li>
                                 </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">Renovations</h3>
-                                <ul className="space-y-3">
-                                    <li><Link href="/flooring-installation-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring Installation</Link></li>
-                                    <li><Link href="/deck-building-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Deck Building</Link></li>
-                                    <li><Link href="/kitchen-refacing-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Kitchen Refacing</Link></li>
-                                    <li><Link href="/bath-remodel-orlando/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
-                                </ul>
-                                <div className="mt-6 pt-4 border-t border-slate-100">
+                                <div className="mt-4 pt-3 border-t border-slate-100">
                                     <Link href="/services/" className="text-sm font-bold text-[#64CEBB] hover:text-[#4daea0] flex items-center gap-1">
-                                        View All Services →
+                                        All Central Florida Services →
                                     </Link>
                                 </div>
                             </div>

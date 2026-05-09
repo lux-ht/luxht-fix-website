@@ -46,11 +46,10 @@ export default function AddressAutocomplete({ value, onChange }: AddressAutocomp
     const searchAddress = async (query: string) => {
         setIsLoading(true);
         try {
-            // Biasing search towards Orlando, FL area
-            // Viewbox: min_lon,min_lat,max_lon,max_lat (approx for Central FL)
-            // Orlando coords: ~28.5383° N, 81.3792° W
-            // Box: -81.8, 28.2, -80.8, 29.0
-            const viewbox = "-81.8,29.0,-80.8,28.2";
+            // Biasing search towards South Florida & Central FL area
+            // Viewbox covers from Miami/Fort Lauderdale up to Orlando
+            // Box: -82.0, 25.5, -80.0, 29.0
+            const viewbox = "-82.0,29.0,-80.0,25.5";
 
             const response = await fetch(
                 `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=5&addressdetails=1&countrycodes=us&viewbox=${viewbox}&bounded=1`,
@@ -94,7 +93,7 @@ export default function AddressAutocomplete({ value, onChange }: AddressAutocomp
                     name="address"
                     required
                     autoComplete="off" // Disable browser default to show ours
-                    placeholder="123 Orlando Ave, Orlando, FL"
+                    placeholder="Enter your Florida address"
                     value={value}
                     onChange={handleInputChange}
                     onFocus={() => {

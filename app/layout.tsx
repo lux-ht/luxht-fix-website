@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://fix.luxht.com'),
   title: {
-    default: 'LUXHT Fix | Premium Home Repairs & Handyman Services in Orlando, FL',
-    template: '%s | LUXHT Fix Orlando',
+    default: 'LUXHT Fix | Home Repairs & Handyman Services in South Florida & Central Florida',
+    template: '%s | LUXHT Fix',
   },
   description:
-    'Professional handyman and home repair services in Orlando, FL. Specializing in drywall repair, TV mounting, flooring, deck building, and more. Licensed & Insured. Call (407) 720-7476.',
+    'Professional handyman and home repair services in South Florida & Central Florida. Specializing in drywall repair, TV mounting, flooring, deck building, and more. Serving Miami, Fort Lauderdale, Pembroke Pines & Orlando. Licensed & Insured. Call (407) 720-7476.',
   alternates: {
     canonical: 'https://fix.luxht.com/',
   },

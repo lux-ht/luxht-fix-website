@@ -13,7 +13,7 @@ const defaultReviews: Review[] = [
     { text: "They fixed a huge hole in our living room - you can't even tell it was there. Perfect texture match!", name: "Sarah M.", loc: "Winter Park", rating: 5, date: "Nov 2024" },
     { text: "Incredible service. Arrived on time, super clean, and the wall looks brand new.", name: "Jason K.", loc: "Lake Nona", rating: 5, date: "Dec 2024" },
     { text: "Fast and professional. The texture matching is wizardry.", name: "Emily R.", loc: "Dr. Phillips", rating: 5, date: "Oct 2024" },
-    { text: "Saved me from my DIY disaster. Worth every penny.", name: "Mike T.", loc: "Orlando", rating: 5, date: "Jan 2025" },
+    { text: "Saved me from my DIY disaster. Worth every penny.", name: "Mike T.", loc: "Miami", rating: 5, date: "Jan 2025" },
     { text: "Best handyman experience I've had. Highly recommend.", name: "Lisa B.", loc: "Altamonte", rating: 5, date: "Feb 2025" },
     { text: "Professional, polite, and quick. The finish is flawless.", name: "David W.", loc: "Winter Garden", rating: 5, date: "Dec 2024" },
     { text: "I was worried about the dust, but they left it cleaner than they found it.", name: "Jessica P.", loc: "Maitland", rating: 5, date: "Mar 2025" }

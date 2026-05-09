@@ -40,6 +40,16 @@ export default function Footer() {
                             <li><Link href="/furniture-assembly-orlando/" className="hover:text-[#64CEBB] transition-colors">Furniture Assembly</Link></li>
                             <li className="col-span-2 mt-1"><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
                         </ul>
+                        <h3 className="font-bold text-white mt-6 mb-3 uppercase tracking-wider text-xs">South Florida</h3>
+                        <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
+                            <li><Link href="/drywall-miami/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
+                            <li><Link href="/tv-mounting-miami/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
+                            <li><Link href="/flooring-installation-miami/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
+                            <li><Link href="/bath-remodel-miami/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
+                            <li><Link href="/hurricane-damage-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Hurricane Repair</Link></li>
+                            <li><Link href="/stucco-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Stucco Repair</Link></li>
+                            <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All South Florida Services →</Link></li>
+                        </ul>
                     </div>
 
                     {/* Company Column - 1 col, sits next to Services on mobile */}
@@ -90,7 +100,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-0.5">Area</div>
-                                    <span className="text-xs font-medium text-white/90">Orlando, FL</span>
+                                    <span className="text-xs font-medium text-white/90">South Florida & Central Florida</span>
                                 </div>
                             </div>
                         </div>
@@ -103,11 +113,11 @@ export default function Footer() {
                     <div className="max-w-4xl text-slate-300/90 leading-relaxed text-xs md:text-sm">
                         {/* Mobile: show only the first short sentence */}
                         <p>
-                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing high-end handyman and home improvement services across the greater Orlando area.
+                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing high-end handyman and home improvement services across South Florida and Central Florida.
                         </p>
                         {/* Desktop: show the full second paragraph too */}
                         <p className="hidden md:block mt-3">
-                            We specialize in professional TV mounting, expert furniture assembly, and high-quality interior painting for residents in Maitland, Winter Park, and Casselberry. With a focus on reliability and precision, LUXHT Fix ensures your home projects—from minor electrical work to complex home staging—are handled with the utmost care and attention to detail. Experience the difference of a professional team committed to excellence and sophisticated results in every Orlando home.
+                            We specialize in professional TV mounting, expert furniture assembly, and high-quality interior painting for residents in Maitland, Winter Park, and Casselberry. Now proudly serving South Florida including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your home projects—from minor electrical work to complex home staging—are handled with the utmost care and attention to detail.
                         </p>
                     </div>
                 </div>

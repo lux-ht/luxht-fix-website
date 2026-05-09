@@ -4,7 +4,7 @@ const faqs = [
         answer: "Yes. Texture matching is a critical part of professional drywall repair. We carefully blend the repaired area with the surrounding wall so the patch does not stand out after painting."
     },
     {
-        question: "Do You Offer Same Week Drywall Repair in Orlando?",
+        question: "Do You Offer Same Week Drywall Repair in South Florida & Central Florida?",
         answer: "In most cases, yes. We prioritize drywall repair jobs that require fast turnaround and will schedule you as quickly as possible based on availability."
     },
     {

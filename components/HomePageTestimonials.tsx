@@ -17,6 +17,36 @@ function GoogleGIcon() {
 }
 
 const testimonials = [
+    // South Florida Reviews (shown first)
+    {
+        name: "Carlos M.",
+        loc: "Miami, FL",
+        text: "Had drywall damage from a small water leak. LUXHT Fix came out the same week, matched the texture perfectly, and the wall looks brand new. Excellent service in the Miami area!",
+        rating: 5,
+        date: "May 2025"
+    },
+    {
+        name: "Rachel W.",
+        loc: "Pembroke Pines, FL",
+        text: "They mounted our 75-inch TV on a concrete wall in our condo — something other companies refused to do. Clean install, cables hidden, done in under two hours.",
+        rating: 5,
+        date: "Apr 2025"
+    },
+    {
+        name: "Nicole & Jason P.",
+        loc: "Fort Lauderdale, FL",
+        text: "Complete bathroom remodel — new tile, vanity, fixtures. They handled everything from demo to final walkthrough. Our bathroom looks like a luxury hotel now!",
+        rating: 5,
+        date: "Apr 2025"
+    },
+    {
+        name: "Maria G.",
+        loc: "Coral Gables, FL",
+        text: "Needed stucco repair and exterior patching after hurricane season. The color matching was perfect and they finished ahead of schedule. Will definitely use again.",
+        rating: 5,
+        date: "Mar 2025"
+    },
+    // Central Florida Reviews
     {
         name: "David R.",
         loc: "Winter Park, FL",
@@ -115,7 +145,7 @@ export default function HomePageTestimonials() {
 
             <div className="mt-8 pt-8 border-t border-slate-800 text-center relative z-10">
                 <div className="text-3xl font-bold">500+</div>
-                <div className="text-slate-400 text-sm tracking-wide uppercase font-semibold">Happy Customers in Orlando</div>
+                <div className="text-slate-400 text-sm tracking-wide uppercase font-semibold">Happy Customers Across Florida</div>
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import {
     ArrowRight, CheckCircle, Phone, Mail, MapPin, Star
 } from 'lucide-react';
+import { LOCATIONS, type LocationConfig } from '@/lib/locations';
 
 export interface FAQItem {
     q: string;
@@ -18,6 +19,7 @@ export interface RelatedService {
 export interface ServicePageProps {
     serviceName: string;
     slug: string;
+    location?: string; // 'orlando' | 'miami' — defaults to 'orlando'
     neighborhoods: string[];
     parentCategory: string;
     parentSlug: string;
@@ -36,6 +38,7 @@ export interface ServicePageProps {
 export default function ServicePageTemplate({
     serviceName,
     slug,
+    location = 'orlando',
     neighborhoods,
     parentCategory,
     parentSlug,
@@ -50,26 +53,28 @@ export default function ServicePageTemplate({
     startingPrice,
     statsText,
 }: ServicePageProps) {
+    const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.orlando;
+    const locationLabel = location === 'miami' ? 'South Florida' : 'Central Florida';
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://fix.luxht.com/#localbusiness",
-        "name": `LUXHT Fix - ${serviceName} Orlando`,
+        "name": `LUXHT Fix - ${serviceName} ${loc.name}`,
         "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
         "url": `https://fix.luxht.com/${slug}/`,
-        "telephone": "+1-407-720-7476",
+        "telephone": `+1-${loc.phone.replace(/[()\s]/g, '-')}`,
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Maitland",
+            "addressLocality": loc.address.city,
             "addressRegion": "FL",
-            "postalCode": "32751",
+            "postalCode": loc.address.zip,
             "addressCountry": "US"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 28.6256,
-            "longitude": -81.3631
+            "latitude": loc.geo.lat,
+            "longitude": loc.geo.lng
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -153,7 +158,7 @@ export default function ServicePageTemplate({
             <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
                 <div className="relative z-10 container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                        {serviceName} in Orlando, FL
+                        {serviceName} in {locationLabel}
                     </h1>
                     <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
                         {heroSubtitle}
@@ -165,17 +170,17 @@ export default function ServicePageTemplate({
                     )}
 
                     <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-                        <CheckCircle size={16} /> {statsText || 'Licensed • Insured • Orlando\'s Trusted Experts'}
+                        <CheckCircle size={16} /> {statsText || `Licensed • Insured • ${loc.name}'s Trusted Experts`}
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                        <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+                        <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer">
                             <Phone size={24} /> Call Now
                         </a>
-                        <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+                        <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass border-white/20 hover:bg-white/10">
                             <span className="text-xl">💬</span> Text Us
                         </a>
-                        <a href={`mailto:info@luxht.com?subject=${encodeURIComponent(serviceName)}%20Quote%20Request`} className="btn-gradient-glass border-white/20 hover:bg-white/10">
+                        <a href={`mailto:${loc.email}?subject=${encodeURIComponent(serviceName)}%20Quote%20Request`} className="btn-gradient-glass border-white/20 hover:bg-white/10">
                             <Mail size={24} /> Email Us
                         </a>
                     </div>
@@ -184,7 +189,7 @@ export default function ServicePageTemplate({
                 {startingPrice && (
                     <div className="text-blue-200 text-sm opacity-90">
                         <p className="font-bold">{startingPrice}</p>
-                        <a href={`sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20${encodeURIComponent(serviceName.toLowerCase())}...`} className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
+                        <a href={`sms:${loc.phoneRaw}?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20${encodeURIComponent(serviceName.toLowerCase())}...`} className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
                     </div>
                 )}
             </header>
@@ -193,7 +198,7 @@ export default function ServicePageTemplate({
             <section className="py-20 px-4 container mx-auto">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-[#584D94] mb-6">
-                        Professional {serviceName} in Orlando
+                        Professional {serviceName} in {loc.name}
                     </h2>
                     <p className="text-lg text-slate-600 leading-relaxed mb-8">
                         {introParagraph}
@@ -237,10 +242,10 @@ export default function ServicePageTemplate({
 
                     <div className="text-center mt-12">
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+                            <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer">
                                 <Phone size={18} /> Get Free Estimate
                             </a>
-                            <a href="sms:4077207476" className="btn-gradient-secondary">
+                            <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-secondary">
                                 <span>💬</span> Text Us
                             </a>
                         </div>
@@ -251,7 +256,7 @@ export default function ServicePageTemplate({
             {/* WHY CHOOSE US */}
             <section className="py-20 px-4 container mx-auto bg-[#584D94]/5 rounded-3xl my-8 max-w-6xl">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-xl md:text-3xl font-bold text-[#584D94] mb-8">Why Orlando Homeowners Choose LUXHT Fix</h2>
+                    <h2 className="text-xl md:text-3xl font-bold text-[#584D94] mb-8">Why {loc.name} Homeowners Choose LUXHT Fix</h2>
                     <div className="grid md:grid-cols-2 gap-4">
                         {whyChooseUs.map((item, i) => (
                             <div key={i} className="flex items-start gap-3 text-slate-700">
@@ -266,7 +271,7 @@ export default function ServicePageTemplate({
             {/* FAQ — VISIBLE (NO ACCORDION) */}
             <section className="py-20 bg-slate-50 px-4">
                 <div className="container mx-auto max-w-3xl">
-                    <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">{serviceName} FAQs — Orlando</h2>
+                    <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">{serviceName} FAQs — {loc.name}</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, i) => (
                             <div key={i} className="bg-white border border-slate-200 rounded-lg p-6">
@@ -282,7 +287,7 @@ export default function ServicePageTemplate({
             <section className="py-20 px-4 container mx-auto max-w-4xl text-center">
                 <h2 className="text-3xl font-bold text-[#584D94] mb-8">{serviceName} Service Areas</h2>
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
-                    {["Orlando", ...neighborhoods].map((area, i) => (
+                    {neighborhoods.map((area, i) => (
                         <span key={i} className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium border border-slate-200 inline-flex items-center gap-1">
                             <MapPin size={14} className="text-[#64CEBB]" /> {area}
                         </span>
@@ -316,16 +321,16 @@ export default function ServicePageTemplate({
                 <div className="container mx-auto max-w-2xl">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Need {serviceName} This Week?</h2>
                     <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                        Fast, professional service with quality results.<br />Orlando{"'"}s trusted home repair experts.
+                        Fast, professional service with quality results.<br />{loc.name}{"'"}s trusted home repair experts.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                        <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
-                            <Phone size={20} /> Call Now: (407) 720-7476
+                        <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer">
+                            <Phone size={20} /> Call Now: {loc.phone}
                         </a>
-                        <a href="sms:4077207476" className="btn-gradient-glass">
+                        <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass">
                             <span>💬</span> Text Us
                         </a>
-                        <a href="mailto:info@luxht.com" className="btn-gradient-glass">
+                        <a href={`mailto:${loc.email}`} className="btn-gradient-glass">
                             <Mail size={20} /> Email Us
                         </a>
                     </div>

@@ -4,7 +4,7 @@ export default function SEOStruct() {
         '@type': ['LocalBusiness', 'HomeAndConstructionBusiness', 'Organization'],
         '@id': 'https://fix.luxht.com/#localbusiness',
         name: 'LUXHT Fix',
-        alternateName: 'LUXHT Fix Orlando',
+        alternateName: 'LUXHT Fix',
         legalName: 'LUXURY HOME TRANSFORMATIONS LLC',
         url: 'https://fix.luxht.com/',
         logo: {
@@ -14,13 +14,13 @@ export default function SEOStruct() {
             height: 800,
         },
         image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
-        description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance in Orlando, FL.',
+        description: 'Professional home services division of LUXHT Luxury Home Transformations, bringing construction-level expertise to repairs and maintenance across South Florida and Central Florida.',
         slogan: 'Construction professionals. Not just handymen.',
         foundingDate: '2024',
         email: 'info@luxht.com',
         telephone: '+1-407-720-7476',
         priceRange: '$$',
-        knowsAbout: ['Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation'],
+        knowsAbout: ['Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation', 'Hurricane Damage Repair', 'Stucco Repair', 'Screen Enclosure Repair'],
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Maitland',
@@ -47,15 +47,26 @@ export default function SEOStruct() {
                 closes: '18:00',
             },
         ],
-        areaServed: {
-            '@type': 'GeoCircle',
-            geoMidpoint: {
-                '@type': 'GeoCoordinates',
-                latitude: '28.6256',
-                longitude: '-81.3631',
+        areaServed: [
+            {
+                '@type': 'GeoCircle',
+                geoMidpoint: {
+                    '@type': 'GeoCoordinates',
+                    latitude: '28.6256',
+                    longitude: '-81.3631',
+                },
+                geoRadius: '50000',
             },
-            geoRadius: '50000',
-        },
+            {
+                '@type': 'GeoCircle',
+                geoMidpoint: {
+                    '@type': 'GeoCoordinates',
+                    latitude: '26.0031',
+                    longitude: '-80.2241',
+                },
+                geoRadius: '60000',
+            },
+        ],
         sameAs: [
             'https://www.facebook.com/luxht',
             'https://www.instagram.com/luxht',

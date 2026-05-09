@@ -51,7 +51,7 @@ export default function Hero({ imageSrc, imageAlt, imageOpacity = "opacity-10", 
                     transition={{ duration: 0.8 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-blue-600/10 border border-blue-600/20 text-sm mb-6 text-blue-700 backdrop-blur-md">
-                        Serving Orlando & Surrounding Areas
+                        Serving South Florida & Central Florida
                     </span>
 
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight text-slate-900">
