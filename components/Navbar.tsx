@@ -173,6 +173,18 @@ export default function Navbar() {
                             <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#64CEBB] rounded-full"></span>
                         )}
                     </Link>
+                    <Link
+                        href="/blog/"
+                        className={clsx(
+                            "font-medium transition-all relative",
+                            pathname.startsWith("/blog") ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-white/80")
+                        )}
+                    >
+                        Blog
+                        {pathname.startsWith("/blog") && (
+                            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#64CEBB] rounded-full"></span>
+                        )}
+                    </Link>
                 </div>
 
                 {/* CTA Buttons */}
@@ -247,6 +259,7 @@ export default function Navbar() {
                     <Link href="/about/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>About</Link>
                     <Link href="/faq/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>FAQ</Link>
                     <Link href="/costs/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Costs</Link>
+                    <Link href="/blog/" className="block text-lg font-medium text-slate-800" onClick={() => setIsOpen(false)}>Blog</Link>
 
                     <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                         <div className="grid grid-cols-2 gap-3">

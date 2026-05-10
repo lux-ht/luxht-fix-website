@@ -28,6 +28,20 @@ export default function DoorLockTrimMiamiPage() {
       relatedServices={[{title:'Door Alignment',href:'/door-alignment-miami/'},{title:'Deadbolt Installation',href:'/deadbolt-installation-miami/'},{title:'Smart Lock Installation',href:'/smart-lock-installation-miami/'},{title:'Door Handle Replacement',href:'/door-handle-replacement-miami/'},{title:'Hurricane Damage Repair',href:'/hurricane-damage-repair-miami/'}]}
       startingPrice="Door services start at $85"
       statsText="Licensed • Insured • Hurricane Damage Experts"
+      galleryImages={[
+        { src: "/images/services/door-lock/door-adjustment-before.jpg", title: "Door Adjustment", subtitle: "Before: Misaligned" },
+        { src: "/images/services/door-lock/door-adjustment-after.jpg", title: "Door Adjustment", subtitle: "After: Smooth Operation" },
+        { src: "/images/services/door-lock/crown-molding-before.jpg", title: "Crown Molding", subtitle: "Before: Installation" },
+        { src: "/images/services/door-lock/crown-molding-after.jpg", title: "Crown Molding", subtitle: "After: Elegant Finish" },
+        { src: "/images/services/door-lock/door-repair-before.jpg", title: "Door Repair", subtitle: "Before: Damaged" },
+        { src: "/images/services/door-lock/door-repair-after.jpg", title: "Door Repair", subtitle: "After: Restored" },
+        { src: "/images/services/door-lock/frame-repair-before.jpg", title: "Frame Repair", subtitle: "Before: Compromised" },
+        { src: "/images/services/door-lock/frame-repair-after.jpg", title: "Frame Repair", subtitle: "After: Secure & Solid" },
+        { src: "/images/services/door-lock/lock-install-in-progress-before.jpg", title: "Lock Install", subtitle: "Before: Preparation" },
+        { src: "/images/services/door-lock/lock-install-in-progress-after.jpg", title: "Lock Install", subtitle: "After: Secure Installation" },
+        { src: "/images/services/door-lock/basboard-before.jpg", title: "Baseboard", subtitle: "Before: Replacement" },
+        { src: "/images/services/door-lock/basboard-after.jpg", title: "Baseboard", subtitle: "After: Clean Finish" },
+      ]}
     />
   );
 }

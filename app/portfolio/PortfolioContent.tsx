@@ -122,7 +122,7 @@ export default function PortfolioContent() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Browse real projects completed for Orlando homeowners. Every project shows our
+                            Browse real projects completed for homeowners across South Florida and Central Florida. Every project shows our
                             commitment to quality, transparency, and customer satisfaction.
                         </p>
 

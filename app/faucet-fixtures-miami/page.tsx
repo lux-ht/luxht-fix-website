@@ -28,6 +28,18 @@ export default function FaucetFixturesMiamiPage() {
       relatedServices={[{title:'Faucet Replacement',href:'/faucet-replacement-miami/'},{title:'Shower Head Replacement',href:'/shower-head-replacement-miami/'},{title:'Garbage Disposal',href:'/garbage-disposal-installation-miami/'},{title:'Toilet Repair',href:'/toilet-repair-miami/'},{title:'Bath Remodel',href:'/bath-remodel-miami/'}]}
       startingPrice="Fixture installation starts at $95"
       statsText="Licensed • Insured • Leak-Free Guarantee"
+      galleryImages={[
+        { src: "/images/services/faucet-fixtures/vanity-upgrades-before.jpg", title: "Vanity Upgrade", subtitle: "Before: Outdated" },
+        { src: "/images/services/faucet-fixtures/vanity-upgrades-after.jpg", title: "Vanity Upgrade", subtitle: "After: Modern & Clean" },
+        { src: "/images/services/faucet-fixtures/bathroom-faucet-before.jpg", title: "Bathroom Faucet", subtitle: "Before: Old Fixture" },
+        { src: "/images/services/faucet-fixtures/bathroom-faucet-after.jpg", title: "Bathroom Faucet", subtitle: "After: Sleek Upgrade" },
+        { src: "/images/services/faucet-fixtures/kitchen-faucet-before.jpg", title: "Kitchen Faucet", subtitle: "Before: Standard" },
+        { src: "/images/services/faucet-fixtures/kitchen-faucet-after.jpg", title: "Kitchen Faucet", subtitle: "After: Pull-Down Spray" },
+        { src: "/images/services/faucet-fixtures/garbage-disposal-before.jpg", title: "Disposal", subtitle: "Before: Broken Unit" },
+        { src: "/images/services/faucet-fixtures/garbage-disposal-after.jpg", title: "Disposal", subtitle: "After: Powerful & Quiet" },
+        { src: "/images/services/faucet-fixtures/shower-head-before.jpg", title: "Shower Head", subtitle: "Before: Low Pressure" },
+        { src: "/images/services/faucet-fixtures/shower-head-after.jpg", title: "Shower Head", subtitle: "After: Spa-Like Flow" },
+      ]}
     />
   );
 }

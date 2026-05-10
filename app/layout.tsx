@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: 'https://fix.luxht.com/',
   },
   openGraph: {
-    title: 'LUXHT Fix | Handyman Services in Orlando, FL',
+    title: 'LUXHT Fix | Handyman Services in South Florida & Central Florida',
     description:
-      'Expert home repair and handyman services in Orlando, FL. Drywall, flooring, TV mounting, decks & more. Licensed & Insured.',
+      'Expert home repair and handyman services across South Florida & Central Florida. Drywall, flooring, TV mounting, decks & more. Licensed & Insured.',
     url: 'https://fix.luxht.com/',
     siteName: 'LUXHT Fix',
     locale: 'en_US',
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
         url: '/images/logo-wide-hammers.png',
         width: 800,
         height: 800,
-        alt: 'LUXHT Fix - Premium Home Repair Services in Orlando',
+        alt: 'LUXHT Fix - Premium Home Repair Services in South Florida & Central Florida',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LUXHT Fix | Handyman Services in Orlando, FL',
+    title: 'LUXHT Fix | Handyman Services in South Florida & Central Florida',
     description:
-      'Expert home repair and handyman services in Orlando, FL. Licensed & Insured. Call (407) 720-7476.',
+      'Expert home repair and handyman services across South Florida & Central Florida. Licensed & Insured. Call (407) 720-7476.',
     images: ['/images/logo-wide-hammers.png'],
   },
   robots: {

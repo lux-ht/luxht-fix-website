@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
     ArrowRight, DollarSign, Hammer, Tv, Home, Utensils,
     Fence, Lightbulb, Sofa, Droplets, DoorOpen, CheckCircle,
-    TrendingUp, Users, Clock, Phone, Eye, Mail
+    TrendingUp, Users, Clock, Phone, Eye, Mail, Wind, Shield
 } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
 
@@ -89,6 +89,33 @@ const costCategories = [
         priceRange: "$100 - $1,500",
         icon: DoorOpen,
         popular: false
+    },
+    {
+        title: "Hurricane Damage Repair",
+        slug: "hurricane-damage-repair",
+        description: "Storm damage restoration — drywall, stucco, screens",
+        priceRange: "$500 - $10,000+",
+        icon: Wind,
+        popular: false,
+        southFL: true
+    },
+    {
+        title: "Stucco Repair",
+        slug: "stucco-repair",
+        description: "Crack repair, color matching, and exterior patching",
+        priceRange: "$200 - $3,000",
+        icon: Hammer,
+        popular: false,
+        southFL: true
+    },
+    {
+        title: "Screen Enclosure Repair",
+        slug: "screen-enclosure-repair",
+        description: "Pool cage, lanai, and patio screen repair",
+        priceRange: "$150 - $2,500",
+        icon: Shield,
+        popular: false,
+        southFL: true
     }
 ];
 
@@ -110,7 +137,7 @@ export default function CostsPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-6">
-                            <DollarSign size={16} /> 2026 Orlando Pricing Guide
+                            <DollarSign size={16} /> 2026 South Florida & Central Florida Pricing Guide
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -119,7 +146,7 @@ export default function CostsPage() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Get transparent pricing for home repairs and renovations in Orlando.
+                            Get transparent pricing for home repairs and renovations across South Florida and Central Florida.
                             We've analyzed hundreds of projects to help you budget accurately.
                         </p>
 
@@ -184,6 +211,11 @@ export default function CostsPage() {
                                             Popular
                                         </span>
                                     )}
+                                    {(category as any).southFL && (
+                                        <span className="absolute top-4 right-4 bg-[#584D94] text-white text-xs font-bold px-2 py-1 rounded-full">
+                                            🌴 South FL
+                                        </span>
+                                    )}
 
                                     <div className="w-14 h-14 bg-gradient-to-br from-[#584D94] to-[#7B6FCC] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                         <Icon className="w-7 h-7 text-white" />
@@ -221,7 +253,7 @@ export default function CostsPage() {
                             Why We Show Our Prices (When Others Won't)
                         </h2>
                         <p className="text-white/80 text-lg mb-6 max-w-2xl mx-auto">
-                            We researched every major handyman service in Orlando. They all hide their pricing behind
+                            We researched every major handyman service in South Florida. They all hide their pricing behind
                             "request a quote" buttons and phone-first sales tactics. We believe you deserve better.
                         </p>
                         <Link
@@ -242,7 +274,7 @@ export default function CostsPage() {
                             Why Trust Our Cost Estimates?
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Our pricing data comes from real projects completed in the Orlando area.
+                            Our pricing data comes from real projects completed across South Florida and Central Florida.
                         </p>
                     </div>
 
@@ -251,9 +283,9 @@ export default function CostsPage() {
                             <div className="w-16 h-16 bg-[#64CEBB]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <TrendingUp className="w-8 h-8 text-[#64CEBB]" />
                             </div>
-                            <h3 className="font-bold text-lg mb-2">Real Orlando Data</h3>
+                        <h3 className="font-bold text-lg mb-2">Real Florida Data</h3>
                             <p className="text-slate-500 text-sm">
-                                Prices based on actual projects completed in Orlando and Central Florida.
+                                Prices based on actual projects completed across South Florida and Central Florida.
                             </p>
                         </div>
 

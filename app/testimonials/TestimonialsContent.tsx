@@ -77,6 +77,33 @@ const testimonials = [
         date: "February 2026",
         text: "Assembled our entire IKEA bedroom set in 2 hours. Fast, professional, and they took away all the packaging. The $270 was well worth not spending my weekend struggling with instructions!",
         image: "/testimonials/kevin-m.jpg"
+    },
+    {
+        name: "Diana Morales",
+        location: "Pembroke Pines, FL",
+        service: "Drywall Repair",
+        rating: 5,
+        date: "March 2026",
+        text: "We just moved to Pembroke Pines and needed drywall patches throughout the house. LUXHT Fix was fast, clean, and the texture matching was perfect. So glad they expanded to South Florida!",
+        image: "/testimonials/diana-m.jpg"
+    },
+    {
+        name: "Carlos Vega",
+        location: "Fort Lauderdale, FL",
+        service: "TV Mounting",
+        rating: 5,
+        date: "April 2026",
+        text: "Mounted our 85\" TV in our condo overlooking the Intracoastal. They concealed all cables perfectly and even installed a soundbar mount. Very professional team — highly recommend for anyone in the Fort Lauderdale area.",
+        image: "/testimonials/carlos-v.jpg"
+    },
+    {
+        name: "Rachel Steinberg",
+        location: "Aventura, FL",
+        service: "Smart Home Installation",
+        rating: 5,
+        date: "April 2026",
+        text: "Had Ring cameras, a smart lock, and Nest thermostat installed in our Aventura townhouse. The technician was incredibly thorough and set up everything on both our phones. Great to have a reliable handyman service down here now.",
+        image: "/testimonials/rachel-s.jpg"
     }
 ];
 
@@ -106,7 +133,7 @@ export default function TestimonialsContent() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Real reviews from real Orlando homeowners who experienced our transparent pricing
+                            Real reviews from homeowners across South Florida and Central Florida who experienced our transparent pricing
                             and quality craftsmanship firsthand.
                         </p>
 
@@ -218,7 +245,7 @@ export default function TestimonialsContent() {
                         Become Our Next Success Story
                     </h2>
                     <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-                        Join hundreds of satisfied Orlando homeowners. Get transparent pricing and quality craftsmanship.
+                        Join hundreds of satisfied homeowners across South Florida and Central Florida. Get transparent pricing and quality craftsmanship.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/portfolio/" className="bg-white text-[#584D94] font-bold py-4 px-8 rounded-full hover:shadow-xl transition-all inline-flex items-center justify-center gap-2">

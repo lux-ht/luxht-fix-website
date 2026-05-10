@@ -28,6 +28,15 @@ export default function FurnitureAssemblyMiamiPage() {
       relatedServices={[{title:'TV Mounting',href:'/tv-mounting-miami/'},{title:'Smart Home Installation',href:'/smart-home-installation-miami/'},{title:'Door, Lock & Trim',href:'/door-lock-trim-miami/'},{title:'Baseboard Installation',href:'/baseboard-installation-miami/'}]}
       startingPrice="Assembly starts at $75 per item"
       statsText="Licensed • Insured • All Brands"
+      galleryImages={[
+        { src: "/images/services/furniture-assembly/ikea-furniture.jpg", title: "IKEA Furniture", subtitle: "Expert Assembly" },
+        { src: "/images/services/furniture-assembly/office-furniture.jpg", title: "Office Setup", subtitle: "Productive Workspaces" },
+        { src: "/images/services/furniture-assembly/bedroom-sets.jpg", title: "Bedroom Suites", subtitle: "Rest Easy" },
+        { src: "/images/services/furniture-assembly/dining-sets.jpg", title: "Dining Sets", subtitle: "Ready for Gathering" },
+        { src: "/images/services/furniture-assembly/bookcases.jpg", title: "Bookcases & Storage", subtitle: "Organized Living" },
+        { src: "/images/services/furniture-assembly/outdoor-patio.jpg", title: "Outdoor Patio", subtitle: "Weather-Ready" },
+        { src: "/images/services/furniture-assembly/amazon-and-wayfair.jpg", title: "Online Retailers", subtitle: "Amazon & Wayfair" },
+      ]}
     />
   );
 }

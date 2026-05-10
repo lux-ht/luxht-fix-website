@@ -28,6 +28,14 @@ export default function DeckBuildingMiamiPage() {
       relatedServices={[{title:'Patio & Lanai Repair',href:'/patio-lanai-repair-miami/'},{title:'Screen Enclosure Repair',href:'/screen-enclosure-repair-miami/'},{title:'Outdoor TV Mounting',href:'/outdoor-tv-mounting-miami/'},{title:'Flooring Installation',href:'/flooring-installation-miami/'}]}
       startingPrice="Custom decks start at $8,000"
       statsText="Licensed • Insured • Hurricane-Rated Construction"
+      galleryImages={[
+        { src: "/images/services/deck/custom-deck-design.jpg", title: "Custom Deck Design", subtitle: "Tailored to Your Home" },
+        { src: "/images/services/deck/composite-and-wood.jpg", title: "Material Options", subtitle: "Composite & Wood" },
+        { src: "/images/services/deck/multi-level-decks.jpg", title: "Multi-Level Decks", subtitle: "Maximize Space" },
+        { src: "/images/services/deck/pergolas-and-shade.jpg", title: "Pergolas & Shade", subtitle: "Cool Comfort" },
+        { src: "/images/services/deck/stairs-and-railings.jpg", title: "Stairs & Railings", subtitle: "Safe & Stylish" },
+        { src: "/images/services/deck/ground-level-decks.jpg", title: "Ground Level", subtitle: "Seamless Transition" },
+      ]}
     />
   );
 }

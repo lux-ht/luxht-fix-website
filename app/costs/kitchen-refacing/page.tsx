@@ -8,14 +8,10 @@ import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors">
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && <div className="pb-4 text-slate-600 leading-relaxed">{answer}</div>}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -24,7 +20,7 @@ export default function KitchenRefacingCostPage() {
     const { openModal } = useModal();
 
     const faqData = [
-        { question: "How much does kitchen cabinet refacing cost?", answer: "Kitchen cabinet refacing in Orlando costs $4,000-$8,000 for small kitchens (10-15 cabinets), $8,000-$12,000 for medium kitchens, and $12,000-$20,000 for large kitchens with premium materials." },
+        { question: "How much does kitchen cabinet refacing cost?", answer: "Kitchen cabinet refacing in South Florida & Central Florida costs $4,000-$8,000 for small kitchens (10-15 cabinets), $8,000-$12,000 for medium kitchens, and $12,000-$20,000 for large kitchens with premium materials." },
         { question: "Is cabinet refacing worth it vs replacement?", answer: "Refacing costs 30-50% less than full replacement and takes just 3-5 days vs 2-4 weeks. If your cabinet boxes are solid, refacing provides a like-new look at half the cost." },
         { question: "What does cabinet refacing include?", answer: "Refacing includes new door and drawer fronts, new hinges and hardware, and veneer covering on visible cabinet frames. The existing cabinet boxes remain in place." },
         { question: "How long does kitchen refacing take?", answer: "Most kitchen refacing projects take 3-5 days. Your kitchen remains functional throughout with minimal disruption to daily cooking." }
@@ -40,7 +36,7 @@ export default function KitchenRefacingCostPage() {
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Kitchen Cabinet Refacing Cost?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Transform your kitchen for a fraction of replacement cost. Get pricing for cabinet refacing in Orlando.</p>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Transform your kitchen for a fraction of replacement cost. Get pricing for cabinet refacing in South Florida & Central Florida.</p>
                         <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
                             <div className="w-14 h-14 bg-[#64CEBB] rounded-xl flex items-center justify-center"><DollarSign className="w-8 h-8 text-white" /></div>
                             <div><div className="text-white/70 text-sm">Average Cost Range</div><div className="text-3xl font-bold text-white">$4,000 - $20,000</div></div>

@@ -8,14 +8,10 @@ import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors">
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && <div className="pb-4 text-slate-600 leading-relaxed">{answer}</div>}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -24,7 +20,7 @@ export default function BathroomRemodelCostPage() {
     const { openModal } = useModal();
 
     const faqData = [
-        { question: "How much does a bathroom remodel cost in Orlando?", answer: "A basic bathroom refresh costs $3,000-$7,000, a mid-range remodel runs $10,000-$25,000, and a full luxury renovation can cost $25,000-$50,000+ depending on size and finishes." },
+        { question: "How much does a bathroom remodel cost in South Florida & Central Florida?", answer: "A basic bathroom refresh costs $3,000-$7,000, a mid-range remodel runs $10,000-$25,000, and a full luxury renovation can cost $25,000-$50,000+ depending on size and finishes." },
         { question: "What is included in a bathroom remodel?", answer: "A full remodel typically includes new flooring, vanity, toilet, shower/tub, tile work, lighting, and fixtures. Plumbing and electrical updates are often included." },
         { question: "How long does a bathroom remodel take?", answer: "A basic refresh takes 1-2 weeks, a mid-range remodel takes 2-3 weeks, and complex renovations may take 4-6 weeks including permits and inspections." },
         { question: "Is a bathroom remodel worth it?", answer: "Bathroom remodels typically return 60-70% of the investment at resale. Updated bathrooms also improve daily comfort and can reduce maintenance costs." }
@@ -39,7 +35,7 @@ export default function BathroomRemodelCostPage() {
                     <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors"><ArrowLeft size={18} /> Back to Cost Guides</Link>
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does a Bathroom Remodel Cost in Orlando?</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does a Bathroom Remodel Cost in South Florida & Central Florida?</h1>
                         <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Compare bathroom renovation prices from basic refreshes to luxury transformations.</p>
 
                         <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
@@ -148,7 +144,7 @@ export default function BathroomRemodelCostPage() {
                     <section className="mb-16 bg-gradient-to-br from-[#584D94] to-[#7B6FCC] rounded-2xl p-8 text-white">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-3"><Shield className="w-6 h-6" /> Why Choose LUXHT Fix?</h2>
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">35+ Bathrooms Completed</h4><p className="text-white/70 text-sm">Extensive experience in Orlando.</p></div></div>
+                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">35+ Bathrooms Completed</h4><p className="text-white/70 text-sm">Extensive experience in South Florida & Central Florida.</p></div></div>
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Design to Installation</h4><p className="text-white/70 text-sm">One team handles everything.</p></div></div>
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">On-Time Completion</h4><p className="text-white/70 text-sm">We meet our timeline commitments.</p></div></div>
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Detailed Written Quotes</h4><p className="text-white/70 text-sm">No surprise costs mid-project.</p></div></div>

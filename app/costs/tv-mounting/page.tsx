@@ -12,14 +12,10 @@ import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors">
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && <div className="pb-4 text-slate-600 leading-relaxed">{answer}</div>}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -28,7 +24,7 @@ export default function TVMountingCostPage() {
     const { openModal } = useModal();
 
     const faqData = [
-        { question: "How much does it cost to mount a TV on the wall?", answer: "Basic TV wall mounting in Orlando costs $100-$200 for a fixed mount. Tilting mounts run $150-$250, and full-motion articulating mounts cost $200-$350. Prices include mounting hardware installation but not the mount itself." },
+        { question: "How much does it cost to mount a TV on the wall?", answer: "Basic TV wall mounting in South Florida & Central Florida costs $100-$200 for a fixed mount. Tilting mounts run $150-$250, and full-motion articulating mounts cost $200-$350. Prices include mounting hardware installation but not the mount itself." },
         { question: "Does TV mounting include hiding cables?", answer: "Basic mounting typically doesn't include cable concealment. In-wall cable concealment adds $100-$200 to the total cost. Surface-mounted cord covers are a cheaper alternative at $30-$50." },
         { question: "Can any TV be mounted on the wall?", answer: "Most flat-screen TVs from 32\" to 85\" can be wall-mounted if they have VESA mounting holes. Very heavy TVs (over 100 lbs) may require special mounts and reinforced wall attachments." },
         { question: "How long does TV mounting take?", answer: "Standard TV mounting takes 1-2 hours. Add an hour for cable concealment. Above-fireplace installations or complex setups may take 2-3 hours total." }
@@ -50,7 +46,7 @@ export default function TVMountingCostPage() {
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4">
                             <Clock size={16} /> Updated January 2026
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does TV Mounting Cost in Orlando?</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does TV Mounting Cost in South Florida & Central Florida?</h1>
                         <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Professional TV mounting prices for all sizes and mount types. Get your TV installed safely and securely.</p>
 
                         {/* Starting At Price Highlight */}

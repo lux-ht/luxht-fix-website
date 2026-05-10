@@ -28,6 +28,16 @@ export default function BathRemodelMiamiPage() {
       relatedServices={[{title:'Kitchen Refacing',href:'/kitchen-refacing-miami/'},{title:'Flooring Installation',href:'/flooring-installation-miami/'},{title:'Faucet & Fixtures',href:'/faucet-fixtures-miami/'},{title:'Toilet Repair',href:'/toilet-repair-miami/'},{title:'Shower Head Replacement',href:'/shower-head-replacement-miami/'}]}
       startingPrice="Bathroom remodels start at $8,500"
       statsText="Licensed • Insured • Full Renovations"
+      galleryImages={[
+        { src: "/images/services/bathroom-remodel/shower-and-tub-before.jpg", title: "Shower & Tub", subtitle: "Before: Dated Tile" },
+        { src: "/images/services/bathroom-remodel/shower-and-tub-after.jpg", title: "Shower & Tub", subtitle: "After: Modern Spa" },
+        { src: "/images/services/bathroom-remodel/vanity-install-before.jpg", title: "Vanity Install", subtitle: "Before: Old Cabinet" },
+        { src: "/images/services/bathroom-remodel/vanity-install-after.jpg", title: "Vanity Install", subtitle: "After: Floating Vanity" },
+        { src: "/images/services/bathroom-remodel/tile-work-before.jpg", title: "Tile Work", subtitle: "Before: Worn Floors" },
+        { src: "/images/services/bathroom-remodel/tile-work-after.jpg", title: "Tile Work", subtitle: "After: Premium Porcelain" },
+        { src: "/images/services/bathroom-remodel/design-and-planning-before.jpg", title: "Design Process", subtitle: "Before: Small Layout" },
+        { src: "/images/services/bathroom-remodel/design-and-planning-after.jpg", title: "Design Process", subtitle: "After: Optimized Space" },
+      ]}
     />
   );
 }

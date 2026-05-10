@@ -67,6 +67,14 @@ export default function DrywallMiamiPage() {
       ]}
       startingPrice="Most small repairs start at $150"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/drywall-project-1.jpg", title: "Wall Repair", subtitle: "Seamless Patch" },
+        { src: "/drywall-project-2.jpg", title: "Hole Repair", subtitle: "Invisible Fix" },
+        { src: "/drywall-project-3.jpg", title: "Water Damage", subtitle: "Full Restoration" },
+        { src: "/drywall-project-4.jpg", title: "Texture Match", subtitle: "Perfect Blend" },
+        { src: "/drywall-project-5.jpg", title: "Ceiling Repair", subtitle: "Expert Finish" },
+        { src: "/drywall-project-6.jpg", title: "Large Area", subtitle: "Complete Resurface" },
+      ]}
     />
   );
 }

@@ -50,7 +50,7 @@ const testimonials = [
     {
         name: "David R.",
         loc: "Winter Park, FL",
-        text: "Had a long list of 'small fixes' - wardrobe assembly and several floating shelves. They were fast, precise, and cleaned up everything. Best value in Orlando!",
+        text: "Had a long list of 'small fixes' - wardrobe assembly and several floating shelves. They were fast, precise, and cleaned up everything. Best value in Florida!",
         rating: 5,
         date: "Jan 2025"
     },

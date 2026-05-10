@@ -28,6 +28,14 @@ export default function FlooringMiamiPage() {
       relatedServices={[{title:'Bath Remodel',href:'/bath-remodel-miami/'},{title:'Kitchen Refacing',href:'/kitchen-refacing-miami/'},{title:'Drywall Repair',href:'/drywall-miami/'},{title:'Baseboard Installation',href:'/baseboard-installation-miami/'},{title:'Patio & Lanai Repair',href:'/patio-lanai-repair-miami/'}]}
       startingPrice="Professional installation starts at $3 per sq ft"
       statsText="Licensed • Insured • Humidity-Resistant Expertise"
+      galleryImages={[
+        { src: "/images/services/flooring/ceramic-and-porcelain-before.jpg", title: "Tile Flooring", subtitle: "Before: Old Surface" },
+        { src: "/images/services/flooring/ceramic-and-porcelain-after.jpg", title: "Tile Flooring", subtitle: "After: Premium Porcelain" },
+        { src: "/images/services/flooring/laminate-flooring-before.jpg", title: "Laminate Install", subtitle: "Before: Subfloor Prep" },
+        { src: "/images/services/flooring/laminate-flooring-after.jpg", title: "Laminate Install", subtitle: "After: Seamless Finish" },
+        { src: "/images/services/flooring/hardwood-flooring-in-progress.jpg", title: "Hardwood", subtitle: "In Progress: Installation" },
+        { src: "/images/services/flooring/hardwood-flooring-complete.jpg", title: "Hardwood", subtitle: "After: Finished Look" },
+      ]}
     />
   );
 }

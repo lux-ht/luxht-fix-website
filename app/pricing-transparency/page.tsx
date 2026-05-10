@@ -10,15 +10,15 @@ import { useState } from 'react';
 // SEO-optimized FAQ data for schema markup and user interaction
 const faqData = [
     {
-        question: "How much does handyman work cost in Orlando?",
-        answer: "Handyman costs in Orlando range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
+        question: "How much does handyman work cost in South Florida?",
+        answer: "Handyman costs in South Florida range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
     },
     {
         question: "Why don't most handyman companies show their prices?",
         answer: "Many companies use a 'lead-first' model where they want to speak with you before revealing pricing. This allows them to adjust quotes based on perceived budget and urgency. We believe transparent pricing builds trust and helps you make informed decisions."
     },
     {
-        question: "Is LUXHT Fix the cheapest handyman service in Orlando?",
+        question: "Is LUXHT Fix the cheapest handyman service in Florida?",
         answer: "We're not the cheapest—we focus on quality and transparency. Our prices reflect experienced craftsmen, quality materials, proper insurance, and warranties. You won't find surprise charges or 'estimate-then-upsell' tactics with us."
     },
     {
@@ -27,7 +27,7 @@ const faqData = [
     },
     {
         question: "How accurate are your online pricing guides?",
-        answer: "Our pricing guides are based on real projects completed in Orlando. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
+        answer: "Our pricing guides are based on real projects completed across South Florida and Central Florida. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
     }
 ];
 
@@ -37,13 +37,13 @@ const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix",
-    "description": "Professional handyman and home repair services in Orlando with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
+    "description": "Professional handyman and home repair services across South Florida & Central Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
     "url": "https://fix.luxht.com",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Orlando",
+        "addressLocality": "Miami",
         "addressRegion": "FL",
         "addressCountry": "US"
     },
@@ -52,28 +52,16 @@ const organizationSchema = {
         "latitude": 28.5383,
         "longitude": -81.3792
     },
-    "areaServed": ["Orlando", "Winter Park", "Windermere", "Dr. Phillips", "Lake Nona", "Celebration", "Oviedo", "Altamonte Springs"],
+    "areaServed": ["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Aventura", "Orlando", "Winter Park", "Windermere", "Dr. Phillips", "Lake Nona"],
     "sameAs": ["https://www.instagram.com/luxhtfix"]
 };
 
-// FAQ Item Component
+// FAQ Item Component — Always visible for AI crawlers & better UX
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-full py-4 px-2 flex items-center justify-between text-left hover:text-[#584D94] transition-colors"
-            >
-                <span className="font-semibold text-slate-800 pr-4">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />}
-            </button>
-            {isOpen && (
-                <div className="pb-4 px-2 text-slate-600 leading-relaxed">
-                    {answer}
-                </div>
-            )}
+        <div className="border-b border-slate-200 last:border-0 py-5 px-2">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -390,7 +378,7 @@ export default function PricingTransparencyPage() {
                                 <HelpCircle className="w-8 h-8" /> Frequently Asked Questions
                             </h2>
                             <p className="text-slate-600 mb-6">
-                                Get answers to common questions about handyman pricing and costs in Orlando.
+                                Get answers to common questions about handyman pricing and costs in South Florida and Central Florida.
                             </p>
                             <div className="bg-white border border-slate-200 rounded-xl divide-y divide-slate-200">
                                 {faqData.map((faq, index) => (
@@ -405,7 +393,7 @@ export default function PricingTransparencyPage() {
                                 Experience the Difference
                             </h2>
                             <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-                                Join hundreds of Orlando homeowners who appreciate honest pricing and quality work.
+                                Join hundreds of Florida homeowners who appreciate honest pricing and quality work.
                                 Browse our transparent cost guides or get a personalized quote today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

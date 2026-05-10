@@ -8,14 +8,10 @@ import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors">
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && <div className="pb-4 text-slate-600 leading-relaxed">{answer}</div>}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -40,7 +36,7 @@ export default function SmartHomeCostPage() {
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Smart Home Installation Cost?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for smart thermostats, doorbells, locks, and full home automation in Orlando.</p>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for smart thermostats, doorbells, locks, and full home automation in South Florida & Central Florida.</p>
                         <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
                             <div className="w-14 h-14 bg-[#64CEBB] rounded-xl flex items-center justify-center"><DollarSign className="w-8 h-8 text-white" /></div>
                             <div><div className="text-white/70 text-sm">Average Cost Range</div><div className="text-3xl font-bold text-white">$150 - $5,000+</div></div>

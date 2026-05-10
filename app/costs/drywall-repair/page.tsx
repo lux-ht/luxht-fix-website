@@ -11,24 +11,12 @@ import {
 import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
-// FAQ Component
+// FAQ Component — Always visible for AI crawlers & better UX
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors"
-            >
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && (
-                <div className="pb-4 text-slate-600 leading-relaxed">
-                    {answer}
-                </div>
-            )}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -39,7 +27,7 @@ export default function DrywallRepairCostPage() {
     const faqData = [
         {
             question: "How much does it cost to fix a small hole in drywall?",
-            answer: "Small drywall holes (under 4 inches) typically cost $75 to $150 to repair professionally in Orlando. This includes patching, sanding, and preparing for paint. DIY repairs can cost $10-30 in materials, but professional results require skill and proper tools."
+            answer: "Small drywall holes (under 4 inches) typically cost $75 to $150 to repair professionally in South Florida & Central Florida. This includes patching, sanding, and preparing for paint. DIY repairs can cost $10-30 in materials, but professional results require skill and proper tools."
         },
         {
             question: "Is it worth hiring a professional for drywall repair?",
@@ -82,11 +70,11 @@ export default function DrywallRepairCostPage() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-                            How Much Does Drywall Repair Cost in Orlando?
+                            How Much Does Drywall Repair Cost in South Florida & Central Florida?
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
-                            Get accurate pricing for drywall repair services in Orlando.
+                            Get accurate pricing for drywall repair services in South Florida & Central Florida.
                             From small hole patches to full wall restoration.
                         </p>
 
@@ -218,7 +206,7 @@ export default function DrywallRepairCostPage() {
                             </table>
                         </div>
                         <p className="text-slate-500 text-sm mt-4 italic">
-                            * Prices are estimates for the Orlando area. Actual costs may vary based on specific project requirements.
+                            * Prices are estimates for the South Florida and Central Florida. Actual costs may vary based on specific project requirements.
                         </p>
                     </section>
 

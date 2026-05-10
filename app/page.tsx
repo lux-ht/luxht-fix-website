@@ -2,10 +2,14 @@ import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import {
     Hammer, ArrowRight, Paintbrush, Wrench, Grid, Ruler, Tv,
-    DoorOpen, CheckCircle, Zap, Star, Phone, Mail, PaintRoller, MapPin
+    DoorOpen, CheckCircle, Zap, Star, Phone, Mail, PaintRoller, MapPin, Shield
 } from 'lucide-react';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
 import DrywallGallery from '@/components/DrywallGallery';
+import SmartSearch from '@/components/SmartSearch';
+import FloatingIcons from '@/components/FloatingIcons';
+import AnimatedCounter from '@/components/AnimatedCounter';
+import ScrollReveal from '@/components/ScrollReveal';
 import Image from 'next/image';
 
 export default function Home() {
@@ -15,31 +19,19 @@ export default function Home() {
 
             {/* HERO SECTION */}
             <header className="relative bg-white pt-32 pb-16 overflow-hidden">
-                {/* Abstract Background Elements */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#584D94]/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
-                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#64CEBB]/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
+                {/* Animated Gradient Orbs */}
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#584D94]/5 rounded-full blur-3xl -mr-20 -mt-20 animate-orb-1"></div>
+                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#64CEBB]/10 rounded-full blur-3xl -ml-20 -mb-20 animate-orb-2"></div>
+
+                {/* Floating Tool Icons */}
+                <FloatingIcons />
 
                 <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
 
-                    {/* Stats strip */}
-                    <div className="flex items-center justify-center gap-6 md:gap-8 mb-8">
-                        <div className="flex flex-col items-center">
-                            <span className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">500+</span>
-                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Projects Done</span>
-                        </div>
-                        <div className="w-px h-10 md:h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
-                        <div className="flex flex-col items-center">
-                            <span className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none">40+</span>
-                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Years Exp.</span>
-                        </div>
-                        <div className="w-px h-10 md:h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
-                        <div className="flex flex-col items-center">
-                            <span className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none">100%</span>
-                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Satisfaction</span>
-                        </div>
-                    </div>
+                    {/* Smart Search Bar */}
+                    <SmartSearch />
 
-                    <h1 className="text-[2.75rem] md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
+                    <h1 className="text-[2.75rem] md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight mt-10">
                         Handyman Services<br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">in South Florida & Central Florida</span>
                     </h1>
@@ -60,15 +52,34 @@ export default function Home() {
                         </Link>
                     </div>
 
+                    {/* Animated Stats strip */}
+                    <div className="flex items-center justify-center gap-6 md:gap-8 mt-10">
+                        <div className="flex flex-col items-center">
+                            <AnimatedCounter target={500} suffix="+" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
+                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Projects Done</span>
+                        </div>
+                        <div className="w-px h-10 md:h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                        <div className="flex flex-col items-center">
+                            <AnimatedCounter target={40} suffix="+" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
+                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Years Exp.</span>
+                        </div>
+                        <div className="w-px h-10 md:h-11 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                        <div className="flex flex-col items-center">
+                            <AnimatedCounter target={100} suffix="%" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none" />
+                            <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Satisfaction</span>
+                        </div>
+                    </div>
+
                 </div>
             </header>
 
             {/* 🌴 NOW IN SOUTH FLORIDA BANNER */}
+            <ScrollReveal>
             <section className="bg-gradient-to-r from-[#584D94] to-[#7B6FCC] text-white py-6 px-4">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-[#64CEBB]/20 flex items-center justify-center flex-shrink-0 animate-pulse">
+                            <div className="w-10 h-10 rounded-full bg-[#64CEBB]/20 flex items-center justify-center flex-shrink-0 animate-badge-pulse">
                                 <MapPin size={20} className="text-[#64CEBB]" />
                             </div>
                             <div>
@@ -82,6 +93,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            </ScrollReveal>
 
             {/* FEATURED SPECIALTY: DRYWALL */}
             <section className="pt-8 md:pt-48 pb-20 px-4 container mx-auto">
@@ -150,11 +162,13 @@ export default function Home() {
             {/* SERVICE CATEGORIES */}
             <section className="py-20 bg-slate-50 px-4">
                 <div className="container mx-auto max-w-6xl">
+                    <ScrollReveal>
                     <div className="text-center mb-16">
                         <p className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Our Services</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Expert Home Services Across Florida</h2>
                         <p className="text-slate-500 mt-3">Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Orlando & more</p>
                     </div>
+                    </ScrollReveal>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
@@ -168,8 +182,9 @@ export default function Home() {
                             { title: 'Kitchen & Bath', icon: Paintbrush, href: '/bath-remodel-miami/', links: [{t:'Bath Remodel',h:'/bath-remodel-miami/'},{t:'Kitchen Refacing',h:'/kitchen-refacing-miami/'}] },
                             { title: 'Deck & Outdoor', icon: PaintRoller, href: '/deck-building-miami/', links: [{t:'Deck Building',h:'/deck-building-miami/'},{t:'Furniture Assembly',h:'/furniture-assembly-miami/'},{t:'Patio & Lanai Repair',h:'/patio-lanai-repair-miami/'},{t:'Screen Enclosure',h:'/screen-enclosure-repair-miami/'}] },
                         ].map((cat, i) => (
-                            <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
-                                <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4"><cat.icon size={24} /></div>
+                            <ScrollReveal key={i} delay={i * 80}>
+                            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover-lift h-full">
+                                <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4 service-icon-pulse"><cat.icon size={24} /></div>
                                 <h2 className="text-xl font-bold text-slate-800 mb-3">
                                     <Link href={cat.href} className="hover:text-[#584D94] transition-colors">{cat.title}</Link>
                                 </h2>
@@ -179,6 +194,7 @@ export default function Home() {
                                     ))}
                                 </ul>
                             </div>
+                            </ScrollReveal>
                         ))}
                     </div>
 
@@ -191,8 +207,16 @@ export default function Home() {
             </section>
 
             {/* WHY CHOOSE US */}
-            <section className="py-24 px-4 container mx-auto">
+            <section className="py-24 px-4 container mx-auto relative">
+                {/* Floating badge */}
+                <div className="hidden lg:block absolute -right-4 top-20 bg-white border border-slate-200 rounded-2xl px-4 py-3 shadow-lg animate-badge-pulse z-10" aria-hidden="true">
+                    <div className="flex items-center gap-2">
+                        <Shield size={18} className="text-[#64CEBB]" />
+                        <span className="text-xs font-bold text-slate-700">Licensed & Insured</span>
+                    </div>
+                </div>
                 <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+                    <ScrollReveal direction="left">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Florida Homeowners Trust LUXHT Fix</h2>
                         <div className="space-y-8">
@@ -214,14 +238,18 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
+                    </ScrollReveal>
 
+                    <ScrollReveal direction="right" delay={200}>
                     <HomePageTestimonials />
+                    </ScrollReveal>
                 </div>
             </section>
 
 
 
             {/* FINAL CTA */}
+            <ScrollReveal direction="scale">
             <section id="contact" className="py-24 bg-gradient-to-br from-[#64CEBB] via-[#4BC0AD] to-[#584D94] text-white text-center px-4 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-50"></div>
                 <div className="container mx-auto max-w-2xl relative z-10">
@@ -242,6 +270,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            </ScrollReveal>
 
 
         </main>

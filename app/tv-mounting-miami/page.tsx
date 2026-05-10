@@ -67,6 +67,14 @@ export default function TVMountingMiamiPage() {
       ]}
       startingPrice="TV mounting starts at $120"
       statsText="Licensed • Insured • Condo & Home Specialists"
+      galleryImages={[
+        { src: "/images/services/tv-mounting/flat-screen-tvs.jpg", title: "Flat Screen Mount", subtitle: "Clean & Level" },
+        { src: "/images/services/tv-mounting/cable-management.jpg", title: "Cable Management", subtitle: "Hidden Wires" },
+        { src: "/images/services/tv-mounting/soundbar-installation.jpg", title: "Soundbar Setup", subtitle: "Immersive Audio" },
+        { src: "/images/services/tv-mounting/mount-types.jpg", title: "Mount Types", subtitle: "Full Motion or Fixed" },
+        { src: "/images/services/tv-mounting/any-wall-type.jpg", title: "Any Wall Surface", subtitle: "Secure Installation" },
+        { src: "/images/services/tv-mounting/outdoor-tv.jpg", title: "Outdoor TV", subtitle: "Weather-Safe Setup" },
+      ]}
     />
   );
 }

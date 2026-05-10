@@ -6,8 +6,8 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About LUXHT Fix | Professional Home Services in Orlando - Construction Experts',
-    description: 'LUXHT Fix brings construction-level expertise to home repairs and maintenance in Orlando. Not typical handymen - real builders serving luxury homeowners.',
+    title: 'About LUXHT Fix | Professional Home Services in South Florida & Central Florida',
+    description: 'LUXHT Fix brings construction-level expertise to home repairs across South Florida and Central Florida. Founded in Orlando, now expanding across Miami-Dade & Broward counties.',
     alternates: { canonical: 'https://fix.luxht.com/about/' },
 };
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">About LUXHT Fix</h1>
                     <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-12">
-                        LUXHT Fix is a full service handyman company in Orlando specializing in drywall repair, TV mounting, flooring, deck work, and general home repairs. We help homeowners keep their homes functional, safe, and looking great.
+                        LUXHT Fix is a full-service handyman company serving South Florida and Central Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Founded in Orlando, now expanding across Miami-Dade & Broward counties.</strong>
                     </p>
 
                     {/* Character Team Portrait */}
@@ -37,7 +37,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-bold text-[#584D94] mb-4">Built From Luxury Construction.<br />Designed for Ongoing Home Care.</h2>
                             <p className="text-slate-600 leading-relaxed text-lg">
                                 <span className="inline-flex items-center gap-1 font-bold text-[#584D94] bg-[#584D94]/10 px-2 py-0.5 rounded-md">LUXHT<span className="text-[#64CEBB]">Fix</span></span> is the professional home services division of
-                                <span className="inline-flex items-center gap-1 font-bold bg-gradient-to-r from-[#584D94] to-[#7B6FCC] bg-clip-text text-transparent">LUXHT</span> – <span className="italic text-[#64CEBB] font-medium">Luxury Home Transformations</span>, one of Orlando's trusted names in high-end residential construction and renovation.
+                                <span className="inline-flex items-center gap-1 font-bold bg-gradient-to-r from-[#584D94] to-[#7B6FCC] bg-clip-text text-transparent">LUXHT</span> – <span className="italic text-[#64CEBB] font-medium">Luxury Home Transformations</span>, one of Florida's trusted names in high-end residential construction and renovation.
                             </p>
                             <p className="text-slate-600 leading-relaxed mt-4">
                                 After years of completing full-scale kitchen remodels and custom home transformations, we recognized a consistent need: our clients wanted the same level of construction expertise for ongoing maintenance and smaller improvements.
@@ -50,7 +50,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-4">From Major Renovations to Everyday Care</h2>
                             <p className="text-slate-600 leading-relaxed">
-                                LUXHT Fix serves Orlando homeowners before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
+                                LUXHT Fix serves homeowners across Florida before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
                             </p>
                         </div>
                     </div>
@@ -92,13 +92,48 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* SECTION 4 & 5: Why We Exist & Philosophy */}
+            {/* OUR GROWTH STORY */}
+            <section className="py-20 px-4 bg-gradient-to-br from-[#584D94]/5 to-[#64CEBB]/5">
+                <div className="container mx-auto max-w-5xl">
+                    <div className="text-center mb-12">
+                        <div className="inline-flex items-center gap-2 bg-[#64CEBB]/10 text-[#64CEBB] px-4 py-2 rounded-full text-sm font-bold mb-4 border border-[#64CEBB]/20">
+                            <MapPin size={16} /> Our Journey
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">From Orlando to South Florida</h2>
+                        <p className="text-slate-500 mt-3 max-w-2xl mx-auto">
+                            After establishing LUXHT Fix as the go-to handyman service in Central Florida, we recognized the same gap in South Florida — homeowners who demand construction-quality expertise for everyday repairs.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-4 gap-6 mb-12">
+                        {[
+                            { year: '2024', text: 'Founded in Orlando as the home services division of LUXHT', color: 'bg-slate-100 border-slate-200' },
+                            { year: '2025', text: 'Completed 500+ projects across Central Florida', color: 'bg-slate-100 border-slate-200' },
+                            { year: '2025', text: 'Launched South Florida branch serving Miami-Dade & Broward', color: 'bg-[#64CEBB]/10 border-[#64CEBB]/30' },
+                            { year: '2026', text: 'Investing in dedicated South Florida operations, team & fleet', color: 'bg-[#584D94]/10 border-[#584D94]/30' },
+                        ].map((step, i) => (
+                            <div key={i} className={`${step.color} border rounded-2xl p-6 text-center`}>
+                                <div className="text-2xl font-black text-[#584D94] mb-2">{step.year}</div>
+                                <p className="text-slate-600 text-sm leading-relaxed">{step.text}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+                        <p className="text-slate-600 leading-relaxed text-lg">
+                            In 2025, we made the commitment to expand into Miami-Dade and Broward counties. Today, we're <strong className="text-[#584D94]">investing heavily in our South Florida operations</strong> — building a dedicated local team, expanding our service fleet, and creating partnerships with the best material suppliers in the region. Our goal: bring the same construction-grade quality that Central Florida trusts to every home in South Florida.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* WHY WE EXIST & APPROACH */}
             <section className="py-20 px-4 container mx-auto">
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
                     <div>
                         <h2 className="text-3xl font-bold text-[#584D94] mb-6">Why LUXHT Fix Exists</h2>
                         <p className="text-slate-600 mb-6 leading-relaxed">
-                            Luxury and well-maintained homes in Orlando require consistent, professional care. Our clients asked us: "Can you handle our smaller repairs too?"
+                            Luxury and well-maintained homes require consistent, professional care. Our clients asked us: "Can you handle our smaller repairs too?"
                         </p>
                         <p className="text-slate-600 mb-6 leading-relaxed">
                             They wanted a reliable team for one-time fixes and recurring service without sacrificing quality. LUXHT Fix provides:
@@ -120,7 +155,7 @@ export default function AboutPage() {
                     <div className="bg-[#584D94]/5 p-8 rounded-3xl border border-[#584D94]/10">
                         <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Approach</h2>
                         <p className="text-slate-600 mb-8">
-                            Every Orlando home deserves professional care. Whether repairing a small drywall hole or installing flooring, we approach every project with:
+                            Every Florida home deserves professional care. Whether repairing a small drywall hole or installing flooring, we approach every project with:
                         </p>
                         <ul className="space-y-4">
                             {[
@@ -140,21 +175,44 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* SECTION 6: Serving Orlando */}
-            <section className="py-16 bg-[#584D94] text-white text-center px-4 relative overflow-hidden">
+            {/* SERVICE AREAS — DUAL COLUMN */}
+            <section className="py-16 bg-[#584D94] text-white px-4 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                <div className="container mx-auto relative z-10">
-                    <MapPin className="mx-auto mb-4 text-[#64CEBB]" size={40} />
-                    <h2 className="text-3xl font-bold mb-6">Proudly Serving Orlando & Surrounding Communities</h2>
-                    <p className="text-blue-100 max-w-2xl mx-auto mb-10 text-lg">
-                        Based in Orlando, we serve homeowners who expect professionalism.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-                        {['Orlando', 'Winter Park', 'Maitland', 'Altamonte Springs', 'Lake Nona', 'Dr. Phillips', 'Windermere', 'Ocoee', 'Apopka', 'Winter Garden', 'College Park', 'Baldwin Park'].map((city, i) => (
-                            <span key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
-                                {city}
-                            </span>
-                        ))}
+                <div className="container mx-auto relative z-10 max-w-5xl">
+                    <div className="text-center mb-10">
+                        <MapPin className="mx-auto mb-4 text-[#64CEBB]" size={40} />
+                        <h2 className="text-3xl font-bold mb-3">Serving South Florida & Central Florida</h2>
+                        <p className="text-blue-100 max-w-2xl mx-auto text-lg">
+                            Two regions. One standard of excellence.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <div className="flex items-center gap-2 mb-4">
+                                <span className="bg-[#64CEBB] text-white text-xs font-bold px-3 py-1 rounded-full">🌴 Primary Focus</span>
+                                <h3 className="font-bold text-lg">South Florida</h3>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                {['Miami', 'Fort Lauderdale', 'Pembroke Pines', 'Cooper City', 'Aventura', 'Hallandale Beach', 'Miramar', 'Davie', 'Hollywood', 'Sunny Isles Beach', 'North Miami', 'Coral Gables', 'Doral', 'Miami Beach'].map((city, i) => (
+                                    <span key={i} className="bg-[#64CEBB]/20 backdrop-blur-sm border border-[#64CEBB]/30 px-3 py-1.5 rounded-full text-sm font-medium">
+                                        {city}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex items-center gap-2 mb-4">
+                                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Est. 2024</span>
+                                <h3 className="font-bold text-lg">Central Florida</h3>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                {['Orlando', 'Winter Park', 'Maitland', 'Altamonte Springs', 'Lake Nona', 'Dr. Phillips', 'Windermere', 'Ocoee', 'Apopka', 'Winter Garden', 'College Park', 'Baldwin Park'].map((city, i) => (
+                                    <span key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full text-sm font-medium">
+                                        {city}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -193,16 +251,16 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Comprehensive Home Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
-                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-orlando/' },
-                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile', href: '/flooring-installation-orlando/' },
-                        { name: 'Deck Building', desc: 'Custom outdoor living spaces', href: '/deck-building-orlando/' },
-                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization', href: '/kitchen-refacing-orlando/' },
-                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations', href: '/bath-remodel-orlando/' },
-                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements', href: '/door-lock-trim-orlando/' },
-                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations', href: '/faucet-fixtures-orlando/' },
-                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups', href: '/tv-mounting-orlando/' },
-                        { name: 'Smart Home', desc: 'Automation & device integration', href: '/smart-home-installation-orlando/' },
-                        { name: 'Furniture Assembly', desc: 'Expert assembly for any brand', href: '/furniture-assembly-orlando/' },
+                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-miami/' },
+                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile', href: '/flooring-installation-miami/' },
+                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations', href: '/bath-remodel-miami/' },
+                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization', href: '/kitchen-refacing-miami/' },
+                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups', href: '/tv-mounting-miami/' },
+                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements', href: '/door-lock-trim-miami/' },
+                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations', href: '/faucet-fixtures-miami/' },
+                        { name: 'Smart Home', desc: 'Automation & device integration', href: '/smart-home-installation-miami/' },
+                        { name: 'Hurricane Damage Repair', desc: 'Fast storm damage restoration', href: '/hurricane-damage-repair-miami/' },
+                        { name: 'Stucco Repair', desc: 'Crack repair & color matching', href: '/stucco-repair-miami/' },
                     ].map((service, i) => (
                         <Link key={i} href={service.href} className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
                             <h3 className="font-bold text-lg text-slate-800 group-hover:text-[#584D94] transition-colors mb-2 ">{service.name}</h3>
@@ -223,7 +281,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <h2 className="text-4xl font-bold mb-6">Experience the LUXHT Fix Difference</h2>
                     <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                        Looking for more than a typical handyman in Orlando? Work with construction professionals who treat your home with the care it deserves.
+                        Looking for more than a typical handyman? From South Florida to Central Florida — work with construction professionals who treat your home with the care it deserves.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">

@@ -28,6 +28,16 @@ export default function SmartHomeMiamiPage() {
       relatedServices={[{title:'Smart Lock Installation',href:'/smart-lock-installation-miami/'},{title:'Smart Doorbell Installation',href:'/smart-doorbell-installation-miami/'},{title:'TV Mounting',href:'/tv-mounting-miami/'},{title:'Door, Lock & Trim',href:'/door-lock-trim-miami/'}]}
       startingPrice="Smart device installation starts at $85"
       statsText="Licensed • Insured • 250+ Devices Installed"
+      galleryImages={[
+        { src: "/images/services/smart-home/video-doorbells.jpg", title: "Video Doorbell", subtitle: "Clear & Connected" },
+        { src: "/images/services/smart-home/smart-locks.jpg", title: "Smart Lock Install", subtitle: "Keyless Security" },
+        { src: "/images/services/smart-home/security-cameras.jpg", title: "Security Cameras", subtitle: "24/7 Monitoring" },
+        { src: "/images/services/smart-home/smart-thermostats.jpg", title: "Smart Thermostat", subtitle: "Efficient Climate Control" },
+        { src: "/images/services/smart-home/automation-hubs.jpg", title: "Automation Hub", subtitle: "Central Control" },
+        { src: "/images/services/smart-home/smart-lighting.jpg", title: "Smart Lighting", subtitle: "Automated Ambiance" },
+        { src: "/images/services/smart-home/safety-detectors.jpg", title: "Safety Detectors", subtitle: "Smoke & CO" },
+        { src: "/images/services/smart-home/garage-controllers.jpg", title: "Garage Control", subtitle: "Remote Access" },
+      ]}
     />
   );
 }

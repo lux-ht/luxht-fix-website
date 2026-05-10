@@ -4,8 +4,8 @@ import { Phone, HelpCircle, DollarSign, Calendar, Mail } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Frequently Asked Questions | LUXHT Fix Orlando',
-    description: 'Common questions about pricing, scheduling, and our services. Learn how LUXHT Fix provides transparent, vital home repairs in Orlando.',
+    title: 'Frequently Asked Questions | LUXHT Fix — South Florida & Central Florida',
+    description: 'Common questions about pricing, scheduling, and our services across South Florida and Central Florida. Learn how LUXHT Fix provides transparent, expert home repairs.',
     alternates: { canonical: 'https://fix.luxht.com/faq/' },
 };
 
@@ -16,7 +16,8 @@ export default function FAQPage() {
             icon: HelpCircle,
             items: [
                 { q: "Are you licensed and insured?", a: "Yes, LUXHT Fix is fully licensed and insured in the state of Florida. We carry liability insurance for your protection and ours." },
-                { q: "What areas do you serve?", a: "We serve the greater Orlando area including Winter Park, Maitland, Altamonte Springs, Lake Nona, Dr. Phillips, Windermere, and surrounding communities." },
+                { q: "What areas do you serve?", a: "We serve homeowners across South Florida — including Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, Aventura, and surrounding cities — as well as Central Florida — including Orlando, Winter Park, Lake Nona, Dr. Phillips, Windermere, and surrounding communities." },
+                { q: "Do you serve the Miami area?", a: "Yes! In 2025 we expanded to South Florida. We now serve Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, and 14+ cities across Miami-Dade and Broward counties." },
                 { q: "Do you offer free estimates?", a: "Yes! For most standard jobs, we can provide a free estimate over the phone or via message if you send us photos. For larger renovations, we offer in-home consultations." }
             ]
         },
@@ -26,16 +27,19 @@ export default function FAQPage() {
             items: [
                 { q: "How quickly can I get an appointment?", a: "We pride ourselves on 'Same-Week Service' for most repairs. Often, we can fit small jobs in within 24-48 hours." },
                 { q: "Do I need to supply the materials?", a: "It depends. For repairs like drywall, we bring everything. For installations like light fixtures or faucets, you typically buy the item you want, and we install it. We can confirm this during booking." },
-                { q: "Do you clean up after the job?", a: "Absolutely. We treat your home with respect, which means leaving the work area cleaner than we found it." }
+                { q: "Do you clean up after the job?", a: "Absolutely. We treat your home with respect, which means leaving the work area cleaner than we found it." },
+                { q: "Do you handle hurricane damage repair?", a: "Yes, we provide hurricane damage repair services in South Florida including drywall, stucco, screen enclosure, and impact window prep. We respond quickly after storms to help get your home back in shape." },
+                { q: "Do you do stucco repair?", a: "Yes, stucco repair is one of our South Florida specialties. We handle crack repair, color matching, and exterior patching for homes across Miami-Dade and Broward counties." }
             ]
         },
         {
             category: "Pricing & Payment",
             icon: DollarSign,
             items: [
-                { q: "How do you charge?", a: "We offer flat-rate pricing for many common tasks (like TV mounting or faucet installation) so you know exactly what to pay. larger projects are estimated by the job, not just by the hour." },
+                { q: "How do you charge?", a: "We offer flat-rate pricing for many common tasks (like TV mounting or faucet installation) so you know exactly what to pay. Larger projects are estimated by the job, not just by the hour." },
                 { q: "What forms of payment do you accept?", a: "We accept all major credit cards, debit cards, cash, and digital payments like Venmo or Zelle for your convenience." },
-                { q: "Is there a warranty on your work?", a: "Yes, we stand behind our craftsmanship. We offer a 1-year workmanship warranty on all installations and repairs." }
+                { q: "Is there a warranty on your work?", a: "Yes, we stand behind our craftsmanship. We offer a 1-year workmanship warranty on all installations and repairs." },
+                { q: "Are prices the same in South Florida and Central Florida?", a: "Pricing is similar, though material costs and project scope can vary by region. We provide location-specific estimates for every project to ensure accuracy." }
             ]
         }
     ];

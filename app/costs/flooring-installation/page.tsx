@@ -8,14 +8,10 @@ import { useModal } from '@/context/ModalContext';
 import { useState } from 'react';
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-slate-200 last:border-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="w-full py-4 flex items-center justify-between text-left hover:text-[#584D94] transition-colors">
-                <span className="font-semibold text-slate-800">{question}</span>
-                {isOpen ? <ChevronUp className="w-5 h-5 text-slate-400" /> : <ChevronDown className="w-5 h-5 text-slate-400" />}
-            </button>
-            {isOpen && <div className="pb-4 text-slate-600 leading-relaxed">{answer}</div>}
+        <div className="border-b border-slate-200 last:border-0 py-5">
+            <h3 className="font-semibold text-slate-800 mb-2">{question}</h3>
+            <p className="text-slate-600 leading-relaxed">{answer}</p>
         </div>
     );
 }
@@ -24,7 +20,7 @@ export default function FlooringCostPage() {
     const { openModal } = useModal();
 
     const faqData = [
-        { question: "How much does it cost to install flooring per square foot?", answer: "In Orlando, flooring installation costs $3-$8/sq ft for laminate, $4-$10/sq ft for vinyl plank, $8-$15/sq ft for hardwood, and $10-$20/sq ft for tile. These prices include materials and labor." },
+        { question: "How much does it cost to install flooring per square foot?", answer: "In South Florida and Central Florida, flooring installation costs $3-$8/sq ft for laminate, $4-$10/sq ft for vinyl plank, $8-$15/sq ft for hardwood, and $10-$20/sq ft for tile. These prices include materials and labor." },
         { question: "What is the cheapest flooring to install?", answer: "Laminate flooring is typically the most affordable option at $3-$8 per square foot installed. Vinyl plank is slightly more at $4-$10/sq ft but offers better water resistance." },
         { question: "How long does flooring installation take?", answer: "A single room (200 sq ft) typically takes 1 day. A whole-home installation (1,500+ sq ft) takes 3-5 days depending on the flooring type and complexity." },
         { question: "Should I remove old flooring myself?", answer: "DIY removal can save $1-$3 per square foot on labor. However, professional removal ensures proper subfloor preparation and may be required for warranty coverage." }
@@ -39,7 +35,7 @@ export default function FlooringCostPage() {
                     <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors"><ArrowLeft size={18} /> Back to Cost Guides</Link>
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Flooring Installation Cost in Orlando?</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Flooring Installation Cost in South Florida & Central Florida?</h1>
                         <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Compare prices for hardwood, laminate, vinyl, and tile flooring installation in Central Florida.</p>
 
                         {/* Per Sq Ft Pricing */}

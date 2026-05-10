@@ -8,23 +8,23 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Home Services in Orlando | LUXHT Fix - Complete Handyman Solutions',
-    description: 'Professional home services in Orlando. Drywall repair, flooring, decks, kitchens, baths, TV mounting & more. Licensed, insured, trusted by 500+ homeowners.',
+    title: 'Home Services in South Florida & Central Florida | LUXHT Fix - Complete Handyman Solutions',
+    description: 'Professional home services across South Florida & Central Florida. Drywall repair, flooring, decks, kitchens, baths, TV mounting & more. Licensed, insured, trusted by 500+ homeowners.',
     alternates: { canonical: 'https://fix.luxht.com/services/' },
 };
 
 export default function ServicesPage() {
     const allServices = [
-        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-orlando/" },
-        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-orlando/" },
-        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-orlando/" },
-        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-orlando/" },
-        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-orlando/" },
-        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-orlando/" },
-        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-orlando/" },
-        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-orlando/" },
-        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-orlando/" },
-        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-orlando/" },
+        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-miami/" },
+        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-miami/" },
+        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-miami/" },
+        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-miami/" },
+        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-miami/" },
+        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-miami/" },
+        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-miami/" },
+        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-miami/" },
+        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-miami/" },
+        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-miami/" },
     ];
 
     const serviceSchema = {
@@ -37,14 +37,16 @@ export default function ServicesPage() {
         "priceRange": "$$-$$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Orlando",
+            "addressLocality": "Miami",
             "addressRegion": "FL",
             "addressCountry": "US"
         },
-        "areaServed": {
-            "@type": "City",
-            "name": "Orlando"
-        },
+        "areaServed": [
+            { "@type": "State", "name": "Florida" },
+            { "@type": "City", "name": "Miami" },
+            { "@type": "City", "name": "Fort Lauderdale" },
+            { "@type": "City", "name": "Orlando" }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Home Services",
@@ -70,12 +72,12 @@ export default function ServicesPage() {
             {/* Hero Section */}
             <header className="pt-32 pb-20 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white text-center px-4">
                 <div className="container mx-auto max-w-4xl">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Complete Home Services in Orlando</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Complete Home Services in South Florida & Central Florida</h1>
                     <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto font-light">
-                        From everyday fixes to complete renovations, LUXHT Fix delivers professional craftsmanship you can trust.
+                        From everyday fixes to complete renovations, LUXHT Fix delivers professional craftsmanship you can trust — now serving Miami, Fort Lauderdale, Orlando & beyond.
                     </p>
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md py-2 px-6 rounded-full border border-white/20 text-[#64CEBB] font-bold mb-8">
-                        <CheckCircle size={18} /> Licensed • Insured • 500+ Orlando Homes Served
+                        <CheckCircle size={18} /> Licensed • Insured • 500+ Florida Homes Served
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
@@ -112,7 +114,7 @@ export default function ServicesPage() {
                         </p>
                         <div className="flex items-center gap-4">
                             <span className="text-2xl font-bold text-slate-800">Starting at $150</span>
-                            <Link href="/drywall-orlando/" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
+                            <Link href="/drywall-miami/" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
                                 Learn More <ArrowRight size={18} />
                             </Link>
                         </div>
@@ -125,7 +127,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[#584D94] mb-4">All Home Services</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides comprehensive home repair and renovation services throughout Orlando. Every project is completed with attention to detail.</p>
+                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides comprehensive home repair and renovation services throughout South Florida and Central Florida. Every project is completed with attention to detail.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -155,7 +157,7 @@ export default function ServicesPage() {
             {/* Why Choose Us */}
             <section className="py-20 px-4 container mx-auto bg-slate-50">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-[#584D94] mb-12">Why Orlando Homeowners Trust LUXHT Fix</h2>
+                    <h2 className="text-3xl font-bold text-[#584D94] mb-12">Why Florida Homeowners Trust LUXHT Fix</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                         {[
                             { text: "Licensed & Insured", icon: CheckCircle },
@@ -179,11 +181,24 @@ export default function ServicesPage() {
             {/* Service Areas */}
             <section className="py-20 bg-white px-4 border-t border-slate-100">
                 <div className="container mx-auto max-w-4xl text-center">
-                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving Orlando & Surrounding Areas</h2>
+                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving South Florida & Central Florida</h2>
+                    <div className="flex flex-wrap justify-center gap-3 mb-4">
+                        <span className="px-4 py-2 bg-[#64CEBB]/10 rounded-full text-[#64CEBB] text-sm font-bold border border-[#64CEBB]/20">🌴 South Florida</span>
+                    </div>
                     <div className="flex flex-wrap justify-center gap-3 mb-8">
-                        {["Winter Park", "Maitland", "Altamonte Springs", "Lake Nona", "Dr. Phillips", "Windermere", "Ocoee", "Apopka", "Winter Garden", "College Park", "Baldwin Park", "Longwood"].map((area, i) => (
-                            <span key={i} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
+                        {["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Cooper City", "Aventura", "Miramar", "Davie", "Coral Gables", "Doral", "Sunny Isles Beach", "North Miami"].map((area, i) => (
+                            <span key={`sf-${i}`} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
                                 <MapPin size={14} className="text-[#64CEBB]" /> {area}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-3 mb-4">
+                        <span className="px-4 py-2 bg-[#584D94]/10 rounded-full text-[#584D94] text-sm font-bold border border-[#584D94]/20">🏠 Central Florida</span>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-3 mb-8">
+                        {["Orlando", "Winter Park", "Maitland", "Altamonte Springs", "Lake Nona", "Dr. Phillips", "Windermere", "Ocoee", "Apopka", "Winter Garden", "College Park", "Baldwin Park"].map((area, i) => (
+                            <span key={`cf-${i}`} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
+                                <MapPin size={14} className="text-[#584D94]" /> {area}
                             </span>
                         ))}
                     </div>

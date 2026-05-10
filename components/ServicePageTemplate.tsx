@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GalleryGrid from '@/components/GalleryGrid';
 import Link from 'next/link';
 import {
     ArrowRight, CheckCircle, Phone, Mail, MapPin, Star
@@ -33,6 +34,7 @@ export interface ServicePageProps {
     relatedServices: RelatedService[];
     startingPrice?: string;
     statsText?: string;
+    galleryImages?: { src: string; title: string; subtitle: string }[];
 }
 
 export default function ServicePageTemplate({
@@ -52,6 +54,7 @@ export default function ServicePageTemplate({
     relatedServices,
     startingPrice,
     statsText,
+    galleryImages,
 }: ServicePageProps) {
     const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.orlando;
     const locationLabel = location === 'miami' ? 'South Florida' : 'Central Florida';
@@ -223,6 +226,19 @@ export default function ServicePageTemplate({
                     )}
                 </div>
             </section>
+
+            {/* GALLERY */}
+            {galleryImages && galleryImages.length > 0 && (
+                <section className="py-20 px-4 bg-slate-50">
+                    <div className="container mx-auto max-w-6xl">
+                        <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Recent Projects Gallery</h2>
+                        <GalleryGrid images={galleryImages} />
+                        <div className="text-center mt-12">
+                            <p className="text-slate-500 italic">Real photos of LUXHT Fix {serviceName.toLowerCase()} projects in {locationLabel}.</p>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* PROCESS */}
             <section className="py-20 bg-white">

@@ -3,7 +3,7 @@ import { Accessibility, Eye, Keyboard, MousePointer, Volume2, MessageCircle, Ref
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Accessibility Statement | LUXHT Fix Orlando',
+    title: 'Accessibility Statement | LUXHT Fix',
     description: 'LUXHT Fix is committed to ensuring digital accessibility for people of all abilities. Learn about our ongoing efforts to improve our website experience.',
     alternates: { canonical: 'https://fix.luxht.com/accessibility/' },
 };
