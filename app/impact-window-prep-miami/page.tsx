@@ -33,6 +33,12 @@ export default function ImpactWindowPrepMiamiPage() {
       relatedServices={[{"title":"All Services","href":"/south-florida/"},{"title":"Drywall Repair","href":"/drywall-miami/"},{"title":"TV Mounting","href":"/tv-mounting-miami/"},{"title":"Flooring","href":"/flooring-installation-miami/"},{"title":"Bath Remodel","href":"/bath-remodel-miami/"}]}
       startingPrice="Impact Window Installation Prep starts at $250"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/images/services/impact-windows/prep-before.jpg", title: "Window Removal", subtitle: "Before: Old Aluminum" },
+        { src: "/images/services/impact-windows/prep-after.jpg", title: "Opening Prep", subtitle: "After: Clean Concrete" },
+        { src: "/images/services/impact-windows/frame-before.jpg", title: "Sill Repair", subtitle: "Before: Rotted Wood" },
+        { src: "/images/services/impact-windows/frame-after.jpg", title: "Trim Finishing", subtitle: "After: Sealed Trim" }
+      ]}
     />
   );
 }

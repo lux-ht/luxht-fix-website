@@ -33,6 +33,12 @@ export default function StuccoRepairMiamiPage() {
       relatedServices={[{"title":"All Services","href":"/south-florida/"},{"title":"Drywall Repair","href":"/drywall-miami/"},{"title":"TV Mounting","href":"/tv-mounting-miami/"},{"title":"Flooring","href":"/flooring-installation-miami/"},{"title":"Bath Remodel","href":"/bath-remodel-miami/"}]}
       startingPrice="Stucco Repair starts at $175"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/images/services/stucco/crack-before.jpg", title: "Crack Repair", subtitle: "Before: Settlement Cracks" },
+        { src: "/images/services/stucco/crack-after.jpg", title: "Crack Repair", subtitle: "After: Seamless Patch" },
+        { src: "/images/services/stucco/water-before.jpg", title: "Water Damage", subtitle: "Before: Blistering Stucco" },
+        { src: "/images/services/stucco/water-after.jpg", title: "Water Damage", subtitle: "After: Restored Surface" }
+      ]}
     />
   );
 }

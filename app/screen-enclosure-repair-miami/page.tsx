@@ -33,6 +33,12 @@ export default function ScreenEnclosureRepairMiamiPage() {
       relatedServices={[{"title":"All Services","href":"/south-florida/"},{"title":"Drywall Repair","href":"/drywall-miami/"},{"title":"TV Mounting","href":"/tv-mounting-miami/"},{"title":"Flooring","href":"/flooring-installation-miami/"},{"title":"Bath Remodel","href":"/bath-remodel-miami/"}]}
       startingPrice="Screen Enclosure Repair starts at $150"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/images/services/screen-enclosure/tear-before.jpg", title: "Screen Repair", subtitle: "Before: Torn Mesh" },
+        { src: "/images/services/screen-enclosure/tear-after.jpg", title: "Screen Repair", subtitle: "After: Tight Replacement" },
+        { src: "/images/services/screen-enclosure/frame-before.jpg", title: "Frame Alignment", subtitle: "Before: Bent Framing" },
+        { src: "/images/services/screen-enclosure/frame-after.jpg", title: "Frame Alignment", subtitle: "After: Secure & Level" }
+      ]}
     />
   );
 }

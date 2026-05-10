@@ -20,13 +20,13 @@ export default function FloatingIcons() {
                     className="absolute animate-tool-float"
                     style={{
                         ...item.style,
-                        opacity: 0.06,
+                        opacity: 0.15,
                     }}
                 >
                     <item.Icon
                         size={i % 2 === 0 ? 48 : 36}
                         className="text-[#584D94]"
-                        strokeWidth={1.5}
+                        strokeWidth={2}
                     />
                 </div>
             ))}

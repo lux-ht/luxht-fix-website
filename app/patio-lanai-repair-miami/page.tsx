@@ -33,6 +33,12 @@ export default function PatioLanaiRepairMiamiPage() {
       relatedServices={[{"title":"All Services","href":"/south-florida/"},{"title":"Drywall Repair","href":"/drywall-miami/"},{"title":"TV Mounting","href":"/tv-mounting-miami/"},{"title":"Flooring","href":"/flooring-installation-miami/"},{"title":"Bath Remodel","href":"/bath-remodel-miami/"}]}
       startingPrice="Patio & Lanai Repair starts at $200"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/images/services/patio-lanai/pavers-before.jpg", title: "Patio Repair", subtitle: "Before: Sunken Pavers" },
+        { src: "/images/services/patio-lanai/pavers-after.jpg", title: "Patio Repair", subtitle: "After: Level Surface" },
+        { src: "/images/services/patio-lanai/roof-before.jpg", title: "Lanai Roof", subtitle: "Before: Structural Wear" },
+        { src: "/images/services/patio-lanai/roof-after.jpg", title: "Lanai Roof", subtitle: "After: Reinforced Structure" }
+      ]}
     />
   );
 }

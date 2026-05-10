@@ -75,28 +75,32 @@ export default function Home() {
 
             {/* 🌴 NOW IN SOUTH FLORIDA BANNER */}
             <ScrollReveal>
-            <section className="bg-gradient-to-r from-[#584D94] to-[#7B6FCC] text-white py-6 px-4">
+            <section className="px-4 -mt-6 relative z-20 mb-8">
                 <div className="container mx-auto max-w-5xl">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-[#64CEBB]/20 flex items-center justify-center flex-shrink-0 animate-badge-pulse">
-                                <MapPin size={20} className="text-[#64CEBB]" />
+                    <div className="bg-gradient-to-r from-[#584D94] to-[#7B6FCC] btn-gradient-shimmer text-white rounded-2xl shadow-xl p-6 relative overflow-hidden border border-white/20">
+                        {/* Shimmer overlay class does the work, but we can add an extra glow effect */}
+                        <div className="absolute inset-0 bg-white/5 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 shadow-inner animate-badge-pulse backdrop-blur-sm">
+                                    <MapPin size={24} className="text-white" />
+                                </div>
+                                <div>
+                                    <p className="font-extrabold text-xl md:text-2xl drop-shadow-sm tracking-tight">🌴 Now Serving South Florida!</p>
+                                    <p className="text-blue-100 font-medium mt-1">Miami • Fort Lauderdale • Hollywood • Pembroke Pines • Coral Gables</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="font-bold text-lg">🌴 Now Serving South Florida!</p>
-                                <p className="text-blue-100 text-sm">Miami • Fort Lauderdale • Hollywood • Pembroke Pines • Coral Gables & more</p>
-                            </div>
+                            <Link href="/south-florida/" className="bg-white text-[#584D94] px-8 py-3.5 rounded-full font-bold shadow-lg hover:shadow-[#64CEBB]/50 hover:-translate-y-1 hover:bg-[#64CEBB] hover:text-white transition-all flex items-center gap-2 flex-shrink-0 border-2 border-transparent">
+                                Explore South Florida <ArrowRight size={18} />
+                            </Link>
                         </div>
-                        <Link href="/south-florida/" className="bg-white text-[#584D94] px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#64CEBB] hover:text-white transition-all flex items-center gap-2 flex-shrink-0">
-                            Explore South Florida Services <ArrowRight size={16} />
-                        </Link>
                     </div>
                 </div>
             </section>
             </ScrollReveal>
 
             {/* FEATURED SPECIALTY: DRYWALL */}
-            <section className="pt-8 md:pt-48 pb-20 px-4 container mx-auto">
+            <section className="pt-8 md:pt-12 pb-20 px-4 container mx-auto">
                 {/* Mobile Layout (UI 2026) */}
                 <div className="md:hidden bg-[#584D94] rounded-3xl overflow-hidden relative shadow-2xl mb-4">
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>

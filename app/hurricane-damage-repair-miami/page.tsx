@@ -33,6 +33,12 @@ export default function HurricaneDamageRepairMiamiPage() {
       relatedServices={[{"title":"All Services","href":"/south-florida/"},{"title":"Drywall Repair","href":"/drywall-miami/"},{"title":"TV Mounting","href":"/tv-mounting-miami/"},{"title":"Flooring","href":"/flooring-installation-miami/"},{"title":"Bath Remodel","href":"/bath-remodel-miami/"}]}
       startingPrice="Hurricane Damage Repair starts at $200"
       statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      galleryImages={[
+        { src: "/images/services/hurricane-damage/repair-before.jpg", title: "Exterior Repair", subtitle: "Before: Damaged Siding" },
+        { src: "/images/services/hurricane-damage/repair-after.jpg", title: "Exterior Repair", subtitle: "After: Pristine Condition" },
+        { src: "/images/services/hurricane-damage/water-before.jpg", title: "Interior Water Damage", subtitle: "Before: Storm Leaks" },
+        { src: "/images/services/hurricane-damage/water-after.jpg", title: "Interior Water Damage", subtitle: "After: Restored Drywall" }
+      ]}
     />
   );
 }
