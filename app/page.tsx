@@ -116,7 +116,7 @@ export default function Home() {
                         {/* Integrated Gallery */}
                         <DrywallGallery />
 
-                        <Link href="/drywall-orlando/" className="btn-gradient-glass btn-gradient-shimmer w-full justify-center text-sm">
+                        <Link href="/drywall-miami/" className="btn-gradient-glass btn-gradient-shimmer w-full justify-center text-sm">
                             Fix My Drywall <ArrowRight size={16} />
                         </Link>
                     </div>
@@ -143,7 +143,7 @@ export default function Home() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="/drywall-orlando/" className="btn-gradient-glass btn-gradient-shimmer">
+                            <Link href="/drywall-miami/" className="btn-gradient-glass btn-gradient-shimmer">
                                 Fix My Drywall <ArrowRight size={18} />
                             </Link>
                         </div>

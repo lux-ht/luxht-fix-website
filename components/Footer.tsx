@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Hammer } from 'lucide-react';
+import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Hammer, Palmtree } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -26,7 +26,20 @@ export default function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
                     {/* Services Column - 1 col on mobile, 2 on desktop */}
                     <div className="col-span-1 md:col-span-2">
-                        <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Services</h3>
+                        <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs flex items-center gap-1.5">
+                            <Palmtree size={14} className="text-[#64CEBB]" /> South Florida
+                        </h3>
+                        <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
+                            <li><Link href="/drywall-miami/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
+                            <li><Link href="/tv-mounting-miami/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
+                            <li><Link href="/flooring-installation-miami/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
+                            <li><Link href="/bath-remodel-miami/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
+                            <li><Link href="/hurricane-damage-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Hurricane Repair</Link></li>
+                            <li><Link href="/stucco-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Stucco Repair</Link></li>
+                            <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All South Florida Services →</Link></li>
+                        </ul>
+                        
+                        <h3 className="font-bold text-white mt-6 mb-3 uppercase tracking-wider text-xs">Central Florida</h3>
                         <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
                             <li><Link href="/drywall-orlando/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
                             <li><Link href="/tv-mounting-orlando/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
@@ -38,17 +51,7 @@ export default function Footer() {
                             <li><Link href="/faucet-fixtures-orlando/" className="hover:text-[#64CEBB] transition-colors">Faucet & Fixtures</Link></li>
                             <li><Link href="/smart-home-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Smart Home</Link></li>
                             <li><Link href="/furniture-assembly-orlando/" className="hover:text-[#64CEBB] transition-colors">Furniture Assembly</Link></li>
-                            <li className="col-span-2 mt-1"><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Services →</Link></li>
-                        </ul>
-                        <h3 className="font-bold text-white mt-6 mb-3 uppercase tracking-wider text-xs">South Florida</h3>
-                        <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
-                            <li><Link href="/drywall-miami/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
-                            <li><Link href="/tv-mounting-miami/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
-                            <li><Link href="/flooring-installation-miami/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
-                            <li><Link href="/bath-remodel-miami/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
-                            <li><Link href="/hurricane-damage-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Hurricane Repair</Link></li>
-                            <li><Link href="/stucco-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Stucco Repair</Link></li>
-                            <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All South Florida Services →</Link></li>
+                            <li className="col-span-2 mt-1"><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Central Florida Services →</Link></li>
                         </ul>
                     </div>
 

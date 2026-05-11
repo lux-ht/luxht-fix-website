@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown, Phone, PhoneCall, ExternalLink } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, PhoneCall, ExternalLink, Palmtree } from 'lucide-react';
 import clsx from 'clsx';
 import { useModal } from '@/context/ModalContext';
 
@@ -98,7 +98,9 @@ export default function Navbar() {
                             <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white transform rotate-45 border-t border-l border-slate-100"></div>
 
                             <div>
-                                <h3 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-4 border-b border-[#584D94]/20 pb-2">South Florida ✨</h3>
+                                <h3 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-4 border-b border-[#584D94]/20 pb-2 flex items-center gap-1.5">
+                                    <Palmtree size={16} className="text-[#64CEBB]" /> South Florida
+                                </h3>
                                 <ul className="space-y-3">
                                     <li>
                                         <Link href="/drywall-miami/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
@@ -241,18 +243,31 @@ export default function Navbar() {
                         >
                             Services <ChevronDown size={16} className={clsx("transition-transform", isServicesOpen ? "rotate-180" : "")} />
                         </button>
-                        <div className={clsx("space-y-3 pl-4 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all", isServicesOpen ? "max-h-[500px] mt-2" : "max-h-0")}>
-                            <Link href="/drywall-orlando/" className="block text-[#584D94] font-medium" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
-                            <Link href="/door-lock-trim-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Door, Lock & Trim</Link>
-                            <Link href="/faucet-fixtures-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Faucet & Fixtures</Link>
-                            <Link href="/tv-mounting-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
-                            <Link href="/furniture-assembly-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Furniture Assembly</Link>
-                            <Link href="/smart-home-installation-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Smart Home</Link>
-                            <Link href="/flooring-installation-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Flooring Installation</Link>
-                            <Link href="/deck-building-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Deck Building</Link>
-                            <Link href="/kitchen-refacing-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Kitchen Refacing</Link>
-                            <Link href="/bath-remodel-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Bath Remodel</Link>
-                            <Link href="/services/" className="block text-[#64CEBB] font-bold mt-2" onClick={() => setIsOpen(false)}>View All Services</Link>
+                        <div className={clsx("space-y-4 pl-4 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all", isServicesOpen ? "max-h-[800px] mt-2 pb-2" : "max-h-0")}>
+                            <div>
+                                <h4 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                                    <Palmtree size={14} className="text-[#64CEBB]" /> South Florida
+                                </h4>
+                                <div className="space-y-2 pl-2">
+                                    <Link href="/drywall-miami/" className="block text-[#584D94] font-medium" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
+                                    <Link href="/hurricane-damage-repair-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Hurricane Repair</Link>
+                                    <Link href="/tv-mounting-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
+                                    <Link href="/flooring-installation-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Flooring</Link>
+                                    <Link href="/bath-remodel-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Bath Remodel</Link>
+                                    <Link href="/south-florida/" className="block text-[#64CEBB] font-bold text-sm" onClick={() => setIsOpen(false)}>All South FL Services →</Link>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Central Florida</h4>
+                                <div className="space-y-2 pl-2">
+                                    <Link href="/drywall-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
+                                    <Link href="/door-lock-trim-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Door, Lock & Trim</Link>
+                                    <Link href="/faucet-fixtures-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Faucet & Fixtures</Link>
+                                    <Link href="/tv-mounting-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
+                                    <Link href="/furniture-assembly-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Furniture Assembly</Link>
+                                    <Link href="/services/" className="block text-[#64CEBB] font-bold text-sm" onClick={() => setIsOpen(false)}>All Central FL Services →</Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
