@@ -36,5 +36,36 @@ export default async function BlogPostPage({ params }: Props) {
     const post = getPostBySlug(slug);
     if (!post) notFound();
 
-    return <BlogPostClient post={post} />;
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.excerpt,
+        "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
+        "author": {
+            "@type": "Organization",
+            "name": "LUXHT Fix",
+            "url": "https://fix.luxht.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "LUXHT Fix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://fix.luxht.com/images/logo-wide-hammers.png"
+            }
+        },
+        "datePublished": new Date(post.date).toISOString(),
+        "dateModified": new Date(post.date).toISOString()
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+            <BlogPostClient post={post} />
+        </>
+    );
 }

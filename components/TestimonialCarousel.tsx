@@ -33,8 +33,36 @@ function GoogleGIcon() {
 
 export default function TestimonialCarousel({ customReviews }: { customReviews?: Review[] }) {
     const reviewsToDisplay = customReviews || defaultReviews;
+    
+    const parseDate = (d?: string) => {
+        if (!d) return new Date().toISOString().split('T')[0];
+        try {
+            return new Date(d).toISOString().split('T')[0];
+        } catch {
+            return new Date().toISOString().split('T')[0];
+        }
+    };
+
+    const reviewSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://fix.luxht.com/#localbusiness",
+        "name": "LUXHT Fix",
+        "review": reviewsToDisplay.map((r) => ({
+            "@type": "Review",
+            "author": { "@type": "Person", "name": r.name },
+            "datePublished": parseDate(r.date),
+            "reviewRating": { "@type": "Rating", "ratingValue": r.rating, "bestRating": "5" },
+            "reviewBody": r.text
+        }))
+    };
+
     return (
         <div className="mask-gradient-x w-full overflow-hidden py-10 relative">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+            />
             <div className="flex gap-6 animate-scroll w-max hover:pause">
                 {/* original list */}
                 {reviewsToDisplay.map((review, i) => (
