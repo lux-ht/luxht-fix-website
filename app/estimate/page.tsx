@@ -3,6 +3,8 @@
 import React, { useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import { supabase } from '@/lib/supabase';
+import { Globe } from 'lucide-react';
+import StarBorder from '@/components/StarBorder';
 
 /* ─────────────────────────────────────────
    MODERN SVG ICONS
@@ -383,10 +385,10 @@ export default function EstimatePage() {
                 {/* Top bar */}
                 <header className="est-topbar">
                     <Image
-                        src="/images/luxht-fix-logo-new.png"
+                        src="/images/luxht-fix-logo-transparent.png"
                         alt="LUXHT Fix"
-                        width={390}
-                        height={144}
+                        width={1024}
+                        height={481}
                         className="est-logo"
                         priority
                     />
@@ -406,17 +408,21 @@ export default function EstimatePage() {
                 {/* Service grid */}
                 <div className="est-grid">
                     {visibleServices.map((svc) => (
-                        <button
+                        <StarBorder
                             key={svc.id}
+                            as="button"
                             className="est-tile"
                             onClick={() => openService(svc)}
+                            color="#ffffff"
+                            speed="5s"
+                            thickness={2}
                             style={{ '--tile-gradient': svc.gradient } as React.CSSProperties}
                         >
                             <div className="est-tile__icon">
                                 {icons[svc.icon as keyof typeof icons]}
                             </div>
                             <span className="est-tile__label">{svc.label}</span>
-                        </button>
+                        </StarBorder>
                     ))}
                 </div>
 
@@ -444,10 +450,7 @@ export default function EstimatePage() {
                 <div className="est-about-wrap">
                     <a href="https://fix.luxht.com" className="est-about-btn" target="_blank" rel="noopener noreferrer">
                         <span className="est-about-btn__icon">
-                            <svg viewBox="0 0 20 20" fill="none" width="17" height="17">
-                                <circle cx="10" cy="10" r="8.5" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M10 9v5M10 7h.01" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-                            </svg>
+                            <Globe size={17} strokeWidth={1.8} />
                         </span>
                         About LUXHT Fix
                         <span className="est-about-btn__arrow">↗</span>
@@ -662,7 +665,7 @@ export default function EstimatePage() {
                     position: sticky; top: 0; z-index: 50;
                     box-shadow: 0 2px 16px rgba(88,77,148,0.07);
                 }
-                .est-logo { height: 132px; max-width: 60%; width: auto; object-fit: contain; }
+                .est-logo { height: 60px; max-width: 60%; width: auto; object-fit: contain; }
                 .est-call-chip {
                     display: flex; align-items: center; gap: 7px;
                     background: linear-gradient(135deg, #584D94 0%, #7B6FCC 100%);
@@ -704,12 +707,26 @@ export default function EstimatePage() {
                 .est-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 11px; padding: 16px 14px 0; }
                 .est-tile {
                     position: relative; aspect-ratio: 1; border-radius: 22px; border: none;
-                    cursor: pointer; display: flex; flex-direction: column;
-                    align-items: center; justify-content: center; gap: 8px;
-                    background: var(--tile-gradient); padding: 10px 8px;
+                    cursor: pointer;
                     overflow: hidden;
+                    background: transparent;
                     transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease;
                     box-shadow: 0 4px 18px rgba(0,0,0,0.14), 0 1px 4px rgba(0,0,0,0.08);
+                }
+                .est-tile .inner-content {
+                    border: none;
+                    background: var(--tile-gradient);
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 10px 8px;
+                    border-radius: 20px;
+                    color: white;
+                    z-index: 1;
                 }
                 .est-tile::after {
                     content: ''; position: absolute; inset: 0;
