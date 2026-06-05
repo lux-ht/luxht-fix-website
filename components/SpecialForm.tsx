@@ -12,6 +12,7 @@ export default function SpecialForm() {
         phone: '',
         zip: '',
         offer: '',
+        ruthSupport: 'No need, regular scheduling is fine',
     });
 
     const handleChange = (
@@ -25,6 +26,10 @@ export default function SpecialForm() {
         setIsSubmitting(true);
 
         try {
+            const detailsText = [
+                formData.ruthSupport ? `Ruth Support: ${formData.ruthSupport}` : ''
+            ].filter(Boolean).join(' | ');
+
             const { error } = await supabase.from('leads').insert([
                 {
                     name: formData.name,
@@ -32,6 +37,7 @@ export default function SpecialForm() {
                     zip_code: formData.zip,
                     service: formData.offer,
                     source: 'magazine-winter-park',
+                    details: detailsText,
                 },
             ]);
 
@@ -111,6 +117,57 @@ export default function SpecialForm() {
                         10 Free Outlet Refresh
                     </option>
                 </select>
+            </div>
+            <div className="field">
+                <label>Would you like Ruth involved for extra comfort or support?</label>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '4px' }}>
+                    {[
+                        "Yes, please involve Ruth in communication",
+                        "Yes, I would prefer Ruth to be part of the visit if possible",
+                        "No need, regular scheduling is fine"
+                    ].map((opt) => (
+                        <button
+                            key={opt}
+                            type="button"
+                            onClick={() => setFormData(prev => ({ ...prev, ruthSupport: opt }))}
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '12px',
+                                padding: '14px 16px',
+                                background: formData.ruthSupport === opt ? 'rgba(201, 168, 76, 0.12)' : 'rgba(255, 255, 255, 0.1)',
+                                border: formData.ruthSupport === opt ? '2px solid var(--gold)' : '1px solid rgba(255, 255, 255, 0.2)',
+                                borderRadius: '10px',
+                                cursor: 'pointer',
+                                textAlign: 'left',
+                                fontSize: '14px',
+                                fontWeight: '500',
+                                color: 'var(--white)',
+                                transition: 'all 0.15s',
+                                fontFamily: 'inherit'
+                            }}
+                        >
+                            <span style={{
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '50%',
+                                border: formData.ruthSupport === opt ? '2px solid var(--gold)' : '2px solid rgba(255,255,255,0.4)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                fontSize: '11px',
+                                fontWeight: '800',
+                                color: 'var(--white)',
+                                flexShrink: 0,
+                                background: formData.ruthSupport === opt ? 'var(--gold)' : 'transparent',
+                                transition: 'all 0.15s'
+                            }}>
+                                {formData.ruthSupport === opt ? '✓' : ''}
+                            </span>
+                            <span>{opt}</span>
+                        </button>
+                    ))}
+                </div>
             </div>
             <button type="submit" className="submit-btn" disabled={isSubmitting}>
                 {isSubmitting ? 'Submitting…' : '✓ Claim My Offer Now — It\'s Free'}

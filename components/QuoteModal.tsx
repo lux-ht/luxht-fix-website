@@ -21,7 +21,8 @@ export default function QuoteModal() {
         address: '',
         service: 'General Repair',
         referral: '',
-        comments: ''
+        comments: '',
+        ruthSupport: 'No need, regular scheduling is fine'
     });
 
     const services = [
@@ -77,6 +78,11 @@ export default function QuoteModal() {
             }
 
             // 2. Insert Lead Data
+            const detailsText = [
+                formData.comments ? `Details: ${formData.comments}` : '',
+                formData.ruthSupport ? `Ruth Support: ${formData.ruthSupport}` : ''
+            ].filter(Boolean).join(' | ');
+
             const { error: insertError } = await supabase
                 .from('leads')
                 .insert([
@@ -87,7 +93,7 @@ export default function QuoteModal() {
                         address: formData.address,
                         service: formData.service,
                         referral_source: formData.referral,
-                        details: formData.comments, // mapped 'comments' to 'details' based on table schema
+                        details: detailsText,
                         image_url: imageUrl
                     }
                 ]);
@@ -100,7 +106,8 @@ export default function QuoteModal() {
             // Clean up form
             setFormData({
                 name: '', email: '', phone: '', address: '',
-                service: 'General Repair', referral: '', comments: ''
+                service: 'General Repair', referral: '', comments: '',
+                ruthSupport: 'No need, regular scheduling is fine'
             });
             setSelectedImage(null);
 
@@ -459,6 +466,45 @@ export default function QuoteModal() {
                                                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
                                                     <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L1 4h10L6 9z" fill="currentColor" /></svg>
                                                 </div>
+                                            </div>
+                                        </motion.div>
+
+                                        {/* Ruth Support Option */}
+                                        <motion.div
+                                            initial={{ opacity: 0, x: -20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: 0.42 }}
+                                            className="space-y-2"
+                                        >
+                                            <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">
+                                                Would you like Ruth involved for extra comfort or support?
+                                            </label>
+                                            <div className="flex flex-col gap-2">
+                                                {[
+                                                    "Yes, please involve Ruth in communication",
+                                                    "Yes, I would prefer Ruth to be part of the visit if possible",
+                                                    "No need, regular scheduling is fine"
+                                                ].map((opt) => (
+                                                    <button
+                                                        key={opt}
+                                                        type="button"
+                                                        onClick={() => setFormData(prev => ({ ...prev, ruthSupport: opt }))}
+                                                        className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-left text-sm font-medium transition-all ${
+                                                            formData.ruthSupport === opt
+                                                                ? "border-[#64CEBB] bg-[#64CEBB]/5 text-slate-900"
+                                                                : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                                                        }`}
+                                                    >
+                                                        <span className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 transition-all ${
+                                                            formData.ruthSupport === opt
+                                                                ? "border-[#64CEBB] bg-[#64CEBB] text-white"
+                                                                : "border-slate-300 bg-white"
+                                                        }`}>
+                                                            {formData.ruthSupport === opt && "✓"}
+                                                        </span>
+                                                        <span>{opt}</span>
+                                                    </button>
+                                                ))}
                                             </div>
                                         </motion.div>
 

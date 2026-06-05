@@ -295,6 +295,7 @@ export default function EstimatePage() {
     const [msgName, setMsgName] = useState('');
     const [msgPhone, setMsgPhone] = useState('');
     const [msgNote, setMsgNote] = useState('');
+    const [ruthSupport, setRuthSupport] = useState('No need, regular scheduling is fine');
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
@@ -357,6 +358,7 @@ export default function EstimatePage() {
                 activeService ? `Service: ${activeService.label}` : '',
                 selectedSubs.length ? `Details: ${selectedSubs.join(', ')}` : '',
                 msgNote ? `Note: ${msgNote}` : '',
+                ruthSupport ? `Ruth Support: ${ruthSupport}` : '',
                 'Source: QR Magnet / estimate page (South Florida)',
             ].filter(Boolean).join(' | ');
 
@@ -590,6 +592,29 @@ export default function EstimatePage() {
                             <textarea rows={3} placeholder="Tell us a little more about what you need..."
                                 value={msgNote} onChange={e => setMsgNote(e.target.value)}
                                 className="est-field__input est-field__input--textarea" />
+                        </div>
+                        <div className="est-field">
+                            <label className="est-field__label">Would you like Ruth involved for extra comfort or support?</label>
+                            <div className="est-ruth-options" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                {[
+                                    "Yes, please involve Ruth in communication",
+                                    "Yes, I would prefer Ruth to be part of the visit if possible",
+                                    "No need, regular scheduling is fine"
+                                ].map((opt) => (
+                                    <button
+                                        key={opt}
+                                        type="button"
+                                        className={`est-check-item ${ruthSupport === opt ? 'est-check-item--selected' : ''}`}
+                                        onClick={() => setRuthSupport(opt)}
+                                        style={{ width: '100%' }}
+                                    >
+                                        <span className="est-check-item__box" style={{ borderRadius: '50%' }}>
+                                            {ruthSupport === opt ? '✓' : ''}
+                                        </span>
+                                        <span>{opt}</span>
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                         <div className="est-field">
                             <label className="est-field__label">📸 Add a photo (optional)</label>

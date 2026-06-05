@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown, Phone, PhoneCall, ExternalLink, Palmtree } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, PhoneCall, ExternalLink, Palmtree, Layers, Wind, Tv, Grid as GridIcon, Bath, Key, Droplet, Hammer, ArrowRight } from 'lucide-react';
 import clsx from 'clsx';
 import { useModal } from '@/context/ModalContext';
 
@@ -243,29 +243,67 @@ export default function Navbar() {
                         >
                             Services <ChevronDown size={16} className={clsx("transition-transform", isServicesOpen ? "rotate-180" : "")} />
                         </button>
-                        <div className={clsx("space-y-4 pl-4 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all", isServicesOpen ? "max-h-[800px] mt-2 pb-2" : "max-h-0")}>
+                        <div className={clsx("space-y-6 pl-1 ml-1 overflow-hidden transition-all", isServicesOpen ? "max-h-[1000px] mt-4 pb-2" : "max-h-0")}>
+                            {/* South Florida */}
                             <div>
-                                <h4 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                                <h4 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-3 flex items-center gap-1.5">
                                     <Palmtree size={14} className="text-[#64CEBB]" /> South Florida
                                 </h4>
-                                <div className="space-y-2 pl-2">
-                                    <Link href="/drywall-miami/" className="block text-[#584D94] font-medium" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
-                                    <Link href="/hurricane-damage-repair-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Hurricane Repair</Link>
-                                    <Link href="/tv-mounting-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
-                                    <Link href="/flooring-installation-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Flooring</Link>
-                                    <Link href="/bath-remodel-miami/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Bath Remodel</Link>
-                                    <Link href="/south-florida/" className="block text-[#64CEBB] font-bold text-sm" onClick={() => setIsOpen(false)}>All South FL Services →</Link>
+                                <div className="grid grid-cols-3 gap-2">
+                                    <Link href="/drywall-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Layers size={22} className="text-[#584D94]" />
+                                        <span className="text-[10px] font-bold text-[#584D94] leading-tight">Drywall Repair</span>
+                                    </Link>
+                                    <Link href="/hurricane-damage-repair-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Wind size={22} className="text-[#584D94]" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Hurricane Repair</span>
+                                    </Link>
+                                    <Link href="/tv-mounting-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Tv size={22} className="text-[#584D94]" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">TV Mounting</span>
+                                    </Link>
+                                    <Link href="/flooring-installation-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <GridIcon size={22} className="text-[#584D94]" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Flooring</span>
+                                    </Link>
+                                    <Link href="/bath-remodel-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Bath size={22} className="text-[#584D94]" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Bath Remodel</span>
+                                    </Link>
+                                    <Link href="/south-florida/" className="flex flex-col items-center justify-center p-3 bg-[#64CEBB]/10 hover:bg-[#64CEBB]/15 active:scale-95 border border-[#64CEBB]/20 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <ArrowRight size={22} className="text-[#64CEBB]" />
+                                        <span className="text-[10px] font-bold text-[#64CEBB] leading-tight">All Services</span>
+                                    </Link>
                                 </div>
                             </div>
+                            {/* Central Florida */}
                             <div>
-                                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Central Florida</h4>
-                                <div className="space-y-2 pl-2">
-                                    <Link href="/drywall-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Drywall Repair</Link>
-                                    <Link href="/door-lock-trim-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Door, Lock & Trim</Link>
-                                    <Link href="/faucet-fixtures-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Faucet & Fixtures</Link>
-                                    <Link href="/tv-mounting-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>TV Mounting</Link>
-                                    <Link href="/furniture-assembly-orlando/" className="block text-slate-600" onClick={() => setIsOpen(false)}>Furniture Assembly</Link>
-                                    <Link href="/services/" className="block text-[#64CEBB] font-bold text-sm" onClick={() => setIsOpen(false)}>All Central FL Services →</Link>
+                                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Central Florida</h4>
+                                <div className="grid grid-cols-3 gap-2">
+                                    <Link href="/drywall-orlando/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Layers size={22} className="text-slate-500" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Drywall Repair</span>
+                                    </Link>
+                                    <Link href="/door-lock-trim-orlando/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Key size={22} className="text-slate-500" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Doors & Locks</span>
+                                    </Link>
+                                    <Link href="/faucet-fixtures-orlando/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Droplet size={22} className="text-slate-500" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Faucets</span>
+                                    </Link>
+                                    <Link href="/tv-mounting-orlando/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Tv size={22} className="text-slate-500" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">TV Mounting</span>
+                                    </Link>
+                                    <Link href="/furniture-assembly-orlando/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <Hammer size={22} className="text-slate-500" />
+                                        <span className="text-[10px] font-bold text-slate-700 leading-tight">Furniture</span>
+                                    </Link>
+                                    <Link href="/services/" className="flex flex-col items-center justify-center p-3 bg-[#64CEBB]/10 hover:bg-[#64CEBB]/15 active:scale-95 border border-[#64CEBB]/20 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                        <ArrowRight size={22} className="text-[#64CEBB]" />
+                                        <span className="text-[10px] font-bold text-[#64CEBB] leading-tight">All Services</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
