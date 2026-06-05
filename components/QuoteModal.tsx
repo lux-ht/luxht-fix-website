@@ -477,12 +477,14 @@ export default function QuoteModal() {
                                             className="space-y-2"
                                         >
                                             <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">
-                                                Would you like Ruth involved for extra comfort or support?
+                                                Would you feel more comfortable with Ruth involved?
                                             </label>
-                                            <div className="flex flex-col gap-2">
+                                            <p className="text-xs text-slate-500 leading-relaxed">
+                                                Ruth is part of our family-owned team and stays personally connected to the process. Some clients feel better knowing there is a woman in the loop for communication, support, and extra reassurance.
+                                            </p>
+                                            <div className="flex flex-col gap-2 mt-1">
                                                 {[
-                                                    "Yes, please involve Ruth in communication",
-                                                    "Yes, I would prefer Ruth to be part of the visit if possible",
+                                                    "I would prefer Ruth to be part of the visit if possible",
                                                     "No need, regular scheduling is fine"
                                                 ].map((opt) => (
                                                     <button

@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from '@/components/Navbar';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import GalleryGrid from '@/components/GalleryGrid';
@@ -6,6 +8,7 @@ import {
     ArrowRight, CheckCircle, Phone, Mail, MapPin, Star
 } from 'lucide-react';
 import { LOCATIONS, type LocationConfig } from '@/lib/locations';
+import { useModal } from '@/context/ModalContext';
 
 export interface FAQItem {
     q: string;
@@ -56,6 +59,7 @@ export default function ServicePageTemplate({
     statsText,
     galleryImages,
 }: ServicePageProps) {
+    const { openModal } = useModal();
     const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.orlando;
     const locationLabel = location === 'miami' ? 'South Florida' : 'Central Florida';
     const localBusinessSchema = {
@@ -176,16 +180,23 @@ export default function ServicePageTemplate({
                         <CheckCircle size={16} /> {statsText || `Licensed • Insured • ${loc.name}'s Trusted Experts`}
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                        <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer">
-                            <Phone size={24} /> Call Now
-                        </a>
-                        <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass border-white/20 hover:bg-white/10">
-                            <span className="text-xl">💬</span> Text Us
-                        </a>
-                        <a href={`mailto:${loc.email}?subject=${encodeURIComponent(serviceName)}%20Quote%20Request`} className="btn-gradient-glass border-white/20 hover:bg-white/10">
-                            <Mail size={24} /> Email Us
-                        </a>
+                    <div className="max-w-md mx-auto space-y-3 mb-8">
+                        <div className="grid grid-cols-2 gap-3">
+                            <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <Phone size={20} /> Call Now
+                            </a>
+                            <button onClick={() => openModal('quote')} className="btn-gradient-primary btn-gradient-shimmer w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full border-none cursor-pointer">
+                                Get Free Quote
+                            </button>
+                        </div>
+                        <div className="grid grid-cols-2 gap-3">
+                            <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass border-white/20 hover:bg-white/10 w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <span className="text-lg">💬</span> Text Us
+                            </a>
+                            <a href={`mailto:${loc.email}?subject=${encodeURIComponent(serviceName)}%20Quote%20Request`} className="btn-gradient-glass border-white/20 hover:bg-white/10 w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <Mail size={20} /> Email Us
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -339,16 +350,23 @@ export default function ServicePageTemplate({
                     <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                         Fast, professional service with quality results.<br />{loc.name}{"'"}s trusted home repair experts.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                        <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer">
-                            <Phone size={20} /> Call Now: {loc.phone}
-                        </a>
-                        <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass">
-                            <span>💬</span> Text Us
-                        </a>
-                        <a href={`mailto:${loc.email}`} className="btn-gradient-glass">
-                            <Mail size={20} /> Email Us
-                        </a>
+                    <div className="max-w-md mx-auto space-y-3 mb-8">
+                        <div className="grid grid-cols-2 gap-3">
+                            <a href={`tel:${loc.phoneRaw}`} className="btn-gradient-primary btn-gradient-shimmer w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <Phone size={20} /> Call Now
+                            </a>
+                            <button onClick={() => openModal('quote')} className="btn-gradient-primary btn-gradient-shimmer w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full border-none cursor-pointer">
+                                Get Free Quote
+                            </button>
+                        </div>
+                        <div className="grid grid-cols-2 gap-3">
+                            <a href={`sms:${loc.phoneRaw}`} className="btn-gradient-glass border-white/20 hover:bg-white/10 w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <span className="text-lg">💬</span> Text Us
+                            </a>
+                            <a href={`mailto:${loc.email}?subject=${encodeURIComponent(serviceName)}%20Quote%20Request`} className="btn-gradient-glass border-white/20 hover:bg-white/10 w-full flex items-center justify-center gap-2 py-3 px-4 text-base font-bold rounded-full">
+                                <Mail size={20} /> Email Us
+                            </a>
+                        </div>
                     </div>
                     <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service</p>
                 </div>

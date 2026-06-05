@@ -119,11 +119,13 @@ export default function SpecialForm() {
                 </select>
             </div>
             <div className="field">
-                <label>Would you like Ruth involved for extra comfort or support?</label>
+                <label>Would you feel more comfortable with Ruth involved?</label>
+                <p style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', lineHeight: '1.5', margin: '0 0 8px 0' }}>
+                    Ruth is part of our family-owned team and stays personally connected to the process. Some clients feel better knowing there is a woman in the loop for communication, support, and extra reassurance.
+                </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '4px' }}>
                     {[
-                        "Yes, please involve Ruth in communication",
-                        "Yes, I would prefer Ruth to be part of the visit if possible",
+                        "I would prefer Ruth to be part of the visit if possible",
                         "No need, regular scheduling is fine"
                     ].map((opt) => (
                         <button

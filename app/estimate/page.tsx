@@ -594,11 +594,13 @@ export default function EstimatePage() {
                                 className="est-field__input est-field__input--textarea" />
                         </div>
                         <div className="est-field">
-                            <label className="est-field__label">Would you like Ruth involved for extra comfort or support?</label>
+                            <label className="est-field__label">Would you feel more comfortable with Ruth involved?</label>
+                            <p style={{ fontSize: '12px', color: '#6b7280', lineHeight: '1.4', margin: '0 0 6px 0' }}>
+                                Ruth is part of our family-owned team and stays personally connected to the process. Some clients feel better knowing there is a woman in the loop for communication, support, and extra reassurance.
+                            </p>
                             <div className="est-ruth-options" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 {[
-                                    "Yes, please involve Ruth in communication",
-                                    "Yes, I would prefer Ruth to be part of the visit if possible",
+                                    "I would prefer Ruth to be part of the visit if possible",
                                     "No need, regular scheduling is fine"
                                 ].map((opt) => (
                                     <button
