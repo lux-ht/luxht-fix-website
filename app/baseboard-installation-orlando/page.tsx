@@ -47,7 +47,7 @@ export default function BaseboardInstallationPage() {
                 "Clean caulking and paint-ready finishing",
                 "Paired with flooring installation for one-stop service",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does baseboard installation cost in Orlando?", a: "Baseboard installation typically costs $3 to $6 per linear foot for labor, depending on profile complexity and corner count. A typical 1,500 sq ft home runs $600 to $1,200 for full baseboard installation. Text us your room measurements at (407) 720-7476 for an exact quote." },
@@ -63,7 +63,7 @@ export default function BaseboardInstallationPage() {
                 { title: "Door Alignment", href: "/door-alignment-orlando/" }
             ]}
             startingPrice="Baseboard installation from $3/linear foot"
-            statsText="Licensed • Insured • Precision Cuts"
+            statsText="Fully Insured • Precision Cuts"
         />
     );
 }

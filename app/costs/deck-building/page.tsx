@@ -103,7 +103,7 @@ export default function DeckBuildingCostPage() {
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Custom Deck Design</h4><p className="text-white/70 text-sm">Built to your exact specifications.</p></div></div>
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Permit Handling</h4><p className="text-white/70 text-sm">We manage all permit applications.</p></div></div>
-                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Licensed & Insured</h4><p className="text-white/70 text-sm">Full protection for your project.</p></div></div>
+                            <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-white/70 text-sm">Full protection for your project.</p></div></div>
                             <div className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-[#64CEBB] flex-shrink-0" /><div><h4 className="font-semibold">Written Warranty</h4><p className="text-white/70 text-sm">Craftsmanship guaranteed.</p></div></div>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">

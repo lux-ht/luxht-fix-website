@@ -1,6 +1,6 @@
 # LUXHT Fix Website
 
-Professional handyman and home repair services website for LUXHT Fix, serving Orlando and Central Florida.
+Professional property maintenance and improvement services website for LUXHT Fix, serving Orlando, Central Florida, and South Florida.
 
 ## 🚀 Tech Stack
 

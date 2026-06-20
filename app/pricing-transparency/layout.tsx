@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Transparent Pricing for Handyman Services Orlando | LUXHT Fix',
-    description: 'See upfront pricing for home repairs in Orlando. Drywall repair, TV mounting, bathroom remodels, and more. No hidden fees, no surprise charges. Get honest quotes from LUXHT Fix.',
+    title: 'Transparent Pricing for Property Maintenance Services Orlando | LUXHT Fix',
+    description: 'See upfront pricing for property maintenance and repairs in Orlando. Drywall repair, TV mounting, bathroom remodels, and more. No hidden fees, no surprise charges. Get honest quotes from LUXHT Fix.',
     keywords: [
-        'handyman prices Orlando',
+        'property maintenance prices Orlando',
         'home repair costs Orlando FL',
-        'transparent pricing handyman',
+        'transparent pricing property maintenance',
         'drywall repair cost Orlando',
         'TV mounting price Orlando',
         'bathroom remodel cost Orlando',
-        'honest handyman pricing',
+        'honest property maintenance pricing',
         'upfront pricing home services',
         'Orlando home improvement costs',
-        'Central Florida handyman rates'
+        'Central Florida property maintenance rates'
     ],
     openGraph: {
-        title: 'Transparent Pricing for Home Repairs | LUXHT Fix Orlando',
+        title: 'Transparent Pricing for Property Maintenance | LUXHT Fix Orlando',
         description: 'No hidden fees, no surprises. See our upfront pricing for drywall repair, TV mounting, bathroom remodels, and more in Orlando.',
         type: 'website',
         locale: 'en_US',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Transparent Pricing for Home Repairs | LUXHT Fix Orlando',
-        description: 'No hidden fees, no surprises. See our upfront pricing for home services in Orlando.'
+        title: 'Transparent Pricing for Property Maintenance | LUXHT Fix Orlando',
+        description: 'No hidden fees, no surprises. See our upfront pricing for property maintenance in Orlando.'
     },
     alternates: {
         canonical: 'https://fix.luxht.com/pricing-transparency/'

@@ -48,7 +48,7 @@ export default function WaterDamageDrywallPage() {
                 "Mold prevention included at no extra cost",
                 "We don't patch over wet drywall — we replace it properly",
                 "Same-week emergency service available",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Should I repair or replace water-damaged drywall?", a: "It depends on the extent of the damage. Small stains may only need surface treatment, but drywall that's soft, bubbling, or crumbling must be cut out and replaced. LUXHT Fix assesses every situation and recommends the right approach — we never patch over hidden moisture." },
@@ -64,7 +64,7 @@ export default function WaterDamageDrywallPage() {
                 { title: "Toilet Repair", href: "/toilet-repair-orlando/" }
             ]}
             startingPrice="Water damage repairs start at $250"
-            statsText="Licensed • Insured • Emergency Service Available"
+            statsText="Fully Insured • Emergency Service Available"
         />
     );
 }

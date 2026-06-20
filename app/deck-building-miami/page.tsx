@@ -18,7 +18,7 @@ export default function DeckBuildingMiamiPage() {
       introParagraph="South Florida's year-round outdoor lifestyle makes a quality deck essential. LUXHT Fix builds custom decks across Miami-Dade and Broward counties using weather-resistant composite and tropical hardwood materials designed to withstand the region's intense sun, rain, and humidity. From elevated pool decks in Pembroke Pines to rooftop terraces in Fort Lauderdale, we design and build outdoor spaces that last."
       serviceDetails={['Custom deck design and construction','Composite decking (Trex, TimberTech)','Tropical hardwood options','Pool deck construction','Elevated and multi-level decks','Railing and stair installation']}
       processSteps={['Free consultation and design discussion','Create detailed plans with material selections','Obtain necessary permits','Prepare site and install foundation','Build deck structure and framing','Install decking, rails, and stairs','Final inspection and walkthrough']}
-      whyChooseUs={['Deck specialists for South Florida climate','Hurricane-rated construction methods','Weather-resistant composite materials','Custom designs for your outdoor vision','Permit handling included','Licensed, insured, and background-checked']}
+      whyChooseUs={['Deck specialists for South Florida climate','Hurricane-rated construction methods','Weather-resistant composite materials','Custom designs for your outdoor vision','Permit handling included','Fully insured and background-checked']}
       faqs={[
         {q:'What deck material is best for South Florida?',a:'Composite decking (Trex, TimberTech) is our top recommendation — it resists moisture, UV damage, and termites. Tropical hardwoods like Ipe are also excellent choices.'},
         {q:'How much does a deck cost in South Florida?',a:'Custom decks start at $8,000 depending on size, material, and complexity. We provide detailed estimates after a free consultation.'},
@@ -27,7 +27,7 @@ export default function DeckBuildingMiamiPage() {
       ]}
       relatedServices={[{title:'Patio & Lanai Repair',href:'/patio-lanai-repair-miami/'},{title:'Screen Enclosure Repair',href:'/screen-enclosure-repair-miami/'},{title:'Outdoor TV Mounting',href:'/outdoor-tv-mounting-miami/'},{title:'Flooring Installation',href:'/flooring-installation-miami/'}]}
       startingPrice="Custom decks start at $8,000"
-      statsText="Licensed • Insured • Hurricane-Rated Construction"
+      statsText="Fully Insured • Hurricane-Rated Construction"
       galleryImages={[
         { src: "/images/services/deck/custom-deck-design.jpg", title: "Custom Deck Design", subtitle: "Tailored to Your Home" },
         { src: "/images/services/deck/composite-and-wood.jpg", title: "Material Options", subtitle: "Composite & Wood" },

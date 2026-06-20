@@ -116,7 +116,7 @@ export default function FaucetPage() {
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-            <CheckCircle size={16} /> Licensed • Insured • 300+ Orlando Fixtures Installed
+            <CheckCircle size={16} /> Fully Insured • 300+ Orlando Fixtures Installed
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
@@ -252,7 +252,7 @@ export default function FaucetPage() {
                 "All fixture types: modern, traditional, touchless",
                 "Leak-free connections guaranteed",
                 "Clean installation with no water damage",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-slate-700 text-sm md:text-base">
                   <span className="text-[#64CEBB] mt-1 flex-shrink-0"><CheckCircle size={20} /></span>
@@ -401,7 +401,7 @@ export default function FaucetPage() {
               <Mail size={20} /> Email Us
             </a>
           </div>
-          <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service • Leak-Free Guarantee</p>
+          <p className="text-sm opacity-75">Fully Insured • Same-Week Service • Leak-Free Guarantee</p>
         </div>
       </section>
 

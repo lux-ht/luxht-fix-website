@@ -10,15 +10,15 @@ import { useState } from 'react';
 // SEO-optimized FAQ data for schema markup and user interaction
 const faqData = [
     {
-        question: "How much does handyman work cost in South Florida?",
-        answer: "Handyman costs in South Florida range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
+        question: "How much does property maintenance cost in South Florida?",
+        answer: "Property maintenance costs in South Florida range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
     },
     {
-        question: "Why don't most handyman companies show their prices?",
+        question: "Why don't most property maintenance companies show their prices?",
         answer: "Many companies use a 'lead-first' model where they want to speak with you before revealing pricing. This allows them to adjust quotes based on perceived budget and urgency. We believe transparent pricing builds trust and helps you make informed decisions."
     },
     {
-        question: "Is LUXHT Fix the cheapest handyman service in Florida?",
+        question: "Is LUXHT Fix the cheapest property maintenance company in Florida?",
         answer: "We're not the cheapest—we focus on quality and transparency. Our prices reflect experienced craftsmen, quality materials, proper insurance, and warranties. You won't find surprise charges or 'estimate-then-upsell' tactics with us."
     },
     {
@@ -37,7 +37,7 @@ const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix",
-    "description": "Professional handyman and home repair services across South Florida & Central Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
+    "description": "Professional property maintenance, repairs, installations, and improvement services across South Florida & Central Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
     "url": "https://fix.luxht.com",
     "telephone": "+1-407-720-7476",
     "priceRange": "$$",
@@ -294,7 +294,7 @@ export default function PricingTransparencyPage() {
                                     <CheckCircle className="w-5 h-5 text-[#64CEBB] flex-shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-semibold mb-1">Skilled Labor</h4>
-                                        <p className="text-sm text-slate-600">Experienced, licensed professionals</p>
+                                        <p className="text-sm text-slate-600">Experienced, background-checked professionals</p>
                                     </div>
                                 </div>
 
@@ -318,7 +318,7 @@ export default function PricingTransparencyPage() {
                                     <CheckCircle className="w-5 h-5 text-[#64CEBB] flex-shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-semibold mb-1">Insurance Coverage</h4>
-                                        <p className="text-sm text-slate-600">Fully licensed, bonded, and insured</p>
+                                        <p className="text-sm text-slate-600">Fully insured for your complete protection</p>
                                     </div>
                                 </div>
 
@@ -378,7 +378,7 @@ export default function PricingTransparencyPage() {
                                 <HelpCircle className="w-8 h-8" /> Frequently Asked Questions
                             </h2>
                             <p className="text-slate-600 mb-6">
-                                Get answers to common questions about handyman pricing and costs in South Florida and Central Florida.
+                                Get answers to common questions about property maintenance pricing and costs in South Florida and Central Florida.
                             </p>
                             <div className="bg-white border border-slate-200 rounded-xl divide-y divide-slate-200">
                                 {faqData.map((faq, index) => (
@@ -393,7 +393,7 @@ export default function PricingTransparencyPage() {
                                 Experience the Difference
                             </h2>
                             <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-                                Join hundreds of Florida homeowners who appreciate honest pricing and quality work.
+                                Join hundreds of Florida property owners who appreciate honest pricing and quality work.
                                 Browse our transparent cost guides or get a personalized quote today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -48,7 +48,7 @@ export default function DrywallMiamiPage() {
         'Seamless texture matching guaranteed',
         'Condo-friendly services throughout South Florida',
         'Same-week service across Miami-Dade & Broward',
-        'Licensed, insured, and background-checked'
+        'Fully insured and background-checked'
       ]}
       faqs={[
         { q: "What's the best drywall repair service in South Florida?", a: 'LUXHT Fix is one of South Florida\'s top-rated drywall specialists. We focus exclusively on quality drywall work with seamless texture matching across Miami, Fort Lauderdale, Hollywood, and all surrounding cities.' },
@@ -66,7 +66,7 @@ export default function DrywallMiamiPage() {
         { title: 'Hurricane Damage Repair', href: '/hurricane-damage-repair-miami/' }
       ]}
       startingPrice="Most small repairs start at $150"
-      statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      statsText="Fully Insured • Serving Miami-Dade & Broward"
       galleryImages={[
         { src: "/drywall-project-1.jpg", title: "Wall Repair", subtitle: "Seamless Patch" },
         { src: "/drywall-project-2.jpg", title: "Hole Repair", subtitle: "Invisible Fix" },

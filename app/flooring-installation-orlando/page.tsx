@@ -13,7 +13,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Flooring Installation Orlando | Hardwood, LVP, Tile - LUXHT Fix',
-  description: 'Expert flooring installation in Orlando. Hardwood, laminate, vinyl, and tile. Starting at $3/sq ft. Licensed & Insured. Call today!',
+  description: 'Expert flooring installation in Orlando. Hardwood, laminate, vinyl, and tile. Starting at $3/sq ft. Fully Insured. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/flooring-installation-orlando/' },
   openGraph: {
     title: 'Flooring Installation Orlando | LUXHT Fix',
@@ -83,7 +83,7 @@ export default function FlooringPage() {
     { text: "Our new hardwood floors look incredible! They finished our entire first floor in 3 days with zero mess left behind.", name: "Jennifer S.", loc: "Winter Park", rating: 5, date: "Jan 2025" },
     { text: "Professional installation of our LVP flooring. The team was efficient and the transitions look perfect.", name: "Mark D.", loc: "Lake Nona", rating: 5, date: "Dec 2024" },
     { text: "Great pricing and even better work. They removed our old carpet and installed laminate in two bedrooms.", name: "Ashley T.", loc: "Altamonte Springs", rating: 5, date: "Feb 2025" },
-    { text: "Licensed and insured, which was important to me. The tile work in our kitchen is flawless.", name: "Robert K.", loc: "Dr. Phillips", rating: 5, date: "Nov 2024" },
+    { text: "Fully insured, which was important to me. The tile work in our kitchen is flawless.", name: "Robert K.", loc: "Dr. Phillips", rating: 5, date: "Nov 2024" },
     { text: "Best flooring experience I've had. Fast quote and same-week installation.", name: "Sarah M.", loc: "Oviedo", rating: 5, date: "Mar 2025" }
   ];
 
@@ -116,7 +116,7 @@ export default function FlooringPage() {
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-            <CheckCircle size={16} /> Licensed • Insured • 200+ Orlando Floors Installed
+            <CheckCircle size={16} /> Fully Insured • 200+ Orlando Floors Installed
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
@@ -240,7 +240,7 @@ export default function FlooringPage() {
                 "Proper subfloor preparation included",
                 "Warranty-compliant installation methods",
                 "Clean execution with minimal disruption",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-slate-700 text-sm md:text-base">
                   <span className="text-[#64CEBB] mt-1 flex-shrink-0"><CheckCircle size={20} /></span>
@@ -389,7 +389,7 @@ export default function FlooringPage() {
               <Mail size={20} /> Email Us
             </a>
           </div>
-          <p className="text-sm opacity-75">Licensed • Insured • Quality Materials • Expert Installation</p>
+          <p className="text-sm opacity-75">Fully Insured • Quality Materials • Expert Installation</p>
         </div>
       </section>
 

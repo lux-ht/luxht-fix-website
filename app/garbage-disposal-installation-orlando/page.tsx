@@ -47,7 +47,7 @@ export default function GarbageDisposalPage() {
                 "Proper electrical and plumbing connections",
                 "First-time installations welcome",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does garbage disposal installation cost in Orlando?", a: "Replacement installation labor starts at $95 when swapping like-for-like. First-time installations requiring new plumbing and electrical connections typically range from $150 to $250. Disposal unit is not included." },
@@ -63,7 +63,7 @@ export default function GarbageDisposalPage() {
                 { title: "Kitchen Refacing", href: "/kitchen-refacing-orlando/" }
             ]}
             startingPrice="Disposal replacement starts at $95"
-            statsText="Licensed • Insured • All Brands Supported"
+            statsText="Fully Insured • All Brands Supported"
         />
     );
 }

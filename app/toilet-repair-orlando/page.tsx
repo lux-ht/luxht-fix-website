@@ -47,7 +47,7 @@ export default function ToiletRepairPage() {
                 "Wax ring replacements — no mess, no odor",
                 "New toilet installation available",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Why does my toilet keep running?", a: "A running toilet is usually caused by a worn flapper that no longer seals properly, or a faulty fill valve that doesn't shut off. Both are inexpensive parts that LUXHT Fix can replace in under 30 minutes." },
@@ -63,7 +63,7 @@ export default function ToiletRepairPage() {
                 { title: "Bath Remodel", href: "/bath-remodel-orlando/" }
             ]}
             startingPrice="Toilet repairs start at $75"
-            statsText="Licensed • Insured • Parts On Truck"
+            statsText="Fully Insured • Parts On Truck"
         />
     );
 }

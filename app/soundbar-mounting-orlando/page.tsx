@@ -47,7 +47,7 @@ export default function SoundbarMountingPage() {
                 "Cable management included with every install",
                 "Paired with TV mounting for one-visit setups",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Can you mount any brand of soundbar?", a: "Yes. LUXHT Fix mounts all major soundbar brands including Sonos, Bose, Samsung, LG, Vizio, and more. We use the manufacturer's bracket when available or install a universal bracket for brands that don't include wall-mount hardware." },
@@ -63,7 +63,7 @@ export default function SoundbarMountingPage() {
                 { title: "Smart Home Installation", href: "/smart-home-installation-orlando/" }
             ]}
             startingPrice="Soundbar mounting starts at $75"
-            statsText="Licensed • Insured • All Brands Supported"
+            statsText="Fully Insured • All Brands Supported"
         />
     );
 }

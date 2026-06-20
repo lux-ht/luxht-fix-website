@@ -354,7 +354,7 @@ We carry the insurance Miami condo associations require and follow all building 
     tags: ["DIY", "Tips", "Home Repair", "Handyman"],
     content: `## The Honest Truth About DIY
 
-We're a handyman company telling you this: **some projects you should absolutely do yourself.** Here's our honest breakdown of when to DIY and when to call a pro.
+We're a property maintenance company telling you this: **some projects you should absolutely do yourself.** Here's our honest breakdown of when to DIY and when to call a pro.
 
 ### ✅ Great DIY Projects
 

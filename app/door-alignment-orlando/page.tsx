@@ -47,7 +47,7 @@ export default function DoorAlignmentPage() {
                 "Most fixes completed in under 1 hour",
                 "Same-day service available for urgent issues",
                 "Upfront pricing — no surprises",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Why does my door stick in summer?", a: "Orlando's high humidity causes wooden doors to absorb moisture and swell, making them stick against the frame. LUXHT Fix can plane the door edges to account for seasonal swelling, or we can address underlying issues like loose hinges that make the problem worse." },
@@ -63,7 +63,7 @@ export default function DoorAlignmentPage() {
                 { title: "Smart Lock Installation", href: "/smart-lock-installation-orlando/" }
             ]}
             startingPrice="Door adjustments start at $85"
-            statsText="Licensed • Insured • 400+ Doors Fixed in Orlando"
+            statsText="Fully Insured • 400+ Doors Fixed in Orlando"
         />
     );
 }

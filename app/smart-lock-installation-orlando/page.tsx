@@ -47,7 +47,7 @@ export default function SmartLockInstallationPage() {
                 "Full smartphone app setup and training",
                 "Voice assistant integration (Alexa, Google, Siri)",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Which smart lock is best for my home?", a: "It depends on your needs. Schlage Encode is our top pick for reliability and built-in Wi-Fi. August is great if you want to keep your existing key. Yale Assure integrates well with smart home systems. We can recommend the best option during your consultation." },
@@ -63,7 +63,7 @@ export default function SmartLockInstallationPage() {
                 { title: "Door Handle Replacement", href: "/door-handle-replacement-orlando/" }
             ]}
             startingPrice="Smart lock installation starts at $95"
-            statsText="Licensed • Insured • 250+ Devices Installed"
+            statsText="Fully Insured • 250+ Devices Installed"
         />
     );
 }

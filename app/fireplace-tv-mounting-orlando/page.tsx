@@ -47,7 +47,7 @@ export default function FireplaceTVMountingPage() {
                 "Adjustable mounts for comfortable neck-level viewing",
                 "All fireplace types: gas, electric, decorative",
                 "Cable concealment through masonry included",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Is it safe to mount a TV above a fireplace?", a: "Yes, when done properly. LUXHT Fix assesses heat output and ensures proper clearance between the fireplace and TV. We use heat-rated mounting hardware and recommend adjustable mounts that angle the TV downward for comfortable viewing." },
@@ -63,7 +63,7 @@ export default function FireplaceTVMountingPage() {
                 { title: "Drywall Repair", href: "/drywall-orlando/" }
             ]}
             startingPrice="Fireplace mounting starts at $200"
-            statsText="Licensed • Insured • Heat-Safe Installation"
+            statsText="Fully Insured • Heat-Safe Installation"
         />
     );
 }

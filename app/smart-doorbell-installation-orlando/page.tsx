@@ -47,7 +47,7 @@ export default function SmartDoorbellPage() {
                 "Full app setup and personalized training",
                 "Hardwired and battery-powered expertise",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Can I install a smart doorbell myself?", a: "Battery-powered models are simple DIY installs, but hardwired models require working with doorbell wiring and potentially upgrading your transformer. LUXHT Fix handles both types and ensures everything is configured correctly for reliable operation." },
@@ -63,7 +63,7 @@ export default function SmartDoorbellPage() {
                 { title: "TV Mounting", href: "/tv-mounting-orlando/" }
             ]}
             startingPrice="Doorbell installation starts at $75"
-            statsText="Licensed • Insured • 250+ Devices Installed"
+            statsText="Fully Insured • 250+ Devices Installed"
         />
     );
 }

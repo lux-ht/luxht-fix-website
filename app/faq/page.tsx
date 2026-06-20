@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | LUXHT Fix — South Florida & Central Florida',
-    description: 'Common questions about pricing, scheduling, and our services across South Florida and Central Florida. Learn how LUXHT Fix provides transparent, expert home repairs.',
+    description: 'Common questions about pricing, scheduling, and our property maintenance and improvement services across South Florida and Central Florida. Learn how LUXHT Fix provides transparent, professional service.',
     alternates: { canonical: 'https://fix.luxht.com/faq/' },
 };
 
@@ -15,10 +15,11 @@ export default function FAQPage() {
             category: "General",
             icon: HelpCircle,
             items: [
-                { q: "Are you licensed and insured?", a: "Yes, LUXHT Fix is fully licensed and insured in the state of Florida. We carry liability insurance for your protection and ours." },
+                { q: "Are you fully insured?", a: "Yes, LUXHT Fix is fully insured in the state of Florida. We carry comprehensive liability insurance for your protection and peace of mind." },
                 { q: "What areas do you serve?", a: "We serve homeowners across South Florida — including Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, Aventura, and surrounding cities — as well as Central Florida — including Orlando, Winter Park, Lake Nona, Dr. Phillips, Windermere, and surrounding communities." },
                 { q: "Do you serve the Miami area?", a: "Yes! In 2025 we expanded to South Florida. We now serve Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, and 14+ cities across Miami-Dade and Broward counties." },
-                { q: "Do you offer free estimates?", a: "Yes! For most standard jobs, we can provide a free estimate over the phone or via message if you send us photos. For larger renovations, we offer in-home consultations." }
+                { q: "Do you offer free estimates?", a: "Yes! For most standard jobs, we can provide a free estimate over the phone or via message if you send us photos. For larger renovations, we offer in-home consultations." },
+                { q: "Are you a handyman service?", a: "Many clients find us while searching for a handyman, but LUXHT Fix is built as a professional property maintenance and improvement company. We are a local, family-owned company \u2014 not a lead generation app or outsourced workers. You call us, you get us." }
             ]
         },
         {

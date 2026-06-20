@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Get a Free Estimate | LUXHT Fix – South Florida Handyman',
+    title: 'Get a Free Estimate | LUXHT Fix \u2014 Property Maintenance & Improvement',
     description:
         'Tap a service, describe your project, and get a free estimate from LUXHT Fix. Serving Miami-Dade, Broward & Palm Beach County.',
     robots: { index: false, follow: false },

@@ -221,7 +221,7 @@ export default function TestimonialsContent() {
                             </div>
                             <h3 className="font-bold text-lg mb-2">Quality Craftsmanship</h3>
                             <p className="text-slate-600 text-sm">
-                                40+ years of combined experience. Licensed, insured, and dedicated to doing it right.
+                                40+ years of combined experience. Fully insured, and dedicated to doing it right.
                             </p>
                         </div>
 

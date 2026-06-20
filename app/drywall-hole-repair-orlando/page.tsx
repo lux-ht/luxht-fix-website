@@ -47,7 +47,7 @@ export default function DrywallHoleRepairPage() {
                 "Seamless texture matching guaranteed",
                 "Same-week service in most Orlando areas",
                 "No mess left behind — we protect and clean",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does it cost to fix a hole in drywall in Orlando?", a: "Small nail holes can be repaired for as little as $75, while larger holes from doorknobs or access cuts typically range from $150 to $350. Text us a photo at (407) 720-7476 for an exact quote." },
@@ -63,7 +63,7 @@ export default function DrywallHoleRepairPage() {
                 { title: "Door Handle Replacement", href: "/door-handle-replacement-orlando/" }
             ]}
             startingPrice="Hole repairs start at $75"
-            statsText="Licensed • Insured • 500+ Holes Repaired in Orlando"
+            statsText="Fully Insured • 500+ Holes Repaired in Orlando"
         />
     );
 }

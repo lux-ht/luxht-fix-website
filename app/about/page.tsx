@@ -6,8 +6,8 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About LUXHT Fix | Professional Home Services in South Florida & Central Florida',
-    description: 'LUXHT Fix brings construction-level expertise to home repairs across South Florida and Central Florida. Founded in Orlando, now expanding across Miami-Dade & Broward counties.',
+    title: 'About LUXHT Fix | Property Maintenance & Improvement — South Florida & Central Florida',
+    description: 'LUXHT Fix provides professional property maintenance, repairs, installations, and improvements for residential and commercial properties. Family-owned. Founded in Orlando, now serving South Florida.',
     alternates: { canonical: 'https://fix.luxht.com/about/' },
 };
 
@@ -20,9 +20,12 @@ export default function AboutPage() {
             <header className="pt-32 pb-20 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white text-center px-4">
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">About LUXHT Fix</h1>
-                    <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-12">
-                        LUXHT Fix is a full-service handyman company serving South Florida and Central Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Founded in Orlando, now expanding across Miami-Dade & Broward counties.</strong>
+                    <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-6">
+                        LUXHT Fix is a professional property maintenance and improvement company serving South Florida and Central Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Founded in Orlando, now expanding across Miami-Dade & Broward counties.</strong>
                     </p>
+                    <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 py-2 px-5 rounded-full text-sm font-bold text-white/90 mb-6">
+                        <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
+                    </div>
 
                     {/* Character Team Portrait */}
                     {/* Character Team Portrait Removed */}
@@ -76,9 +79,12 @@ export default function AboutPage() {
                     <div className="inline-block bg-[#584D94] text-white text-xs font-bold py-1 px-3 rounded-full mb-6 uppercase tracking-wider">
                         Construction Professionals
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Not Just Handymen. Real Builders.</h2>
-                    <p className="text-xl text-slate-600 mb-12 leading-relaxed">
-                        Our team consists of licensed construction professionals with extensive experience in structural framing, plumbing, electrical, and finish carpentry. Because we come from real construction backgrounds, we understand the structure and safety behind every repair.
+                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">More Than Maintenance. Professional Property Care.</h2>
+                    <p className="text-xl text-slate-600 mb-4 leading-relaxed">
+                        Our team consists of experienced construction professionals with extensive experience in structural framing, plumbing, electrical, and finish carpentry. Because we come from real construction backgrounds, we understand the structure and safety behind every repair.
+                    </p>
+                    <p className="text-base text-slate-500 mb-12 leading-relaxed italic">
+                        Many clients find us while searching for a handyman, but LUXHT Fix is built as a professional property maintenance and improvement company.
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
@@ -101,7 +107,7 @@ export default function AboutPage() {
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-800">From Orlando to South Florida</h2>
                         <p className="text-slate-500 mt-3 max-w-2xl mx-auto">
-                            After establishing LUXHT Fix as the go-to handyman service in Central Florida, we recognized the same gap in South Florida — homeowners who demand construction-quality expertise for everyday repairs.
+                            After establishing LUXHT Fix as the trusted property maintenance company in Central Florida, we recognized the same gap in South Florida — property owners who demand construction-quality expertise for everyday repairs.
                         </p>
                     </div>
 
@@ -223,11 +229,11 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">The LUXHT Fix Difference</h2>
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
                         <div className="grid grid-cols-2 bg-slate-900 text-white font-bold p-4 text-sm md:text-base">
-                            <div className="pl-4">Typical Handyman</div>
+                            <div className="pl-4">Typical Service Provider</div>
                             <div className="text-[#64CEBB]">LUXHT Fix</div>
                         </div>
                         {[
-                            ['General repair experience', 'Licensed construction professionals'],
+                            ['General repair experience', 'Experienced construction professionals'],
                             ['One-person operations', 'Backed by full renovation company'],
                             ['Volume-based business model', 'Quality and relationship focused'],
                             ['Limited structural knowledge', 'Deep construction expertise'],
@@ -248,7 +254,7 @@ export default function AboutPage() {
 
             {/* SECTION 8: Services List */}
             <section className="py-20 px-4 container mx-auto">
-                <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Comprehensive Home Services</h2>
+                <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Comprehensive Property Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
                         { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-miami/' },
@@ -281,7 +287,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <h2 className="text-4xl font-bold mb-6">Experience the LUXHT Fix Difference</h2>
                     <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                        Looking for more than a typical handyman? From South Florida to Central Florida — work with construction professionals who treat your home with the care it deserves.
+                        Looking for a property maintenance company that treats your home with care? From South Florida to Central Florida — work with construction professionals who are personally responsible for every project.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
@@ -295,7 +301,7 @@ export default function AboutPage() {
                         </a>
                     </div>
                     <p className="text-sm text-white/60 font-medium tracking-widest uppercase">
-                        Licensed • Insured • Construction-Grade Expertise
+                        Fully Insured • Construction-Grade Expertise
                     </p>
                 </div>
             </section>

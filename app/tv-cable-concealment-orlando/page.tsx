@@ -47,7 +47,7 @@ export default function TVCableConcealmentPage() {
                 "Code-compliant power solutions",
                 "Clean cuts with drywall repair included",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Can you hide TV cables inside the wall?", a: "Yes. In-wall cable routing is our most popular service. We route HDMI, audio, and other low-voltage cables through the wall cavity for a completely wire-free look. Power cables require a code-compliant power bridge or recessed outlet solution." },
@@ -63,7 +63,7 @@ export default function TVCableConcealmentPage() {
                 { title: "Smart Home Installation", href: "/smart-home-installation-orlando/" }
             ]}
             startingPrice="Cable concealment starts at $75"
-            statsText="Licensed • Insured • 300+ Installs in Orlando"
+            statsText="Fully Insured • 300+ Installs in Orlando"
         />
     );
 }

@@ -47,7 +47,7 @@ export default function OutdoorTVMountingPage() {
                 "GFCI safety compliance for outdoor installations",
                 "Experience with patio, lanai, poolside, and pergola setups",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Can a regular TV be mounted outdoors?", a: "A regular TV can be used in a fully covered and screened area like a lanai. For exposed patios, we recommend an outdoor-rated TV or a weatherproof TV enclosure. LUXHT Fix can advise on the best option for your specific setup." },
@@ -63,7 +63,7 @@ export default function OutdoorTVMountingPage() {
                 { title: "Deck Building", href: "/deck-building-orlando/" }
             ]}
             startingPrice="Outdoor mounting starts at $175"
-            statsText="Licensed • Insured • Weather-Safe Installation"
+            statsText="Fully Insured • Weather-Safe Installation"
         />
     );
 }

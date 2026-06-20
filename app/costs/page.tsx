@@ -253,7 +253,7 @@ export default function CostsPage() {
                             Why We Show Our Prices (When Others Won't)
                         </h2>
                         <p className="text-white/80 text-lg mb-6 max-w-2xl mx-auto">
-                            We researched every major handyman service in South Florida. They all hide their pricing behind
+                            We researched every major property maintenance company in South Florida. They all hide their pricing behind
                             "request a quote" buttons and phone-first sales tactics. We believe you deserve better.
                         </p>
                         <Link

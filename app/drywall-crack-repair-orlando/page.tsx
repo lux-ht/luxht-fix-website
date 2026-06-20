@@ -47,7 +47,7 @@ export default function DrywallCrackRepairPage() {
                 "Seamless texture matching guaranteed",
                 "Same-week service in most Orlando areas",
                 "Upfront pricing with photo estimates",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Why do cracks keep appearing in my drywall?", a: "Recurring drywall cracks are usually caused by foundation settling, seasonal temperature changes, or improper original installation. LUXHT Fix inspects for the root cause before repairing so the fix lasts. In older Orlando homes, settling is the most common cause." },
@@ -63,7 +63,7 @@ export default function DrywallCrackRepairPage() {
                 { title: "Door Alignment", href: "/door-alignment-orlando/" }
             ]}
             startingPrice="Most crack repairs start at $150"
-            statsText="Licensed • Insured • 500+ Orlando Homes Served"
+            statsText="Fully Insured • 500+ Orlando Homes Served"
         />
     );
 }

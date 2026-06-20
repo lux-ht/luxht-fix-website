@@ -28,7 +28,7 @@ const templateServices = [
     intro: 'Cracks in your South Florida home\'s walls are more than cosmetic — they can signal settling, moisture intrusion, or structural stress common in the region\'s sandy soil and tropical climate. LUXHT Fix specializes in identifying the root cause of drywall cracks and delivering permanent, invisible repairs for homeowners across Miami, Fort Lauderdale, Hollywood, and surrounding communities.',
     details: ['Hairline crack repair','Settlement crack repair','Corner bead crack repair','Stress crack repair around doors/windows','Ceiling crack repair','Joint tape failure repair'],
     steps: ['Inspect crack pattern to determine root cause','Clean and prepare crack area','Apply fiberglass mesh tape for reinforcement','Build up compound in thin, precise layers','Match existing wall texture seamlessly','Sand smooth and prepare for painting'],
-    why: ['Crack repair specialists serving South Florida','Root cause analysis before repair','Fiberglass mesh reinforcement for permanence','Seamless texture matching guaranteed','Same-week service across Miami-Dade & Broward','Licensed, insured, and background-checked'],
+    why: ['Crack repair specialists serving South Florida','Root cause analysis before repair','Fiberglass mesh reinforcement for permanence','Seamless texture matching guaranteed','Same-week service across Miami-Dade & Broward','Fully insured and background-checked'],
     faqs: [
       {q:'Why do I have cracks in my South Florida home?',a:'South Florida\'s sandy soil, humidity, and occasional storm activity can cause settling and expansion that leads to drywall cracks. Older homes in Coral Gables, Hollywood, and Miami are especially prone.'},
       {q:'How much does drywall crack repair cost in Miami?',a:'Most crack repairs range from $120-$300 depending on length, location, and texture matching needs. Contact us for a photo-based quote.'},
@@ -39,7 +39,7 @@ const templateServices = [
       {title:'Drywall Repair',href:'/drywall-miami/'},{title:'Drywall Hole Repair',href:'/drywall-hole-repair-miami/'},
       {title:'Water Damage Drywall',href:'/water-damage-drywall-repair-miami/'},{title:'Texture Matching',href:'/texture-matching-miami/'}
     ],
-    price: 'Crack repair starts at $120', stats: 'Licensed • Insured • Serving Miami-Dade & Broward'
+    price: 'Crack repair starts at $120', stats: 'Fully Insured • Serving Miami-Dade & Broward'
   },
   {
     name: 'Drywall Hole Repair', slug: 'drywall-hole-repair-miami',
@@ -49,7 +49,7 @@ const templateServices = [
     intro: 'Whether it\'s a doorknob punch-through in your Aventura condo or a plumbing access cut in your Pembroke Pines home, LUXHT Fix delivers invisible drywall hole repairs across South Florida. We handle everything from small nail holes to large openings with professional-grade materials and expert texture matching.',
     details: ['Small hole patching (nail pops, anchors)','Medium hole repair (fist/doorknob size)','Large hole repair (access cuts, damage)','Multi-hole repair projects','Ceiling hole repair','Texture matching after repair'],
     steps: ['Assess hole size and surrounding wall condition','Cut clean edges and install backing support','Apply patch and build up compound layers','Match existing texture precisely','Sand smooth and prepare for painting','Clean workspace completely'],
-    why: ['Hole repair specialists across South Florida','All sizes: nail holes to large access cuts','Seamless texture matching guaranteed','Same-week service in Miami-Dade & Broward','Clean execution with floor protection','Licensed, insured, and background-checked'],
+    why: ['Hole repair specialists across South Florida','All sizes: nail holes to large access cuts','Seamless texture matching guaranteed','Same-week service in Miami-Dade & Broward','Clean execution with floor protection','Fully insured and background-checked'],
     faqs: [
       {q:'How much does drywall hole repair cost in Miami?',a:'Pricing depends on hole size and quantity. Small holes start at $150, large access cuts from $250. Send us a photo for an instant quote.'},
       {q:'How long does hole repair take?',a:'Most single-hole repairs take 2-3 hours including texture matching and drying time.'},
@@ -60,7 +60,7 @@ const templateServices = [
       {title:'Drywall Repair',href:'/drywall-miami/'},{title:'Drywall Crack Repair',href:'/drywall-crack-repair-miami/'},
       {title:'Water Damage Drywall',href:'/water-damage-drywall-repair-miami/'},{title:'Texture Matching',href:'/texture-matching-miami/'}
     ],
-    price: 'Hole repair starts at $150', stats: 'Licensed • Insured • Serving All of South Florida'
+    price: 'Hole repair starts at $150', stats: 'Fully Insured • Serving All of South Florida'
   },
   {
     name: 'Water Damage Drywall Repair', slug: 'water-damage-drywall-repair-miami',
@@ -70,7 +70,7 @@ const templateServices = [
     intro: 'South Florida\'s tropical storms, heavy rainfall, and high humidity make water damage a common issue for homeowners in Miami, Fort Lauderdale, Hollywood, and surrounding areas. LUXHT Fix provides comprehensive water damage drywall repair — from moisture assessment and mold prevention to seamless texture matching — ensuring your walls are restored safely and completely.',
     details: ['Water damage assessment and moisture testing','Removal of compromised drywall sections','Mold prevention treatment','New drywall installation','Seamless texture matching','Ceiling water damage repair'],
     steps: ['Test moisture levels with professional equipment','Identify and confirm water source is resolved','Remove all water-damaged drywall safely','Treat area for mold prevention','Install new drywall with proper backing','Match texture and prepare for painting'],
-    why: ['Water damage repair experts in South Florida','Professional moisture testing equipment','Mold prevention protocols included','Hurricane and storm damage experience','Same-week emergency service available','Licensed, insured, and background-checked'],
+    why: ['Water damage repair experts in South Florida','Professional moisture testing equipment','Mold prevention protocols included','Hurricane and storm damage experience','Same-week emergency service available','Fully insured and background-checked'],
     faqs: [
       {q:'How do I know if my drywall has water damage?',a:'Signs include bubbling, soft spots, discoloration, peeling paint, and musty odors. South Florida humidity can make damage worse if not addressed quickly.'},
       {q:'Do you handle mold from water damage?',a:'We treat affected areas with mold prevention solutions and ensure proper drying before repair. For extensive mold, we recommend a certified mold remediation specialist first.'},
@@ -81,7 +81,7 @@ const templateServices = [
       {title:'Drywall Repair',href:'/drywall-miami/'},{title:'Hurricane Damage Repair',href:'/hurricane-damage-repair-miami/'},
       {title:'Drywall Crack Repair',href:'/drywall-crack-repair-miami/'},{title:'Texture Matching',href:'/texture-matching-miami/'}
     ],
-    price: 'Water damage repair starts at $200', stats: 'Licensed • Insured • Storm Damage Experts'
+    price: 'Water damage repair starts at $200', stats: 'Fully Insured • Storm Damage Experts'
   },
   {
     name: 'Texture Matching', slug: 'texture-matching-miami',
@@ -91,7 +91,7 @@ const templateServices = [
     intro: 'A repair is only as good as its finish. LUXHT Fix provides expert texture matching for South Florida homeowners, ensuring every patch and repair blends invisibly with your existing walls. Whether your home in Coral Gables has a smooth finish, your Pembroke Pines house has orange peel, or your Hollywood condo features knockdown texture, we match it perfectly.',
     details: ['Orange peel texture matching','Knockdown texture matching','Smooth finish blending','Skip trowel texture','Popcorn ceiling matching','Custom texture replication'],
     steps: ['Analyze existing wall texture pattern and depth','Prepare repair area with proper compound','Apply matching texture using specialized tools','Allow proper drying time','Fine-tune texture blend with surrounding area','Sand and prepare for painting'],
-    why: ['Texture matching specialists in South Florida','All texture types: orange peel, knockdown, smooth','Professional-grade tools and materials','Invisible blending guaranteed','Serving Miami-Dade and Broward counties','Licensed, insured, and background-checked'],
+    why: ['Texture matching specialists in South Florida','All texture types: orange peel, knockdown, smooth','Professional-grade tools and materials','Invisible blending guaranteed','Serving Miami-Dade and Broward counties','Fully insured and background-checked'],
     faqs: [
       {q:'Can you match any wall texture?',a:'Yes. We match orange peel, knockdown, smooth, skip trowel, and custom textures found in South Florida homes of all ages.'},
       {q:'How do you ensure a perfect match?',a:'We analyze your existing texture\'s pattern, depth, and spacing, then replicate it using the same tools and techniques. The result is an invisible blend.'},
@@ -102,7 +102,7 @@ const templateServices = [
       {title:'Drywall Repair',href:'/drywall-miami/'},{title:'Drywall Hole Repair',href:'/drywall-hole-repair-miami/'},
       {title:'Drywall Crack Repair',href:'/drywall-crack-repair-miami/'},{title:'Water Damage Repair',href:'/water-damage-drywall-repair-miami/'}
     ],
-    price: 'Texture matching starts at $150', stats: 'Licensed • Insured • Perfect Match Guaranteed'
+    price: 'Texture matching starts at $150', stats: 'Fully Insured • Perfect Match Guaranteed'
   },
   {
     name: 'TV Cable Concealment', slug: 'tv-cable-concealment-miami',
@@ -112,7 +112,7 @@ const templateServices = [
     intro: 'Nothing ruins a beautiful TV mounting job like visible cables. LUXHT Fix provides professional cable concealment for South Florida homeowners — routing HDMI, power, and audio cables behind walls or through premium cable covers. Whether you\'re in a Miami Beach high-rise or a Davie single-family home, we deliver clean, organized setups.',
     details: ['In-wall cable routing (HDMI, power, audio)','Surface cable cover installation','Power outlet relocation behind TV','Cable management for soundbars','Multi-device cable organization','Conduit installation for concrete walls'],
     steps: ['Assess wall type and cable routing options','Plan optimal cable path from TV to devices','Cut access points or install surface tracks','Route cables through wall or covers','Install any needed power outlets','Test all connections and organize cables'],
-    why: ['Cable concealment specialists in South Florida','In-wall and surface solutions for any wall type','Condo-friendly installations (no structural changes)','Clean, organized results every time','Same-week service across Miami-Dade & Broward','Licensed, insured, and background-checked'],
+    why: ['Cable concealment specialists in South Florida','In-wall and surface solutions for any wall type','Condo-friendly installations (no structural changes)','Clean, organized results every time','Same-week service across Miami-Dade & Broward','Fully insured and background-checked'],
     faqs: [
       {q:'Can you hide cables in a condo wall?',a:'Yes. We offer both in-wall routing and surface cable covers that work perfectly in condos throughout Aventura, Sunny Isles Beach, and Miami Beach without structural modifications.'},
       {q:'How much does cable concealment cost in Miami?',a:'Basic cable cover installation starts at $100. In-wall cable routing starts at $175. Pricing depends on wall type and number of cables.'},
@@ -123,7 +123,7 @@ const templateServices = [
       {title:'TV Mounting',href:'/tv-mounting-miami/'},{title:'Fireplace TV Mounting',href:'/fireplace-tv-mounting-miami/'},
       {title:'Soundbar Mounting',href:'/soundbar-mounting-miami/'},{title:'Outdoor TV Mounting',href:'/outdoor-tv-mounting-miami/'}
     ],
-    price: 'Cable concealment starts at $100', stats: 'Licensed • Insured • Condo-Friendly Solutions'
+    price: 'Cable concealment starts at $100', stats: 'Fully Insured • Condo-Friendly Solutions'
   },
 ];
 
@@ -197,7 +197,7 @@ function generateTemplatePage(svc) {
     'Clean execution with area protection',
     'Same-week scheduling available',
     'Serving all of South Florida',
-    'Licensed and insured professionals'
+    'Fully insured professionals'
   ]);
   const steps = JSON.stringify(svc.steps || [
     'Assess the project scope and requirements',
@@ -213,13 +213,13 @@ function generateTemplatePage(svc) {
     'Clean, respectful execution in your home',
     'Transparent pricing with no hidden fees',
     'Same-week service across Miami-Dade & Broward',
-    'Licensed, insured, and background-checked'
+    'Fully insured and background-checked'
   ]);
   const faqs = JSON.stringify(svc.faqs || [
     {q:`How much does ${svc.name.toLowerCase()} cost in South Florida?`,a:`Pricing varies by project scope. ${svc.name} starts at ${svc.price}. Contact us with photos for a fast, personalized quote.`},
     {q:`Do you serve my area in South Florida?`,a:`Yes! LUXHT Fix serves all of Miami-Dade and Broward counties including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, and surrounding cities.`},
     {q:`How quickly can you schedule ${svc.name.toLowerCase()}?`,a:`We offer same-week service for most projects. Contact us to check current availability in your area.`},
-    {q:`Are you licensed and insured?`,a:`Yes. LUXHT Fix is fully licensed and insured for all work we perform throughout South Florida.`}
+    {q:`Are you fully insured?`,a:`Yes. LUXHT Fix is fully fully insured for all work we perform throughout South Florida.`}
   ]);
   const related = JSON.stringify(svc.related || [
     {title:'All Services',href:'/south-florida/'},
@@ -234,7 +234,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '${svc.name} in South Florida | Miami, Fort Lauderdale - LUXHT Fix',
-  description: 'Professional ${svc.name.toLowerCase()} in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & more. Licensed & Insured. Call today!',
+  description: 'Professional ${svc.name.toLowerCase()} in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & more. Fully Insured. Call today!',
   alternates: { canonical: 'https://fix.luxht.com/${svc.slug}/' },
   openGraph: {
     title: '${svc.name} in South Florida | LUXHT Fix',
@@ -263,7 +263,7 @@ export default function ${svc.slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.to
       faqs={${faqs}}
       relatedServices={${related}}
       startingPrice="${svc.price ? `${svc.name} starts at ${svc.price}` : ''}"
-      statsText="Licensed • Insured • Serving Miami-Dade & Broward"
+      statsText="Fully Insured • Serving Miami-Dade & Broward"
     />
   );
 }

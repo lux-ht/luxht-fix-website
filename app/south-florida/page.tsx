@@ -9,12 +9,12 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Home Repair & Handyman Services in South Florida | Miami, Fort Lauderdale - LUXHT Fix',
-  description: 'Professional home repair and handyman services in South Florida. Drywall, TV mounting, flooring, bathroom remodels & more. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines. Licensed & Insured.',
+  title: 'Property Maintenance & Improvement in South Florida | Miami, Fort Lauderdale — LUXHT Fix',
+  description: 'Professional property maintenance, repairs, installations, and improvements in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines. Family-Owned. Fully Insured.',
   alternates: { canonical: 'https://fix.luxht.com/south-florida/' },
   openGraph: {
-    title: 'LUXHT Fix South Florida | Home Repair & Handyman Services',
-    description: 'Professional home repair in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & 10+ cities.',
+    title: 'LUXHT Fix South Florida | Property Maintenance & Improvement',
+    description: 'Professional property maintenance and improvement in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & 10+ cities.',
     url: 'https://fix.luxht.com/south-florida/',
     type: 'website',
     siteName: 'LUXHT Fix',
@@ -98,7 +98,7 @@ export default function SouthFloridaPage() {
             <MapPin size={16} /> Now Serving South Florida
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Home Repair & Handyman Services in South Florida
+            Property Maintenance & Improvement in South Florida
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
             Professional home repair for Miami-Dade & Broward counties.
@@ -108,7 +108,7 @@ export default function SouthFloridaPage() {
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-            <CheckCircle size={16} /> Licensed • Insured • Serving 14 South Florida Cities
+            <CheckCircle size={16} /> Family-Owned • Fully Insured • Serving 14 South Florida Cities
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -161,7 +161,7 @@ export default function SouthFloridaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               'Proven track record with 500+ homes served in Central Florida',
-              'Licensed, insured, and background-checked professionals',
+              'Fully insured and background-checked professionals',
               'Same-week service across Miami-Dade & Broward counties',
               'Specialized in South Florida challenges: humidity, storms, concrete walls',
               'Upfront pricing with photo-based estimates',
@@ -220,7 +220,7 @@ export default function SouthFloridaPage() {
               <Mail size={20} /> Email Us
             </a>
           </div>
-          <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service Available</p>
+          <p className="text-sm opacity-75">Fully Insured • Same-Week Service Available</p>
         </div>
       </section>
     </main>

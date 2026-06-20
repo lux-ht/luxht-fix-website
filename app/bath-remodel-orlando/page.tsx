@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://fix.luxht.com/bath-remodel-orlando/' },
   openGraph: {
     title: 'Bathroom Remodel Orlando | LUXHT Fix',
-    description: 'Professional bathroom remodeling in Orlando. Full renovations from design to completion. Licensed & Insured.',
+    description: 'Professional bathroom remodeling in Orlando. Full renovations from design to completion. Fully Insured.',
     url: 'https://fix.luxht.com/bath-remodel-orlando/',
     type: 'website',
     siteName: 'LUXHT Fix',
@@ -122,7 +122,7 @@ export default function BathRemodelPage() {
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-            <CheckCircle size={16} /> Licensed • Insured • 35+ Orlando Bathrooms Remodeled
+            <CheckCircle size={16} /> Fully Insured • 35+ Orlando Bathrooms Remodeled
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
@@ -254,7 +254,7 @@ export default function BathRemodelPage() {
                 "Quality materials and professional craftsmanship",
                 "Transparent pricing with detailed estimates",
                 "On-time project completion (2-3 weeks typical)",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-slate-700 text-sm md:text-base">
                   <span className="text-[#64CEBB] mt-1 flex-shrink-0"><CheckCircle size={20} /></span>
@@ -403,7 +403,7 @@ export default function BathRemodelPage() {
               <Mail size={20} /> Email Us
             </a>
           </div>
-          <p className="text-sm opacity-75">Licensed • Insured • Free Design Consultation • 2-3 Week Completion</p>
+          <p className="text-sm opacity-75">Fully Insured • Free Design Consultation • 2-3 Week Completion</p>
         </div>
       </section>
 

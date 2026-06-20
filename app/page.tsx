@@ -31,14 +31,20 @@ export default function Home() {
                     {/* Smart Search Bar */}
                     <SmartSearch />
 
-                    <h1 className="text-[2.75rem] md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight mt-10">
-                        Handyman Services<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">in South Florida & Central Florida</span>
+                    <h1 className="text-[2.75rem] md:text-7xl font-bold text-slate-900 mb-4 tracking-tight leading-tight mt-10">
+                        Property Maintenance<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">& Improvement</span>
                     </h1>
 
-                    <p className="text-lg md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
-                        Expert craftsmanship with transparent pricing for homeowners across South Florida and Central Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                    <p className="text-sm md:text-base font-semibold text-slate-500 tracking-wide mb-4">Residential | Commercial | Rentals | Offices</p>
+
+                    <p className="text-lg md:text-2xl text-slate-600 mb-4 max-w-2xl mx-auto font-light leading-relaxed">
+                        Professional repairs, maintenance, installations, and property improvements across South Florida & Central Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                     </p>
+
+                    <div className="inline-flex items-center gap-2 bg-[#584D94]/10 border border-[#584D94]/20 py-2 px-5 rounded-full text-sm font-bold text-[#584D94] mb-6">
+                        <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
+                    </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
@@ -169,7 +175,7 @@ export default function Home() {
                     <ScrollReveal>
                     <div className="text-center mb-16">
                         <p className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Our Services</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Expert Home Services Across Florida</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Professional Property Services Across Florida</h2>
                         <p className="text-slate-500 mt-3">Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Orlando & more</p>
                     </div>
                     </ScrollReveal>
@@ -212,20 +218,27 @@ export default function Home() {
 
             {/* WHY CHOOSE US */}
             <section className="py-24 px-4 container mx-auto relative">
-                {/* Floating badge */}
+                {/* Floating badges */}
                 <div className="hidden lg:block absolute -right-4 top-20 bg-white border border-slate-200 rounded-2xl px-4 py-3 shadow-lg animate-badge-pulse z-10" aria-hidden="true">
                     <div className="flex items-center gap-2">
                         <Shield size={18} className="text-[#64CEBB]" />
-                        <span className="text-xs font-bold text-slate-700">Licensed & Insured</span>
+                        <span className="text-xs font-bold text-slate-700">Fully Insured</span>
+                    </div>
+                </div>
+                <div className="hidden lg:block absolute -right-4 top-36 bg-white border border-slate-200 rounded-2xl px-4 py-3 shadow-lg animate-badge-pulse z-10" style={{ animationDelay: '1s' }} aria-hidden="true">
+                    <div className="flex items-center gap-2">
+                        <Star size={18} className="text-[#64CEBB] fill-[#64CEBB]" />
+                        <span className="text-xs font-bold text-slate-700">Family-Owned</span>
                     </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
                     <ScrollReveal direction="left">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Florida Homeowners Trust LUXHT Fix</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Florida Property Owners Trust LUXHT Fix</h2>
                         <div className="space-y-8">
                             {[
-                                { title: "Licensed & Insured", desc: "Fully licensed, bonded, and insured for your complete protection." },
+                                { title: "Fully Insured", desc: "Fully insured for your complete protection." },
+                                { title: "Family-Owned & Personally Responsible", desc: "You call us. You get us. No lead apps, no random outsourcing." },
                                 { title: "Same-Day Service Available", desc: "Fast scheduling—many projects can start the same day you call." },
                                 { title: "Transparent Pricing", desc: "Clear, detailed quotes before we start. No surprises, no hidden fees." },
                                 { title: "100% Satisfaction Guarantee", desc: "We'll work with you until you're completely satisfied with the results." }

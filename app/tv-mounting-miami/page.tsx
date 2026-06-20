@@ -48,7 +48,7 @@ export default function TVMountingMiamiPage() {
         'Concealed cable solutions included with every install',
         'Outdoor TV mounting for South Florida\'s year-round patio lifestyle',
         'Same-week service across Miami-Dade & Broward',
-        'Licensed, insured, and background-checked'
+        'Fully insured and background-checked'
       ]}
       faqs={[
         { q: 'Can you mount a TV on a concrete condo wall?', a: 'Yes. Many South Florida condos have concrete walls. We use commercial-grade concrete anchors and masonry drill bits for secure installations in high-rises throughout Aventura, Sunny Isles Beach, and Miami Beach.' },
@@ -66,7 +66,7 @@ export default function TVMountingMiamiPage() {
         { title: 'Smart Home Installation', href: '/smart-home-installation-miami/' }
       ]}
       startingPrice="TV mounting starts at $120"
-      statsText="Licensed • Insured • Condo & Home Specialists"
+      statsText="Fully Insured • Condo & Home Specialists"
       galleryImages={[
         { src: "/images/services/tv-mounting/flat-screen-tvs.jpg", title: "Flat Screen Mount", subtitle: "Clean & Level" },
         { src: "/images/services/tv-mounting/cable-management.jpg", title: "Cable Management", subtitle: "Hidden Wires" },

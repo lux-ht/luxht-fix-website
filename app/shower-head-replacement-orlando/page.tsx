@@ -47,7 +47,7 @@ export default function ShowerHeadReplacementPage() {
                 "All types: rain, handheld, dual systems",
                 "Shower arm replacement included if needed",
                 "Same-week service — often same-day",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does shower head replacement cost in Orlando?", a: "Labor for a standard shower head replacement starts at $65. If the shower arm needs replacement due to corrosion, the total typically ranges from $95 to $150. Shower head hardware is not included." },
@@ -63,7 +63,7 @@ export default function ShowerHeadReplacementPage() {
                 { title: "Garbage Disposal", href: "/garbage-disposal-installation-orlando/" }
             ]}
             startingPrice="Shower head replacement starts at $65"
-            statsText="Licensed • Insured • Drip-Free Guarantee"
+            statsText="Fully Insured • Drip-Free Guarantee"
         />
     );
 }

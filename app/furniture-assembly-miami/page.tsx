@@ -18,7 +18,7 @@ export default function FurnitureAssemblyMiamiPage() {
       introParagraph="Skip the frustration of flat-pack furniture assembly. LUXHT Fix provides fast, professional furniture assembly across South Florida — from IKEA desks in Doral to Wayfair bedroom sets in Pembroke Pines. We assemble everything correctly, securely, and quickly so you can enjoy your new furniture without the hassle."
       serviceDetails={['IKEA furniture assembly','Wayfair and Amazon furniture','Office desks and workstations','Bedroom sets and wardrobes','Shelving and storage units','Outdoor furniture assembly']}
       processSteps={['Confirm furniture items and inventory parts','Organize all hardware and components','Follow manufacturer specifications precisely','Assemble with professional tools for secure fit','Level and adjust for stability','Clean up all packaging and debris']}
-      whyChooseUs={['All brands: IKEA, Wayfair, Amazon, and more','Fast assembly with professional tools','Furniture secured to wall when needed','Clean up of all packaging included','Same-day service available in most areas','Licensed, insured, and background-checked']}
+      whyChooseUs={['All brands: IKEA, Wayfair, Amazon, and more','Fast assembly with professional tools','Furniture secured to wall when needed','Clean up of all packaging included','Same-day service available in most areas','Fully insured and background-checked']}
       faqs={[
         {q:'How much does furniture assembly cost?',a:'Assembly starts at $75 per item. Multi-item discounts available. Pricing depends on furniture complexity.'},
         {q:'Do you assemble IKEA furniture?',a:'Yes. IKEA assembly is one of our most popular services. We handle PAX wardrobes, KALLAX shelving, MALM dressers, and all other IKEA products.'},
@@ -27,7 +27,7 @@ export default function FurnitureAssemblyMiamiPage() {
       ]}
       relatedServices={[{title:'TV Mounting',href:'/tv-mounting-miami/'},{title:'Smart Home Installation',href:'/smart-home-installation-miami/'},{title:'Door, Lock & Trim',href:'/door-lock-trim-miami/'},{title:'Baseboard Installation',href:'/baseboard-installation-miami/'}]}
       startingPrice="Assembly starts at $75 per item"
-      statsText="Licensed • Insured • All Brands"
+      statsText="Fully Insured • All Brands"
       galleryImages={[
         { src: "/images/services/furniture-assembly/ikea-furniture.jpg", title: "IKEA Furniture", subtitle: "Expert Assembly" },
         { src: "/images/services/furniture-assembly/office-furniture.jpg", title: "Office Setup", subtitle: "Productive Workspaces" },

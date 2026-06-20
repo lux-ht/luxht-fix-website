@@ -47,7 +47,7 @@ export default function TextureMatchingPage() {
                 "Professional-grade spray and hand-application tools",
                 "We match even difficult vintage textures",
                 "Satisfaction guaranteed on every texture match",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "Can you match my wall's exact texture?", a: "Yes. LUXHT Fix matches all common textures including orange peel, knockdown, smooth, skip trowel, and custom patterns. We use professional-grade equipment and techniques to replicate your existing texture precisely." },
@@ -63,7 +63,7 @@ export default function TextureMatchingPage() {
                 { title: "Bath Remodel", href: "/bath-remodel-orlando/" }
             ]}
             startingPrice="Texture matching starts at $150"
-            statsText="Licensed • Insured • Texture Specialists"
+            statsText="Fully Insured • Texture Specialists"
         />
     );
 }

@@ -22,6 +22,13 @@ export default function Footer() {
                     </div>
                 </div>
 
+                    {/* Trust Badge */}
+                    <div className="text-center sm:text-left mb-6">
+                        <span className="inline-flex items-center gap-2 bg-white/10 border border-white/15 text-white/80 text-xs font-semibold py-1.5 px-4 rounded-full">
+                            Family-Owned. Not a Lead App. · Serving Miami-Dade, Broward & Palm Beach
+                        </span>
+                    </div>
+
                 {/* Links Grid - Services + Company side-by-side, Contact below */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
                     {/* Services Column - 1 col on mobile, 2 on desktop */}
@@ -120,11 +127,11 @@ export default function Footer() {
                     <div className="max-w-4xl text-slate-200 leading-relaxed text-xs md:text-sm">
                         {/* Mobile: show only the first short sentence */}
                         <p>
-                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing high-end handyman and home improvement services across South Florida and Central Florida.
+                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida and Central Florida.
                         </p>
                         {/* Desktop: show the full second paragraph too */}
                         <p className="hidden md:block mt-3 text-slate-300">
-                            We specialize in professional TV mounting, expert furniture assembly, and high-quality interior painting for residents in Maitland, Winter Park, and Casselberry. Now proudly serving South Florida including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your home projects—from minor electrical work to complex home staging—are handled with the utmost care and attention to detail.
+                            We specialize in professional property maintenance, repairs, installations, and improvements for residents and businesses in Maitland, Winter Park, and Casselberry. Now proudly serving South Florida including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your property projects—from minor repairs to complex improvements—are handled with the utmost care and attention to detail.
                         </p>
                     </div>
                 </div>
@@ -132,7 +139,7 @@ export default function Footer() {
 
             <div className="bg-[#342b5a] py-6 relative z-10">
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-center text-blue-200 text-xs">
-                    <p>© {new Date().getFullYear()} LUXHT Fix. All rights reserved. Licensed & Insured.</p>
+                    <p>© {new Date().getFullYear()} LUXHT Fix. All rights reserved. Family-Owned. Fully Insured.</p>
                     <div className="flex flex-wrap justify-center gap-4 text-slate-400">
                         <Link href="/privacy-policy/" className="hover:text-[#64CEBB] transition-colors">Privacy Policy</Link>
                         <span className="text-white/10 hidden sm:inline">|</span>

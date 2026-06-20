@@ -81,7 +81,7 @@ export default function Hero({ imageSrc, imageAlt, imageOpacity = "opacity-10", 
                     </div>
 
                     <p className="mt-4 text-sm text-slate-500">
-                        Same week service • Licensed & Insured
+                        Same week service • Fully Insured
                     </p>
                 </motion.div>
             </div>

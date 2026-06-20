@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
                                     <h2 className="text-2xl font-bold">Services Description</h2>
                                 </div>
                                 <p className="text-slate-300 leading-relaxed">
-                                    LUXHT Fix provides professional home repair, renovation, and handyman services across the South Florida and Central Florida metropolitan areas. Our services include, but are not limited to:
+                                    LUXHT Fix provides professional property maintenance, repair, installation, and improvement services across the South Florida and Central Florida metropolitan areas. Our services include, but are not limited to:
                                 </p>
                                 <ul className="text-slate-300 space-y-2 list-disc list-inside">
                                     <li>Drywall repair and installation</li>

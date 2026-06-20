@@ -18,7 +18,7 @@ export default function DoorLockTrimMiamiPage() {
       introParagraph="South Florida's humidity causes doors to swell, stick, and misalign more than in drier climates. LUXHT Fix provides comprehensive door, lock, and trim services across Miami-Dade and Broward counties — from fixing hurricane-damaged doors in Hollywood to installing smart locks in Aventura condos. We handle alignment, hardware upgrades, deadbolt installation, and decorative trim with precision craftsmanship."
       serviceDetails={['Door alignment and adjustment','Lock and deadbolt installation','Smart lock installation and setup','Door handle and knob replacement','Interior and exterior door repair','Trim and molding installation']}
       processSteps={['Assess door, lock, or trim issue','Provide transparent quote with options','Source professional-grade hardware','Complete installation or repair','Test operation and adjust fit','Clean workspace and verify satisfaction']}
-      whyChooseUs={['Door and lock specialists in South Florida','Hurricane damage repair experience','Smart lock installation and setup included','Humidity-related door problems are our specialty','Same-week service across Miami-Dade & Broward','Licensed, insured, and background-checked']}
+      whyChooseUs={['Door and lock specialists in South Florida','Hurricane damage repair experience','Smart lock installation and setup included','Humidity-related door problems are our specialty','Same-week service across Miami-Dade & Broward','Fully insured and background-checked']}
       faqs={[
         {q:'Why is my door sticking in South Florida?',a:'South Florida\'s high humidity causes wooden doors to swell and frames to shift. We adjust, plane, or rehang doors to restore smooth operation.'},
         {q:'Do you install smart locks in condos?',a:'Yes. We install Schlage, August, Yale, and Kwikset smart locks in condos and homes throughout South Florida with full app setup.'},
@@ -27,7 +27,7 @@ export default function DoorLockTrimMiamiPage() {
       ]}
       relatedServices={[{title:'Door Alignment',href:'/door-alignment-miami/'},{title:'Deadbolt Installation',href:'/deadbolt-installation-miami/'},{title:'Smart Lock Installation',href:'/smart-lock-installation-miami/'},{title:'Door Handle Replacement',href:'/door-handle-replacement-miami/'},{title:'Hurricane Damage Repair',href:'/hurricane-damage-repair-miami/'}]}
       startingPrice="Door services start at $85"
-      statsText="Licensed • Insured • Hurricane Damage Experts"
+      statsText="Fully Insured • Hurricane Damage Experts"
       galleryImages={[
         { src: "/images/services/door-lock/door-adjustment-before.jpg", title: "Door Adjustment", subtitle: "Before: Misaligned" },
         { src: "/images/services/door-lock/door-adjustment-after.jpg", title: "Door Adjustment", subtitle: "After: Smooth Operation" },

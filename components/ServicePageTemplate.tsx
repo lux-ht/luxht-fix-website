@@ -177,7 +177,7 @@ export default function ServicePageTemplate({
                     )}
 
                     <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-                        <CheckCircle size={16} /> {statsText || `Licensed • Insured • ${loc.name}'s Trusted Experts`}
+                        <CheckCircle size={16} /> {statsText || `Fully Insured • ${loc.name}'s Trusted Experts`}
                     </div>
 
                     <div className="max-w-md mx-auto space-y-3 mb-8">
@@ -220,7 +220,7 @@ export default function ServicePageTemplate({
 
                     {/* Neighborhood mentions */}
                     <p className="text-slate-600 leading-relaxed mb-8">
-                        We proudly serve homeowners in <strong>{neighborhoods.slice(0, -1).join(', ')}</strong>
+                        We proudly serve property owners and residents in <strong>{neighborhoods.slice(0, -1).join(', ')}</strong>
                         {neighborhoods.length > 1 && <>, and <strong>{neighborhoods[neighborhoods.length - 1]}</strong></>}
                         {' '}with expert {serviceName.toLowerCase()} services. Whether you&apos;re in a historic home in {neighborhoods[0]} or a newer community in {neighborhoods[neighborhoods.length - 1]}, LUXHT Fix delivers the same high-quality results.
                     </p>
@@ -283,7 +283,7 @@ export default function ServicePageTemplate({
             {/* WHY CHOOSE US */}
             <section className="py-20 px-4 container mx-auto bg-[#584D94]/5 rounded-3xl my-8 max-w-6xl">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-xl md:text-3xl font-bold text-[#584D94] mb-8">Why {loc.name} Homeowners Choose LUXHT Fix</h2>
+                    <h2 className="text-xl md:text-3xl font-bold text-[#584D94] mb-8">Why {loc.name} Property Owners Choose LUXHT Fix</h2>
                     <div className="grid md:grid-cols-2 gap-4">
                         {whyChooseUs.map((item, i) => (
                             <div key={i} className="flex items-start gap-3 text-slate-700">
@@ -348,7 +348,7 @@ export default function ServicePageTemplate({
                 <div className="container mx-auto max-w-2xl">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Need {serviceName} This Week?</h2>
                     <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                        Fast, professional service with quality results.<br />{loc.name}{"'"}s trusted home repair experts.
+                        Fast, professional service with quality results.<br />{loc.name}{"'"}s trusted property maintenance professionals.
                     </p>
                     <div className="max-w-md mx-auto space-y-3 mb-8">
                         <div className="grid grid-cols-2 gap-3">
@@ -368,7 +368,7 @@ export default function ServicePageTemplate({
                             </a>
                         </div>
                     </div>
-                    <p className="text-sm opacity-75">Licensed • Insured • Same-Week Service</p>
+                    <p className="text-sm opacity-75">Family-Owned • Fully Insured • Same-Week Service</p>
                 </div>
             </section>
         </main>

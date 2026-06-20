@@ -7,18 +7,18 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://fix.luxht.com'),
   title: {
-    default: 'LUXHT Fix | Home Repairs & Handyman Services in South Florida & Central Florida',
+    default: 'LUXHT Fix | Property Maintenance & Improvement in South Florida & Central Florida',
     template: '%s | LUXHT Fix',
   },
   description:
-    'Professional handyman and home repair services in South Florida & Central Florida. Specializing in drywall repair, TV mounting, flooring, deck building, and more. Serving Miami, Fort Lauderdale, Pembroke Pines & Orlando. Licensed & Insured. Call (407) 720-7476.',
+    'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida & Central Florida. Drywall, TV mounting, flooring, deck building & more. Serving Miami, Fort Lauderdale, Pembroke Pines & Orlando. Family-Owned. Fully Insured. Call (407) 720-7476.',
   alternates: {
     canonical: 'https://fix.luxht.com/',
   },
   openGraph: {
-    title: 'LUXHT Fix | Handyman Services in South Florida & Central Florida',
+    title: 'LUXHT Fix | Property Maintenance & Improvement — South Florida & Central Florida',
     description:
-      'Expert home repair and handyman services across South Florida & Central Florida. Drywall, flooring, TV mounting, decks & more. Licensed & Insured.',
+      'Professional property maintenance and improvement services across South Florida & Central Florida. Drywall, flooring, TV mounting, installations & more. Family-Owned. Fully Insured.',
     url: 'https://fix.luxht.com/',
     siteName: 'LUXHT Fix',
     locale: 'en_US',
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
         url: '/images/logo-wide-hammers.png',
         width: 800,
         height: 800,
-        alt: 'LUXHT Fix - Premium Home Repair Services in South Florida & Central Florida',
+        alt: 'LUXHT Fix - Property Maintenance & Improvement in South Florida & Central Florida',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LUXHT Fix | Handyman Services in South Florida & Central Florida',
+    title: 'LUXHT Fix | Property Maintenance & Improvement — South Florida & Central Florida',
     description:
-      'Expert home repair and handyman services across South Florida & Central Florida. Licensed & Insured. Call (407) 720-7476.',
+      'Professional property maintenance and improvement services across South Florida & Central Florida. Family-Owned. Fully Insured. Call (407) 720-7476.',
     images: ['/images/logo-wide-hammers.png'],
   },
   robots: {

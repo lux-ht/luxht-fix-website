@@ -47,7 +47,7 @@ export default function CrownMoldingPage() {
                 "Traditional and modern profiles available",
                 "Clean caulking and paint-ready finish",
                 "Whole-house packages for consistent look",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does crown molding installation cost in Orlando?", a: "Crown molding installation typically costs $5 to $10 per linear foot for labor, depending on profile size and room complexity. A standard living room runs $400 to $700. Whole-house packages receive volume discounts. Text us your room dimensions at (407) 720-7476." },
@@ -63,7 +63,7 @@ export default function CrownMoldingPage() {
                 { title: "Drywall Repair", href: "/drywall-orlando/" }
             ]}
             startingPrice="Crown molding from $5/linear foot"
-            statsText="Licensed • Insured • Precision Craftsmanship"
+            statsText="Fully Insured • Precision Craftsmanship"
         />
     );
 }

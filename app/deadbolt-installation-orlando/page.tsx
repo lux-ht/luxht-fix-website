@@ -47,7 +47,7 @@ export default function DeadboltInstallationPage() {
                 "Reinforced strike plates included for maximum security",
                 "Smart deadbolt setup with smartphone integration",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "What's the best deadbolt for home security?", a: "For maximum security, we recommend Grade 1 or Grade 2 deadbolts from brands like Schlage or Kwikset. Smart deadbolts from Schlage Encode or August offer keypad convenience with strong security. LUXHT Fix can recommend the best option for your specific door and security needs." },
@@ -63,7 +63,7 @@ export default function DeadboltInstallationPage() {
                 { title: "Smart Home Installation", href: "/smart-home-installation-orlando/" }
             ]}
             startingPrice="Deadbolt installation starts at $95"
-            statsText="Licensed • Insured • Security-Focused"
+            statsText="Fully Insured • Security-Focused"
         />
     );
 }

@@ -47,7 +47,7 @@ export default function DoorHandleReplacementPage() {
                 "Interior and exterior handle expertise",
                 "Precise alignment for smooth, quiet operation",
                 "Bulk pricing for multi-door projects",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does door handle replacement cost?", a: "Labor for door handle replacement starts at $45 per door, with discounts for multi-door projects. Hardware costs vary based on brand and style — we can recommend options that fit your budget and aesthetic." },
@@ -63,7 +63,7 @@ export default function DoorHandleReplacementPage() {
                 { title: "Baseboard Installation", href: "/baseboard-installation-orlando/" }
             ]}
             startingPrice="Handle replacement starts at $45/door"
-            statsText="Licensed • Insured • All Finishes Available"
+            statsText="Fully Insured • All Finishes Available"
         />
     );
 }

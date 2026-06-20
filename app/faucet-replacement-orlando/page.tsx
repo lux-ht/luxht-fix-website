@@ -47,7 +47,7 @@ export default function FaucetReplacementPage() {
                 "We handle corroded and stuck connections",
                 "Leak-free guarantee on every installation",
                 "Same-week service in most Orlando areas",
-                "Licensed, insured, and background-checked"
+                "Fully insured and background-checked"
             ]}
             faqs={[
                 { q: "How much does faucet replacement cost in Orlando?", a: "Labor for faucet replacement typically ranges from $95 to $175, depending on faucet type and any complications like corroded connections. Faucet hardware is not included. Text us at (407) 720-7476 for a quick quote." },
@@ -63,7 +63,7 @@ export default function FaucetReplacementPage() {
                 { title: "Bath Remodel", href: "/bath-remodel-orlando/" }
             ]}
             startingPrice="Faucet replacement starts at $95"
-            statsText="Licensed • Insured • Leak-Free Guarantee"
+            statsText="Fully Insured • Leak-Free Guarantee"
         />
     );
 }
