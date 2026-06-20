@@ -20,7 +20,7 @@ export default function SEOStruct() {
         email: 'info@luxht.com',
         telephone: '+1-407-720-7476',
         priceRange: '$$',
-        knowsAbout: ['Property Maintenance', 'Residential Maintenance', 'Commercial Property Maintenance', 'Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation', 'Hurricane Damage Repair', 'Stucco Repair', 'Screen Enclosure Repair'],
+        knowsAbout: ['Property Maintenance', 'Residential Maintenance', 'Commercial Property Maintenance', 'Rental Turnover Repairs', 'Fence & Gate Repair', 'Gutter Guard & Cleaning', 'Pressure Washing', 'Accent Walls & Custom Trim', 'Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation', 'Hurricane Damage Repair', 'Stucco Repair', 'Screen Enclosure Repair'],
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Maitland',
