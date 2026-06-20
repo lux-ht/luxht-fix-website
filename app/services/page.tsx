@@ -3,7 +3,8 @@ import Link from 'next/link';
 import ProjectSlideshow from '@/components/ProjectSlideshow';
 import {
     Hammer, Tv, Grid, Ruler, DoorOpen, Wrench, Paintbrush,
-    Bath, Zap, Monitor, CheckCircle, MapPin, ArrowRight, Star
+    Bath, Zap, Monitor, CheckCircle, MapPin, ArrowRight, Star,
+    Shield, Briefcase, Key, Droplets, Wind, Layers
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -16,12 +17,19 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
     const allServices = [
         { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-miami/" },
+        { title: "Property Maintenance", desc: "Scheduled preventative & seasonal property maintenance.", price: "$195", icon: Shield, link: "/property-maintenance-miami/" },
+        { title: "Commercial Maintenance", desc: "General facility maintenance and repairs for commercial spaces.", price: "$95/hr", icon: Briefcase, link: "/commercial-property-maintenance-miami/" },
+        { title: "Rental Turnover Repairs", desc: "Tenant prep, rapid wall repair, paint touch-ups, hardware.", price: "$250", icon: Key, link: "/rental-turnover-repairs-miami/" },
         { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-miami/" },
         { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-miami/" },
         { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-miami/" },
         { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-miami/" },
         { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-miami/" },
         { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-miami/" },
+        { title: "Fence & Gate Repair", desc: "Fixing sagging gates, broken posts, and damaged panels.", price: "$175", icon: Hammer, link: "/fence-gate-repair-miami/" },
+        { title: "Gutter Guard & Cleaning", desc: "Keep gutters clear and install professional leaf guards.", price: "$150", icon: Droplets, link: "/gutter-maintenance-miami/" },
+        { title: "Pressure Washing", desc: "Remove mold, algae, and grime from siding, driveways, patios.", price: "$199", icon: Wind, link: "/pressure-washing-miami/" },
+        { title: "Accent Walls & Custom Trim", desc: "Custom woodwork, shiplap, wainscoting, and trim updates.", price: "$450", icon: Layers, link: "/accent-walls-miami/" },
         { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-miami/" },
         { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-miami/" },
         { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-miami/" },

@@ -46,6 +46,13 @@ const searchIndex: SearchItem[] = [
     { title: "Stucco Repair", href: "/stucco-repair-miami/", category: "service", keywords: ["stucco", "exterior", "crack", "patch", "wall"] },
     { title: "Patio & Lanai Repair", href: "/patio-lanai-repair-miami/", category: "service", keywords: ["patio", "lanai", "screen", "outdoor", "enclosure"] },
     { title: "Screen Enclosure Repair", href: "/screen-enclosure-repair-miami/", category: "service", keywords: ["screen", "enclosure", "pool", "cage", "mesh", "repair"] },
+    { title: "Property Maintenance", href: "/property-maintenance-miami/", category: "service", keywords: ["maintenance", "property", "seasonal", "preventative", "leak check", "upkeep"] },
+    { title: "Commercial Property Maintenance", href: "/commercial-property-maintenance-miami/", category: "service", keywords: ["commercial", "facility", "business", "office", "retail", "maintenance", "repair"] },
+    { title: "Rental Turnover Repairs", href: "/rental-turnover-repairs-miami/", category: "service", keywords: ["rental", "turnover", "tenant", "landlord", "paint", "prep", "punch list"] },
+    { title: "Fence & Gate Repair", href: "/fence-gate-repair-miami/", category: "service", keywords: ["fence", "gate", "wood", "vinyl", "post", "hinge", "repair"] },
+    { title: "Gutter Guard & Cleaning", href: "/gutter-maintenance-miami/", category: "service", keywords: ["gutter", "guard", "cleaning", "leaf", "maintenance", "downspout"] },
+    { title: "Pressure Washing", href: "/pressure-washing-miami/", category: "service", keywords: ["pressure", "wash", "power", "cleaning", "grime", "mold", "driveway", "stucco"] },
+    { title: "Accent Walls & Custom Trim", href: "/accent-walls-miami/", category: "service", keywords: ["accent", "wall", "trim", "shiplap", "wainscoting", "board", "batten", "carpentry"] },
 
     // Cost Guides
     { title: "Drywall Repair Costs", href: "/costs/drywall-repair/", category: "cost", keywords: ["drywall", "cost", "price", "how much", "repair"] },

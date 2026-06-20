@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {
   ArrowRight, CheckCircle, Phone, Mail, MapPin, Star,
   Hammer, Tv, Grid, DoorOpen, Bath, Utensils, Wrench,
-  Monitor, Shield, Zap, Home, Droplets, Wind
+  Monitor, Shield, Zap, Home, Droplets, Wind, Briefcase, Key, Layers
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 
 const services = [
   { title: 'Drywall Repair', icon: Hammer, href: '/drywall-miami/', desc: 'Holes, cracks, water damage — invisible repairs.' },
+  { title: 'Property Maintenance', icon: Shield, href: '/property-maintenance-miami/', desc: 'Scheduled preventative & seasonal maintenance for your home.' },
+  { title: 'Commercial Maintenance', icon: Briefcase, href: '/commercial-property-maintenance-miami/', desc: 'Facility repairs and upkeep for businesses & offices.' },
+  { title: 'Rental Turnover Repairs', icon: Key, href: '/rental-turnover-repairs-miami/', desc: 'Tenant prep, paint touch-ups, wall repairs & hardware.' },
   { title: 'TV Mounting', icon: Tv, href: '/tv-mounting-miami/', desc: 'Wall mounting with concealed cables. All wall types.' },
   { title: 'Flooring Installation', icon: Grid, href: '/flooring-installation-miami/', desc: 'Hardwood, LVP, tile — humidity-resistant options.' },
   { title: 'Bath Remodel', icon: Bath, href: '/bath-remodel-miami/', desc: 'Complete bathroom renovations from design to finish.' },
@@ -30,6 +33,10 @@ const services = [
   { title: 'Door, Lock & Trim', icon: DoorOpen, href: '/door-lock-trim-miami/', desc: 'Fix sticking doors, upgrade locks, install trim.' },
   { title: 'Smart Home', icon: Monitor, href: '/smart-home-installation-miami/', desc: 'Ring doorbells, smart locks, cameras & more.' },
   { title: 'Faucet & Fixtures', icon: Wrench, href: '/faucet-fixtures-miami/', desc: 'Faucets, toilets, disposals — leak-free installs.' },
+  { title: 'Fence & Gate Repair', icon: Hammer, href: '/fence-gate-repair-miami/', desc: 'Sagging gates, broken posts, and damaged panel repairs.' },
+  { title: 'Gutter Guard & Cleaning', icon: Droplets, href: '/gutter-maintenance-miami/', desc: 'Clear gutters and professional leaf guard installations.' },
+  { title: 'Pressure Washing', icon: Wind, href: '/pressure-washing-miami/', desc: 'Exterior grime, mold, and algae removal for patios & walls.' },
+  { title: 'Accent Walls & Trim', icon: Layers, href: '/accent-walls-miami/', desc: 'Custom woodwork, shiplap, wainscoting & trim updates.' },
   { title: 'Deck Building', icon: Home, href: '/deck-building-miami/', desc: 'Custom decks for South Florida outdoor living.' },
   { title: 'Furniture Assembly', icon: Grid, href: '/furniture-assembly-miami/', desc: 'IKEA, Wayfair, Amazon — fast, professional assembly.' },
   // South Florida Specific
