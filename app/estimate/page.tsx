@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
 import { Globe } from 'lucide-react';
 import StarBorder from '@/components/StarBorder';
@@ -140,6 +141,63 @@ const icons = {
             <path d="M33 5v6M30 8h6" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
         </svg>
     ),
+    maintenance: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <path d="M20 5 L32 9 v12 C32 29 27 34 20 36 C13 34 8 29 8 21 v-12 Z" fill="white" opacity="0.2" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
+            <path d="M15 19 l4 4 l7 -7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+    ),
+    commercial: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="8" y="12" width="24" height="20" rx="3" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
+            <path d="M15 12 V8 h10 v4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <rect x="18" y="20" width="4" height="4" rx="0.5" fill="white" opacity="0.6"/>
+            <line x1="8" y1="18" x2="32" y2="18" stroke="white" strokeWidth="1.5" opacity="0.4"/>
+        </svg>
+    ),
+    turnover: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <path d="M14 26 a5 5 0 1 0 0 -10 a5 5 0 0 0 0 10 z" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
+            <path d="M18 21 h14 v4 m-4 -4 v4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M8 8 L20 8 L20 12" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+        </svg>
+    ),
+    fence: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="8" width="4" height="24" rx="1" fill="white" opacity="0.3"/>
+            <rect x="14" y="8" width="4" height="24" rx="1" fill="white" opacity="0.5"/>
+            <rect x="22" y="8" width="4" height="24" rx="1" fill="white" opacity="0.5"/>
+            <rect x="30" y="8" width="4" height="24" rx="1" fill="white" opacity="0.3"/>
+            <line x1="4" y1="14" x2="36" y2="14" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+            <line x1="4" y1="26" x2="36" y2="26" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        </svg>
+    ),
+    gutter: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <path d="M6 14 h28 v8 a6 6 0 0 1 -12 0 v-4" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.3"/>
+            <path d="M20 22 a3 3 0 0 1 -6 0" stroke="white" strokeWidth="2" fill="none"/>
+            <circle cx="14" cy="9" r="1.5" fill="white"/>
+            <circle cx="24" cy="7" r="2" fill="white"/>
+            <circle cx="28" cy="11" r="1" fill="white"/>
+        </svg>
+    ),
+    pressure: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <path d="M8 20 H24" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+            <path d="M24 16 L32 20 L24 24 Z" fill="white" opacity="0.4"/>
+            <path d="M34 14 Q38 20 34 26" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
+            <path d="M36 17 Q39 20 36 23" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.6"/>
+            <circle cx="12" cy="14" r="2" fill="white" opacity="0.5"/>
+            <circle cx="16" cy="26" r="1.5" fill="white" opacity="0.5"/>
+        </svg>
+    ),
+    accent: (
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="8" width="28" height="6" rx="1" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5"/>
+            <rect x="6" y="17" width="28" height="6" rx="1" fill="white" opacity="0.4" stroke="white" strokeWidth="1.5"/>
+            <rect x="6" y="26" width="28" height="6" rx="1" fill="white" opacity="0.6" stroke="white" strokeWidth="1.5"/>
+        </svg>
+    ),
 };
 
 /* ─────────────────────────────────────────
@@ -276,6 +334,107 @@ const SERVICES = [
         ],
         supabaseService: 'Deck Building',
     },
+    {
+        id: 'maintenance',
+        icon: 'maintenance',
+        label: 'Property Maint.',
+        color: '#4f46e5',
+        gradient: 'linear-gradient(135deg, #4f46e5 0%, #818cf8 100%)',
+        subServices: [
+            'Gutter cleaning & leaf guards',
+            'Weatherproofing & caulking',
+            'Seasonal safety inspections',
+            'Filter & battery replacements',
+            'General property checkups',
+        ],
+        supabaseService: 'Property Maintenance',
+    },
+    {
+        id: 'commercial',
+        icon: 'commercial',
+        label: 'Commercial Maint.',
+        color: '#0f172a',
+        gradient: 'linear-gradient(135deg, #0f172a 0%, #334155 100%)',
+        subServices: [
+            'Ceiling tile replacement',
+            'Drywall patch & paint',
+            'Door closers & hardware',
+            'Fixture installations',
+            'General property upkeep',
+        ],
+        supabaseService: 'Commercial Property Maintenance',
+    },
+    {
+        id: 'turnover',
+        icon: 'turnover',
+        label: 'Rental Turnover',
+        color: '#0d9488',
+        gradient: 'linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)',
+        subServices: [
+            'Drywall patch & repaint',
+            'Cabinet hardware adjust',
+            'Light fixture updates',
+            'Tenant damage fixes',
+            'Turnover punch list',
+        ],
+        supabaseService: 'Rental Turnover Repairs',
+    },
+    {
+        id: 'fence',
+        icon: 'fence',
+        label: 'Fence & Gate',
+        color: '#78350f',
+        gradient: 'linear-gradient(135deg, #78350f 0%, #b45309 100%)',
+        subServices: [
+            'Sagging gate adjustment',
+            'Post replacement / reinforce',
+            'Broken panel / board repair',
+            'Latch or hinge replacement',
+        ],
+        supabaseService: 'Fence & Gate Repair',
+    },
+    {
+        id: 'gutter',
+        icon: 'gutter',
+        label: 'Gutter Maint.',
+        color: '#2563eb',
+        gradient: 'linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)',
+        subServices: [
+            'Gutter cleaning',
+            'Leaf guard installation',
+            'Gutter leak repair',
+            'Downspout clearing / alignment',
+        ],
+        supabaseService: 'Gutter Guard & Cleaning',
+    },
+    {
+        id: 'pressure',
+        icon: 'pressure',
+        label: 'Pressure Wash',
+        color: '#0284c7',
+        gradient: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)',
+        subServices: [
+            'Driveway & sidewalk cleaning',
+            'Patio & deck washing',
+            'Siding & exterior wall wash',
+            'Fence pressure washing',
+        ],
+        supabaseService: 'Pressure Washing',
+    },
+    {
+        id: 'accent-walls',
+        icon: 'accent',
+        label: 'Accent Walls',
+        color: '#431407',
+        gradient: 'linear-gradient(135deg, #431407 0%, #78350f 100%)',
+        subServices: [
+            'Accent wall (shiplap / board & batten)',
+            'Crown molding',
+            'Baseboard upgrades',
+            'Custom wainscoting',
+        ],
+        supabaseService: 'Accent Walls & Custom Trim',
+    },
 ];
 
 type Screen = 'home' | 'service' | 'message' | 'success';
@@ -386,14 +545,16 @@ export default function EstimatePage() {
             <div className={`est-screen ${screen === 'home' ? 'est-screen--active' : ''}`}>
                 {/* Top bar */}
                 <header className="est-topbar">
-                    <Image
-                        src="/images/luxht-fix-logo-transparent.png"
-                        alt="LUXHT Fix"
-                        width={1024}
-                        height={481}
-                        className="est-logo"
-                        priority
-                    />
+                    <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+                        <Image
+                            src="/images/luxht-fix-logo-transparent.png"
+                            alt="LUXHT Fix"
+                            width={1024}
+                            height={481}
+                            className="est-logo"
+                            priority
+                        />
+                    </Link>
                     <a href="tel:4077207476" className="est-call-chip">
                         <span className="est-call-chip__dot" />
                         Call Us
@@ -402,6 +563,11 @@ export default function EstimatePage() {
 
                 {/* Hero */}
                 <div className="est-hero">
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '14px' }}>
+                        <Link href="/" className="est-hero-back-link">
+                            ← Back to Home Page
+                        </Link>
+                    </div>
                     <div className="est-hero__badge">📍 Miami-Dade · Broward · Palm Beach</div>
                     <h1 className="est-hero__title">What needs<br /><span className="est-gradient-text">fixing today?</span></h1>
                     <p className="est-hero__sub">Tap a service → get a free estimate 👇</p>
@@ -430,7 +596,7 @@ export default function EstimatePage() {
 
                 {!showAll && (
                     <button className="est-show-more" onClick={() => setShowAll(true)}>
-                        + 3 More Services
+                        + {SERVICES.length - 6} More Services
                     </button>
                 )}
 
@@ -729,6 +895,25 @@ export default function EstimatePage() {
                     -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
                 }
                 .est-hero__sub { font-size: 14px; color: #6b7280; font-weight: 500; }
+
+                .est-hero-back-link {
+                    font-size: 13px;
+                    color: #584d94;
+                    font-weight: 700;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                    background: rgba(88, 77, 148, 0.07);
+                    transition: all 0.2s;
+                    border: 1px solid rgba(88, 77, 148, 0.15);
+                }
+                .est-hero-back-link:active {
+                    background: rgba(88, 77, 148, 0.15);
+                    transform: scale(0.96);
+                }
 
                 /* SERVICE GRID */
                 .est-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 11px; padding: 16px 14px 0; }
