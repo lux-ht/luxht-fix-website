@@ -1,203 +1,35 @@
 "use client";
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
-import { Globe } from 'lucide-react';
+import {
+    Globe, Hammer, Tv, DoorOpen, Wrench, Grid, Paintbrush, Zap, Ruler,
+    PaintRoller, Shield, Building2, Key, Fence, CloudRain, Sparkles, Layers, Bath
+} from 'lucide-react';
 import StarBorder from '@/components/StarBorder';
 
 /* ─────────────────────────────────────────
-   MODERN SVG ICONS
+   MODERN SVG ICONS (LUCIDE REACT)
 ───────────────────────────────────────── */
 const icons = {
-    drywall: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="4" y="8" width="32" height="5" rx="2" fill="white" opacity="0.95"/>
-            <rect x="4" y="17" width="32" height="5" rx="2" fill="white" opacity="0.75"/>
-            <rect x="4" y="26" width="32" height="5" rx="2" fill="white" opacity="0.55"/>
-            <rect x="14" y="6" width="3" height="28" rx="1.5" fill="white" opacity="0.3"/>
-            <rect x="23" y="6" width="3" height="28" rx="1.5" fill="white" opacity="0.3"/>
-            {/* Patch circle */}
-            <circle cx="30" cy="12" r="5" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5"/>
-            <path d="M28 12h4M30 10v4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
-    ),
-    tv: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="4" y="7" width="32" height="20" rx="3" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
-            <rect x="8" y="11" width="24" height="12" rx="1.5" fill="white" opacity="0.3"/>
-            <line x1="20" y1="27" x2="20" y2="32" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
-            <line x1="14" y1="32" x2="26" y2="32" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
-            {/* Mount bracket */}
-            <rect x="18" y="22" width="4" height="6" rx="1" fill="white" opacity="0.6"/>
-            <line x1="9" y1="4" x2="20" y2="9" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
-            <circle cx="8" cy="4" r="2" fill="white" opacity="0.7"/>
-        </svg>
-    ),
-    doors: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="8" y="4" width="20" height="32" rx="2" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
-            <rect x="4" y="34" width="28" height="2.5" rx="1.25" fill="white" opacity="0.6"/>
-            {/* Door panels */}
-            <rect x="11" y="8" width="6" height="8" rx="1" fill="white" opacity="0.25"/>
-            <rect x="19" y="8" width="6" height="8" rx="1" fill="white" opacity="0.25"/>
-            <rect x="11" y="20" width="14" height="9" rx="1" fill="white" opacity="0.25"/>
-            {/* Knob */}
-            <circle cx="25" cy="21" r="2.5" fill="white" opacity="0.9"/>
-            <circle cx="25" cy="21" r="1" fill="white" opacity="0.5"/>
-            {/* Lock keyhole */}
-            <circle cx="32" cy="16" r="4" fill="white" opacity="0.15" stroke="white" strokeWidth="1.5"/>
-            <path d="M32 15v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-            <circle cx="32" cy="14" r="1.5" fill="white" opacity="0.8"/>
-        </svg>
-    ),
-    plumbing: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* Faucet body */}
-            <path d="M10 16h20v4H10z" rx="2" fill="white" opacity="0.25"/>
-            <rect x="9" y="16" width="22" height="4" rx="2" fill="white" opacity="0.3"/>
-            {/* Spout */}
-            <rect x="17" y="20" width="6" height="10" rx="3" fill="white" opacity="0.35"/>
-            <path d="M20 30 Q18 34 18 36" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.7"/>
-            {/* Handle */}
-            <rect x="14" y="11" width="12" height="7" rx="3.5" fill="white" opacity="0.4"/>
-            <rect x="19" y="8" width="2" height="5" rx="1" fill="white" opacity="0.7"/>
-            {/* Water drops */}
-            <ellipse cx="23" cy="34" rx="1.5" ry="2" fill="white" opacity="0.6"/>
-            <ellipse cx="17" cy="36" rx="1" ry="1.5" fill="white" opacity="0.4"/>
-        </svg>
-    ),
-    flooring: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* Floor planks perspective */}
-            <rect x="4" y="10" width="15" height="8" rx="1.5" fill="white" opacity="0.35"/>
-            <rect x="21" y="10" width="15" height="8" rx="1.5" fill="white" opacity="0.25"/>
-            <rect x="4" y="20" width="10" height="8" rx="1.5" fill="white" opacity="0.25"/>
-            <rect x="16" y="20" width="12" height="8" rx="1.5" fill="white" opacity="0.35"/>
-            <rect x="30" y="20" width="6" height="8" rx="1.5" fill="white" opacity="0.2"/>
-            <rect x="4" y="30" width="32" height="4" rx="1.5" fill="white" opacity="0.4"/>
-            {/* Tool */}
-            <path d="M30 8 L36 5 L35 9 L31 11 Z" fill="white" opacity="0.8"/>
-            <line x1="28" y1="10" x2="31" y2="11" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
-    ),
-    kitchen: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* Cabinet */}
-            <rect x="4" y="6" width="32" height="14" rx="2" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5"/>
-            <line x1="20" y1="6" x2="20" y2="20" stroke="white" strokeWidth="1.5" opacity="0.5"/>
-            <circle cx="16" cy="13" r="2" fill="white" opacity="0.7"/>
-            <circle cx="24" cy="13" r="2" fill="white" opacity="0.7"/>
-            {/* Counter */}
-            <rect x="2" y="20" width="36" height="3" rx="1.5" fill="white" opacity="0.5"/>
-            {/* Backsplash tiles */}
-            <rect x="4" y="24" width="7" height="5" rx="1" fill="white" opacity="0.2"/>
-            <rect x="13" y="24" width="7" height="5" rx="1" fill="white" opacity="0.2"/>
-            <rect x="22" y="24" width="7" height="5" rx="1" fill="white" opacity="0.2"/>
-            {/* Faucet accent */}
-            <path d="M33 24 Q35 27 33 30" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-        </svg>
-    ),
-    smart: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* House outline */}
-            <path d="M20 6 L34 18 L34 34 L6 34 L6 18 Z" fill="white" opacity="0.15" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-            <polyline points="14,34 14,24 26,24 26,34" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
-            {/* WiFi signal */}
-            <path d="M15 16 Q20 11 25 16" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.9" fill="none"/>
-            <path d="M17 18.5 Q20 15 23 18.5" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.7" fill="none"/>
-            <circle cx="20" cy="21" r="2" fill="white" opacity="0.95"/>
-        </svg>
-    ),
-    trim: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* Ruler */}
-            <rect x="4" y="14" width="32" height="10" rx="2" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5"/>
-            <line x1="10" y1="14" x2="10" y2="19" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="16" y1="14" x2="16" y2="21" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="22" y1="14" x2="22" y2="19" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="28" y1="14" x2="28" y2="21" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-            {/* Molding profile */}
-            <path d="M4 8 Q8 8 8 12 L32 12 Q32 8 36 8" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.8"/>
-            <path d="M4 32 L36 32" stroke="white" strokeWidth="3" strokeLinecap="round" opacity="0.5"/>
-        </svg>
-    ),
-    outdoor: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            {/* Deck boards */}
-            <rect x="4" y="22" width="32" height="4" rx="1.5" fill="white" opacity="0.4"/>
-            <rect x="4" y="28" width="32" height="4" rx="1.5" fill="white" opacity="0.3"/>
-            {/* Post */}
-            <rect x="8" y="10" width="3" height="14" rx="1.5" fill="white" opacity="0.5"/>
-            <rect x="29" y="10" width="3" height="14" rx="1.5" fill="white" opacity="0.5"/>
-            {/* Railing */}
-            <line x1="8" y1="12" x2="32" y2="12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.7"/>
-            <line x1="15" y1="12" x2="15" y2="22" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
-            <line x1="21" y1="12" x2="21" y2="22" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
-            <line x1="27" y1="12" x2="27" y2="22" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
-            {/* Sun/leaf */}
-            <circle cx="33" cy="8" r="4" fill="white" opacity="0.6"/>
-            <path d="M33 5v6M30 8h6" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
-        </svg>
-    ),
-    maintenance: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <path d="M20 5 L32 9 v12 C32 29 27 34 20 36 C13 34 8 29 8 21 v-12 Z" fill="white" opacity="0.2" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-            <path d="M15 19 l4 4 l7 -7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-    ),
-    commercial: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="8" y="12" width="24" height="20" rx="3" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
-            <path d="M15 12 V8 h10 v4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <rect x="18" y="20" width="4" height="4" rx="0.5" fill="white" opacity="0.6"/>
-            <line x1="8" y1="18" x2="32" y2="18" stroke="white" strokeWidth="1.5" opacity="0.4"/>
-        </svg>
-    ),
-    turnover: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <path d="M14 26 a5 5 0 1 0 0 -10 a5 5 0 0 0 0 10 z" fill="white" opacity="0.2" stroke="white" strokeWidth="2"/>
-            <path d="M18 21 h14 v4 m-4 -4 v4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M8 8 L20 8 L20 12" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
-        </svg>
-    ),
-    fence: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="6" y="8" width="4" height="24" rx="1" fill="white" opacity="0.3"/>
-            <rect x="14" y="8" width="4" height="24" rx="1" fill="white" opacity="0.5"/>
-            <rect x="22" y="8" width="4" height="24" rx="1" fill="white" opacity="0.5"/>
-            <rect x="30" y="8" width="4" height="24" rx="1" fill="white" opacity="0.3"/>
-            <line x1="4" y1="14" x2="36" y2="14" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
-            <line x1="4" y1="26" x2="36" y2="26" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
-        </svg>
-    ),
-    gutter: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <path d="M6 14 h28 v8 a6 6 0 0 1 -12 0 v-4" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.3"/>
-            <path d="M20 22 a3 3 0 0 1 -6 0" stroke="white" strokeWidth="2" fill="none"/>
-            <circle cx="14" cy="9" r="1.5" fill="white"/>
-            <circle cx="24" cy="7" r="2" fill="white"/>
-            <circle cx="28" cy="11" r="1" fill="white"/>
-        </svg>
-    ),
-    pressure: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <path d="M8 20 H24" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-            <path d="M24 16 L32 20 L24 24 Z" fill="white" opacity="0.4"/>
-            <path d="M34 14 Q38 20 34 26" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
-            <path d="M36 17 Q39 20 36 23" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.6"/>
-            <circle cx="12" cy="14" r="2" fill="white" opacity="0.5"/>
-            <circle cx="16" cy="26" r="1.5" fill="white" opacity="0.5"/>
-        </svg>
-    ),
-    accent: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-            <rect x="6" y="8" width="28" height="6" rx="1" fill="white" opacity="0.2" stroke="white" strokeWidth="1.5"/>
-            <rect x="6" y="17" width="28" height="6" rx="1" fill="white" opacity="0.4" stroke="white" strokeWidth="1.5"/>
-            <rect x="6" y="26" width="28" height="6" rx="1" fill="white" opacity="0.6" stroke="white" strokeWidth="1.5"/>
-        </svg>
-    ),
+    drywall: <Hammer size={36} strokeWidth={1.5} />,
+    tv: <Tv size={36} strokeWidth={1.5} />,
+    doors: <DoorOpen size={36} strokeWidth={1.5} />,
+    plumbing: <Wrench size={36} strokeWidth={1.5} />,
+    flooring: <Grid size={36} strokeWidth={1.5} />,
+    kitchen: <Bath size={36} strokeWidth={1.5} />,
+    smart: <Zap size={36} strokeWidth={1.5} />,
+    trim: <Ruler size={36} strokeWidth={1.5} />,
+    outdoor: <PaintRoller size={36} strokeWidth={1.5} />,
+    maintenance: <Shield size={36} strokeWidth={1.5} />,
+    commercial: <Building2 size={36} strokeWidth={1.5} />,
+    turnover: <Key size={36} strokeWidth={1.5} />,
+    fence: <Fence size={36} strokeWidth={1.5} />,
+    gutter: <CloudRain size={36} strokeWidth={1.5} />,
+    pressure: <Sparkles size={36} strokeWidth={1.5} />,
+    accent: <Layers size={36} strokeWidth={1.5} />,
 };
 
 /* ─────────────────────────────────────────
@@ -450,6 +282,16 @@ export default function EstimatePage() {
     const [photo, setPhoto] = useState<File | null>(null);
     const [photoPreview, setPhotoPreview] = useState<string | null>(null);
     const [showAll, setShowAll] = useState(false);
+    const [defaultCount, setDefaultCount] = useState(6);
+
+    useEffect(() => {
+        const updateCount = () => {
+            setDefaultCount(window.innerWidth >= 768 ? 8 : 6);
+        };
+        updateCount();
+        window.addEventListener('resize', updateCount);
+        return () => window.removeEventListener('resize', updateCount);
+    }, []);
 
     const [msgName, setMsgName] = useState('');
     const [msgPhone, setMsgPhone] = useState('');
@@ -459,7 +301,7 @@ export default function EstimatePage() {
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
-    const visibleServices = showAll ? SERVICES : SERVICES.slice(0, 6);
+    const visibleServices = showAll ? SERVICES : SERVICES.slice(0, defaultCount);
 
     const openService = useCallback((svc: Service) => {
         setActiveService(svc);
@@ -596,7 +438,7 @@ export default function EstimatePage() {
 
                 {!showAll && (
                     <button className="est-show-more" onClick={() => setShowAll(true)}>
-                        + {SERVICES.length - 6} More Services
+                        + {SERVICES.length - defaultCount} More Services
                     </button>
                 )}
 
@@ -741,25 +583,25 @@ export default function EstimatePage() {
                                 )}
                             </div>
                         )}
-                        <div className="est-field">
+                        <div className="est-field est-field--half">
                             <label className="est-field__label">Your Name *</label>
                             <input type="text" required placeholder="First & Last Name"
                                 value={msgName} onChange={e => setMsgName(e.target.value)}
                                 className="est-field__input" autoComplete="name" />
                         </div>
-                        <div className="est-field">
+                        <div className="est-field est-field--half">
                             <label className="est-field__label">Phone Number *</label>
                             <input type="tel" required placeholder="(305) 000-0000"
                                 value={msgPhone} onChange={e => setMsgPhone(e.target.value)}
                                 className="est-field__input" autoComplete="tel" inputMode="tel" />
                         </div>
-                        <div className="est-field">
+                        <div className="est-field est-field--full">
                             <label className="est-field__label">Brief description (optional)</label>
                             <textarea rows={3} placeholder="Tell us a little more about what you need..."
                                 value={msgNote} onChange={e => setMsgNote(e.target.value)}
                                 className="est-field__input est-field__input--textarea" />
                         </div>
-                        <div className="est-field">
+                        <div className="est-field est-field--full">
                             <label className="est-field__label">Would you feel more comfortable with Ruth involved?</label>
                             <p style={{ fontSize: '12px', color: '#6b7280', lineHeight: '1.4', margin: '0 0 6px 0' }}>
                                 Ruth is part of our family-owned team and stays personally connected to the process. Some clients feel better knowing there is a woman in the loop for communication, support, and extra reassurance.
@@ -784,7 +626,7 @@ export default function EstimatePage() {
                                 ))}
                             </div>
                         </div>
-                        <div className="est-field">
+                        <div className="est-field est-field--full">
                             <label className="est-field__label">📸 Add a photo (optional)</label>
                             <input type="file" accept="image/*" capture="environment"
                                 onChange={handlePhoto} className="est-hidden-file" id="msg-photo" />
@@ -1182,6 +1024,218 @@ export default function EstimatePage() {
                     background: none; border: none; color: #584D94; font-size: 13px; font-weight: 700;
                     cursor: pointer; padding: 8px; text-decoration: underline; text-underline-offset: 3px;
                     font-family: inherit;
+                }
+
+                @media (min-width: 768px) {
+                    .est-root {
+                        max-width: 1000px;
+                        background: #f8f7ff;
+                        box-shadow: 0 4px 30px rgba(88,77,148,0.05);
+                        border-radius: 24px;
+                        margin: 40px auto;
+                        padding-bottom: 40px;
+                        min-height: auto;
+                    }
+                    .est-screen {
+                        min-height: auto;
+                    }
+                    .est-topbar {
+                        padding: 20px 40px;
+                        border-radius: 24px 24px 0 0;
+                    }
+                    .est-logo {
+                        height: 70px;
+                    }
+                    .est-hero {
+                        padding: 48px 40px 32px;
+                    }
+                    .est-hero__title {
+                        font-size: 42px;
+                        margin-bottom: 12px;
+                    }
+                    .est-hero__sub {
+                        font-size: 18px;
+                    }
+                    .est-grid {
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 20px;
+                        padding: 24px 40px 0;
+                    }
+                    .est-tile {
+                        border-radius: 28px;
+                    }
+                    .est-tile .inner-content {
+                        border-radius: 26px;
+                        padding: 24px 16px;
+                        gap: 14px;
+                    }
+                    .est-tile__label {
+                        font-size: 15px;
+                        letter-spacing: 0.3px;
+                    }
+                    .est-tile__icon svg {
+                        width: 48px !important;
+                        height: 48px !important;
+                    }
+                    .est-tile:hover .est-tile__icon svg {
+                        transform: scale(1.15) rotate(5deg);
+                    }
+                    
+                    /* Detail screen split layout */
+                    .est-detail-header {
+                        padding: 40px 40px 48px;
+                        border-radius: 0 0 24px 24px;
+                    }
+                    .est-detail-header__title {
+                        font-size: 38px;
+                    }
+                    .est-detail-header__sub {
+                        font-size: 16px;
+                    }
+                    .est-detail-header__icon svg {
+                        width: 72px !important;
+                        height: 72px !important;
+                    }
+                    .est-detail-body {
+                        display: grid;
+                        grid-template-columns: 1.2fr 1fr;
+                        gap: 24px 40px;
+                        padding: 40px;
+                        align-items: start;
+                    }
+                    .est-detail-body > .est-section:nth-child(1) {
+                        grid-column: 1;
+                        grid-row: 1;
+                        margin-bottom: 0;
+                    }
+                    .est-detail-body > .est-section:nth-child(2) {
+                        grid-column: 1;
+                        grid-row: 2;
+                        margin-bottom: 0;
+                    }
+                    .est-detail-body > .est-section:nth-child(3) {
+                        grid-column: 2;
+                        grid-row: 1 / span 2;
+                        margin-bottom: 0;
+                    }
+                    .est-check-item {
+                        padding: 16px 20px;
+                        font-size: 15px;
+                        border-radius: 16px;
+                    }
+                    .est-check-item:hover {
+                        background: #fafafc;
+                        border-color: rgba(88,77,148,0.15);
+                    }
+                    .est-check-item--selected:hover {
+                        background: rgba(100,206,187,0.08);
+                        border-color: #64CEBB;
+                    }
+                    .est-photo-btn {
+                        padding: 30px;
+                        border-radius: 20px;
+                    }
+                    .est-cta-btn {
+                        padding: 20px 24px;
+                        border-radius: 20px;
+                        margin-bottom: 14px;
+                    }
+                    .est-cta-btn__main {
+                        font-size: 16px;
+                    }
+                    .est-cta-btn__sub {
+                        font-size: 12.5px;
+                    }
+                    .est-cta-btn:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 24px rgba(88,77,148,0.25);
+                    }
+                    .est-cta-btn--text:hover {
+                        box-shadow: 0 8px 24px rgba(75,192,173,0.22);
+                    }
+                    
+                    /* Form page grid layout */
+                    .est-form-header {
+                        padding: 40px 40px 48px;
+                        border-radius: 0 0 24px 24px;
+                    }
+                    .est-form-header__title {
+                        font-size: 34px;
+                    }
+                    .est-form-header__sub {
+                        font-size: 16px;
+                    }
+                    .est-form-body {
+                        padding: 40px;
+                        max-width: 800px;
+                        margin: 0 auto;
+                    }
+                    .est-form {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 24px;
+                    }
+                    .est-field--full {
+                        grid-column: 1 / span 2;
+                    }
+                    .est-field--half {
+                        grid-column: span 1;
+                    }
+                    .est-form-service-badge {
+                        grid-column: 1 / span 2;
+                        padding: 16px 20px;
+                        font-size: 15px;
+                    }
+                    .est-submit-btn {
+                        grid-column: 1 / span 2;
+                        padding: 20px;
+                        font-size: 17px;
+                        border-radius: 20px;
+                    }
+                    .est-form-note {
+                        grid-column: 1 / span 2;
+                        font-size: 12px;
+                    }
+                    
+                    /* Success page */
+                    .est-success {
+                        padding: 60px 40px;
+                        max-width: 500px;
+                        margin: 0 auto;
+                    }
+                    .est-success__title {
+                        font-size: 30px;
+                    }
+                    .est-success__sub {
+                        font-size: 16px;
+                    }
+                    
+                    /* Bottom action rows and strips */
+                    .est-home-actions {
+                        padding: 32px 40px 0;
+                    }
+                    .est-home-actions__row {
+                        max-width: 600px;
+                        margin: 0 auto;
+                        gap: 16px;
+                    }
+                    .est-action-btn {
+                        padding: 16px 20px;
+                        font-size: 15px;
+                        border-radius: 20px;
+                    }
+                    .est-about-wrap {
+                        padding: 24px 40px 8px;
+                    }
+                    .est-about-btn {
+                        padding: 12px 28px;
+                        font-size: 14px;
+                    }
+                    .est-trust {
+                        padding: 20px 40px 30px;
+                        font-size: 13px;
+                        gap: 12px;
+                    }
                 }
             `}</style>
         </div>
