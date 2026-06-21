@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/images/logo-wide-hammers.png',
-    apple: '/images/logo-wide-hammers.png',
+    icon: '/favicon.ico',
+    apple: '/images/favicon.png',
   },
 };
 
