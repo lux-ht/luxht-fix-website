@@ -28,6 +28,15 @@ export default function Home() {
 
                 <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
 
+                    {/* Get Your Service Button */}
+                    <div className="mb-8 flex justify-center">
+                        <Link href="/estimate/" className="btn-sparkle-pink">
+                            <span className="sparkle-icon">✨</span>
+                            <span>Get Your Service</span>
+                            <span className="sparkle-icon">✨</span>
+                        </Link>
+                    </div>
+
                     {/* Smart Search Bar */}
                     <SmartSearch />
 
