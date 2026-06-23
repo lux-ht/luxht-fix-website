@@ -439,7 +439,7 @@ export default function SpecialThankYouPage() {
             </Link>
           </div>
           <a
-            href="tel:4072880832"
+            href="tel:9543003043"
             style={{
               backgroundColor: 'var(--gold)',
               color: 'var(--purple)',
@@ -454,7 +454,7 @@ export default function SpecialThankYouPage() {
               transition: 'all 0.25s',
             }}
           >
-            <span>📞</span> (407) 288-0832
+            <span>📞</span> (954) 300-3043
           </a>
         </header>
 
@@ -498,7 +498,7 @@ export default function SpecialThankYouPage() {
               prioritize your booking.
             </p>
 
-            <a href="sms:4072880832" className="ty-text-btn">
+            <a href="sms:9543003043" className="ty-text-btn">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -511,7 +511,7 @@ export default function SpecialThankYouPage() {
             </a>
 
             <p className="ty-btn-note">
-              Opens your messages app → (407) 288-0832
+              Opens your messages app → (954) 300-3043
             </p>
           </div>
         </section>
@@ -583,7 +583,7 @@ export default function SpecialThankYouPage() {
             <strong>LUXURY HOME TRANSFORMATIONS LLC</strong>
           </p>
           <p style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center' }}>
-            <a href="tel:4072880832" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px' }}>📞 (407) 288-0832</a>
+            <a href="tel:9543003043" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px' }}>📞 (954) 300-3043</a>
             <a href="https://fix.luxht.com" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px' }}>🌐 fix.luxht.com</a>
           </p>
         </footer>

@@ -53,7 +53,7 @@ export default function SoundbarMountingPage() {
                 { q: "Can you mount any brand of soundbar?", a: "Yes. LUXHT Fix mounts all major soundbar brands including Sonos, Bose, Samsung, LG, Vizio, and more. We use the manufacturer's bracket when available or install a universal bracket for brands that don't include wall-mount hardware." },
                 { q: "Should I mount my soundbar above or below the TV?", a: "Below is the standard and recommended position. Mounting above can interfere with the TV mount and doesn't provide optimal audio direction. We mount soundbars directly below the TV for the best visual alignment and audio experience." },
                 { q: "Can you install a soundbar at the same time as TV mounting?", a: "Absolutely. Most clients pair soundbar mounting with TV mounting for a complete one-visit setup. This is the most efficient option and ensures cable management is done together." },
-                { q: "How much does soundbar mounting cost in Orlando?", a: "Standalone soundbar mounting starts at $75. When paired with TV mounting, cable concealment, and soundbar installation is typically discounted. Text us at (407) 720-7476 for a bundled quote." }
+                { q: "How much does soundbar mounting cost in Orlando?", a: "Standalone soundbar mounting starts at $75. When paired with TV mounting, cable concealment, and soundbar installation is typically discounted. Text us at (954) 300-3043 for a bundled quote." }
             ]}
             relatedServices={[
                 { title: "TV Mounting", href: "/tv-mounting-orlando/" },

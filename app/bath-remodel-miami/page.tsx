@@ -37,6 +37,15 @@ export default function BathRemodelMiamiPage() {
         { src: "/images/services/bathroom-remodel/tile-work-after.jpg", title: "Tile Work", subtitle: "After: Premium Porcelain" },
         { src: "/images/services/bathroom-remodel/design-and-planning-before.jpg", title: "Design Process", subtitle: "Before: Small Layout" },
         { src: "/images/services/bathroom-remodel/design-and-planning-after.jpg", title: "Design Process", subtitle: "After: Optimized Space" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-1.jpg", title: "Modern Contrast", subtitle: "Black Hex Shower & Geometric Floors" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-2.jpg", title: "Minimalist Spa", subtitle: "Floating Wood Vanity & Glass Shower" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-3.jpg", title: "Luxury Marble", subtitle: "Double Vanity & Bookmatched Stone" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-4.jpg", title: "Warm Transitional", subtitle: "Freestanding Tub & Arched Mirrors" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-5.jpg", title: "Earthy Modern", subtitle: "Travertine Vessel Sinks & Backlit Mirrors" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-6.jpg", title: "Olive & Terrazzo", subtitle: "Green vertical tile, gold fixtures, terrazzo floor" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-7.jpg", title: "Beige & Black Accent", subtitle: "Single oak vanity, oval mirror, black fixtures" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-8.jpg", title: "Before & After", subtitle: "Full cosmetic and layout renovation" },
+        { src: "/images/services/bathroom-remodel/bath-remodel-gallery-9.jpg", title: "Luxury Spa Retreat", subtitle: "Double wood vanity, freestanding tub, walk-in shower" },
       ]}
     />
   );

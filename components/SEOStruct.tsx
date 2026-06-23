@@ -18,7 +18,7 @@ export default function SEOStruct() {
         slogan: 'Property Maintenance & Improvement. Family-Owned. Not a Lead App.',
         foundingDate: '2024',
         email: 'info@luxht.com',
-        telephone: '+1-407-720-7476',
+        telephone: '+1-954-300-3043',
         priceRange: '$$',
         knowsAbout: ['Property Maintenance', 'Residential Maintenance', 'Commercial Property Maintenance', 'Rental Turnover Repairs', 'Fence & Gate Repair', 'Gutter Guard & Cleaning', 'Pressure Washing', 'Accent Walls & Custom Trim', 'Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation', 'Hurricane Damage Repair', 'Stucco Repair', 'Screen Enclosure Repair'],
         address: {
@@ -78,7 +78,7 @@ export default function SEOStruct() {
         },
         contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+1-407-720-7476',
+            telephone: '+1-954-300-3043',
             contactType: 'customer service',
             areaServed: {
                 '@type': 'Country',

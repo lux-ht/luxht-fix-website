@@ -173,7 +173,7 @@ export default function CostsPage() {
                             >
                                 Get a Free Quote
                             </button>
-                            <a href="sms:4077207476" className="btn-gradient-secondary">
+                            <a href="sms:9543003043" className="btn-gradient-secondary">
                                 <span>💬</span> Text Us
                             </a>
                             <a href="mailto:info@luxht.com?subject=Quote%20Request" className="btn-gradient-secondary">
@@ -330,13 +330,13 @@ export default function CostsPage() {
                             <CheckCircle size={20} /> Get Free Quote
                         </button>
                         <a
-                            href="sms:4077207476"
+                            href="sms:9543003043"
                             className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
                         >
                             <span>💬</span> Text Us
                         </a>
                         <a
-                            href="tel:4077207476"
+                            href="tel:9543003043"
                             className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
                         >
                             <Phone size={20} /> Call Now

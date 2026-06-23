@@ -50,7 +50,7 @@ export default function FaucetReplacementPage() {
                 "Fully insured and background-checked"
             ]}
             faqs={[
-                { q: "How much does faucet replacement cost in Orlando?", a: "Labor for faucet replacement typically ranges from $95 to $175, depending on faucet type and any complications like corroded connections. Faucet hardware is not included. Text us at (407) 720-7476 for a quick quote." },
+                { q: "How much does faucet replacement cost in Orlando?", a: "Labor for faucet replacement typically ranges from $95 to $175, depending on faucet type and any complications like corroded connections. Faucet hardware is not included. Text us at (954) 300-3043 for a quick quote." },
                 { q: "Can I buy my own faucet and have you install it?", a: "Absolutely. Most of our clients purchase their faucet from Home Depot, Lowe's, or Amazon and have us install it. We install any brand and style." },
                 { q: "How long does a faucet replacement take?", a: "A straightforward faucet replacement takes 30-60 minutes. If we encounter corroded supply lines or stuck mounting hardware, it may take up to 90 minutes." },
                 { q: "Do you replace the supply lines too?", a: "We inspect supply lines during every faucet replacement. If they're corroded, kinked, or showing age, we recommend replacing them at the same time to prevent future leaks. Supply line replacement adds minimal cost." }

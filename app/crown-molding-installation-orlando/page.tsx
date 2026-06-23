@@ -50,7 +50,7 @@ export default function CrownMoldingPage() {
                 "Fully insured and background-checked"
             ]}
             faqs={[
-                { q: "How much does crown molding installation cost in Orlando?", a: "Crown molding installation typically costs $5 to $10 per linear foot for labor, depending on profile size and room complexity. A standard living room runs $400 to $700. Whole-house packages receive volume discounts. Text us your room dimensions at (407) 720-7476." },
+                { q: "How much does crown molding installation cost in Orlando?", a: "Crown molding installation typically costs $5 to $10 per linear foot for labor, depending on profile size and room complexity. A standard living room runs $400 to $700. Whole-house packages receive volume discounts. Text us your room dimensions at (954) 300-3043." },
                 { q: "What style of crown molding should I choose?", a: "For traditional Orlando homes, wider profiles (3.5\" to 5.25\") add classic elegance. For modern or contemporary homes, a simpler 2.5\" to 3.5\" profile provides clean lines. We can bring samples to help you decide." },
                 { q: "Can you install crown molding on vaulted or angled ceilings?", a: "Yes. Vaulted and cathedral ceilings require specialized compound angle cutting that not all contractors can handle. LUXHT Fix has the experience and tools for these challenging installations." },
                 { q: "Is crown molding worth the investment?", a: "Yes. Crown molding consistently ranks as one of the highest-ROI home improvements. It adds perceived value and elegance to every room, and buyers notice the difference." }

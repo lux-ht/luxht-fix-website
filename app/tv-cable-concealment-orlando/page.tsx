@@ -51,7 +51,7 @@ export default function TVCableConcealmentPage() {
             ]}
             faqs={[
                 { q: "Can you hide TV cables inside the wall?", a: "Yes. In-wall cable routing is our most popular service. We route HDMI, audio, and other low-voltage cables through the wall cavity for a completely wire-free look. Power cables require a code-compliant power bridge or recessed outlet solution." },
-                { q: "How much does TV cable concealment cost in Orlando?", a: "Surface cable covers start at $75, while in-wall cable routing typically ranges from $150 to $300 depending on wall type and number of cables. Text us a photo of your setup at (407) 720-7476 for an exact quote." },
+                { q: "How much does TV cable concealment cost in Orlando?", a: "Surface cable covers start at $75, while in-wall cable routing typically ranges from $150 to $300 depending on wall type and number of cables. Text us a photo of your setup at (954) 300-3043 for an exact quote." },
                 { q: "Can you conceal cables on a brick or concrete wall?", a: "Yes. For brick and concrete walls, we use premium surface cable covers that mount securely and can be painted to match your wall color. These provide a clean look without drilling through masonry." },
                 { q: "Can you add cable concealment to an already-mounted TV?", a: "Absolutely. We frequently add cable concealment to existing TV installations. We can work around your current mount without needing to remove the TV in most cases." }
             ]}

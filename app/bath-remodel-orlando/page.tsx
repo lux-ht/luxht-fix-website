@@ -37,7 +37,7 @@ export default function BathRemodelPage() {
     "name": "LUXHT Fix - Bathroom Remodel Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/bath-remodel-orlando/",
-    "telephone": "+1-407-720-7476",
+    "telephone": "+1-954-300-3043",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
@@ -126,10 +126,10 @@ export default function BathRemodelPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+            <a href="sms:9543003043" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <span className="text-xl">💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com?subject=Bath%20Remodel%20Quote%20Request" className="btn-gradient-glass border-white/20 hover:bg-white/10">
@@ -140,7 +140,7 @@ export default function BathRemodelPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Bathroom remodels start at $8,500</p>
-          <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
+          <a href="sms:9543003043?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
         </div>
       </header>
 
@@ -192,6 +192,15 @@ export default function BathRemodelPage() {
             { src: "/images/services/bathroom-remodel/tile-work-after.jpg", title: "Tile Work", subtitle: "After: Premium Porcelain" },
             { src: "/images/services/bathroom-remodel/design-and-planning-before.jpg", title: "Design Process", subtitle: "Before: Small Layout" },
             { src: "/images/services/bathroom-remodel/design-and-planning-after.jpg", title: "Design Process", subtitle: "After: Optimized Space" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-1.jpg", title: "Modern Contrast", subtitle: "Black Hex Shower & Geometric Floors" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-2.jpg", title: "Minimalist Spa", subtitle: "Floating Wood Vanity & Glass Shower" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-3.jpg", title: "Luxury Marble", subtitle: "Double Vanity & Bookmatched Stone" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-4.jpg", title: "Warm Transitional", subtitle: "Freestanding Tub & Arched Mirrors" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-5.jpg", title: "Earthy Modern", subtitle: "Travertine Vessel Sinks & Backlit Mirrors" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-6.jpg", title: "Olive & Terrazzo", subtitle: "Green vertical tile, gold fixtures, terrazzo floor" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-7.jpg", title: "Beige & Black Accent", subtitle: "Single oak vanity, oval mirror, black fixtures" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-8.jpg", title: "Before & After", subtitle: "Full cosmetic and layout renovation" },
+            { src: "/images/services/bathroom-remodel/bath-remodel-gallery-9.jpg", title: "Luxury Spa Retreat", subtitle: "Double wood vanity, freestanding tub, walk-in shower" },
           ]}
           />
 
@@ -234,7 +243,7 @@ export default function BathRemodelPage() {
               <a href="/#contact" className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Consultation
               </a>
-              <a href="sms:4077207476" className="btn-gradient-secondary">
+              <a href="sms:9543003043" className="btn-gradient-secondary">
                 <span>💬</span> Text Us
               </a>
             </div>
@@ -316,7 +325,7 @@ export default function BathRemodelPage() {
             <Link href="/costs/bathroom-remodel/" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
-            <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
+            <a href="sms:9543003043?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20bathroom%20remodel..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
               <MessageSquare size={18} /> Text Us - Get Instant Reply
             </a>
           </div>
@@ -393,10 +402,10 @@ export default function BathRemodelPage() {
             Custom design. Quality materials. Expert craftsmanship.<br />Orlando's trusted bathroom remodeling experts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={20} /> Call Now: (407) 720-7476
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={20} /> Call Now: (954) 300-3043
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass">
+            <a href="sms:9543003043" className="btn-gradient-glass">
               <span>💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com" className="btn-gradient-glass">

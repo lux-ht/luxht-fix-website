@@ -81,8 +81,8 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                         <h3 className="text-2xl font-bold mb-3">Need Help With Your Home?</h3>
                         <p className="text-white/80 mb-6">LUXHT Fix serves South Florida & Central Florida with construction-grade expertise.</p>
                         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                            <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:bg-[#52bdbc] transition-all flex items-center gap-2 justify-center">
-                                <Phone size={18} /> Call (407) 720-7476
+                            <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:bg-[#52bdbc] transition-all flex items-center gap-2 justify-center">
+                                <Phone size={18} /> Call (954) 300-3043
                             </a>
                             <button onClick={() => openModal()} className="bg-white/20 backdrop-blur-sm text-white font-bold py-3 px-8 rounded-full hover:bg-white/30 transition-all border border-white/30">
                                 Get Free Quote

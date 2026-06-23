@@ -120,7 +120,7 @@ export default function DoorLockTrimCostPage() {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start">
                             <button onClick={() => openModal('quote')} className="bg-white text-[#584D94] font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 w-full sm:w-auto"><CheckCircle size={18} /> Get Free Quote</button>
-                            <a href="tel:4077207476" className="border-2 border-white text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 w-full sm:w-auto"><Phone size={18} /> (407) 720-7476</a>
+                            <a href="tel:9543003043" className="border-2 border-white text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 w-full sm:w-auto"><Phone size={18} /> (954) 300-3043</a>
                         </div>
                     </section>
                     <section className="mb-16">

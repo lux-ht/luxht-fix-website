@@ -39,7 +39,7 @@ const organizationSchema = {
     "name": "LUXHT Fix",
     "description": "Professional property maintenance, repairs, installations, and improvement services across South Florida & Central Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
     "url": "https://fix.luxht.com",
-    "telephone": "+1-407-720-7476",
+    "telephone": "+1-954-300-3043",
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
@@ -403,7 +403,7 @@ export default function PricingTransparencyPage() {
                                 <button onClick={() => openModal('quote')} className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
                                     <Phone size={20} /> Free Quote
                                 </button>
-                                <a href="sms:4077207476" className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
+                                <a href="sms:9543003043" className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
                                     <span>💬</span> Text Us
                                 </a>
                             </div>

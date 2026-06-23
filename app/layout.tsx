@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | LUXHT Fix',
   },
   description:
-    'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida & Central Florida. Drywall, TV mounting, flooring, deck building & more. Serving Miami, Fort Lauderdale, Pembroke Pines & Orlando. Family-Owned. Fully Insured. Call (407) 720-7476.',
+    'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida & Central Florida. Drywall, TV mounting, flooring, deck building & more. Serving Miami, Fort Lauderdale, Pembroke Pines & Orlando. Family-Owned. Fully Insured. Call (954) 300-3043.',
   alternates: {
     canonical: 'https://fix.luxht.com/',
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'LUXHT Fix | Property Maintenance & Improvement — South Florida & Central Florida',
     description:
-      'Professional property maintenance and improvement services across South Florida & Central Florida. Family-Owned. Fully Insured. Call (407) 720-7476.',
+      'Professional property maintenance and improvement services across South Florida & Central Florida. Family-Owned. Fully Insured. Call (954) 300-3043.',
     images: ['/images/logo-wide-hammers.png'],
   },
   robots: {

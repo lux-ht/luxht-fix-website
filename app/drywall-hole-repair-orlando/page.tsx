@@ -50,7 +50,7 @@ export default function DrywallHoleRepairPage() {
                 "Fully insured and background-checked"
             ]}
             faqs={[
-                { q: "How much does it cost to fix a hole in drywall in Orlando?", a: "Small nail holes can be repaired for as little as $75, while larger holes from doorknobs or access cuts typically range from $150 to $350. Text us a photo at (407) 720-7476 for an exact quote." },
+                { q: "How much does it cost to fix a hole in drywall in Orlando?", a: "Small nail holes can be repaired for as little as $75, while larger holes from doorknobs or access cuts typically range from $150 to $350. Text us a photo at (954) 300-3043 for an exact quote." },
                 { q: "Can you repair large holes in drywall?", a: "Yes. We repair holes of any size using professional techniques including California patches and backing board installations. Even large plumbing or electrical access cuts can be repaired to look like new." },
                 { q: "How long does a drywall hole repair take?", a: "Most small to medium hole repairs are completed in 1-2 hours. Large holes requiring backing board installation may take 2-4 hours including drying time." },
                 { q: "Will the repair be visible after it's done?", a: "No. Our texture-matching techniques ensure the repaired area blends seamlessly with the surrounding wall. Most homeowners can't find the repair once it's finished and painted." }

@@ -47,7 +47,7 @@ export default function SpecialForm() {
         } catch (error: any) {
             console.error('Submission Error:', error);
             alert(
-                'Something went wrong submitting your offer claim. Please call us at (407) 288-0832 instead!'
+                'Something went wrong submitting your offer claim. Please call us at (954) 300-3043 instead!'
             );
         } finally {
             setIsSubmitting(false);
@@ -75,7 +75,7 @@ export default function SpecialForm() {
                         type="tel"
                         id="phone"
                         name="phone"
-                        placeholder="(407) 000-0000"
+                        placeholder="(954) 000-0000"
                         required
                         value={formData.phone}
                         onChange={handleChange}

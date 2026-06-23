@@ -195,13 +195,13 @@ export default function Navbar() {
 
                 {/* CTA Buttons */}
                 <div className="hidden md:flex items-center gap-4">
-                    <a href="tel:4077207476" className={clsx("font-bold flex items-center gap-2 transition-colors hidden xl:flex", useDarkText ? "text-[#584D94]" : "text-white")}>
-                        <Phone size={18} /> (407) 720-7476
+                    <a href="tel:9543003043" className={clsx("font-bold flex items-center gap-2 transition-colors hidden xl:flex", useDarkText ? "text-[#584D94]" : "text-white")}>
+                        <Phone size={18} /> (954) 300-3043
                     </a>
 
                     {/* Text Us - Desktop */}
                     <a
-                        href="sms:4077207476"
+                        href="sms:9543003043"
                         className="btn-gradient-secondary"
                     >
                         <span>💬</span> Text Us
@@ -344,10 +344,10 @@ export default function Navbar() {
 
                     <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                         <div className="grid grid-cols-2 gap-3">
-                            <a href="tel:4077207476" className="bg-slate-100 text-slate-800 font-bold py-3 rounded-xl flex items-center justify-center gap-2">
+                            <a href="tel:9543003043" className="bg-slate-100 text-slate-800 font-bold py-3 rounded-xl flex items-center justify-center gap-2">
                                 <Phone size={20} /> Call Now
                             </a>
-                            <a href="sms:4077207476" className="bg-[#584D94]/10 text-[#584D94] font-bold py-3 rounded-xl flex items-center justify-center gap-2 border border-[#584D94]/20">
+                            <a href="sms:9543003043" className="bg-[#584D94]/10 text-[#584D94] font-bold py-3 rounded-xl flex items-center justify-center gap-2 border border-[#584D94]/20">
                                 <span>💬</span> Text Us
                             </a>
                         </div>

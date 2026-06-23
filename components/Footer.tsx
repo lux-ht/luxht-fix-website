@@ -83,7 +83,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-0.5">Call</div>
-                                    <a href="tel:4077207476" className="hover:text-[#64CEBB] text-xs font-medium">(407) 720-7476</a>
+                                    <a href="tel:9543003043" className="hover:text-[#64CEBB] text-xs font-medium">(954) 300-3043</a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
@@ -92,7 +92,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-0.5">Text</div>
-                                    <a href="sms:4077207476" className="hover:text-[#64CEBB] text-xs font-medium">(407) 720-7476</a>
+                                    <a href="sms:9543003043" className="hover:text-[#64CEBB] text-xs font-medium">(954) 300-3043</a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">

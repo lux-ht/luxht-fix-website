@@ -52,7 +52,7 @@ export default function DrywallCrackRepairPage() {
             faqs={[
                 { q: "Why do cracks keep appearing in my drywall?", a: "Recurring drywall cracks are usually caused by foundation settling, seasonal temperature changes, or improper original installation. LUXHT Fix inspects for the root cause before repairing so the fix lasts. In older Orlando homes, settling is the most common cause." },
                 { q: "Can you fix cracks without repainting the whole wall?", a: "Yes. Our texture-matching techniques allow us to blend the repair area with the surrounding wall so only a small section needs touch-up paint, not the entire wall." },
-                { q: "How much does drywall crack repair cost in Orlando?", a: "Most crack repairs range from $150 to $400 depending on length, severity, and texture matching needs. We provide exact quotes after seeing photos of your cracks — just text us at (407) 720-7476." },
+                { q: "How much does drywall crack repair cost in Orlando?", a: "Most crack repairs range from $150 to $400 depending on length, severity, and texture matching needs. We provide exact quotes after seeing photos of your cracks — just text us at (954) 300-3043." },
                 { q: "How long does drywall crack repair take?", a: "Most crack repairs are completed in 2-3 hours including drying and texture matching. Extensive cracking across multiple walls may take a full day." }
             ]}
             relatedServices={[

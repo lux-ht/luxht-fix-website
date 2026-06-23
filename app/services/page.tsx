@@ -41,7 +41,7 @@ export default function ServicesPage() {
         "name": "LUXHT Fix",
         "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
         "url": "https://fix.luxht.com/services/",
-        "telephone": "+1-407-720-7476",
+        "telephone": "+1-954-300-3043",
         "priceRange": "$$-$$$",
         "address": {
             "@type": "PostalAddress",
@@ -91,10 +91,10 @@ export default function ServicesPage() {
                         <CheckCircle size={18} /> Fully Insured • 500+ Florida Properties Served
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
+                        <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
                             Call Now
                         </a>
-                        <a href="sms:4077207476" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                        <a href="sms:9543003043" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                             <span>💬</span> Text Us
                         </a>
                         <a href="#all-services" className="bg-white/10 border border-white/20 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition-all flex items-center justify-center">
@@ -225,10 +225,10 @@ export default function ServicesPage() {
                         From small repairs to complete renovations, LUXHT Fix delivers professional results you can trust.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
+                        <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
                             Call Now
                         </a>
-                        <a href="sms:4077207476" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                        <a href="sms:9543003043" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                             <span>💬</span> Text Us
                         </a>
                         <a href="mailto:info@luxht.com" className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2">

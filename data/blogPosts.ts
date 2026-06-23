@@ -57,7 +57,7 @@ Every service we offer in Central Florida is now available in South Florida, plu
 
 We're investing in a dedicated South Florida team, local material partnerships, and a service fleet to ensure the same quality Central Florida trusts is available across Miami-Dade and Broward.
 
-**Ready to experience the LUXHT Fix difference?** Call us at (407) 720-7476 or text us to schedule your first project.`
+**Ready to experience the LUXHT Fix difference?** Call us at (954) 300-3043 or text us to schedule your first project.`
   },
   {
     slug: "hurricane-season-home-prep-south-florida",
@@ -104,7 +104,7 @@ Take photos and video of every room, your roof, and your exterior. Store copies 
 
 ### Need Help Getting Storm-Ready?
 
-LUXHT Fix provides comprehensive hurricane preparation services across South Florida — from stucco repair and screen enclosure reinforcement to drywall fixes and impact window prep. **Call (407) 720-7476** to schedule a pre-season inspection.`
+LUXHT Fix provides comprehensive hurricane preparation services across South Florida — from stucco repair and screen enclosure reinforcement to drywall fixes and impact window prep. **Call (954) 300-3043** to schedule a pre-season inspection.`
   },
   {
     slug: "drywall-repair-vs-stucco-repair-florida",
@@ -169,7 +169,7 @@ Most South Florida homes use **stucco on the exterior** and **drywall on the int
 
 ### When to Call LUXHT Fix
 
-We handle both drywall and stucco repairs across South Florida. Our construction background means we don't just patch — we identify root causes and make repairs that last. **Call (407) 720-7476** for a free estimate.`
+We handle both drywall and stucco repairs across South Florida. Our construction background means we don't just patch — we identify root causes and make repairs that last. **Call (954) 300-3043** for a free estimate.`
   },
   {
     slug: "tv-mounting-concrete-walls-miami-condo",
@@ -219,7 +219,7 @@ A professional TV mounting in a Miami condo includes:
 
 ### Book Your Condo TV Mounting
 
-LUXHT Fix specializes in concrete wall installations across Miami-Dade and Broward county condos. We carry the proper insurance and follow all building rules. **Call (407) 720-7476** to schedule.`
+LUXHT Fix specializes in concrete wall installations across Miami-Dade and Broward county condos. We carry the proper insurance and follow all building rules. **Call (954) 300-3043** to schedule.`
   },
   {
     slug: "top-5-home-repairs-miami-homeowners-need",
@@ -276,7 +276,7 @@ Living in Miami means your home faces unique challenges: extreme humidity, salt 
 
 ### Don't Wait for Problems to Get Worse
 
-Every one of these issues gets more expensive the longer you wait. LUXHT Fix handles all five of these common Miami home repairs — often in a single visit. **Call (407) 720-7476** for a free estimate.`
+Every one of these issues gets more expensive the longer you wait. LUXHT Fix handles all five of these common Miami home repairs — often in a single visit. **Call (954) 300-3043** for a free estimate.`
   },
   {
     slug: "condo-renovation-rules-miami-2026",
@@ -341,7 +341,7 @@ Following the Champlain Towers tragedy, Florida enacted strict structural safety
 - Fixture and faucet replacement
 - Door and lock installation
 
-We carry the insurance Miami condo associations require and follow all building work-hour restrictions. **Call (407) 720-7476** to discuss your condo project.`
+We carry the insurance Miami condo associations require and follow all building work-hour restrictions. **Call (954) 300-3043** to discuss your condo project.`
   },
   {
     slug: "diy-vs-professional-home-repair-when-to-call",
@@ -401,7 +401,7 @@ The #1 reason homeowners call us is to **fix a failed DIY attempt.** This typica
 
 **DIY the cosmetic stuff. Call a pro for the structural stuff.** Your time has value, and some repairs require tools and expertise that don't make sense for a one-time project.
 
-Need help deciding? Text us a photo at (407) 720-7476 and we'll honestly tell you if it's a DIY job or if you need us.`
+Need help deciding? Text us a photo at (954) 300-3043 and we'll honestly tell you if it's a DIY job or if you need us.`
   },
   {
     slug: "bathroom-remodel-south-florida-guide",
@@ -473,7 +473,7 @@ Bathroom remodels in South Florida require special consideration for **humidity,
 
 ### Book Your Bathroom Remodel
 
-LUXHT Fix provides complete bathroom renovations across South Florida — from design consultation to final inspection. We use humidity-resistant materials built for the Florida climate. **Call (407) 720-7476** for a free in-home consultation.`
+LUXHT Fix provides complete bathroom renovations across South Florida — from design consultation to final inspection. We use humidity-resistant materials built for the Florida climate. **Call (954) 300-3043** for a free in-home consultation.`
   },
   {
     slug: "flooring-guide-south-florida-humidity",
@@ -539,7 +539,7 @@ With average humidity between 70–90%, South Florida is one of the toughest env
 
 ### Get a Free Flooring Estimate
 
-LUXHT Fix installs LVP, tile, and engineered hardwood across South Florida and Central Florida. We include proper moisture barriers and follow manufacturer specifications for Florida installations. **Call (407) 720-7476** for a free quote.`
+LUXHT Fix installs LVP, tile, and engineered hardwood across South Florida and Central Florida. We include proper moisture barriers and follow manufacturer specifications for Florida installations. **Call (954) 300-3043** for a free quote.`
   },
   {
     slug: "smart-home-setup-guide-florida",
@@ -599,7 +599,7 @@ Unless you have a large yard, South Florida's frequent rain and many HOA-managed
 - **DIY-friendly:** Smart plugs, light bulbs, leak sensors
 - **Professional recommended:** Thermostats (involves electrical wiring), smart locks (proper door prep), video doorbells (electrical and mounting)
 
-LUXHT Fix installs all major smart home brands across South Florida and Central Florida. **Call (407) 720-7476** to discuss your smart home setup.`
+LUXHT Fix installs all major smart home brands across South Florida and Central Florida. **Call (954) 300-3043** to discuss your smart home setup.`
   }
 ];
 

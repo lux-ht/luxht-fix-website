@@ -327,14 +327,14 @@ export default function EstimatePage() {
         reader.readAsDataURL(file);
     };
 
-    const callNow = () => { window.location.href = 'tel:4077207476'; };
+    const callNow = () => { window.location.href = 'tel:9543003043'; };
 
     const textService = () => {
         if (!activeService) return;
         const msg = encodeURIComponent(
             `Hi LUXHT Fix! I need help with: ${activeService.label}${selectedSubs.length ? ' — ' + selectedSubs.join(', ') : ''}. Scanned your QR magnet.`
         );
-        window.location.href = `sms:4077207476?body=${msg}`;
+        window.location.href = `sms:9543003043?body=${msg}`;
     };
 
     const handleMessageSubmit = async (e: React.FormEvent) => {
@@ -374,7 +374,7 @@ export default function EstimatePage() {
             setScreen('success');
         } catch (err) {
             console.error(err);
-            alert('Something went wrong. Please call us at (407) 720-7476!');
+            alert('Something went wrong. Please call us at (954) 300-3043!');
         } finally {
             setIsSubmitting(false);
         }
@@ -397,7 +397,7 @@ export default function EstimatePage() {
                             priority
                         />
                     </Link>
-                    <a href="tel:4077207476" className="est-call-chip">
+                    <a href="tel:9543003043" className="est-call-chip">
                         <span className="est-call-chip__dot" />
                         Call Us
                     </a>
@@ -533,7 +533,7 @@ export default function EstimatePage() {
                                     <span className="est-cta-btn__icon">📞</span>
                                     <div>
                                         <div className="est-cta-btn__main">Call for Free Estimate</div>
-                                        <div className="est-cta-btn__sub">(407) 720-7476 · Fastest response</div>
+                                        <div className="est-cta-btn__sub">(954) 300-3043 · Fastest response</div>
                                     </div>
                                     <span className="est-cta-btn__arrow">→</span>
                                 </button>
@@ -663,7 +663,7 @@ export default function EstimatePage() {
                         We got your request and will call you back within 2 hours.<br />
                         In the meantime, feel free to call us directly.
                     </p>
-                    <a href="tel:4077207476" className="est-success__call">📞 (407) 720-7476</a>
+                    <a href="tel:9543003043" className="est-success__call">📞 (954) 300-3043</a>
                     <button className="est-success__back"
                         onClick={() => { setScreen('home'); setActiveService(null); }}>
                         Back to Services

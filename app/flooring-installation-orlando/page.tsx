@@ -37,7 +37,7 @@ export default function FlooringPage() {
     "name": "LUXHT Fix - Flooring Installation Orlando",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/flooring-installation-orlando/",
-    "telephone": "+1-407-720-7476",
+    "telephone": "+1-954-300-3043",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
@@ -120,10 +120,10 @@ export default function FlooringPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+            <a href="sms:9543003043" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <span className="text-xl">💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com?subject=Flooring%20Installation%20Quote%20Request" className="btn-gradient-glass border-white/20 hover:bg-white/10">
@@ -134,7 +134,7 @@ export default function FlooringPage() {
 
         <div className="text-blue-200 text-sm opacity-90">
           <p className="font-bold">Professional installation starts at $3 per sq ft</p>
-          <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20flooring..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
+          <a href="sms:9543003043?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20flooring..." className="hover:text-white underline underline-offset-2">💬 Text for Instant Quote</a>
         </div>
       </header>
 
@@ -220,7 +220,7 @@ export default function FlooringPage() {
               <a href="/#contact" className="btn-gradient-primary btn-gradient-shimmer">
                 Get Free Estimate
               </a>
-              <a href="sms:4077207476" className="btn-gradient-secondary">
+              <a href="sms:9543003043" className="btn-gradient-secondary">
                 <span>💬</span> Text Us
               </a>
             </div>
@@ -302,7 +302,7 @@ export default function FlooringPage() {
             <Link href="/costs/flooring-installation/" className="btn-gradient-glass">
               <ArrowRight size={18} /> View Full Pricing Guide
             </Link>
-            <a href="sms:4077207476?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20flooring..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
+            <a href="sms:9543003043?body=Hi%2C%20I%20need%20a%20quick%20quote%20for%20my%20flooring..." className="btn-gradient-primary btn-gradient-shimmer flex items-center gap-2 justify-center">
               <MessageSquare size={18} /> Text Us - Get Instant Reply
             </a>
           </div>
@@ -379,10 +379,10 @@ export default function FlooringPage() {
             Professional installation that transforms your home.<br />Orlando's trusted flooring experts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={20} /> Call Now: (407) 720-7476
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={20} /> Call Now: (954) 300-3043
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass">
+            <a href="sms:9543003043" className="btn-gradient-glass">
               <span>💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com" className="btn-gradient-glass">

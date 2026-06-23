@@ -62,7 +62,7 @@ export default function SouthFloridaPage() {
     "name": "LUXHT Fix - South Florida Home Repair",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/south-florida/",
-    "telephone": "+1-407-720-7476",
+    "telephone": "+1-954-300-3043",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -119,10 +119,10 @@ export default function SouthFloridaPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
               <Phone size={24} /> Call Now
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass border-white/20 hover:bg-white/10">
+            <a href="sms:9543003043" className="btn-gradient-glass border-white/20 hover:bg-white/10">
               <span className="text-xl">💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com?subject=South%20Florida%20Service%20Request" className="btn-gradient-glass border-white/20 hover:bg-white/10">
@@ -217,10 +217,10 @@ export default function SouthFloridaPage() {
             Professional home repair with clean results.<br />Now serving Miami-Dade & Broward counties.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
-              <Phone size={20} /> Call Now: (407) 720-7476
+            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
+              <Phone size={20} /> Call Now: (954) 300-3043
             </a>
-            <a href="sms:4077207476" className="btn-gradient-glass">
+            <a href="sms:9543003043" className="btn-gradient-glass">
               <span>💬</span> Text Us
             </a>
             <a href="mailto:info@luxht.com" className="btn-gradient-glass">

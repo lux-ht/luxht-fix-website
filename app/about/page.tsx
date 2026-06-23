@@ -290,10 +290,10 @@ export default function AboutPage() {
                         Looking for a property maintenance company that treats your home with care? From South Florida to Central Florida — work with construction professionals who are personally responsible for every project.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                        <a href="tel:4077207476" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
+                        <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">
                             <Phone size={20} /> Call Now
                         </a>
-                        <a href="sms:4077207476" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                        <a href="sms:9543003043" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2">
                             <span>💬</span> Text Us
                         </a>
                         <a href="mailto:info@luxht.com" className="bg-transparent border-2 border-white/20 text-white font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2">

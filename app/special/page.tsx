@@ -487,7 +487,7 @@ export default function SpecialPage() {
               </div>
             </Link>
           </div>
-          <a href="tel:4072880832" className="sp-call-btn">
+          <a href="tel:9543003043" className="sp-call-btn">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -496,7 +496,7 @@ export default function SpecialPage() {
             >
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.7 10.5 19.79 19.79 0 01.67 2a2 2 0 011.99-2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7 7a16 16 0 006 6l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z" />
             </svg>
-            (407) 288-0832
+            (954) 300-3043
           </a>
         </header>
 
@@ -611,7 +611,7 @@ export default function SpecialPage() {
                 A subdivision of <strong>LUXURY HOME TRANSFORMATIONS LLC</strong>
               </span><br />
               <span style={{ fontSize: '14px', marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center' }}>
-                <a href="tel:4072880832" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px', textAlign: 'center' }}>📞 (407) 288-0832</a>
+                <a href="tel:9543003043" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px', textAlign: 'center' }}>📞 (954) 300-3043</a>
                 <a href="https://fix.luxht.com" style={{ backgroundColor: '#ffffff', color: '#000000', textDecoration: 'none', padding: '12px 24px', borderRadius: '50px', fontWeight: 'bold', display: 'inline-block', width: '250px', textAlign: 'center' }}>🌐 fix.luxht.com</a>
               </span>
             </p>

@@ -53,7 +53,7 @@ export default function OutdoorTVMountingPage() {
                 { q: "Can a regular TV be mounted outdoors?", a: "A regular TV can be used in a fully covered and screened area like a lanai. For exposed patios, we recommend an outdoor-rated TV or a weatherproof TV enclosure. LUXHT Fix can advise on the best option for your specific setup." },
                 { q: "What about Florida's humidity and rain?", a: "We use rust-resistant stainless steel and galvanized hardware designed for Florida's conditions. Cable runs use weatherproof conduit, and we ensure all power connections are GFCI-protected for safety." },
                 { q: "Can you mount a TV on a patio post or pergola?", a: "Yes. We mount TVs on posts, pergola beams, and other outdoor structures using specialized brackets that provide secure attachment without compromising the structure's integrity." },
-                { q: "How much does outdoor TV mounting cost in Orlando?", a: "Outdoor TV mounting starts at $175 and varies based on mounting surface, cable concealment, and power requirements. Text us a photo of your outdoor space at (407) 720-7476 for a specific quote." }
+                { q: "How much does outdoor TV mounting cost in Orlando?", a: "Outdoor TV mounting starts at $175 and varies based on mounting surface, cable concealment, and power requirements. Text us a photo of your outdoor space at (954) 300-3043 for a specific quote." }
             ]}
             relatedServices={[
                 { title: "TV Mounting", href: "/tv-mounting-orlando/" },

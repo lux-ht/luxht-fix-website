@@ -51,7 +51,7 @@ export default function ToiletRepairPage() {
             ]}
             faqs={[
                 { q: "Why does my toilet keep running?", a: "A running toilet is usually caused by a worn flapper that no longer seals properly, or a faulty fill valve that doesn't shut off. Both are inexpensive parts that LUXHT Fix can replace in under 30 minutes." },
-                { q: "How much does toilet repair cost in Orlando?", a: "Most toilet repairs range from $75 to $175 including parts. Simple flapper replacements are at the lower end, while wax ring replacements or fill valve work is at the higher end. Text us at (407) 720-7476 for a quick quote." },
+                { q: "How much does toilet repair cost in Orlando?", a: "Most toilet repairs range from $75 to $175 including parts. Simple flapper replacements are at the lower end, while wax ring replacements or fill valve work is at the higher end. Text us at (954) 300-3043 for a quick quote." },
                 { q: "My toilet is leaking at the base. Is that serious?", a: "Yes. A base leak usually means the wax ring seal has failed. This allows sewer gas and water to seep out, which can damage your subfloor and create health concerns. It should be repaired promptly." },
                 { q: "Can you install a new toilet?", a: "Yes. We remove old toilets and install new ones including all connections, wax ring, supply line, and caulking. We also haul away the old toilet if needed." }
             ]}

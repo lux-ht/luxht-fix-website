@@ -56,10 +56,10 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="tel:4077207476" className="btn-gradient-primary btn-gradient-shimmer">
-                            <Phone size={20} /> (407) 720-7476
+                        <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">
+                            <Phone size={20} /> (954) 300-3043
                         </a>
-                        <a href="sms:4077207476" className="flex items-center justify-center gap-2 py-3 px-6 rounded-full font-bold text-sm border-2 border-[#584D94] text-[#584D94] bg-white hover:bg-[#584D94] hover:text-white transition-all">
+                        <a href="sms:9543003043" className="flex items-center justify-center gap-2 py-3 px-6 rounded-full font-bold text-sm border-2 border-[#584D94] text-[#584D94] bg-white hover:bg-[#584D94] hover:text-white transition-all">
                             <span>💬</span> Text Us
                         </a>
                         <Link href="/services/" className="btn-gradient-secondary">
@@ -284,10 +284,10 @@ export default function Home() {
                         From small fixes to major upgrades, let's make your home better together.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:4077207476" className="btn-gradient-glass btn-gradient-shimmer">
-                            <Phone size={20} /> Call Now: (407) 720-7476
+                        <a href="tel:9543003043" className="btn-gradient-glass btn-gradient-shimmer">
+                            <Phone size={20} /> Call Now: (954) 300-3043
                         </a>
-                        <a href="sms:4077207476" className="btn-gradient-glass">
+                        <a href="sms:9543003043" className="btn-gradient-glass">
                             <span>💬</span> Text Us
                         </a>
                         <a href="mailto:info@luxht.com" className="btn-gradient-glass">

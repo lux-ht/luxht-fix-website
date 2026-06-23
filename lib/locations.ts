@@ -30,8 +30,8 @@ export const LOCATIONS: Record<string, LocationConfig> = {
     region: 'Central Florida',
     slug: 'orlando',
     hubSlug: '/',
-    phone: '(407) 720-7476',
-    phoneRaw: '4077207476',
+    phone: '(954) 300-3043',
+    phoneRaw: '9543003043',
     email: 'info@luxht.com',
     neighborhoods: [
       'Winter Park', 'Maitland', 'Altamonte Springs', 'Lake Nona',
@@ -49,8 +49,8 @@ export const LOCATIONS: Record<string, LocationConfig> = {
     region: 'South Florida',
     slug: 'miami',
     hubSlug: '/south-florida/',
-    phone: '(407) 720-7476',
-    phoneRaw: '4077207476',
+    phone: '(954) 300-3043',
+    phoneRaw: '9543003043',
     email: 'info@luxht.com',
     neighborhoods: [
       'Miami', 'Pembroke Pines', 'Cooper City', 'Aventura',

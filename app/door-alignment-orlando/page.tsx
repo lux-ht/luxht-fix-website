@@ -51,7 +51,7 @@ export default function DoorAlignmentPage() {
             ]}
             faqs={[
                 { q: "Why does my door stick in summer?", a: "Orlando's high humidity causes wooden doors to absorb moisture and swell, making them stick against the frame. LUXHT Fix can plane the door edges to account for seasonal swelling, or we can address underlying issues like loose hinges that make the problem worse." },
-                { q: "How much does door alignment cost in Orlando?", a: "Most door alignment and adjustment services range from $85 to $175 per door, depending on the issue. Simple hinge tightening is at the lower end, while planing and frame repair are at the higher end. Text us at (407) 720-7476 for a quick quote." },
+                { q: "How much does door alignment cost in Orlando?", a: "Most door alignment and adjustment services range from $85 to $175 per door, depending on the issue. Simple hinge tightening is at the lower end, while planing and frame repair are at the higher end. Text us at (954) 300-3043 for a quick quote." },
                 { q: "Can you fix a door that won't latch?", a: "Yes. Doors that won't latch usually have a misaligned strike plate or a shifted frame. We reposition the strike plate, shim the frame if needed, or make minor hinge adjustments to restore proper latching." },
                 { q: "Do I need a new door or just an adjustment?", a: "In most cases, adjustment is all you need. LUXHT Fix assesses whether your door problem can be solved with alignment work before ever recommending a replacement. We save you money by fixing what's there." }
             ]}
