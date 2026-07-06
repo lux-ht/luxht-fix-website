@@ -68,32 +68,30 @@ export default function PreSaleHomePrepPage() {
       />
 
       {/* ========== CUSTOM HEADER BAR ========== */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#584D94]/95 backdrop-blur-md border-b border-white/10 px-4 py-3 shadow-lg">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#584D94]/90 backdrop-blur-md border-b border-white/10 px-4 py-3 shadow-lg transition-all duration-350 hover:bg-[#584D94]/95">
         <div className="container mx-auto max-w-6xl flex items-center justify-between">
-          {/* Left Side: Logo (No circle, white color, larger) */}
-          <Link href="/" className="flex items-center">
+          {/* Left Side: Logo (No circle, white color, larger, interactive) */}
+          <Link href="/" className="flex items-center group">
             <Image
-              src="/images/presale-logo-final.png"
+              src="/images/logo-wide-hammers.png"
               alt="LUXHT Fix Logo"
               width={224}
               height={77}
-              className="object-contain opacity-95 transition-opacity hover:opacity-100"
+              className="object-contain opacity-95 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 brightness-0 invert"
               style={{
                 maxHeight: '63px',
-                width: 'auto',
-                filter: 'invert(1) brightness(2)',
-                mixBlendMode: 'screen'
+                width: 'auto'
               }}
               priority
             />
           </Link>
 
-          {/* Right Side: Redesigned pill buttons */}
+          {/* Right Side: Interactive pill buttons */}
           <div className="flex items-center gap-2.5">
             {/* Book Walkthrough Bubble */}
             <a
               href="#book-walkthrough"
-              className="bg-[#64CEBB] hover:bg-[#53b0a0] text-[#453A75] font-extrabold px-5 py-2.5 rounded-full text-xs md:text-sm shadow-md transition-all hover:-translate-y-0.5"
+              className="bg-[#64CEBB] hover:bg-[#53b0a0] text-[#453A75] font-extrabold px-5 py-2.5 rounded-full text-xs md:text-sm shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#64CEBB]/40 active:translate-y-0"
             >
               Book a Pre-Sale Walkthrough
             </a>
@@ -103,7 +101,7 @@ export default function PreSaleHomePrepPage() {
               href="https://www.luxht.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1 text-white/80 hover:text-white border border-white/20 hover:border-white/50 bg-white/5 px-4 py-2.5 rounded-full text-xs font-bold transition-all hover:-translate-y-0.5"
+              className="hidden sm:flex items-center gap-1 text-white/80 hover:text-white border border-white/20 hover:border-white bg-white/5 hover:bg-white/15 px-4 py-2.5 rounded-full text-xs font-bold transition-all duration-300 hover:-translate-y-0.5"
             >
               luxht.com <ExternalLink size={10} />
             </a>
@@ -111,7 +109,7 @@ export default function PreSaleHomePrepPage() {
             {/* fix.luxht.com Bubble */}
             <a
               href="https://fix.luxht.com"
-              className="hidden sm:flex items-center gap-1 text-[#64CEBB] hover:text-white border border-[#64CEBB]/30 hover:border-white bg-[#64CEBB]/10 px-4 py-2.5 rounded-full text-xs font-bold transition-all hover:-translate-y-0.5"
+              className="hidden sm:flex items-center gap-1 text-[#64CEBB] hover:text-white border border-[#64CEBB]/30 hover:border-[#64CEBB] bg-[#64CEBB]/10 hover:bg-[#64CEBB]/20 px-4 py-2.5 rounded-full text-xs font-bold transition-all duration-300 hover:-translate-y-0.5"
             >
               fix.luxht.com <ExternalLink size={10} />
             </a>
@@ -119,40 +117,45 @@ export default function PreSaleHomePrepPage() {
         </div>
       </header>
 
-      {/* ========== HERO SECTION ========== */}
-      <section className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-36 pb-20 px-4 overflow-hidden text-center">
-        {/* Gradient orbs */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#64CEBB]/10 rounded-full blur-3xl -mr-40 -mt-40"></div>
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#7B6FBF]/20 rounded-full blur-3xl -ml-40 -mb-40"></div>
-
+      {/* ========== HERO SECTION WITH CONSULTATION BACKGROUND ========== */}
+      <section
+        className="relative text-white pt-40 pb-24 px-4 overflow-hidden text-center bg-cover"
+        style={{
+          backgroundImage: "url('/images/presale-hero-consultation.jpg')",
+          backgroundPosition: 'center 35%'
+        }}
+      >
         <div className="relative z-10 container mx-auto max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 py-2 px-6 rounded-full text-sm font-bold text-[#64CEBB] mb-6">
-            <Shield size={16} /> Pre-Sale Home Prep Service
+          {/* Frosted glass text card for high readability and premium aesthetic */}
+          <div className="backdrop-blur-md bg-slate-950/65 border border-white/10 p-6 md:p-8 rounded-3xl shadow-2xl max-w-xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 py-2 px-6 rounded-full text-sm font-bold text-[#64CEBB] mb-6">
+              <Shield size={16} /> Pre-Sale Home Prep Service
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-black leading-tight mb-4 tracking-tight text-white drop-shadow-md">
+              Pre-Sale Home Prep
+            </h1>
+            <h2 className="text-lg md:text-2xl font-medium text-[#64CEBB] mb-6 max-w-2xl mx-auto leading-relaxed">
+              Repairs, refreshes, and smart improvements before your home hits the market.
+            </h2>
+
+            <p className="text-base md:text-lg text-blue-100 max-w-xl mx-auto mb-8 font-light leading-relaxed">
+              Selling your home soon? We help you fix what buyers notice before the home goes on the market.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+              <a href="#book-walkthrough" className="btn-gradient-primary btn-gradient-shimmer w-full sm:w-auto">
+                <ClipboardList size={20} /> Book a Walkthrough
+              </a>
+              <a href="tel:9543003043" className="btn-gradient-glass w-full sm:w-auto">
+                <Phone size={20} /> (954) 300-3043
+              </a>
+            </div>
+
+            <p className="text-blue-200 text-xs md:text-sm font-medium">
+              Starting at <strong className="text-white">$295</strong> &middot; Credited toward your project if you approve work over $1,500
+            </p>
           </div>
-
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-4 tracking-tight">
-            LUXHT Fix Pre-Sale Home Prep
-          </h1>
-          <h2 className="text-xl md:text-3xl font-medium text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Repairs, refreshes, and smart improvements before your home hits the market.
-          </h2>
-
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-            Selling your home soon? We help you fix what buyers notice before the home goes on the market.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="#book-walkthrough" className="btn-gradient-primary btn-gradient-shimmer">
-              <ClipboardList size={20} /> Book a Pre-Sale Walkthrough
-            </a>
-            <a href="tel:9543003043" className="btn-gradient-glass">
-              <Phone size={20} /> (954) 300-3043
-            </a>
-          </div>
-
-          <p className="text-blue-200 text-sm font-medium">
-            Starting at <strong className="text-white">$295</strong> &middot; Credited toward your project if you approve work over $1,500
-          </p>
         </div>
       </section>
 
@@ -166,50 +169,95 @@ export default function PreSaleHomePrepPage() {
             <p className="text-slate-500 mt-3 max-w-xl mx-auto">A clear 4-phase process to get your home ready for photos, showings, and buyer confidence.</p>
           </div>
 
+          {/* Scoped CSS for floating animations */}
+          <style dangerouslySetInnerHTML={{
+            __html: `
+              @keyframes cardsFloat {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-8px); }
+              }
+              .animate-step-float-0 { animation: cardsFloat 5s ease-in-out infinite; }
+              .animate-step-float-1 { animation: cardsFloat 5s ease-in-out infinite 1.2s; }
+              .animate-step-float-2 { animation: cardsFloat 5s ease-in-out infinite 2.4s; }
+              .animate-step-float-3 { animation: cardsFloat 5s ease-in-out infinite 3.6s; }
+              
+              .step-card-hover {
+                transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+              }
+              .step-card-hover:hover {
+                animation-play-state: paused;
+                transform: translateY(-16px) scale(1.02) !important;
+                box-shadow: 0 20px 25px -5px rgba(100, 206, 187, 0.15), 0 10px 10px -5px rgba(100, 206, 187, 0.1);
+                border-color: rgba(100, 206, 187, 0.4);
+              }
+            `
+          }} />
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: Eye,
                 num: '01',
                 title: 'Home Readiness Walkthrough',
-                desc: 'We walk the property and check what buyers notice first — curb appeal, walls, bathrooms, kitchen, lighting, flooring, and photo-readiness.'
+                desc: 'We walk the property and check what buyers notice first — curb appeal, walls, bathrooms, kitchen, lighting, flooring, and photo-readiness.',
+                img: '/images/presale-hero-consultation.jpg'
               },
               {
                 icon: ClipboardList,
                 num: '02',
                 title: 'Pre-Sale Repair Plan',
-                desc: 'A clear written plan with what should be repaired, what is worth refreshing for photos, and what is not worth spending money on.'
+                desc: 'A clear written plan with what should be repaired, what is worth refreshing for photos, and what is not worth spending money on.',
+                img: '/images/presale-step-plan.png'
               },
               {
                 icon: Hammer,
                 num: '03',
                 title: 'Focused Execution',
-                desc: 'LUXHT Fix completes the approved work — drywall patches, paint, caulking, fixtures, baseboard repairs, pressure washing, and polish.'
+                desc: 'LUXHT Fix completes the approved work — drywall patches, paint, caulking, fixtures, baseboard repairs, pressure washing, and polish.',
+                img: '/images/presale-step-execution.png'
               },
               {
                 icon: CheckCircle,
                 num: '04',
                 title: 'Final Walkthrough',
-                desc: 'Quality check, before and after photos, seller-ready checklist, and a realtor-ready summary. Your home is photo-ready.'
+                desc: 'Quality check, before and after photos, seller-ready checklist, and a realtor-ready summary. Your home is photo-ready.',
+                img: '/images/presale-step-final.png'
               },
             ].map((step, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover-lift h-full relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#64CEBB] to-[#584D94]"></div>
-                <div className="w-12 h-12 bg-[#584D94]/10 rounded-xl flex items-center justify-center text-[#584D94] mb-4 service-icon-pulse">
-                  <step.icon size={24} />
+              <div
+                key={i}
+                className={`bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg step-card-hover h-full flex flex-col animate-step-float-${i}`}
+              >
+                {/* Image at the top (always visible) */}
+                <div className="relative h-40 w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={step.img}
+                    alt={step.title}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                  />
                 </div>
-                <span className="text-xs font-bold text-[#64CEBB] tracking-widest">{step.num}</span>
-                <h3 className="text-lg font-bold text-slate-800 mt-1 mb-3">{step.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+                
+                {/* Content below the image (White background for 100% readability) */}
+                <div className="p-5 flex-grow flex flex-col justify-start relative bg-white">
+                  {/* Floating icon badge slightly overlapping the image */}
+                  <div className="w-10 h-10 bg-[#584D94] rounded-xl flex items-center justify-center text-[#64CEBB] mb-4 -mt-10 relative z-10 shadow-md border-2 border-white transition-transform duration-300 hover:rotate-3">
+                    <step.icon size={20} />
+                  </div>
+                  <span className="text-xs font-bold text-[#64CEBB] tracking-widest">{step.num}</span>
+                  <h3 className="text-base font-bold text-slate-800 mt-1 mb-2">{step.title}</h3>
+                  <p className="text-slate-600 text-xs md:text-sm leading-relaxed">{step.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ========== WHO IS IT FOR ========== */}
+      {/* ========== WHO IS IT FOR (PROFILE CARDS WITH IMAGES BRUNG TO FRONT) ========== */}
       <section className="py-24 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white px-4 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-50 pointer-events-none"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
             <p className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Who This Is For</p>
@@ -219,17 +267,55 @@ export default function PreSaleHomePrepPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Home, title: 'Homeowners Selling', desc: 'Fix the details buyers notice without overspending on a full remodel.' },
-              { icon: Users, title: 'Realtors & Agents', desc: 'Get your listing ready before photos and showings. We handle the punch list.' },
-              { icon: TrendingUp, title: 'Real Estate Investors', desc: 'Maximize listing appeal with focused repairs that improve buyer perception.' },
-              { icon: Key, title: 'Property Managers', desc: 'Turnover prep with a focus on what sells — not just what needs repair.' },
+              {
+                icon: Home,
+                title: 'Homeowners Selling',
+                desc: 'Fix the details buyers notice without overspending on a full remodel.',
+                img: '/images/presale-profile-homeowner.png'
+              },
+              {
+                icon: Users,
+                title: 'Realtors & Agents',
+                desc: 'Get your listing ready before photos and showings. We handle the punch list.',
+                img: '/images/presale-profile-realtor.png'
+              },
+              {
+                icon: TrendingUp,
+                title: 'Real Estate Investors',
+                desc: 'Maximize listing appeal with focused repairs that improve buyer perception.',
+                img: '/images/presale-profile-investor.png'
+              },
+              {
+                icon: Key,
+                title: 'Property Managers',
+                desc: 'Turnover prep with a focus on what sells — not just what needs repair.',
+                img: '/images/presale-profile-manager.png'
+              },
             ].map((card, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 text-center card-hover-lift">
-                <div className="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <card.icon size={28} className="text-[#64CEBB]" />
+              <div
+                key={i}
+                className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg card-hover-lift h-full flex flex-col"
+              >
+                {/* Image at the top (always visible, no hover required) */}
+                <div className="relative h-44 w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                  />
                 </div>
-                <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                <p className="text-blue-100 text-sm leading-relaxed font-light">{card.desc}</p>
+                
+                {/* Content below the image (White background for 100% readability) */}
+                <div className="p-5 flex-grow flex flex-col justify-start relative bg-white">
+                  {/* Floating icon badge slightly overlapping the image */}
+                  <div className="w-12 h-12 bg-[#584D94] rounded-xl flex items-center justify-center text-[#64CEBB] mb-4 -mt-10 relative z-10 shadow-md border-2 border-white transition-transform duration-300 hover:rotate-3">
+                    <card.icon size={22} />
+                  </div>
+                  <h3 className="text-base font-bold text-slate-800 mb-2">{card.title}</h3>
+                  <p className="text-slate-600 text-xs md:text-sm leading-relaxed">{card.desc}</p>
+                </div>
               </div>
             ))}
           </div>
