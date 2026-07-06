@@ -986,3 +986,26 @@ select:focus-visible {
 .card-sparkle-teal:hover::before {
   opacity: 1;
 }
+
+/* Always-visible custom scrollbar for dashboards */
+.custom-visible-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 206, 187, 0.75) rgba(255, 255, 255, 0.08);
+}
+.custom-visible-scrollbar::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  display: block !important;
+}
+.custom-visible-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 9999px !important;
+}
+.custom-visible-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 206, 187, 0.75) !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.custom-visible-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 206, 187, 1) !important;
+}

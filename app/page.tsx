@@ -129,8 +129,10 @@ export default function Home() {
 
                             {/* South Florida Services Dashboard list */}
                             <div className="border-t border-white/10 pt-3.5">
-                                <span className="block text-slate-300 text-[10px] font-semibold uppercase tracking-wider mb-2">Our Services Directory</span>
-                                <div className="flex flex-wrap gap-1.5 max-h-[120px] overflow-y-auto pr-1 scrollbar-thin">
+                                <span className="block text-slate-300 text-[10px] font-semibold uppercase tracking-wider mb-2">
+                                    Our Services Directory <span className="text-[#64CEBB] animate-pulse lowercase font-normal italic ml-1.5">(scroll to view all 22 services ↕)</span>
+                                </span>
+                                <div className="flex flex-wrap gap-1.5 max-h-[120px] overflow-y-auto pr-1 custom-visible-scrollbar">
                                     {sfServices.map((svc) => (
                                         <Link 
                                             key={svc.name}
