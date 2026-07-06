@@ -12,6 +12,31 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import ScrollReveal from '@/components/ScrollReveal';
 import Image from 'next/image';
 
+const sfServices = [
+    { name: 'Drywall Repair', href: '/estimate?service=drywall' },
+    { name: 'Property Maintenance', href: '/estimate?service=maintenance' },
+    { name: 'Commercial Maintenance', href: '/estimate?service=commercial' },
+    { name: 'Rental Turnover Repairs', href: '/estimate?service=turnover' },
+    { name: 'TV Mounting', href: '/estimate?service=tv' },
+    { name: 'Flooring Installation', href: '/estimate?service=flooring' },
+    { name: 'Bath Remodel', href: '/estimate?service=kitchen' },
+    { name: 'Kitchen Refacing', href: '/estimate?service=kitchen' },
+    { name: 'Door, Lock & Trim', href: '/estimate?service=doors' },
+    { name: 'Smart Home', href: '/estimate?service=smart' },
+    { name: 'Faucet & Fixtures', href: '/estimate?service=plumbing' },
+    { name: 'Fence & Gate Repair', href: '/estimate?service=fence' },
+    { name: 'Gutter Guard & Cleaning', href: '/estimate?service=gutter' },
+    { name: 'Pressure Washing', href: '/estimate?service=pressure' },
+    { name: 'Accent Walls & Trim', href: '/estimate?service=accent-walls' },
+    { name: 'Deck Building', href: '/estimate?service=outdoor' },
+    { name: 'Furniture Assembly', href: '/estimate?service=outdoor' },
+    { name: 'Hurricane Damage Repair', href: '/estimate?service=drywall' },
+    { name: 'Stucco Repair', href: '/estimate?service=drywall' },
+    { name: 'Screen Enclosure Repair', href: '/estimate?service=outdoor' },
+    { name: 'Patio & Lanai Repair', href: '/estimate?service=outdoor' },
+    { name: 'Impact Window Prep', href: '/estimate?service=doors' }
+];
+
 export default function Home() {
     return (
         <main className="min-h-screen bg-white text-slate-800 font-sans">
@@ -26,114 +51,155 @@ export default function Home() {
                 {/* Floating Tool Icons */}
                 <FloatingIcons />
 
-                <div className="container mx-auto px-4 relative z-10 max-w-6xl">
-                    <div className="grid lg:grid-cols-12 gap-8 items-center">
-                        <div className="lg:col-span-4 order-2 lg:order-1 text-left">
-                            <div className="card-sparkle-teal rounded-3xl p-6 relative overflow-hidden shadow-2xl">
-                                {/* Gradient top stripe */}
-                                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#64CEBB] to-[#7B6FCC]"></div>
-                                
+                <div className="container mx-auto px-4 relative z-10 max-w-5xl text-left flex flex-col items-start">
+                    
+                    {/* TWO DUAL-DASHBOARD WINDOWS (Located ABOVE the main header text) */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-8">
+                        
+                        {/* LEFT WINDOW: PRE-SALE HOME PREP */}
+                        <div className="card-sparkle-teal rounded-3xl p-5 md:p-6 relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                            {/* Gradient top stripe */}
+                            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#64CEBB] to-[#7B6FCC]"></div>
+                            
+                            <div>
                                 {/* New badge */}
-                                <div className="inline-flex items-center gap-1 bg-[#64CEBB]/20 border border-[#64CEBB]/30 py-1 px-3 rounded-full text-xs font-bold text-[#64CEBB] mb-4 uppercase tracking-wider animate-pulse">
+                                <div className="inline-flex items-center gap-1 bg-[#64CEBB]/20 border border-[#64CEBB]/30 py-0.5 px-2.5 rounded-full text-[10px] font-bold text-[#64CEBB] mb-3 uppercase tracking-wider animate-pulse">
                                     ✨ New Service
                                 </div>
                                 
-                                <h3 className="text-xl font-bold text-white mb-2 leading-tight drop-shadow-sm">Pre-Sale Home Prep</h3>
+                                <h3 className="text-lg font-bold text-white mb-1.5 leading-tight drop-shadow-sm">Pre-Sale Home Prep</h3>
                                 
-                                <p className="text-blue-100 text-sm mb-4 leading-relaxed font-light">
+                                <p className="text-blue-100 text-xs mb-3.5 leading-relaxed font-light">
                                     Selling your home soon? We help you fix what buyers notice first — repairs, refreshes, and smart improvements before listing to maximize your sales price.
                                 </p>
 
                                 {/* Bulleted details */}
-                                <ul className="space-y-2.5 mb-6 text-slate-200 text-xs md:text-sm font-light">
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle size={16} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
-                                        <span><strong>Walkthroughs</strong> &middot; Check curb appeal, walls, kitchen & baths.</span>
+                                <ul className="space-y-2 mb-5 text-slate-200 text-xs font-light">
+                                    <li className="flex items-start gap-1.5">
+                                        <CheckCircle size={14} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
+                                        <span><strong>Walkthroughs</strong> &middot; Curb appeal, walls, kitchen & baths.</span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle size={16} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
-                                        <span><strong>Focused Repairs</strong> &middot; Drywall patching, painting, caulking & hardware.</span>
+                                    <li className="flex items-start gap-1.5">
+                                        <CheckCircle size={14} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
+                                        <span><strong>Focused Repairs</strong> &middot; Drywall, paint, caulk & hardware.</span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle size={16} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
-                                        <span><strong>Realtor Ready</strong> &middot; Ready for professional photos & showings.</span>
+                                    <li className="flex items-start gap-1.5">
+                                        <CheckCircle size={14} className="text-[#64CEBB] mt-0.5 flex-shrink-0" />
+                                        <span><strong>Realtor Ready</strong> &middot; For professional photos & showings.</span>
                                     </li>
                                 </ul>
+                            </div>
+                            
+                            <Link 
+                                href="/pre-sale-home-prep/" 
+                                className="w-full btn-sparkle-teal text-center !py-2.5 !px-4 !text-sm mt-4"
+                            >
+                                <span className="sparkle-icon">✨</span>
+                                <span className="text-center">Explore Pre-Sale Home Prep</span>
+                                <span className="sparkle-icon">✨</span>
+                            </Link>
+                        </div>
+
+                        {/* RIGHT WINDOW: SOUTH FLORIDA SERVICES DASHBOARD */}
+                        <div className="card-sparkle-teal rounded-3xl p-5 md:p-6 relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                            {/* Pink gradient top stripe */}
+                            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#db2777] to-[#7B6FCC]"></div>
+                            
+                            <div>
+                                {/* Services badge */}
+                                <div className="inline-flex items-center gap-1 bg-[#db2777]/20 border border-[#db2777]/30 py-0.5 px-2.5 rounded-full text-[10px] font-bold text-[#ec4899] mb-3 uppercase tracking-wider animate-pulse">
+                                    🌴 South Florida Services
+                                </div>
                                 
+                                <h3 className="text-lg font-bold text-white mb-1.5 leading-tight drop-shadow-sm">Get Your Service</h3>
+                                
+                                <p className="text-blue-100 text-xs mb-4 leading-relaxed font-light">
+                                    Click any of our specialized services below to view pricing and availability, or request a general estimate for your project.
+                                </p>
+
                                 <Link 
-                                    href="/pre-sale-home-prep/" 
-                                    className="w-full btn-sparkle-teal text-center"
+                                    href="/estimate/" 
+                                    className="w-full btn-sparkle-pink text-center !py-2.5 !px-4 !text-sm mb-4"
                                 >
                                     <span className="sparkle-icon">✨</span>
-                                    <span className="text-center">Pre-Sale Home Prep</span>
+                                    <span>Get Your Service / Request Estimate</span>
                                     <span className="sparkle-icon">✨</span>
                                 </Link>
+                            </div>
+
+                            {/* South Florida Services Dashboard list */}
+                            <div className="border-t border-white/10 pt-3.5">
+                                <span className="block text-slate-300 text-[10px] font-semibold uppercase tracking-wider mb-2">Our Services Directory</span>
+                                <div className="flex flex-wrap gap-1.5 max-h-[120px] overflow-y-auto pr-1 scrollbar-thin">
+                                    {sfServices.map((svc) => (
+                                        <Link 
+                                            key={svc.name}
+                                            href={svc.href}
+                                            className="btn-sparkle-pink !py-1 !px-2 !text-[9px] md:!text-[10px] font-semibold text-center"
+                                        >
+                                            <span className="sparkle-icon">✨</span>
+                                            <span>{svc.name}</span>
+                                            <span className="sparkle-icon">✨</span>
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
-                        {/* RIGHT COLUMN: MAIN HERO CONTENT */}
-                        <div className="lg:col-span-8 order-1 lg:order-2 text-center lg:text-left flex flex-col items-center lg:items-start">
-                            {/* Get Your Service Button */}
-                            <div className="mb-6 flex justify-center lg:justify-start">
-                                <Link href="/estimate/" className="btn-sparkle-pink">
-                                    <span className="sparkle-icon">✨</span>
-                                    <span>Get Your Service</span>
-                                    <span className="sparkle-icon">✨</span>
-                                </Link>
+                    </div>
+
+                    {/* MAIN HERO CONTENT (Left aligned, stretching wide across the screen) */}
+                    <div className="w-full text-left flex flex-col items-start">
+                        {/* Smart Search Bar */}
+                        <div className="w-full max-w-xl mb-6">
+                            <SmartSearch />
+                        </div>
+
+                        <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 mb-4 tracking-tight leading-[1.05] text-left w-full">
+                            Property Maintenance<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">& Improvement</span>
+                        </h1>
+
+                        <p className="text-xs md:text-sm font-semibold text-slate-500 tracking-wide mb-3 text-left">Residential | Commercial | Rentals | Offices</p>
+
+                        <p className="text-base md:text-lg text-slate-600 mb-6 max-w-3xl font-light leading-relaxed text-left">
+                            Professional repairs, maintenance, installations, and property improvements across South Florida & Central Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                        </p>
+
+                        <div className="inline-flex items-center gap-2 bg-[#584D94]/10 border border-[#584D94]/20 py-2 px-5 rounded-full text-sm font-bold text-[#584D94] mb-6">
+                            <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-start items-center w-full sm:w-auto">
+                            <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer w-full sm:w-auto text-center">
+                                <Phone size={20} className="inline mr-2" /> (954) 300-3043
+                            </a>
+                            <a href="sms:9543003043" className="flex items-center justify-center gap-2 py-3 px-6 rounded-full font-bold text-sm border-2 border-[#584D94] text-[#584D94] bg-white hover:bg-[#584D94] hover:text-white transition-all w-full sm:w-auto">
+                                <span>💬</span> Text Us
+                            </a>
+                            <Link href="/services/" className="btn-gradient-secondary w-full sm:w-auto text-center">
+                                Browse All Services <ArrowRight size={18} className="inline ml-1" />
+                            </Link>
+                        </div>
+
+                        {/* Animated Stats strip (Left Aligned) */}
+                        <div className="flex items-center justify-start gap-6 md:gap-8 mt-10 w-full">
+                            <div className="flex flex-col items-center lg:items-start">
+                                <AnimatedCounter target={500} suffix="+" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
+                                <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Projects Done</span>
                             </div>
-
-                            {/* Smart Search Bar */}
-                            <div className="w-full max-w-xl">
-                                <SmartSearch />
+                            <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                            <div className="flex flex-col items-center lg:items-start">
+                                <AnimatedCounter target={40} suffix="+" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
+                                <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Years Exp.</span>
                             </div>
-
-                            <h1 className="text-[2.5rem] md:text-6xl font-bold text-slate-900 mb-4 tracking-tight leading-tight mt-6 text-center lg:text-left">
-                                Property Maintenance<br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#584D94] to-[#7B6FCC]">& Improvement</span>
-                            </h1>
-
-                            <p className="text-xs md:text-sm font-semibold text-slate-500 tracking-wide mb-3 text-center lg:text-left">Residential | Commercial | Rentals | Offices</p>
-
-                            <p className="text-base md:text-lg text-slate-600 mb-4 max-w-2xl font-light leading-relaxed text-center lg:text-left">
-                                Professional repairs, maintenance, installations, and property improvements across South Florida & Central Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
-                            </p>
-
-                            <div className="inline-flex items-center gap-2 bg-[#584D94]/10 border border-[#584D94]/20 py-2 px-5 rounded-full text-sm font-bold text-[#584D94] mb-6">
-                                <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
-                            </div>
-
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto">
-                                <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer w-full sm:w-auto text-center">
-                                    <Phone size={20} className="inline mr-2" /> (954) 300-3043
-                                </a>
-                                <a href="sms:9543003043" className="flex items-center justify-center gap-2 py-3 px-6 rounded-full font-bold text-sm border-2 border-[#584D94] text-[#584D94] bg-white hover:bg-[#584D94] hover:text-white transition-all w-full sm:w-auto">
-                                    <span>💬</span> Text Us
-                                </a>
-                                <Link href="/services/" className="btn-gradient-secondary w-full sm:w-auto text-center">
-                                    Browse All Services <ArrowRight size={18} className="inline ml-1" />
-                                </Link>
-                            </div>
-
-                            {/* Animated Stats strip */}
-                            <div className="flex items-center justify-center lg:justify-start gap-6 md:gap-8 mt-10">
-                                <div className="flex flex-col items-center">
-                                    <AnimatedCounter target={500} suffix="+" className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
-                                    <span className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Projects Done</span>
-                                </div>
-                                <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
-                                <div className="flex flex-col items-center">
-                                    <AnimatedCounter target={40} suffix="+" className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#584D94] to-[#7B6FCC] leading-none" />
-                                    <span className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Years Exp.</span>
-                                </div>
-                                <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
-                                <div className="flex flex-col items-center">
-                                    <AnimatedCounter target={100} suffix="%" className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none" />
-                                    <span className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Satisfaction</span>
-                                </div>
+                            <div className="w-px h-10 bg-gradient-to-b from-[#64CEBB]/30 to-[#584D94]/30 rounded-full"></div>
+                            <div className="flex flex-col items-center lg:items-start">
+                                <AnimatedCounter target={100} suffix="%" className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#64CEBB] to-[#4BC0AD] leading-none" />
+                                <span className="text-[9px] md:text-[11px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Satisfaction</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </header>
 

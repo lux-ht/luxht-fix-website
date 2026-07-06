@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import GalleryGrid from '@/components/GalleryGrid';
@@ -60,6 +61,26 @@ export default function ServicePageTemplate({
     galleryImages,
 }: ServicePageProps) {
     const { openModal } = useModal();
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const handleHashCheck = () => {
+                if (window.location.hash === '#quote' || window.location.hash === '#form') {
+                    openModal('quote');
+                }
+            };
+            
+            // Check immediately on load
+            handleHashCheck();
+
+            // Listen for hash changes
+            window.addEventListener('hashchange', handleHashCheck);
+            return () => {
+                window.removeEventListener('hashchange', handleHashCheck);
+            };
+        }
+    }, [openModal]);
+
     const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.orlando;
     const locationLabel = location === 'miami' ? 'South Florida' : 'Central Florida';
     const localBusinessSchema = {

@@ -293,6 +293,23 @@ export default function EstimatePage() {
         return () => window.removeEventListener('resize', updateCount);
     }, []);
 
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            const serviceId = params.get('service');
+            if (serviceId) {
+                const matched = SERVICES.find(s => s.id === serviceId);
+                if (matched) {
+                    setActiveService(matched);
+                    setSelectedSubs([]);
+                    setPhoto(null);
+                    setPhotoPreview(null);
+                    setScreen('service');
+                }
+            }
+        }
+    }, []);
+
     const [msgName, setMsgName] = useState('');
     const [msgPhone, setMsgPhone] = useState('');
     const [msgNote, setMsgNote] = useState('');
