@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: '_9Wx-VP6u7fsxNALWxp3dJGsRxDmvpsdxPSPuPH22IA',
+  },
   icons: {
     icon: '/favicon.ico?v=2',
     apple: '/images/favicon.png?v=2',
