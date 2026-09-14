@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import GalleryGrid from '@/components/GalleryGrid';
 import Link from 'next/link';
 import {
-    ArrowRight, CheckCircle, Phone, Mail, MapPin, Star
+    ArrowRight, CheckCircle, Phone, Mail, MapPin
 } from 'lucide-react';
 import { LOCATIONS, type LocationConfig } from '@/lib/locations';
 import { useModal } from '@/context/ModalContext';
@@ -24,7 +24,7 @@ export interface RelatedService {
 export interface ServicePageProps {
     serviceName: string;
     slug: string;
-    location?: string; // 'orlando' | 'miami' — defaults to 'orlando'
+    location?: string; // South Florida location key; defaults to Miami
     neighborhoods: string[];
     parentCategory: string;
     parentSlug: string;
@@ -44,7 +44,7 @@ export interface ServicePageProps {
 export default function ServicePageTemplate({
     serviceName,
     slug,
-    location = 'orlando',
+    location = 'miami',
     neighborhoods,
     parentCategory,
     parentSlug,
@@ -81,8 +81,8 @@ export default function ServicePageTemplate({
         }
     }, [openModal]);
 
-    const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.orlando;
-    const locationLabel = location === 'miami' ? 'South Florida' : 'Central Florida';
+    const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.miami;
+    const locationLabel = 'South Florida';
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
@@ -136,7 +136,7 @@ export default function ServicePageTemplate({
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": serviceName,
-            "itemListElement": serviceDetails.map((detail, i) => ({
+            "itemListElement": serviceDetails.map((detail) => ({
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",

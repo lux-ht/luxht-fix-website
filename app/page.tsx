@@ -165,7 +165,7 @@ export default function Home() {
                         <p className="text-xs md:text-sm font-semibold text-slate-500 tracking-wide mb-3 text-left">Residential | Commercial | Rentals | Offices</p>
 
                         <p className="text-base md:text-lg text-slate-600 mb-6 max-w-3xl font-light leading-relaxed text-left">
-                            Professional repairs, maintenance, installations, and property improvements across South Florida & Central Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
+                            Professional repairs, maintenance, installations, and property improvements across South Florida. Specializing in <Link href="/drywall-miami/" className="text-[#584D94] font-medium hover:underline">drywall repair</Link>, <Link href="/tv-mounting-miami/" className="text-[#584D94] font-medium hover:underline">TV mounting</Link>, <Link href="/flooring-installation-miami/" className="text-[#584D94] font-medium hover:underline">flooring</Link>, <Link href="/bath-remodel-miami/" className="text-[#584D94] font-medium hover:underline">bath remodels</Link>, <Link href="/kitchen-refacing-miami/" className="text-[#584D94] font-medium hover:underline">kitchen refacing</Link>, and <Link href="/services/" className="text-[#584D94] font-medium hover:underline">more</Link>.
                         </p>
 
                         <div className="inline-flex items-center gap-2 bg-[#584D94]/10 border border-[#584D94]/20 py-2 px-5 rounded-full text-sm font-bold text-[#584D94] mb-6">
@@ -301,8 +301,8 @@ export default function Home() {
                     <ScrollReveal>
                     <div className="text-center mb-16">
                         <p className="text-sm font-bold tracking-widest text-[#64CEBB] uppercase mb-2">Our Services</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Professional Property Services Across Florida</h2>
-                        <p className="text-slate-500 mt-3">Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Orlando & more</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Professional Property Services Across South Florida</h2>
+                        <p className="text-slate-500 mt-3">Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & more</p>
                     </div>
                     </ScrollReveal>
 

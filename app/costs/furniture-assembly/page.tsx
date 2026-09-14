@@ -36,7 +36,7 @@ export default function FurnitureAssemblyCostPage() {
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Furniture Assembly Cost?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for IKEA, Wayfair, and other furniture assembly in South Florida & Central Florida. Skip the frustration.</p>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for IKEA, Wayfair, and other furniture assembly in South Florida. Skip the frustration.</p>
 
                         {/* Starting At Price Highlight */}
                         <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">

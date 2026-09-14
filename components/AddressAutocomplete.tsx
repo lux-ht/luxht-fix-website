@@ -47,7 +47,7 @@ export default function AddressAutocomplete({ value, onChange }: AddressAutocomp
         setIsLoading(true);
         try {
             // Biasing search towards South Florida & Central FL area
-            // Viewbox covers from Miami/Fort Lauderdale up to Orlando
+            // Viewbox covers the South Florida service area
             // Box: -82.0, 25.5, -80.0, 29.0
             const viewbox = "-82.0,29.0,-80.0,25.5";
 

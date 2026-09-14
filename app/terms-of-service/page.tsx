@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Terms of Service | LUXHT Fix',
-    description: 'Read the terms of service for LUXHT Fix. Learn about our service agreements, estimates, scheduling, and warranty policies for home repairs across South Florida & Central Florida.',
+    description: 'Read the terms of service for LUXHT Fix. Learn about our service agreements, estimates, scheduling, and warranty policies for home repairs across South Florida.',
     alternates: { canonical: 'https://fix.luxht.com/terms-of-service/' },
 };
 
@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
                                     <h2 className="text-2xl font-bold">Services Description</h2>
                                 </div>
                                 <p className="text-slate-300 leading-relaxed">
-                                    LUXHT Fix provides professional property maintenance, repair, installation, and improvement services across the South Florida and Central Florida metropolitan areas. Our services include, but are not limited to:
+                                    LUXHT Fix provides professional property maintenance, repair, installation, and improvement services across South Florida. Our services include, but are not limited to:
                                 </p>
                                 <ul className="text-slate-300 space-y-2 list-disc list-inside">
                                     <li>Drywall repair and installation</li>
@@ -157,7 +157,7 @@ export default function TermsOfServicePage() {
                             <div className="space-y-4">
                                 <h2 className="text-2xl font-bold">Governing Law</h2>
                                 <p className="text-slate-300 leading-relaxed">
-                                    These Terms of Service shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions. Any disputes arising from these terms shall be resolved in the courts of Orange County, Florida.
+                                    These Terms of Service shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions. Any disputes arising from these terms shall be resolved in the courts of Broward County, Florida.
                                 </p>
                             </div>
 

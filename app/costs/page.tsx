@@ -97,7 +97,8 @@ const costCategories = [
         priceRange: "$500 - $10,000+",
         icon: Wind,
         popular: false,
-        southFL: true
+        southFL: true,
+        href: "/hurricane-damage-repair-miami/"
     },
     {
         title: "Stucco Repair",
@@ -106,7 +107,8 @@ const costCategories = [
         priceRange: "$200 - $3,000",
         icon: Hammer,
         popular: false,
-        southFL: true
+        southFL: true,
+        href: "/stucco-repair-miami/"
     },
     {
         title: "Screen Enclosure Repair",
@@ -115,7 +117,8 @@ const costCategories = [
         priceRange: "$150 - $2,500",
         icon: Shield,
         popular: false,
-        southFL: true
+        southFL: true,
+        href: "/screen-enclosure-repair-miami/"
     }
 ];
 
@@ -137,7 +140,7 @@ export default function CostsPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-6">
-                            <DollarSign size={16} /> 2026 South Florida & Central Florida Pricing Guide
+                            <DollarSign size={16} /> 2026 South Florida Pricing Guide
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -146,14 +149,14 @@ export default function CostsPage() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Get transparent pricing for home repairs and renovations across South Florida and Central Florida.
-                            We've analyzed hundreds of projects to help you budget accurately.
+                            Get transparent pricing for home repairs and renovations across South Florida.
+                            We use South Florida project factors to help you budget accurately.
                         </p>
 
                         {/* Stats */}
                         <div className="flex flex-wrap justify-center gap-8 mb-10">
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#64CEBB]">500+</div>
+                                <div className="text-3xl font-bold text-[#64CEBB]">Local</div>
                                 <div className="text-white/70 text-sm">Projects Completed</div>
                             </div>
                             <div className="text-center">
@@ -203,7 +206,7 @@ export default function CostsPage() {
                             return (
                                 <Link
                                     key={index}
-                                    href={`/costs/${category.slug}/`}
+                                    href={('href' in category && category.href) || `/costs/${category.slug}/`}
                                     className="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-[#64CEBB]/50 transition-all duration-300 hover:-translate-y-1"
                                 >
                                     {category.popular && (
@@ -211,7 +214,7 @@ export default function CostsPage() {
                                             Popular
                                         </span>
                                     )}
-                                    {(category as any).southFL && (
+                                    {'southFL' in category && category.southFL && (
                                         <span className="absolute top-4 right-4 bg-[#584D94] text-white text-xs font-bold px-2 py-1 rounded-full">
                                             🌴 South FL
                                         </span>
@@ -274,7 +277,7 @@ export default function CostsPage() {
                             Why Trust Our Cost Estimates?
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Our pricing data comes from real projects completed across South Florida and Central Florida.
+                            Our pricing data comes from real projects completed across South Florida.
                         </p>
                     </div>
 
@@ -285,7 +288,7 @@ export default function CostsPage() {
                             </div>
                         <h3 className="font-bold text-lg mb-2">Real Florida Data</h3>
                             <p className="text-slate-500 text-sm">
-                                Prices based on actual projects completed across South Florida and Central Florida.
+                                Prices based on actual projects completed across South Florida.
                             </p>
                         </div>
 

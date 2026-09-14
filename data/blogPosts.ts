@@ -13,8 +13,8 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "luxht-fix-expands-to-south-florida",
-    title: "LUXHT Fix Expands to South Florida: Now Serving Miami-Dade & Broward",
-    excerpt: "After completing 500+ projects in Central Florida, LUXHT Fix is bringing construction-grade home repair services to Miami, Fort Lauderdale, Pembroke Pines, and 14+ South Florida cities.",
+    title: "LUXHT Fix Serves South Florida: Miami-Dade, Broward & Palm Beach",
+    excerpt: "LUXHT Fix provides construction-grade home repair and property maintenance services across Miami, Fort Lauderdale, Pembroke Pines, and surrounding South Florida communities.",
     category: "Company News",
     date: "2026-05-01",
     readTime: "4 min",
@@ -22,11 +22,11 @@ export const blogPosts: BlogPost[] = [
     tags: ["South Florida", "Miami", "Expansion", "Company News"],
     content: `## LUXHT Fix is Now in South Florida
 
-After years of serving Central Florida homeowners with construction-grade expertise, we're thrilled to announce our expansion into **South Florida** — covering Miami-Dade and Broward counties.
+LUXHT Fix provides professional property maintenance and improvement services throughout **South Florida**, including Miami-Dade, Broward, and Palm Beach counties.
 
 ### Why South Florida?
 
-We heard the same frustration from South Florida homeowners that originally inspired LUXHT Fix in Orlando: **"Why can't I find a handyman who actually knows construction?"**
+South Florida homeowners often ask: **"Why can't I find a handyman who actually knows construction?"** LUXHT Fix answers that need with construction-grade expertise for repairs, installations, and property improvements.
 
 South Florida's unique building landscape — from high-rise condos in Sunny Isles Beach to hurricane-hardened homes in Pembroke Pines — demands professionals who understand structural integrity, moisture management, and Florida building codes.
 
@@ -43,7 +43,7 @@ South Florida's unique building landscape — from high-rise condos in Sunny Isl
 
 ### What Services Are Available?
 
-Every service we offer in Central Florida is now available in South Florida, plus region-specific specialties:
+Our South Florida services include:
 
 - **Drywall Repair** — texture matching for all wall types
 - **TV Mounting** — secure installations in concrete and drywall
@@ -53,9 +53,9 @@ Every service we offer in Central Florida is now available in South Florida, plu
 - **Stucco Repair** — crack repair and color matching
 - **Impact Window Prep** — hurricane-ready upgrades
 
-### Same Standards, New Market
+### Dedicated South Florida Service
 
-We're investing in a dedicated South Florida team, local material partnerships, and a service fleet to ensure the same quality Central Florida trusts is available across Miami-Dade and Broward.
+We're investing in a dedicated South Florida team, local material partnerships, and a service fleet for reliable coverage across Miami-Dade, Broward, and Palm Beach counties.
 
 **Ready to experience the LUXHT Fix difference?** Call us at (954) 300-3043 or text us to schedule your first project.`
   },
@@ -539,7 +539,7 @@ With average humidity between 70–90%, South Florida is one of the toughest env
 
 ### Get a Free Flooring Estimate
 
-LUXHT Fix installs LVP, tile, and engineered hardwood across South Florida and Central Florida. We include proper moisture barriers and follow manufacturer specifications for Florida installations. **Call (954) 300-3043** for a free quote.`
+LUXHT Fix installs LVP, tile, and engineered hardwood across South Florida. We include proper moisture barriers and follow manufacturer specifications for Florida installations. **Call (954) 300-3043** for a free quote.`
   },
   {
     slug: "smart-home-setup-guide-florida",
@@ -599,7 +599,7 @@ Unless you have a large yard, South Florida's frequent rain and many HOA-managed
 - **DIY-friendly:** Smart plugs, light bulbs, leak sensors
 - **Professional recommended:** Thermostats (involves electrical wiring), smart locks (proper door prep), video doorbells (electrical and mounting)
 
-LUXHT Fix installs all major smart home brands across South Florida and Central Florida. **Call (954) 300-3043** to discuss your smart home setup.`
+LUXHT Fix installs all major smart home brands across South Florida. **Call (954) 300-3043** to discuss your smart home setup.`
   }
 ];
 

@@ -83,7 +83,6 @@ const searchIndex: SearchItem[] = [
     { title: "Cost Guides", href: "/costs/", category: "page", keywords: ["cost", "price", "guide", "how much", "pricing"] },
     { title: "About Us", href: "/about/", category: "page", keywords: ["about", "company", "team", "who", "story"] },
     { title: "FAQ", href: "/faq/", category: "page", keywords: ["faq", "question", "help", "answer"] },
-    { title: "Portfolio", href: "/portfolio/", category: "page", keywords: ["portfolio", "work", "projects", "gallery", "photos"] },
     { title: "Testimonials", href: "/testimonials/", category: "page", keywords: ["testimonials", "reviews", "customers", "rating"] },
     { title: "Contact / Quote", href: "/#contact", category: "page", keywords: ["contact", "quote", "call", "phone", "email"] },
     { title: "South Florida Services", href: "/south-florida/", category: "page", keywords: ["south florida", "miami", "fort lauderdale", "broward"] },

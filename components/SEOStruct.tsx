@@ -14,7 +14,7 @@ export default function SEOStruct() {
             height: 800,
         },
         image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
-        description: 'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida and Central Florida. Family-owned. Fully insured.',
+        description: 'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida. Family-owned. Fully insured.',
         slogan: 'Property Maintenance & Improvement. Family-Owned. Not a Lead App.',
         foundingDate: '2024',
         email: 'info@luxht.com',
@@ -23,15 +23,15 @@ export default function SEOStruct() {
         knowsAbout: ['Property Maintenance', 'Residential Maintenance', 'Commercial Property Maintenance', 'Rental Turnover Repairs', 'Fence & Gate Repair', 'Gutter Guard & Cleaning', 'Pressure Washing', 'Accent Walls & Custom Trim', 'Drywall Repair', 'TV Mounting', 'Flooring Installation', 'Kitchen Refacing', 'Deck Building', 'Furniture Assembly', 'Door and Lock Installation', 'Hurricane Damage Repair', 'Stucco Repair', 'Screen Enclosure Repair'],
         address: {
             '@type': 'PostalAddress',
-            addressLocality: 'Maitland',
+            addressLocality: 'Pembroke Pines',
             addressRegion: 'FL',
-            postalCode: '32751',
+            postalCode: '33028',
             addressCountry: 'US',
         },
         geo: {
             '@type': 'GeoCoordinates',
-            latitude: '28.6256',
-            longitude: '-81.3631',
+            latitude: '26.0031',
+            longitude: '-80.2241',
         },
         openingHoursSpecification: [
             {
@@ -48,15 +48,6 @@ export default function SEOStruct() {
             },
         ],
         areaServed: [
-            {
-                '@type': 'GeoCircle',
-                geoMidpoint: {
-                    '@type': 'GeoCoordinates',
-                    latitude: '28.6256',
-                    longitude: '-81.3631',
-                },
-                geoRadius: '50000',
-            },
             {
                 '@type': 'GeoCircle',
                 geoMidpoint: {
@@ -81,8 +72,8 @@ export default function SEOStruct() {
             telephone: '+1-954-300-3043',
             contactType: 'customer service',
             areaServed: {
-                '@type': 'Country',
-                name: 'US'
+                '@type': 'AdministrativeArea',
+                name: 'South Florida'
             },
             availableLanguage: ['English', 'Spanish'],
         },

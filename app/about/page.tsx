@@ -6,8 +6,8 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About LUXHT Fix | Property Maintenance & Improvement — South Florida & Central Florida',
-    description: 'LUXHT Fix provides professional property maintenance, repairs, installations, and improvements for residential and commercial properties. Family-owned. Founded in Orlando, now serving South Florida.',
+    title: 'About LUXHT Fix | Property Maintenance & Improvement — South Florida',
+    description: 'LUXHT Fix provides professional property maintenance, repairs, installations, and improvements for residential and commercial properties across South Florida.',
     alternates: { canonical: 'https://fix.luxht.com/about/' },
 };
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">About LUXHT Fix</h1>
                     <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-6">
-                        LUXHT Fix is a professional property maintenance and improvement company serving South Florida and Central Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Founded in Orlando, now expanding across Miami-Dade & Broward counties.</strong>
+                        LUXHT Fix is a professional property maintenance and improvement company serving South Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Serving Miami-Dade, Broward, and Palm Beach counties.</strong>
                     </p>
                     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 py-2 px-5 rounded-full text-sm font-bold text-white/90 mb-6">
                         <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
@@ -53,7 +53,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-4">From Major Renovations to Everyday Care</h2>
                             <p className="text-slate-600 leading-relaxed">
-                                LUXHT Fix serves homeowners across Florida before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
+                                LUXHT Fix serves South Florida homeowners before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
                             </p>
                         </div>
                     </div>
@@ -105,18 +105,17 @@ export default function AboutPage() {
                         <div className="inline-flex items-center gap-2 bg-[#64CEBB]/10 text-[#64CEBB] px-4 py-2 rounded-full text-sm font-bold mb-4 border border-[#64CEBB]/20">
                             <MapPin size={16} /> Our Journey
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">From Orlando to South Florida</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Built for South Florida Properties</h2>
                         <p className="text-slate-500 mt-3 max-w-2xl mx-auto">
-                            After establishing LUXHT Fix as the trusted property maintenance company in Central Florida, we recognized the same gap in South Florida — property owners who demand construction-quality expertise for everyday repairs.
+                            South Florida property owners deserve reliable maintenance professionals who bring construction-quality expertise to everyday repairs and improvements.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-4 gap-6 mb-12">
+                    <div className="grid md:grid-cols-3 gap-6 mb-12">
                         {[
-                            { year: '2024', text: 'Founded in Orlando as the home services division of LUXHT', color: 'bg-slate-100 border-slate-200' },
-                            { year: '2025', text: 'Completed 500+ projects across Central Florida', color: 'bg-slate-100 border-slate-200' },
-                            { year: '2025', text: 'Launched South Florida branch serving Miami-Dade & Broward', color: 'bg-[#64CEBB]/10 border-[#64CEBB]/30' },
+                            { year: '2025', text: 'Established dedicated service across Miami-Dade & Broward', color: 'bg-[#64CEBB]/10 border-[#64CEBB]/30' },
                             { year: '2026', text: 'Investing in dedicated South Florida operations, team & fleet', color: 'bg-[#584D94]/10 border-[#584D94]/30' },
+                            { year: 'Today', text: 'Serving homes and businesses across South Florida', color: 'bg-slate-100 border-slate-200' },
                         ].map((step, i) => (
                             <div key={i} className={`${step.color} border rounded-2xl p-6 text-center`}>
                                 <div className="text-2xl font-black text-[#584D94] mb-2">{step.year}</div>
@@ -127,7 +126,7 @@ export default function AboutPage() {
 
                     <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
                         <p className="text-slate-600 leading-relaxed text-lg">
-                            In 2025, we made the commitment to expand into Miami-Dade and Broward counties. Today, we're <strong className="text-[#584D94]">investing heavily in our South Florida operations</strong> — building a dedicated local team, expanding our service fleet, and creating partnerships with the best material suppliers in the region. Our goal: bring the same construction-grade quality that Central Florida trusts to every home in South Florida.
+                            We are <strong className="text-[#584D94]">investing in our South Florida operations</strong> — building a dedicated local team, expanding our service fleet, and creating partnerships with trusted material suppliers throughout the region.
                         </p>
                     </div>
                 </div>
@@ -187,12 +186,10 @@ export default function AboutPage() {
                 <div className="container mx-auto relative z-10 max-w-5xl">
                     <div className="text-center mb-10">
                         <MapPin className="mx-auto mb-4 text-[#64CEBB]" size={40} />
-                        <h2 className="text-3xl font-bold mb-3">Serving South Florida & Central Florida</h2>
-                        <p className="text-blue-100 max-w-2xl mx-auto text-lg">
-                            Two regions. One standard of excellence.
-                        </p>
+                        <h2 className="text-3xl font-bold mb-3">Serving South Florida</h2>
+                        <p className="text-blue-100 max-w-2xl mx-auto text-lg">One region. One standard of excellence.</p>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="max-w-3xl mx-auto">
                         <div>
                             <div className="flex items-center gap-2 mb-4">
                                 <span className="bg-[#64CEBB] text-white text-xs font-bold px-3 py-1 rounded-full">🌴 Primary Focus</span>
@@ -201,19 +198,6 @@ export default function AboutPage() {
                             <div className="flex flex-wrap gap-2">
                                 {['Miami', 'Fort Lauderdale', 'Pembroke Pines', 'Cooper City', 'Aventura', 'Hallandale Beach', 'Miramar', 'Davie', 'Hollywood', 'Sunny Isles Beach', 'North Miami', 'Coral Gables', 'Doral', 'Miami Beach'].map((city, i) => (
                                     <span key={i} className="bg-[#64CEBB]/20 backdrop-blur-sm border border-[#64CEBB]/30 px-3 py-1.5 rounded-full text-sm font-medium">
-                                        {city}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <div>
-                            <div className="flex items-center gap-2 mb-4">
-                                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Est. 2024</span>
-                                <h3 className="font-bold text-lg">Central Florida</h3>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                                {['Orlando', 'Winter Park', 'Maitland', 'Altamonte Springs', 'Lake Nona', 'Dr. Phillips', 'Windermere', 'Ocoee', 'Apopka', 'Winter Garden', 'College Park', 'Baldwin Park'].map((city, i) => (
-                                    <span key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full text-sm font-medium">
                                         {city}
                                     </span>
                                 ))}
@@ -287,7 +271,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <h2 className="text-4xl font-bold mb-6">Experience the LUXHT Fix Difference</h2>
                     <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                        Looking for a property maintenance company that treats your home with care? From South Florida to Central Florida — work with construction professionals who are personally responsible for every project.
+                        Looking for a property maintenance company that treats your home with care? From South Florida — work with construction professionals who are personally responsible for every project.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">

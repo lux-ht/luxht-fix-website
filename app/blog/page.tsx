@@ -37,7 +37,7 @@ export default function BlogPage() {
                         Home Repair Tips, Guides & News
                     </h1>
                     <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-                        Expert advice for South Florida & Central Florida homeowners — from hurricane prep to bathroom remodels.
+                        Expert advice for South Florida homeowners — from hurricane prep to bathroom remodels.
                     </p>
                     <div className="max-w-md mx-auto relative">
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />

@@ -9,8 +9,8 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Property Maintenance & Improvement Services | LUXHT Fix — South Florida & Central Florida',
-    description: 'Professional property maintenance, repairs, installations, and improvement services across South Florida & Central Florida. Drywall, flooring, decks, kitchens, baths, TV mounting & more. Family-Owned. Fully Insured.',
+    title: 'Property Maintenance & Improvement Services | LUXHT Fix — South Florida',
+    description: 'Professional property maintenance, repairs, installations, and improvement services across South Florida. Drywall, flooring, decks, kitchens, baths, TV mounting & more. Family-Owned. Fully Insured.',
     alternates: { canonical: 'https://fix.luxht.com/services/' },
 };
 
@@ -53,7 +53,7 @@ export default function ServicesPage() {
             { "@type": "State", "name": "Florida" },
             { "@type": "City", "name": "Miami" },
             { "@type": "City", "name": "Fort Lauderdale" },
-            { "@type": "City", "name": "Orlando" }
+            { "@type": "City", "name": "Coral Gables" }
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -82,13 +82,13 @@ export default function ServicesPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">Property Maintenance & Improvement Services</h1>
                     <p className="text-xl md:text-2xl text-blue-100 mb-4 max-w-2xl mx-auto font-light">
-                        Professional repairs, maintenance, installations, and property improvements for residential and commercial properties — now serving Miami, Fort Lauderdale, Orlando & beyond.
+                        Professional repairs, maintenance, installations, and property improvements for residential and commercial properties across Miami-Dade, Broward, and Palm Beach counties.
                     </p>
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md py-2 px-6 rounded-full border border-white/20 text-white/90 font-bold text-sm mb-4">
                         Family-Owned. Not a Lead App.
                     </div>
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md py-2 px-6 rounded-full border border-white/20 text-[#64CEBB] font-bold mb-8">
-                        <CheckCircle size={18} /> Fully Insured • 500+ Florida Properties Served
+                        <CheckCircle size={18} /> Fully Insured • South Florida Property Specialists
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
@@ -138,7 +138,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[#584D94] mb-4">All Property Services</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides professional property maintenance, repairs, installations, and improvement services throughout South Florida and Central Florida. Every project is completed with attention to detail.</p>
+                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides professional property maintenance, repairs, installations, and improvement services throughout South Florida. Every project is completed with attention to detail.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -172,7 +172,7 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                         {[
                             { text: "Fully Insured", icon: CheckCircle },
-                            { text: "500+ Jobs Done", icon: Star },
+                            { text: "South Florida Focus", icon: Star },
                             { text: "Same-Week Service", icon: CalendarImage },
                             { text: "Quality Materials", icon: Hammer },
                             { text: "Clean Execution", icon: Paintbrush },
@@ -192,7 +192,7 @@ export default function ServicesPage() {
             {/* Service Areas */}
             <section className="py-20 bg-white px-4 border-t border-slate-100">
                 <div className="container mx-auto max-w-4xl text-center">
-                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving South Florida & Central Florida</h2>
+                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving South Florida</h2>
                     <div className="flex flex-wrap justify-center gap-3 mb-4">
                         <span className="px-4 py-2 bg-[#64CEBB]/10 rounded-full text-[#64CEBB] text-sm font-bold border border-[#64CEBB]/20">🌴 South Florida</span>
                     </div>
@@ -200,16 +200,6 @@ export default function ServicesPage() {
                         {["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Cooper City", "Aventura", "Miramar", "Davie", "Coral Gables", "Doral", "Sunny Isles Beach", "North Miami"].map((area, i) => (
                             <span key={`sf-${i}`} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
                                 <MapPin size={14} className="text-[#64CEBB]" /> {area}
-                            </span>
-                        ))}
-                    </div>
-                    <div className="flex flex-wrap justify-center gap-3 mb-4">
-                        <span className="px-4 py-2 bg-[#584D94]/10 rounded-full text-[#584D94] text-sm font-bold border border-[#584D94]/20">🏠 Central Florida</span>
-                    </div>
-                    <div className="flex flex-wrap justify-center gap-3 mb-8">
-                        {["Orlando", "Winter Park", "Maitland", "Altamonte Springs", "Lake Nona", "Dr. Phillips", "Windermere", "Ocoee", "Apopka", "Winter Garden", "College Park", "Baldwin Park"].map((area, i) => (
-                            <span key={`cf-${i}`} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
-                                <MapPin size={14} className="text-[#584D94]" /> {area}
                             </span>
                         ))}
                     </div>

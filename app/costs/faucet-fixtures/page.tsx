@@ -18,7 +18,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 export default function FaucetFixturesCostPage() {
     const { openModal } = useModal();
     const faqData = [
-        { question: "How much does faucet installation cost?", answer: "Basic faucet installation costs $150-$300 in South Florida & Central Florida." },
+        { question: "How much does faucet installation cost?", answer: "Basic faucet installation costs $150-$300 in South Florida." },
         { question: "Can I install a faucet myself?", answer: "Simple replacements are DIY-friendly. Complex jobs benefit from professional help." },
         { question: "How much does toilet installation cost?", answer: "Toilet installation costs $200-$400 including old toilet removal." }
     ];
@@ -32,7 +32,7 @@ export default function FaucetFixturesCostPage() {
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 py-2 px-4 rounded-full text-sm text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">How Much Does Faucet & Fixture Installation Cost?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl">Get pricing for faucet replacement, toilet installation, and plumbing fixtures in South Florida & Central Florida.</p>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl">Get pricing for faucet replacement, toilet installation, and plumbing fixtures in South Florida.</p>
 
                         {/* Starting At Price Highlight */}
                         <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">

@@ -1,6 +1,6 @@
 # LUXHT Fix Website
 
-Professional property maintenance and improvement services website for LUXHT Fix, serving Orlando, Central Florida, and South Florida.
+Professional property maintenance and improvement services website for LUXHT Fix, serving South Florida.
 
 ## 🚀 Tech Stack
 
@@ -41,7 +41,7 @@ app/
 ├── page.tsx                    # Homepage
 ├── about/                      # About page
 ├── costs/                      # Cost guides (10 services)
-├── [service]-orlando/          # Service pages (10 locations)
+├── [service]-miami/            # South Florida service pages
 ├── pricing-transparency/       # Pricing philosophy
 ├── portfolio/                  # Work portfolio
 ├── testimonials/               # Customer reviews
@@ -56,7 +56,7 @@ app/
 - **Responsive Design**: Mobile-first with Tailwind CSS
 - **Interactive Modals**: Quote and scheduling modals
 - **Testimonials Carousel**: Customer social proof
-- **Service Area Coverage**: Orlando and surrounding cities
+- **Service Area Coverage**: Miami-Dade, Broward, and Palm Beach counties
 
 ## 📞 Contact
 

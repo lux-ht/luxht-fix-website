@@ -5,7 +5,7 @@ export interface LocationConfig {
   id: string;
   name: string;
   region: string;
-  slug: string;              // URL slug suffix: "orlando" or "miami"
+  slug: string;              // URL slug suffix
   hubSlug: string;           // Hub page path
   phone: string;
   phoneRaw: string;
@@ -24,25 +24,6 @@ export interface LocationConfig {
 }
 
 export const LOCATIONS: Record<string, LocationConfig> = {
-  orlando: {
-    id: 'orlando',
-    name: 'Orlando',
-    region: 'Central Florida',
-    slug: 'orlando',
-    hubSlug: '/',
-    phone: '(954) 300-3043',
-    phoneRaw: '9543003043',
-    email: 'info@luxht.com',
-    neighborhoods: [
-      'Winter Park', 'Maitland', 'Altamonte Springs', 'Lake Nona',
-      'Dr. Phillips', 'Windermere', 'Ocoee', 'Apopka',
-      'Winter Garden', 'College Park', 'Baldwin Park', 'Longwood',
-      'Lake Mary', 'Casselberry', 'Oviedo'
-    ],
-    address: { city: 'Maitland', state: 'FL', zip: '32751' },
-    geo: { lat: 28.6256, lng: -81.3631 },
-    serviceAreaRadius: '50000',
-  },
   miami: {
     id: 'miami',
     name: 'South Florida',

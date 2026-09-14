@@ -16,9 +16,9 @@ The LUXHT Fix platform was transitioned from a standard brochure site into a hig
 
 ### Service Page Strategy (The "Long-Tail" Play)
 Instead of a single "Services" page, the architecture relies on granular, intent-specific routing to capture local search volume:
-*   e.g., `/drywall-hole-repair-orlando`
-*   e.g., `/tv-cable-concealment-orlando`
-*   e.g., `/texture-matching-orlando`
+*   e.g., `/drywall-hole-repair-miami`
+*   e.g., `/tv-cable-concealment-miami`
+*   e.g., `/texture-matching-miami`
 
 ### Backend Infrastructure
 *   **Database**: Supabase.
@@ -30,7 +30,7 @@ Instead of a single "Services" page, the architecture relies on granular, intent
 
 ### Privacy via the SAB Model
 We successfully implemented a true **Service Area Business (SAB)** schema.
-*   **The Insight**: You do not need to expose a private home address to rank locally. By removing `streetAddress` but retaining `addressLocality` ("Maitland"), `postalCode` ("32751"), and generating a `GeoCircle` with a 50km radius (`areaServed`), Google correctly maps the business to Orlando without compromising security.
+*   **The Insight**: You do not need to expose a private home address to rank locally. By removing `streetAddress` but retaining `addressLocality` ("Pembroke Pines"), `postalCode` ("33028"), and generating a `GeoCircle` with a 60km radius (`areaServed`), Google can map the business to its South Florida service area without compromising security.
 
 ### The Power of Linked Data (`@id`)
 *   **The Insight**: Simply throwing JSON-LD code onto a page isn't enough; the data must represent a coherent "Knowledge Graph." By assigning the primary business a unique ID (`https://fix.luxht.com/#localbusiness`), we could link every individual `Service` schema and `FAQPage` schema back to that central node. This tells Google that the entity offering "Drywall Repair" is identically the same entity defined on the homepage.

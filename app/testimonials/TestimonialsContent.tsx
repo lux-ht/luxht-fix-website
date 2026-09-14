@@ -7,78 +7,6 @@ import { useModal } from '@/context/ModalContext';
 
 const testimonials = [
     {
-        name: "Sarah Mitchell",
-        location: "Winter Park, FL",
-        service: "Drywall Repair",
-        rating: 5,
-        date: "December 2025",
-        text: "LUXHT Fix transformed our living room after water damage. The drywall repair was seamless—you can't even tell there was damage. They matched the texture perfectly and the price was exactly what they quoted online. No surprises!",
-        image: "/testimonials/sarah-m.jpg"
-    },
-    {
-        name: "Michael Rodriguez",
-        location: "Orlando, FL",
-        service: "TV Mounting",
-        rating: 5,
-        date: "January 2026",
-        text: "Professional TV mounting service! They concealed all the cables in the wall and mounted our 75\" TV perfectly level. The technician was knowledgeable and cleaned up everything. Worth every penny of the $250 package.",
-        image: "/testimonials/michael-r.jpg"
-    },
-    {
-        name: "Jennifer Park",
-        location: "Lake Nona, FL",
-        service: "Bathroom Remodel",
-        rating: 5,
-        date: "November 2025",
-        text: "Our bathroom remodel came out stunning! LUXHT Fix handled everything from design to installation. The project stayed on budget ($18,500) and was completed in 3 weeks as promised. Their transparency made the whole process stress-free.",
-        image: "/testimonials/jennifer-p.jpg"
-    },
-    {
-        name: "David Thompson",
-        location: "Windermere, FL",
-        service: "Deck Building",
-        rating: 5,
-        date: "October 2025",
-        text: "Built a 300 sq ft composite deck in our backyard. The craftsmanship is excellent and they handled all the permits. Having upfront pricing on their website helped us budget properly. Highly recommend!",
-        image: "/testimonials/david-t.jpg"
-    },
-    {
-        name: "Lisa Chen",
-        location: "Dr. Phillips, FL",
-        service: "Flooring Installation",
-        rating: 5,
-        date: "December 2025",
-        text: "Replaced 1,200 sq ft of carpet with luxury vinyl plank. The team was efficient, clean, and the result looks amazing. The pricing was transparent—no hidden costs. Exactly what they quoted.",
-        image: "/testimonials/lisa-c.jpg"
-    },
-    {
-        name: "Robert Williams",
-        location: "Altamonte Springs, FL",
-        service: "Kitchen Refacing",
-        rating: 5,
-        date: "January 2026",
-        text: "Our kitchen looks completely different after cabinet refacing! They replaced all the doors and hardware for less than half the cost of a full remodel. The shaker style doors are beautiful. Great team!",
-        image: "/testimonials/robert-w.jpg"
-    },
-    {
-        name: "Amanda Foster",
-        location: "Celebration, FL",
-        service: "Smart Home Installation",
-        rating: 5,
-        date: "January 2026",
-        text: "Had a Ring doorbell, Nest thermostat, and 3 security cameras installed. The technician set up everything on my phone and taught me how to use all the features. Very patient and professional.",
-        image: "/testimonials/amanda-f.jpg"
-    },
-    {
-        name: "Kevin Martinez",
-        location: "Baldwin Park, FL",
-        service: "Furniture Assembly",
-        rating: 5,
-        date: "February 2026",
-        text: "Assembled our entire IKEA bedroom set in 2 hours. Fast, professional, and they took away all the packaging. The $270 was well worth not spending my weekend struggling with instructions!",
-        image: "/testimonials/kevin-m.jpg"
-    },
-    {
         name: "Diana Morales",
         location: "Pembroke Pines, FL",
         service: "Drywall Repair",
@@ -133,15 +61,15 @@ export default function TestimonialsContent() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Real reviews from homeowners across South Florida and Central Florida who experienced our transparent pricing
+                            Real reviews from homeowners across South Florida who experienced our transparent pricing
                             and quality craftsmanship firsthand.
                         </p>
 
                         {/* Stats */}
                         <div className="flex flex-wrap justify-center gap-8 mb-10">
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#64CEBB]">500+</div>
-                                <div className="text-white/70 text-sm">Happy Customers</div>
+                                <div className="text-3xl font-bold text-[#64CEBB]">Local</div>
+                                <div className="text-white/70 text-sm">South Florida Service</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-3xl font-bold text-[#64CEBB]">4.9★</div>
@@ -245,11 +173,11 @@ export default function TestimonialsContent() {
                         Become Our Next Success Story
                     </h2>
                     <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-                        Join hundreds of satisfied homeowners across South Florida and Central Florida. Get transparent pricing and quality craftsmanship.
+                        Join satisfied homeowners across South Florida. Get transparent pricing and quality craftsmanship.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/portfolio/" className="bg-white text-[#584D94] font-bold py-4 px-8 rounded-full hover:shadow-xl transition-all inline-flex items-center justify-center gap-2">
-                            <Eye size={20} /> View Our Portfolio
+                        <Link href="/south-florida/" className="bg-white text-[#584D94] font-bold py-4 px-8 rounded-full hover:shadow-xl transition-all inline-flex items-center justify-center gap-2">
+                            <Eye size={20} /> View Our Services
                         </Link>
                         <button onClick={() => openModal('quote')} className="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
                             <Phone size={20} /> Get Free Quote

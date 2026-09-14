@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import TestimonialsContent from './TestimonialsContent';
 
 export const metadata: Metadata = {
-    title: 'Customer Testimonials | South Florida & Central Florida Home Repair Reviews - LUXHT Fix',
-    description: 'Read real reviews from homeowners across South Florida & Central Florida. 4.9-star rating across 500+ projects. Drywall, flooring, TV mounting, deck building & more. See why customers trust LUXHT Fix.',
+    title: 'Customer Testimonials | South Florida Home Repair Reviews - LUXHT Fix',
+    description: 'Read reviews from homeowners across South Florida. Explore customer experiences with drywall, flooring, TV mounting, deck building, and more.',
     alternates: { canonical: 'https://fix.luxht.com/testimonials/' },
 };
 

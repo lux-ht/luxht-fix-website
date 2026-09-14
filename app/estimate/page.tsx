@@ -490,7 +490,7 @@ export default function EstimatePage() {
                     <span className="est-trust__dot">·</span>
                     <span>⭐ 5-Star Rated</span>
                     <span className="est-trust__dot">·</span>
-                    <span>🏠 500+ Projects</span>
+                    <span>🏠 South Florida Projects</span>
                 </div>
             </div>
 

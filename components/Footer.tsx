@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Hammer, Palmtree } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Phone, Mail, Hammer, Palmtree } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -46,20 +46,6 @@ export default function Footer() {
                             <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All South Florida Services →</Link></li>
                         </ul>
                         
-                        <h3 className="font-bold text-white mt-6 mb-3 uppercase tracking-wider text-xs">Central Florida</h3>
-                        <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
-                            <li><Link href="/drywall-orlando/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
-                            <li><Link href="/tv-mounting-orlando/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
-                            <li><Link href="/flooring-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
-                            <li><Link href="/deck-building-orlando/" className="hover:text-[#64CEBB] transition-colors">Deck Building</Link></li>
-                            <li><Link href="/bath-remodel-orlando/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
-                            <li><Link href="/kitchen-refacing-orlando/" className="hover:text-[#64CEBB] transition-colors">Kitchen Refacing</Link></li>
-                            <li><Link href="/door-lock-trim-orlando/" className="hover:text-[#64CEBB] transition-colors">Door, Lock & Trim</Link></li>
-                            <li><Link href="/faucet-fixtures-orlando/" className="hover:text-[#64CEBB] transition-colors">Faucet & Fixtures</Link></li>
-                            <li><Link href="/smart-home-installation-orlando/" className="hover:text-[#64CEBB] transition-colors">Smart Home</Link></li>
-                            <li><Link href="/furniture-assembly-orlando/" className="hover:text-[#64CEBB] transition-colors">Furniture Assembly</Link></li>
-                            <li className="col-span-2 mt-1"><Link href="/services/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Central Florida Services →</Link></li>
-                        </ul>
                     </div>
 
                     {/* Company Column - 1 col, sits next to Services on mobile */}
@@ -67,7 +53,6 @@ export default function Footer() {
                         <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs">Company</h3>
                         <ul className="space-y-2 text-xs md:text-sm">
                             <li><Link href="/about/" className="hover:text-[#64CEBB] transition-colors">About Us</Link></li>
-                            <li><Link href="/portfolio/" className="hover:text-[#64CEBB] transition-colors">Portfolio</Link></li>
                             <li><Link href="/testimonials/" className="hover:text-[#64CEBB] transition-colors">Testimonials</Link></li>
                             <li><Link href="/faq/" className="hover:text-[#64CEBB] transition-colors">FAQ</Link></li>
                             <li><Link href="/costs/" className="hover:text-[#64CEBB] transition-colors">Costs</Link></li>
@@ -110,7 +95,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-0.5">Area</div>
-                                    <span className="text-xs font-medium text-white/90">South Florida & Central Florida</span>
+                                    <span className="text-xs font-medium text-white/90">South Florida</span>
                                 </div>
                             </div>
                         </div>
@@ -127,11 +112,11 @@ export default function Footer() {
                     <div className="max-w-4xl text-slate-200 leading-relaxed text-xs md:text-sm">
                         {/* Mobile: show only the first short sentence */}
                         <p>
-                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida and Central Florida.
+                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida.
                         </p>
                         {/* Desktop: show the full second paragraph too */}
                         <p className="hidden md:block mt-3 text-slate-300">
-                            We specialize in professional property maintenance, repairs, installations, and improvements for residents and businesses in Maitland, Winter Park, and Casselberry. Now proudly serving South Florida including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your property projects—from minor repairs to complex improvements—are handled with the utmost care and attention to detail.
+                            We proudly serve South Florida, including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your property projects—from minor repairs to complex improvements—are handled with care and attention to detail.
                         </p>
                     </div>
                 </div>

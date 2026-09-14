@@ -27,7 +27,7 @@ const faqData = [
     },
     {
         question: "How accurate are your online pricing guides?",
-        answer: "Our pricing guides are based on real projects completed across South Florida and Central Florida. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
+        answer: "Our pricing guides are based on real projects completed across South Florida. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
     }
 ];
 
@@ -37,7 +37,7 @@ const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix",
-    "description": "Professional property maintenance, repairs, installations, and improvement services across South Florida & Central Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
+    "description": "Professional property maintenance, repairs, installations, and improvement services across South Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
     "url": "https://fix.luxht.com",
     "telephone": "+1-954-300-3043",
     "priceRange": "$$",
@@ -52,7 +52,7 @@ const organizationSchema = {
         "latitude": 28.5383,
         "longitude": -81.3792
     },
-    "areaServed": ["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Aventura", "Orlando", "Winter Park", "Windermere", "Dr. Phillips", "Lake Nona"],
+    "areaServed": ["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Aventura", "Coral Gables", "Miramar", "Davie", "Doral", "Miami Beach"],
     "sameAs": ["https://www.instagram.com/luxhtfix"]
 };
 
@@ -378,7 +378,7 @@ export default function PricingTransparencyPage() {
                                 <HelpCircle className="w-8 h-8" /> Frequently Asked Questions
                             </h2>
                             <p className="text-slate-600 mb-6">
-                                Get answers to common questions about property maintenance pricing and costs in South Florida and Central Florida.
+                                Get answers to common questions about property maintenance pricing and costs in South Florida.
                             </p>
                             <div className="bg-white border border-slate-200 rounded-xl divide-y divide-slate-200">
                                 {faqData.map((faq, index) => (
@@ -393,7 +393,7 @@ export default function PricingTransparencyPage() {
                                 Experience the Difference
                             </h2>
                             <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-                                Join hundreds of Florida property owners who appreciate honest pricing and quality work.
+                                Join South Florida property owners who appreciate honest pricing and quality work.
                                 Browse our transparent cost guides or get a personalized quote today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

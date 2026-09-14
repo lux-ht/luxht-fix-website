@@ -79,7 +79,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                     {/* CTA */}
                     <div className="mt-12 bg-gradient-to-r from-[#584D94] to-[#7B6FCC] rounded-2xl p-8 text-white text-center">
                         <h3 className="text-2xl font-bold mb-3">Need Help With Your Home?</h3>
-                        <p className="text-white/80 mb-6">LUXHT Fix serves South Florida & Central Florida with construction-grade expertise.</p>
+                        <p className="text-white/80 mb-6">LUXHT Fix serves South Florida with construction-grade expertise.</p>
                         <div className="flex flex-col sm:flex-row gap-3 justify-center">
                             <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:bg-[#52bdbc] transition-all flex items-center gap-2 justify-center">
                                 <Phone size={18} /> Call (954) 300-3043

@@ -46,42 +46,6 @@ const testimonials = [
         rating: 5,
         date: "Mar 2025"
     },
-    // Central Florida Reviews
-    {
-        name: "David R.",
-        loc: "Winter Park, FL",
-        text: "Had a long list of 'small fixes' - wardrobe assembly and several floating shelves. They were fast, precise, and cleaned up everything. Best value in Florida!",
-        rating: 5,
-        date: "Jan 2025"
-    },
-    {
-        name: "Amanda L.",
-        loc: "Lake Nona, FL",
-        text: "Finally fixed my squeaky doors and a few drywall patches that I'd been putting off. The attention to detail even on small jobs is impressive.",
-        rating: 5,
-        date: "Feb 2025"
-    },
-    {
-        name: "Robert K.",
-        loc: "Windermere, FL",
-        text: "Professional TV mounting and smart lock installation. Reliable service that actually shows up on time. Highly recommend for any home tech help.",
-        rating: 5,
-        date: "Dec 2024"
-    },
-    {
-        name: "Jennifer S.",
-        loc: "Dr. Phillips, FL",
-        text: "Helped me with move-in furniture assembly and mirror hanging. Everything is perfectly level and secure. So glad I found LUXHT Fix!",
-        rating: 5,
-        date: "Nov 2024"
-    },
-    {
-        name: "Sarah & Mike T.",
-        loc: "Winter Park, FL",
-        text: "They transformed our living room with a custom TV wall and finished the drywall perfectly. Builder-level results for our home repairs.",
-        rating: 5,
-        date: "Mar 2025"
-    }
 ];
 
 export default function HomePageTestimonials() {
@@ -171,8 +135,8 @@ export default function HomePageTestimonials() {
             </div>
 
             <div className="mt-8 pt-8 border-t border-slate-800 text-center relative z-10">
-                <div className="text-3xl font-bold">500+</div>
-                <div className="text-slate-400 text-sm tracking-wide uppercase font-semibold">Happy Customers Across Florida</div>
+                <div className="text-3xl font-bold">South Florida</div>
+                <div className="text-slate-400 text-sm tracking-wide uppercase font-semibold">Local Property Care</div>
             </div>
         </div>
     );

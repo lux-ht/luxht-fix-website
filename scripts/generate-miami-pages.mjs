@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generates all South Florida (Miami) service pages by creating
- * template-based pages that mirror Orlando service pages.
+ * template-based pages for South Florida services.
  */
 import fs from 'fs';
 import path from 'path';

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy | LUXHT Fix',
-    description: 'Learn how LUXHT Fix collects, uses, and protects your personal information. Our privacy policy explains our data practices for home repair services across South Florida & Central Florida.',
+    description: 'Learn how LUXHT Fix collects, uses, and protects your personal information. Our privacy policy explains our data practices for home repair services across South Florida.',
     alternates: { canonical: 'https://fix.luxht.com/privacy-policy/' },
 };
 
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
                                     <h2 className="text-2xl font-bold">Introduction</h2>
                                 </div>
                                 <p className="text-slate-300 leading-relaxed">
-                                    LUXHT Fix ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our home repair and renovation services across South Florida and Central Florida.
+                                    LUXHT Fix ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our home repair and renovation services across South Florida.
                                 </p>
                             </div>
 
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
                                     <p className="text-white font-semibold">LUXHT Fix</p>
                                     <p className="text-slate-300">Email: info@luxht.com</p>
                                     <p className="text-slate-300">Phone: (954) 300-3043</p>
-                                    <p className="text-slate-300">Service Area: South Florida & Central Florida</p>
+                                    <p className="text-slate-300">Service Area: South Florida</p>
                                 </div>
                             </div>
 

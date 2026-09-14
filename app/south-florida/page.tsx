@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Link from 'next/link';
 import {
-  ArrowRight, CheckCircle, Phone, Mail, MapPin, Star,
+  ArrowRight, CheckCircle, Phone, Mail, MapPin,
   Hammer, Tv, Grid, DoorOpen, Bath, Utensils, Wrench,
   Monitor, Shield, Zap, Home, Droplets, Wind, Briefcase, Key, Layers
 } from 'lucide-react';
@@ -111,7 +111,7 @@ export default function SouthFloridaPage() {
             Professional home repair for Miami-Dade & Broward counties.
           </p>
           <p className="text-lg text-blue-200 mb-8">
-            The same quality Orlando trusts — now available in South Florida.
+            Construction-grade property care, built specifically for South Florida.
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
@@ -167,7 +167,7 @@ export default function SouthFloridaPage() {
           <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Why South Florida Trusts LUXHT Fix</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              'Proven track record with 500+ homes served in Central Florida',
+              'Local expertise across Miami-Dade, Broward, and Palm Beach',
               'Fully insured and background-checked professionals',
               'Same-week service across Miami-Dade & Broward counties',
               'Specialized in South Florida challenges: humidity, storms, concrete walls',
@@ -197,16 +197,6 @@ export default function SouthFloridaPage() {
           ))}
         </div>
         <p className="text-slate-500 text-sm">Not sure if we serve your area? Call or text — we&apos;ll confirm quickly.</p>
-      </section>
-
-      {/* CROSS-LINK TO ORLANDO */}
-      <section className="py-12 px-4 bg-white border-t border-slate-100">
-        <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-slate-500 mb-2">Also serving Central Florida</p>
-          <Link href="/" className="text-[#584D94] font-bold text-lg hover:text-[#64CEBB] transition-colors inline-flex items-center gap-2">
-            <MapPin size={18} /> View Orlando Services <ArrowRight size={16} />
-          </Link>
-        </div>
       </section>
 
       {/* FINAL CTA */}
