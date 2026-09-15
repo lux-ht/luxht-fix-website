@@ -60,35 +60,8 @@ export default function HomePageTestimonials() {
 
     const cur = testimonials[index];
 
-    const parseDate = (d?: string) => {
-        if (!d) return new Date().toISOString().split('T')[0];
-        try {
-            return new Date(d).toISOString().split('T')[0];
-        } catch {
-            return new Date().toISOString().split('T')[0];
-        }
-    };
-
-    const reviewSchema = {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://fix.luxht.com/#localbusiness",
-        "name": "LUXHT Fix",
-        "review": testimonials.map((r) => ({
-            "@type": "Review",
-            "author": { "@type": "Person", "name": r.name },
-            "datePublished": parseDate(r.date),
-            "reviewRating": { "@type": "Rating", "ratingValue": r.rating, "bestRating": "5" },
-            "reviewBody": r.text
-        }))
-    };
-
     return (
         <div className="bg-gradient-to-br from-[#584D94] to-[#7B6FCC] rounded-3xl p-8 text-white relative overflow-hidden shadow-2xl min-h-[400px] flex flex-col justify-center">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
-            />
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#64CEBB] rounded-full blur-3xl opacity-20"></div>
 
             <AnimatePresence mode="wait">
@@ -107,7 +80,7 @@ export default function HomePageTestimonials() {
                     </div>
 
                     <blockquote className="text-xl md:text-2xl font-medium italic mb-6 leading-relaxed">
-                        "{cur.text}"
+                        &quot;{cur.text}&quot;
                     </blockquote>
 
                     <div className="font-bold text-[#64CEBB] mb-1">{cur.name}</div>
