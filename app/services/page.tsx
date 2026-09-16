@@ -22,6 +22,7 @@ export default function ServicesPage() {
         { title: "Rental Turnover Repairs", desc: "Tenant prep, rapid wall repair, paint touch-ups, hardware.", price: "$250", icon: Key, link: "/rental-turnover-repairs-miami/" },
         { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-miami/" },
         { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-miami/" },
+        { title: "Septic & Sewer Repair", desc: "Underground line repair, pipe replacement, and septic installation.", price: "Custom quote", icon: Droplets, link: "/septic-sewer-repair-miami/" },
         { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-miami/" },
         { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-miami/" },
         { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-miami/" },
@@ -154,7 +155,7 @@ export default function ServicesPage() {
                                 <p className="text-slate-500 mb-6 min-h-[48px]">{service.desc}</p>
 
                                 <div className="flex items-center justify-between border-t border-slate-100 pt-4">
-                                    <span className="text-sm font-bold text-slate-400">From {service.price}</span>
+                                    <span className="text-sm font-bold text-slate-400">{service.price.startsWith('$') ? `From ${service.price}` : service.price}</span>
                                     <Link href={service.link} className="text-[#64CEBB] font-bold text-sm flex items-center gap-1 hover:text-[#4cada0]">
                                         Learn More <ArrowRight size={14} />
                                     </Link>

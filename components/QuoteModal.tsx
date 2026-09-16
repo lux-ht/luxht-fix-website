@@ -33,6 +33,7 @@ export default function QuoteModal() {
         "Deck Building",
         "Door, Lock & Trim",
         "Faucet & Fixtures",
+        "Septic & Sewer Repair",
         "Smart Home Installation",
         "Furniture Assembly",
         "Kitchen Refacing",

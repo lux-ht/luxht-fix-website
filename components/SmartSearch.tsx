@@ -29,6 +29,7 @@ const searchIndex: SearchItem[] = [
     { title: "Smart Lock Installation", href: "/smart-lock-installation-miami/", category: "service", keywords: ["smart", "lock", "keypad", "keyless", "bluetooth", "wifi"] },
     { title: "Door Handle Replacement", href: "/door-handle-replacement-miami/", category: "service", keywords: ["handle", "door", "knob", "lever", "replace"] },
     { title: "Faucet & Fixtures", href: "/faucet-fixtures-miami/", category: "service", keywords: ["faucet", "fixture", "sink", "plumbing", "tap", "kitchen", "bathroom"] },
+    { title: "Septic & Sewer Repair", href: "/septic-sewer-repair-miami/", category: "service", keywords: ["septic", "sewer", "drain", "underground", "pipe", "pvc", "trench", "tank", "line repair"] },
     { title: "Faucet Replacement", href: "/faucet-replacement-miami/", category: "service", keywords: ["faucet", "replace", "kitchen", "bathroom", "leak"] },
     { title: "Shower Head Replacement", href: "/shower-head-replacement-miami/", category: "service", keywords: ["shower", "head", "rain", "showerhead", "replace"] },
     { title: "Garbage Disposal", href: "/garbage-disposal-installation-miami/", category: "service", keywords: ["garbage", "disposal", "insinkerator", "kitchen", "sink"] },

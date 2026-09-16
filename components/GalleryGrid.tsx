@@ -5,6 +5,8 @@ import ImageModal from './ImageModal';
 
 interface GalleryItem {
     src: string;
+    webpSrc?: string;
+    alt?: string;
     title: string;
     subtitle: string;
 }
@@ -25,19 +27,22 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                         className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer bg-slate-900"
                         onClick={() => setSelectedImage(project)}
                     >
-                        <img
-                            src={project.src}
-                            alt={`${project.title} - ${project.subtitle}`}
-                            loading="lazy"
-                            decoding="async"
-                            width={400}
-                            height={256}
-                            className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
-                        />
+                        <picture className="block">
+                            {project.webpSrc && <source srcSet={project.webpSrc} type="image/webp" />}
+                            <img
+                                src={project.src}
+                                alt={project.alt || `${project.title} - ${project.subtitle}`}
+                                loading="lazy"
+                                decoding="async"
+                                width={400}
+                                height={256}
+                                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
+                            />
+                        </picture>
                         {/* Hover Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#584D94]/95 via-[#584D94]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                            <h3 className="text-white font-bold text-xl mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{project.title}</h3>
-                            <p className="text-[#64CEBB] font-medium text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">{project.subtitle}</p>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#584D94]/95 via-[#584D94]/60 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                            <h3 className="text-white font-bold text-xl mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500">{project.title}</h3>
+                            <p className="text-[#64CEBB] font-medium text-sm translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500 delay-75">{project.subtitle}</p>
                         </div>
                     </div>
                 ))}
@@ -46,8 +51,8 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
             <ImageModal
                 isOpen={!!selectedImage}
                 onClose={() => setSelectedImage(null)}
-                src={selectedImage?.src || ''}
-                alt={selectedImage ? `${selectedImage.title} - ${selectedImage.subtitle}` : ''}
+                src={selectedImage?.webpSrc || selectedImage?.src || ''}
+                alt={selectedImage ? selectedImage.alt || `${selectedImage.title} - ${selectedImage.subtitle}` : ''}
             />
         </>
     );

@@ -38,7 +38,7 @@ export interface ServicePageProps {
     relatedServices: RelatedService[];
     startingPrice?: string;
     statsText?: string;
-    galleryImages?: { src: string; title: string; subtitle: string }[];
+    galleryImages?: { src: string; webpSrc?: string; alt?: string; title: string; subtitle: string }[];
 }
 
 export default function ServicePageTemplate({

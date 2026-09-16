@@ -33,6 +33,7 @@ const services = [
   { title: 'Door, Lock & Trim', icon: DoorOpen, href: '/door-lock-trim-miami/', desc: 'Fix sticking doors, upgrade locks, install trim.' },
   { title: 'Smart Home', icon: Monitor, href: '/smart-home-installation-miami/', desc: 'Ring doorbells, smart locks, cameras & more.' },
   { title: 'Faucet & Fixtures', icon: Wrench, href: '/faucet-fixtures-miami/', desc: 'Faucets, toilets, disposals — leak-free installs.' },
+  { title: 'Septic & Sewer Repair', icon: Droplets, href: '/septic-sewer-repair-miami/', desc: 'Underground line repair, pipe replacement & septic installation.' },
   { title: 'Fence & Gate Repair', icon: Hammer, href: '/fence-gate-repair-miami/', desc: 'Sagging gates, broken posts, and damaged panel repairs.' },
   { title: 'Gutter Guard & Cleaning', icon: Droplets, href: '/gutter-maintenance-miami/', desc: 'Clear gutters and professional leaf guard installations.' },
   { title: 'Pressure Washing', icon: Wind, href: '/pressure-washing-miami/', desc: 'Exterior grime, mold, and algae removal for patios & walls.' },
