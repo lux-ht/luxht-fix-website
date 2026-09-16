@@ -2,7 +2,8 @@ import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import {
     Hammer, ArrowRight, Paintbrush, Wrench, Grid, Ruler, Tv,
-    DoorOpen, CheckCircle, Zap, Star, Phone, Mail, PaintRoller, MapPin, Shield
+    DoorOpen, CheckCircle, Zap, Star, Phone, Mail, PaintRoller, MapPin, Shield,
+    BadgeDollarSign, ClipboardCheck
 } from 'lucide-react';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
 import DrywallGallery from '@/components/DrywallGallery';
@@ -51,6 +52,34 @@ export default function Home() {
                 <FloatingIcons />
 
                 <div className="container mx-auto px-4 relative z-10 max-w-5xl text-left flex flex-col items-start">
+                    <section className="w-full mb-6 overflow-hidden rounded-xl border border-[#64CEBB]/40 bg-[#584D94] text-white shadow-lg" aria-label="Financing available">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 px-5 py-4 md:px-7">
+                            <div className="flex items-center gap-4">
+                                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#64CEBB] text-[#342B5A]">
+                                    <BadgeDollarSign size={24} aria-hidden="true" />
+                                </span>
+                                <div>
+                                    <p className="text-lg font-bold">Financing Available</p>
+                                    <p className="text-sm text-white/80">Ask about flexible financing options for your project.</p>
+                                </div>
+                            </div>
+                            <Link href="/estimate/" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#584D94] transition-colors hover:bg-[#F1FBF9]">
+                                Request an Estimate <ArrowRight size={16} />
+                            </Link>
+                        </div>
+                    </section>
+
+                    <section className="w-full mb-10 border-y border-slate-200 py-5" aria-label="Complete permit and project coordination">
+                        <div className="flex items-start gap-4">
+                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#64CEBB]/15 text-[#267E70]">
+                                <ClipboardCheck size={22} aria-hidden="true" />
+                            </span>
+                            <p className="text-sm md:text-base leading-relaxed text-slate-700">
+                                <strong className="text-slate-900">From permits to final approval, LUXHT Fix handles the process.</strong>{' '}
+                                When required, we coordinate plans and permits, complete the work according to approved requirements, perform internal quality inspections, schedule permit inspections, and follow through to final approval and the certificate of occupancy. You can relax while we manage the project from start to finish.
+                            </p>
+                        </div>
+                    </section>
                     
                     {/* Clear entry points for the two most common customer needs */}
                     <section className="w-full mb-10" aria-labelledby="service-path-heading">
