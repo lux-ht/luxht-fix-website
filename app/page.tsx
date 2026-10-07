@@ -72,7 +72,19 @@ export default function Home() {
       </section>
       <section className="border-t border-slate-200 px-4 py-12">
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
-          <div className="flex gap-4"><BadgeDollarSign className="shrink-0 text-[#267E70]" size={26} /><div><h2 className="text-xl font-semibold">Financing available</h2><p className="mt-2 text-slate-600">Ask about flexible financing options for your project.</p></div></div>
+          <div className="flex gap-4">
+            <BadgeDollarSign className="shrink-0 text-[#267E70]" size={26} />
+            <div className="min-w-0">
+              <h2 className="text-xl font-semibold">Financing through Acorn Finance</h2>
+              <p className="mt-2 leading-relaxed text-slate-600">Explore payment options for your project from multiple lenders through Acorn Finance.</p>
+              <a href="https://www.acornfinance.com/pre-qualify/?d=B4F15&utm_medium=web_pre_qual_banner" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block max-w-full rounded-md border border-black p-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#584D94]">
+                {/* Keep the provider-hosted banner unchanged. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img id="acornBanner" src="https://fs.acornfinance.com/banners/acorn-finance-banner-easy-payment-options-vertical-small.png" alt="Acorn Finance apply and get affordable payment options from multiple lenders" loading="lazy" className="block h-auto w-[300px] max-w-full rounded-[5px]" />
+              </a>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">Financing is subject to lender approval and terms.</p>
+            </div>
+          </div>
           <div className="flex gap-4"><ClipboardCheck className="shrink-0 text-[#267E70]" size={26} /><div><h2 className="text-xl font-semibold">Project and permit coordination</h2><p className="mt-2 leading-relaxed text-slate-600">When required for the agreed scope, we coordinate plans, permits, inspections, and follow-through to final approval.</p></div></div>
         </div>
       </section>
