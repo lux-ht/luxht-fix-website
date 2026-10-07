@@ -13,51 +13,14 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "luxht-fix-expands-to-south-florida",
-    title: "LUXHT Fix Serves South Florida: Miami-Dade, Broward & Palm Beach",
-    excerpt: "LUXHT Fix provides construction-grade home repair and property maintenance services across Miami, Fort Lauderdale, Pembroke Pines, and surrounding South Florida communities.",
+    title: "LUXHT Fix: Our Seven Broward Service Cities",
+    excerpt: "Home repairs and property maintenance in Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, and Miramar.",
     category: "Company News",
-    date: "2026-05-01",
+    date: "2026-10-07",
     readTime: "4 min",
     image: "/images/blog/south-florida-expansion.png",
-    tags: ["South Florida", "Miami", "Expansion", "Company News"],
-    content: `## LUXHT Fix is Now in South Florida
-
-LUXHT Fix provides professional property maintenance and improvement services throughout **South Florida**, including Miami-Dade, Broward, and Palm Beach counties.
-
-### Why South Florida?
-
-South Florida homeowners often ask: **"Why can't I find a handyman who actually knows construction?"** LUXHT Fix answers that need with construction-grade expertise for repairs, installations, and property improvements.
-
-South Florida's unique building landscape — from high-rise condos in Sunny Isles Beach to hurricane-hardened homes in Pembroke Pines — demands professionals who understand structural integrity, moisture management, and Florida building codes.
-
-### Cities We Now Serve
-
-- Miami & Miami Beach
-- Fort Lauderdale
-- Pembroke Pines & Cooper City
-- Hollywood & Hallandale Beach
-- Aventura & Sunny Isles Beach
-- Coral Gables & Doral
-- Miramar & Davie
-- North Miami
-
-### What Services Are Available?
-
-Our South Florida services include:
-
-- **Drywall Repair** — texture matching for all wall types
-- **TV Mounting** — secure installations in concrete and drywall
-- **Flooring Installation** — LVP, tile, and hardwood
-- **Bathroom Remodel** — full renovations for homes and condos
-- **Hurricane Damage Repair** — post-storm restoration
-- **Stucco Repair** — crack repair and color matching
-- **Impact Window Prep** — hurricane-ready upgrades
-
-### Dedicated South Florida Service
-
-We're investing in a dedicated South Florida team, local material partnerships, and a service fleet for reliable coverage across Miami-Dade, Broward, and Palm Beach counties.
-
-**Ready to experience the LUXHT Fix difference?** Call us at (954) 300-3043 or text us to schedule your first project.`
+    tags: ["Broward County","Home Repairs","Service Area","Company News"],
+    content: "## Our Current Service Area\n\nLUXHT Fix provides home repairs, installations, and property maintenance in **Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, and Miramar**. We currently serve only these seven cities.\n\n### Plan Your Repair\n\nSend photos, your property city, a short description of the work, and your preferred timing. We confirm scope, access, pricing, and scheduling before work starts.\n\n### Services Available\n\nDrywall and ceiling repairs, door and lock work, TV mounting, flooring installation, property maintenance, rental turnover repairs, and patio and lanai repairs. [Browse all services](/services/).\n\n### Local Scheduling\n\nSelect your property city when requesting an estimate so we can confirm coverage and plan your visit. Availability depends on scope and the current schedule.\n\n[Request an estimate](/estimate/) or call **(954) 300-3043**."
   },
   {
     slug: "hurricane-season-home-prep-south-florida",
@@ -219,7 +182,7 @@ A professional TV mounting in a Miami condo includes:
 
 ### Book Your Condo TV Mounting
 
-LUXHT Fix specializes in concrete wall installations across Miami-Dade and Broward county condos. We carry the proper insurance and follow all building rules. **Call (954) 300-3043** to schedule.`
+LUXHT Fix specializes in concrete wall installations in condos within our seven Broward service cities. We carry the proper insurance and follow all building rules. **Call (954) 300-3043** to schedule.`
   },
   {
     slug: "top-5-home-repairs-miami-homeowners-need",

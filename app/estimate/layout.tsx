@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Get a South Florida Property Service Estimate',
+    title: "Get a Broward County Property Service Estimate",
     description:
-        'Request an estimate for property maintenance, repairs, installations, and improvements across South Florida.',
+        "Request an estimate for property maintenance, repairs, installations, and improvements across Broward County.",
     alternates: { canonical: 'https://fix.luxht.com/estimate/' },
     robots: { index: false, follow: false },
 };

@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { CheckCircle, Loader2, Phone, MessageSquare } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
+import ServiceCityField from './ServiceCityField';
+import { SERVICE_CITIES } from '@/lib/service-area';
 
 const CONCERN_OPTIONS = [
   'Kitchen',
@@ -20,6 +22,7 @@ const CONCERN_OPTIONS = [
 export default function PreSaleForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [serviceCity, setServiceCity] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -53,10 +56,12 @@ export default function PreSaleForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!SERVICE_CITIES.some(city => city === serviceCity)) return;
     setIsSubmitting(true);
 
     try {
       const qualificationDetails = {
+        property_city: serviceCity,
         listing_timeline: formData.listingTimeline,
         occupancy: formData.occupancy,
         has_realtor: formData.hasRealtor,
@@ -117,6 +122,7 @@ export default function PreSaleForm() {
 
   return (
     <form id="preSaleForm" onSubmit={handleSubmit} className="space-y-4">
+      <ServiceCityField id="presale-city" value={serviceCity} onChange={setServiceCity} />
       {/* Row 1: Name + Phone */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>

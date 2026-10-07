@@ -26,19 +26,14 @@ export interface LocationConfig {
 export const LOCATIONS: Record<string, LocationConfig> = {
   miami: {
     id: 'miami',
-    name: 'South Florida',
-    region: 'South Florida',
-    slug: 'miami',
+    name: "Broward County",
+    region: "Broward County",
+    slug: 'broward',
     hubSlug: '/south-florida/',
     phone: '(954) 300-3043',
     phoneRaw: '9543003043',
     email: 'info@luxht.com',
-    neighborhoods: [
-      'Miami', 'Pembroke Pines', 'Cooper City', 'Aventura',
-      'Hallandale Beach', 'Miramar', 'Davie', 'Hollywood',
-      'Sunny Isles Beach', 'Fort Lauderdale', 'North Miami',
-      'Coral Gables', 'Doral', 'Miami Beach'
-    ],
+    neighborhoods: ["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"],
     address: { city: 'Pembroke Pines', state: 'FL', zip: '33028' },
     geo: { lat: 26.0031, lng: -80.2241 },
     serviceAreaRadius: '60000',

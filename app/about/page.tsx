@@ -6,8 +6,8 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About LUXHT Fix | Property Maintenance & Improvement — South Florida',
-    description: 'LUXHT Fix provides professional property maintenance, repairs, installations, and improvements for residential and commercial properties across South Florida.',
+    title: "About LUXHT Fix | Property Maintenance & Improvement — Broward County",
+    description: "LUXHT Fix provides professional property maintenance, repairs, installations, and improvements for residential and commercial properties across Broward County.",
     alternates: { canonical: 'https://fix.luxht.com/about/' },
 };
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">About LUXHT Fix</h1>
                     <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto font-light leading-relaxed mb-6">
-                        LUXHT Fix is a professional property maintenance and improvement company serving South Florida — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Serving Miami-Dade, Broward, and Palm Beach counties.</strong>
+                        LUXHT Fix is a professional property maintenance and improvement company serving Broward County — specializing in drywall repair, TV mounting, flooring, and more. <strong className="text-white">Serving the seven cities in our Broward service area.</strong>
                     </p>
                     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 py-2 px-5 rounded-full text-sm font-bold text-white/90 mb-6">
                         <Shield size={16} className="text-[#64CEBB]" /> Family-Owned. Not a Lead App.
@@ -53,7 +53,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-4">From Major Renovations to Everyday Care</h2>
                             <p className="text-slate-600 leading-relaxed">
-                                LUXHT Fix serves South Florida homeowners before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
+                                LUXHT Fix serves Broward County homeowners before, during, and after major projects with routine maintenance, small projects, and ongoing care. We allow you to work with one trusted brand for both transformation and long-term home care.
                             </p>
                         </div>
                     </div>
@@ -105,17 +105,17 @@ export default function AboutPage() {
                         <div className="inline-flex items-center gap-2 bg-[#64CEBB]/10 text-[#64CEBB] px-4 py-2 rounded-full text-sm font-bold mb-4 border border-[#64CEBB]/20">
                             <MapPin size={16} /> Our Journey
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Built for South Florida Properties</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Built for Broward County Properties</h2>
                         <p className="text-slate-500 mt-3 max-w-2xl mx-auto">
-                            South Florida property owners deserve reliable maintenance professionals who bring construction-quality expertise to everyday repairs and improvements.
+                            Broward County property owners deserve reliable maintenance professionals who bring construction-quality expertise to everyday repairs and improvements.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
                         {[
-                            { year: '2025', text: 'Established dedicated service across Miami-Dade & Broward', color: 'bg-[#64CEBB]/10 border-[#64CEBB]/30' },
-                            { year: '2026', text: 'Investing in dedicated South Florida operations, team & fleet', color: 'bg-[#584D94]/10 border-[#584D94]/30' },
-                            { year: 'Today', text: 'Serving homes and businesses across South Florida', color: 'bg-slate-100 border-slate-200' },
+                            { year: '2025', text: "Established dedicated service across Broward County", color: 'bg-[#64CEBB]/10 border-[#64CEBB]/30' },
+                            { year: '2026', text: "Investing in dedicated Broward County operations, team & fleet", color: 'bg-[#584D94]/10 border-[#584D94]/30' },
+                            { year: 'Today', text: "Serving homes and businesses across Broward County", color: 'bg-slate-100 border-slate-200' },
                         ].map((step, i) => (
                             <div key={i} className={`${step.color} border rounded-2xl p-6 text-center`}>
                                 <div className="text-2xl font-black text-[#584D94] mb-2">{step.year}</div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
 
                     <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
                         <p className="text-slate-600 leading-relaxed text-lg">
-                            We are <strong className="text-[#584D94]">investing in our South Florida operations</strong> — building a dedicated local team, expanding our service fleet, and creating partnerships with trusted material suppliers throughout the region.
+                            We are <strong className="text-[#584D94]">investing in our Broward County operations</strong> — building a dedicated local team, expanding our service fleet, and creating partnerships with trusted material suppliers throughout the region.
                         </p>
                     </div>
                 </div>
@@ -186,17 +186,17 @@ export default function AboutPage() {
                 <div className="container mx-auto relative z-10 max-w-5xl">
                     <div className="text-center mb-10">
                         <MapPin className="mx-auto mb-4 text-[#64CEBB]" size={40} />
-                        <h2 className="text-3xl font-bold mb-3">Serving South Florida</h2>
+                        <h2 className="text-3xl font-bold mb-3">Serving Broward County</h2>
                         <p className="text-blue-100 max-w-2xl mx-auto text-lg">One region. One standard of excellence.</p>
                     </div>
                     <div className="max-w-3xl mx-auto">
                         <div>
                             <div className="flex items-center gap-2 mb-4">
                                 <span className="bg-[#64CEBB] text-white text-xs font-bold px-3 py-1 rounded-full">🌴 Primary Focus</span>
-                                <h3 className="font-bold text-lg">South Florida</h3>
+                                <h3 className="font-bold text-lg">Broward County</h3>
                             </div>
                             <div className="flex flex-wrap gap-2">
-                                {['Miami', 'Fort Lauderdale', 'Pembroke Pines', 'Cooper City', 'Aventura', 'Hallandale Beach', 'Miramar', 'Davie', 'Hollywood', 'Sunny Isles Beach', 'North Miami', 'Coral Gables', 'Doral', 'Miami Beach'].map((city, i) => (
+                                {["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"].map((city, i) => (
                                     <span key={i} className="bg-[#64CEBB]/20 backdrop-blur-sm border border-[#64CEBB]/30 px-3 py-1.5 rounded-full text-sm font-medium">
                                         {city}
                                     </span>
@@ -241,16 +241,16 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Comprehensive Property Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
-                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-miami/' },
-                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile', href: '/flooring-installation-miami/' },
-                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations', href: '/bath-remodel-miami/' },
-                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization', href: '/kitchen-refacing-miami/' },
-                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups', href: '/tv-mounting-miami/' },
-                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements', href: '/door-lock-trim-miami/' },
-                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations', href: '/faucet-fixtures-miami/' },
-                        { name: 'Smart Home', desc: 'Automation & device integration', href: '/smart-home-installation-miami/' },
-                        { name: 'Hurricane Damage Repair', desc: 'Fast storm damage restoration', href: '/hurricane-damage-repair-miami/' },
-                        { name: 'Stucco Repair', desc: 'Crack repair & color matching', href: '/stucco-repair-miami/' },
+                        { name: 'Drywall Repair', desc: 'Seamless patching & texture matching', href: '/drywall-broward/' },
+                        { name: 'Flooring Installation', desc: 'Hardwood, LVP, Tile', href: '/flooring-installation-broward/' },
+                        { name: 'Bath Remodel', desc: 'Complete bathroom renovations', href: '/bath-remodel-broward/' },
+                        { name: 'Kitchen Refacing', desc: 'Cabinet upgrades & modernization', href: '/kitchen-refacing-broward/' },
+                        { name: 'TV Mounting', desc: 'Secure, clean entertainment setups', href: '/tv-mounting-broward/' },
+                        { name: 'Door, Lock & Trim', desc: 'Security & aesthetic improvements', href: '/door-lock-trim-broward/' },
+                        { name: 'Faucet & Fixtures', desc: 'Leak-free installations', href: '/faucet-fixtures-broward/' },
+                        { name: 'Smart Home', desc: 'Automation & device integration', href: '/smart-home-installation-broward/' },
+                        { name: 'Hurricane Damage Repair', desc: 'Fast storm damage restoration', href: '/hurricane-damage-repair-broward/' },
+                        { name: 'Stucco Repair', desc: 'Crack repair & color matching', href: '/stucco-repair-broward/' },
                     ].map((service, i) => (
                         <Link key={i} href={service.href} className="bg-white p-6 rounded-xl border border-slate-100 hover:shadow-lg hover:border-[#64CEBB] transition-all group">
                             <h3 className="font-bold text-lg text-slate-800 group-hover:text-[#584D94] transition-colors mb-2 ">{service.name}</h3>
@@ -271,7 +271,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <h2 className="text-4xl font-bold mb-6">Experience the LUXHT Fix Difference</h2>
                     <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                        Looking for a property maintenance company that treats your home with care? From South Florida — work with construction professionals who are personally responsible for every project.
+                        Looking for a property maintenance company that treats your home with care? From Broward County — work with construction professionals who are personally responsible for every project.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:bg-[#52bdbc] transition-all flex items-center gap-2">

@@ -34,7 +34,7 @@ export default function PreSaleHomePrepPage() {
                 "addressCountry": "US"
               }
             },
-            "areaServed": ["Miami", "Pembroke Pines", "Fort Lauderdale", "Hollywood", "Cooper City", "Davie", "Miramar"],
+            "areaServed": ["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"],
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Pre-Sale Home Prep Packages",
@@ -59,7 +59,7 @@ export default function PreSaleHomePrepPage() {
               { "@type": "Question", "name": "Do I need to remodel my home before selling?", "acceptedAnswer": { "@type": "Answer", "text": "No. Most homes do not need a full remodel. You need to fix the details buyers notice first. LUXHT Fix helps you focus your budget on what actually matters." } },
               { "@type": "Question", "name": "Can my realtor be involved?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We partner with realtors regularly. Your agent can be present during the walkthrough, receive the repair summary, and coordinate timing around photos and listing dates." } },
               { "@type": "Question", "name": "How long does the repair work take?", "acceptedAnswer": { "@type": "Answer", "text": "Depending on scope: a Listing-Ready Tune-Up takes 1-3 days, a Market-Ready Refresh takes 3-7 days, and a Premium Transformation takes 1-3 weeks." } },
-              { "@type": "Question", "name": "What areas of Florida do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "LUXHT Fix serves South Florida, including Miami, Pembroke Pines, Fort Lauderdale, Hollywood, Cooper City, Davie, Miramar, and surrounding communities." } },
+              { "@type": "Question", "name": "What areas of Florida do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "LUXHT Fix serves Broward County, including Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, Miramar." } },
               { "@type": "Question", "name": "Is LUXHT Fix licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LUXHT Fix is fully insured. We are a subdivision of Luxury Home Transformations LLC, a family-owned business." } },
               { "@type": "Question", "name": "What is included in the walkthrough?", "acceptedAnswer": { "@type": "Answer", "text": "The walkthrough includes a full inspection of buyer-visible issues, photo notes, a priority repair list, budget direction, and a written prep summary." } }
             ]
@@ -599,7 +599,7 @@ export default function PreSaleHomePrepPage() {
               { q: 'Do I need to remodel my home before selling?', a: 'No. Most homes do not need a full remodel. You need to fix the details buyers notice first — scuffed walls, old caulk, loose doors, dated fixtures, poor lighting. LUXHT Fix helps you focus your budget on what actually matters.' },
               { q: 'Can my realtor be involved?', a: 'Absolutely. We partner with realtors regularly. Your agent can be present during the walkthrough, receive the repair summary, and coordinate timing around photos and listing dates.' },
               { q: 'How long does the repair work take?', a: 'Depending on the scope: a Listing-Ready Tune-Up takes 1 to 3 days, a Market-Ready Refresh takes 3 to 7 days, and a Premium Transformation takes 1 to 3 weeks. We coordinate with your listing timeline.' },
-              { q: 'What areas of Florida do you serve?', a: 'LUXHT Fix serves South Florida, including Miami, Pembroke Pines, Fort Lauderdale, Hollywood, Cooper City, Davie, Miramar, and surrounding communities.' },
+              { q: 'What areas of Florida do you serve?', a: "LUXHT Fix serves Broward County, including Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, Miramar." },
               { q: 'Is LUXHT Fix licensed and insured?', a: 'Yes. LUXHT Fix is fully insured. We are a subdivision of Luxury Home Transformations LLC, a family-owned business serving residential and commercial properties.' },
               { q: 'What if I only need a few small repairs?', a: 'That is exactly what the Listing-Ready Tune-Up is for. Starting at $1,500, it covers small repairs, touch-ups, and detail work to get the home looking clean and cared for without over-improving.' },
             ].map((faq, i) => (
@@ -636,7 +636,7 @@ export default function PreSaleHomePrepPage() {
           {[
             { icon: Star, text: 'Family-Owned Business' },
             { icon: Shield, text: 'Fully Insured' },
-            { icon: MapPin, text: 'South Florida' },
+            { icon: MapPin, text: "Broward County" },
             { icon: Sparkles, text: 'Same-Week Response' },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-2 text-slate-600 text-sm font-medium">

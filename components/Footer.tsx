@@ -1,10 +1,10 @@
 import Link from 'next/link';
+import { CITY_PAGES } from '@/lib/service-area';
 import { Facebook, Instagram, MapPin, Phone, Mail, Hammer, Palmtree } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-[#584D94] to-[#453A75] text-slate-100 py-10 md:py-16 text-sm relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#584D94] rounded-full blur-3xl -mr-40 -mt-40 opacity-50"></div>
+        <footer className="bg-[#453A75] text-slate-100 py-10 md:py-16 text-sm relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
 
                 {/* Brand Row - Always full width */}
@@ -24,9 +24,12 @@ export default function Footer() {
 
                     {/* Trust Badge */}
                     <div className="text-center sm:text-left mb-6">
-                        <span className="inline-flex items-center gap-2 bg-white/10 border border-white/15 text-white/80 text-xs font-semibold py-1.5 px-4 rounded-full">
-                            Family-Owned. Not a Lead App. · Serving Miami-Dade, Broward & Palm Beach
+                        <span className="text-white/80 text-xs font-semibold">
+                            Family-Owned. Not a Lead App. · Serving our seven Broward service cities
                         </span>
+                        <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3">
+                            {CITY_PAGES.map(city => <Link key={city.slug} href={`/service-areas/${city.slug}/`} className="underline underline-offset-4 hover:text-[#64CEBB]">{city.name}</Link>)}
+                        </div>
                     </div>
 
                 {/* Links Grid - Services + Company side-by-side, Contact below */}
@@ -34,16 +37,16 @@ export default function Footer() {
                     {/* Services Column - 1 col on mobile, 2 on desktop */}
                     <div className="col-span-1 md:col-span-2">
                         <h3 className="font-bold text-white mb-4 uppercase tracking-wider text-xs flex items-center gap-1.5">
-                            <Palmtree size={14} className="text-[#64CEBB]" /> South Florida
+                            <Palmtree size={14} className="text-[#64CEBB]" /> Broward County
                         </h3>
                         <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs md:text-sm">
-                            <li><Link href="/drywall-miami/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
-                            <li><Link href="/tv-mounting-miami/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
-                            <li><Link href="/flooring-installation-miami/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
-                            <li><Link href="/bath-remodel-miami/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
-                            <li><Link href="/hurricane-damage-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Hurricane Repair</Link></li>
-                            <li><Link href="/stucco-repair-miami/" className="hover:text-[#64CEBB] transition-colors">Stucco Repair</Link></li>
-                            <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All South Florida Services →</Link></li>
+                            <li><Link href="/drywall-broward/" className="hover:text-[#64CEBB] transition-colors">Drywall Repair</Link></li>
+                            <li><Link href="/tv-mounting-broward/" className="hover:text-[#64CEBB] transition-colors">TV Mounting</Link></li>
+                            <li><Link href="/flooring-installation-broward/" className="hover:text-[#64CEBB] transition-colors">Flooring</Link></li>
+                            <li><Link href="/bath-remodel-broward/" className="hover:text-[#64CEBB] transition-colors">Bath Remodel</Link></li>
+                            <li><Link href="/hurricane-damage-repair-broward/" className="hover:text-[#64CEBB] transition-colors">Hurricane Repair</Link></li>
+                            <li><Link href="/stucco-repair-broward/" className="hover:text-[#64CEBB] transition-colors">Stucco Repair</Link></li>
+                            <li className="col-span-2 mt-1"><Link href="/south-florida/" className="font-bold text-[#64CEBB] hover:text-white transition-colors">All Broward County Services →</Link></li>
                         </ul>
                         
                     </div>
@@ -95,7 +98,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-0.5">Area</div>
-                                    <span className="text-xs font-medium text-white/90">South Florida</span>
+                                    <span className="text-xs font-medium text-white/90">Broward County</span>
                                 </div>
                             </div>
                         </div>
@@ -112,11 +115,11 @@ export default function Footer() {
                     <div className="max-w-4xl text-slate-200 leading-relaxed text-xs md:text-sm">
                         {/* Mobile: show only the first short sentence */}
                         <p>
-                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida.
+                            <span className="font-semibold text-white">LUXHT Fix</span>, a premier division of LUXURY HOME TRANSFORMATIONS LLC, is dedicated to providing professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across Broward County.
                         </p>
                         {/* Desktop: show the full second paragraph too */}
                         <p className="hidden md:block mt-3 text-slate-300">
-                            We proudly serve South Florida, including Miami, Fort Lauderdale, Hollywood, Pembroke Pines, Coral Gables, and surrounding communities. With a focus on reliability and precision, LUXHT Fix ensures your property projects—from minor repairs to complex improvements—are handled with care and attention to detail.
+                            We proudly serve Broward County, including Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, Miramar. With a focus on reliability and precision, LUXHT Fix ensures your property projects—from minor repairs to complex improvements—are handled with care and attention to detail.
                         </p>
                     </div>
                 </div>

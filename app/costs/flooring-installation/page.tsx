@@ -20,7 +20,7 @@ export default function FlooringCostPage() {
     const { openModal } = useModal();
 
     const faqData = [
-        { question: "How much does it cost to install flooring per square foot?", answer: "In South Florida, flooring installation costs $3-$8/sq ft for laminate, $4-$10/sq ft for vinyl plank, $8-$15/sq ft for hardwood, and $10-$20/sq ft for tile. These prices include materials and labor." },
+        { question: "How much does it cost to install flooring per square foot?", answer: "In Broward County, flooring installation costs $3-$8/sq ft for laminate, $4-$10/sq ft for vinyl plank, $8-$15/sq ft for hardwood, and $10-$20/sq ft for tile. These prices include materials and labor." },
         { question: "What is the cheapest flooring to install?", answer: "Laminate flooring is typically the most affordable option at $3-$8 per square foot installed. Vinyl plank is slightly more at $4-$10/sq ft but offers better water resistance." },
         { question: "How long does flooring installation take?", answer: "A single room (200 sq ft) typically takes 1 day. A whole-home installation (1,500+ sq ft) takes 3-5 days depending on the flooring type and complexity." },
         { question: "Should I remove old flooring myself?", answer: "DIY removal can save $1-$3 per square foot on labor. However, professional removal ensures proper subfloor preparation and may be required for warranty coverage." }
@@ -35,8 +35,8 @@ export default function FlooringCostPage() {
                     <Link href="/costs/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition-colors"><ArrowLeft size={18} /> Back to Cost Guides</Link>
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Flooring Installation Cost in South Florida?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Compare prices for hardwood, laminate, vinyl, and tile flooring installation in South Florida.</p>
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Flooring Installation Cost in Broward County?</h1>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Compare prices for hardwood, laminate, vinyl, and tile flooring installation in Broward County.</p>
 
                         {/* Per Sq Ft Pricing */}
                         <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">

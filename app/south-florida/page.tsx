@@ -9,12 +9,12 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Property Maintenance & Improvement in South Florida | Miami, Fort Lauderdale — LUXHT Fix',
-  description: 'Professional property maintenance, repairs, installations, and improvements in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines. Family-Owned. Fully Insured.',
+  title: "Property Maintenance & Improvement in Broward County | Pembroke Pines, Fort Lauderdale — LUXHT Fix",
+  description: "Home repairs and property maintenance in Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, and Miramar. Fully insured.",
   alternates: { canonical: 'https://fix.luxht.com/south-florida/' },
   openGraph: {
-    title: 'LUXHT Fix South Florida | Property Maintenance & Improvement',
-    description: 'Professional property maintenance and improvement in South Florida. Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & 10+ cities.',
+    title: "LUXHT Fix Broward County | Property Maintenance & Improvement",
+    description: "Property maintenance and repairs in our seven Broward service cities. Call (954) 300-3043 for an estimate.",
     url: 'https://fix.luxht.com/south-florida/',
     type: 'website',
     siteName: 'LUXHT Fix',
@@ -22,45 +22,40 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { title: 'Drywall Repair', icon: Hammer, href: '/drywall-miami/', desc: 'Holes, cracks, water damage — invisible repairs.' },
-  { title: 'Property Maintenance', icon: Shield, href: '/property-maintenance-miami/', desc: 'Scheduled preventative & seasonal maintenance for your home.' },
-  { title: 'Commercial Maintenance', icon: Briefcase, href: '/commercial-property-maintenance-miami/', desc: 'Facility repairs and upkeep for businesses & offices.' },
-  { title: 'Rental Turnover Repairs', icon: Key, href: '/rental-turnover-repairs-miami/', desc: 'Tenant prep, paint touch-ups, wall repairs & hardware.' },
-  { title: 'TV Mounting', icon: Tv, href: '/tv-mounting-miami/', desc: 'Wall mounting with concealed cables. All wall types.' },
-  { title: 'Flooring Installation', icon: Grid, href: '/flooring-installation-miami/', desc: 'Hardwood, LVP, tile — humidity-resistant options.' },
-  { title: 'Bath Remodel', icon: Bath, href: '/bath-remodel-miami/', desc: 'Complete bathroom renovations from design to finish.' },
-  { title: 'Kitchen Refacing', icon: Utensils, href: '/kitchen-refacing-miami/', desc: 'Modern cabinet upgrades without full renovation.' },
-  { title: 'Door, Lock & Trim', icon: DoorOpen, href: '/door-lock-trim-miami/', desc: 'Fix sticking doors, upgrade locks, install trim.' },
-  { title: 'Smart Home', icon: Monitor, href: '/smart-home-installation-miami/', desc: 'Ring doorbells, smart locks, cameras & more.' },
-  { title: 'Faucet & Fixtures', icon: Wrench, href: '/faucet-fixtures-miami/', desc: 'Faucets, toilets, disposals — leak-free installs.' },
-  { title: 'Septic & Sewer Repair', icon: Droplets, href: '/septic-sewer-repair-miami/', desc: 'Underground line repair, pipe replacement & septic installation.' },
-  { title: 'Fence & Gate Repair', icon: Hammer, href: '/fence-gate-repair-miami/', desc: 'Sagging gates, broken posts, and damaged panel repairs.' },
-  { title: 'Gutter Guard & Cleaning', icon: Droplets, href: '/gutter-maintenance-miami/', desc: 'Clear gutters and professional leaf guard installations.' },
-  { title: 'Pressure Washing', icon: Wind, href: '/pressure-washing-miami/', desc: 'Exterior grime, mold, and algae removal for patios & walls.' },
-  { title: 'Accent Walls & Trim', icon: Layers, href: '/accent-walls-miami/', desc: 'Custom woodwork, shiplap, wainscoting & trim updates.' },
-  { title: 'Deck Building', icon: Home, href: '/deck-building-miami/', desc: 'Custom decks for South Florida outdoor living.' },
-  { title: 'Furniture Assembly', icon: Grid, href: '/furniture-assembly-miami/', desc: 'IKEA, Wayfair, Amazon — fast, professional assembly.' },
+  { title: 'Drywall Repair', icon: Hammer, href: '/drywall-broward/', desc: 'Holes, cracks, water damage — invisible repairs.' },
+  { title: 'Property Maintenance', icon: Shield, href: '/property-maintenance-broward/', desc: 'Scheduled preventative & seasonal maintenance for your home.' },
+  { title: 'Commercial Maintenance', icon: Briefcase, href: '/commercial-property-maintenance-broward/', desc: 'Facility repairs and upkeep for businesses & offices.' },
+  { title: 'Rental Turnover Repairs', icon: Key, href: '/rental-turnover-repairs-broward/', desc: 'Tenant prep, paint touch-ups, wall repairs & hardware.' },
+  { title: 'TV Mounting', icon: Tv, href: '/tv-mounting-broward/', desc: 'Wall mounting with concealed cables. All wall types.' },
+  { title: 'Flooring Installation', icon: Grid, href: '/flooring-installation-broward/', desc: 'Hardwood, LVP, tile — humidity-resistant options.' },
+  { title: 'Bath Remodel', icon: Bath, href: '/bath-remodel-broward/', desc: 'Complete bathroom renovations from design to finish.' },
+  { title: 'Kitchen Refacing', icon: Utensils, href: '/kitchen-refacing-broward/', desc: 'Modern cabinet upgrades without full renovation.' },
+  { title: 'Door, Lock & Trim', icon: DoorOpen, href: '/door-lock-trim-broward/', desc: 'Fix sticking doors, upgrade locks, install trim.' },
+  { title: 'Smart Home', icon: Monitor, href: '/smart-home-installation-broward/', desc: 'Ring doorbells, smart locks, cameras & more.' },
+  { title: 'Faucet & Fixtures', icon: Wrench, href: '/faucet-fixtures-broward/', desc: 'Faucets, toilets, disposals — leak-free installs.' },
+  { title: 'Septic & Sewer Repair', icon: Droplets, href: '/septic-sewer-repair-broward/', desc: 'Underground line repair, pipe replacement & septic installation.' },
+  { title: 'Fence & Gate Repair', icon: Hammer, href: '/fence-gate-repair-broward/', desc: 'Sagging gates, broken posts, and damaged panel repairs.' },
+  { title: 'Gutter Guard & Cleaning', icon: Droplets, href: '/gutter-maintenance-broward/', desc: 'Clear gutters and professional leaf guard installations.' },
+  { title: 'Pressure Washing', icon: Wind, href: '/pressure-washing-broward/', desc: 'Exterior grime, mold, and algae removal for patios & walls.' },
+  { title: 'Accent Walls & Trim', icon: Layers, href: '/accent-walls-broward/', desc: 'Custom woodwork, shiplap, wainscoting & trim updates.' },
+  { title: 'Deck Building', icon: Home, href: '/deck-building-broward/', desc: "Custom decks for Broward County outdoor living." },
+  { title: 'Furniture Assembly', icon: Grid, href: '/furniture-assembly-broward/', desc: 'IKEA, Wayfair, Amazon — fast, professional assembly.' },
   // South Florida Specific
-  { title: 'Hurricane Damage Repair', icon: Wind, href: '/hurricane-damage-repair-miami/', desc: 'Fast storm damage repair for walls, ceilings & doors.' },
-  { title: 'Stucco Repair', icon: Hammer, href: '/stucco-repair-miami/', desc: 'Crack repair, patching, and color matching.' },
-  { title: 'Screen Enclosure Repair', icon: Shield, href: '/screen-enclosure-repair-miami/', desc: 'Pool cage and lanai screen repair.' },
-  { title: 'Patio & Lanai Repair', icon: Home, href: '/patio-lanai-repair-miami/', desc: 'Outdoor living space repair and refresh.' },
-  { title: 'Impact Window Prep', icon: Zap, href: '/impact-window-prep-miami/', desc: 'Framing and finishing for impact window installs.' },
+  { title: 'Hurricane Damage Repair', icon: Wind, href: '/hurricane-damage-repair-broward/', desc: 'Fast storm damage repair for walls, ceilings & doors.' },
+  { title: 'Stucco Repair', icon: Hammer, href: '/stucco-repair-broward/', desc: 'Crack repair, patching, and color matching.' },
+  { title: 'Screen Enclosure Repair', icon: Shield, href: '/screen-enclosure-repair-broward/', desc: 'Pool cage and lanai screen repair.' },
+  { title: 'Patio & Lanai Repair', icon: Home, href: '/patio-lanai-repair-broward/', desc: 'Outdoor living space repair and refresh.' },
+  { title: 'Impact Window Prep', icon: Zap, href: '/impact-window-prep-broward/', desc: 'Framing and finishing for impact window installs.' },
 ];
 
-const neighborhoods = [
-  'Miami', 'Pembroke Pines', 'Cooper City', 'Aventura',
-  'Hallandale Beach', 'Miramar', 'Davie', 'Hollywood',
-  'Sunny Isles Beach', 'Fort Lauderdale', 'North Miami',
-  'Coral Gables', 'Doral', 'Miami Beach'
-];
+const neighborhoods = ["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"];
 
 export default function SouthFloridaPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-    "@id": "https://fix.luxht.com/#localbusiness-miami",
-    "name": "LUXHT Fix - South Florida Home Repair",
+    "@id": "https://fix.luxht.com/#localbusiness-broward",
+    "name": "LUXHT Fix - Broward County Home Repair",
     "image": "https://fix.luxht.com/images/logo-wide-hammers.png",
     "url": "https://fix.luxht.com/south-florida/",
     "telephone": "+1-954-300-3043",
@@ -96,27 +91,27 @@ export default function SouthFloridaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       <Navbar />
-      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'South Florida', href: '/south-florida/' }]} />
+      <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: "Broward County", href: '/south-florida/' }]} />
 
       {/* HERO */}
       <header className="relative bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white pt-32 pb-24 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-grid.svg')] opacity-5" />
         <div className="relative z-10 container mx-auto max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-[#64CEBB]/20 text-[#64CEBB] px-4 py-2 rounded-full text-sm font-bold mb-6 border border-[#64CEBB]/30">
-            <MapPin size={16} /> Now Serving South Florida
+            <MapPin size={16} /> Now Serving Broward County
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Property Maintenance & Improvement in South Florida
+            Property Maintenance & Improvement in Broward County
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-2 font-medium">
-            Professional home repair for Miami-Dade & Broward counties.
+            Professional home repair for Broward County counties.
           </p>
           <p className="text-lg text-blue-200 mb-8">
-            Construction-grade property care, built specifically for South Florida.
+            Construction-grade property care, built specifically for Broward County.
           </p>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base font-semibold text-[#64CEBB] mb-8 bg-white/10 backdrop-blur-md inline-flex py-2 px-6 rounded-full border border-white/20">
-            <CheckCircle size={16} /> Family-Owned • Fully Insured • Serving 14 South Florida Cities
+            <CheckCircle size={16} /> Family-Owned • Fully Insured • Serving 14 Broward County Cities
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -136,9 +131,9 @@ export default function SouthFloridaPage() {
       {/* ALL SERVICES GRID */}
       <section className="py-20 px-4 container mx-auto">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-4">Our South Florida Services</h2>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-4">Our Broward County Services</h2>
           <p className="text-center text-slate-500 mb-12 max-w-2xl mx-auto">
-            From drywall repair and TV mounting to bathroom remodels and hurricane damage restoration — we handle it all across Miami-Dade and Broward counties.
+            From drywall repair and TV mounting to bathroom remodels and hurricane damage restoration — we handle it all across our Broward service area.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -165,13 +160,13 @@ export default function SouthFloridaPage() {
       {/* WHY LUXHT FIX IN SOUTH FLORIDA */}
       <section className="py-20 px-4 bg-[#584D94]/5">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Why South Florida Trusts LUXHT Fix</h2>
+          <h2 className="text-3xl font-bold text-[#584D94] text-center mb-12">Why Broward County Trusts LUXHT Fix</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              'Local expertise across Miami-Dade, Broward, and Palm Beach',
+              'Local expertise across our seven Broward service cities',
               'Fully insured and background-checked professionals',
-              'Same-week service across Miami-Dade & Broward counties',
-              'Specialized in South Florida challenges: humidity, storms, concrete walls',
+              "Same-week service across Broward County counties",
+              "Specialized in Broward County challenges: humidity, storms, concrete walls",
               'Upfront pricing with photo-based estimates',
               'Condo and high-rise friendly — HOA compliant work',
               'Hurricane and storm damage repair experience',
@@ -188,8 +183,8 @@ export default function SouthFloridaPage() {
 
       {/* SERVICE AREAS */}
       <section className="py-20 px-4 container mx-auto max-w-4xl text-center">
-        <h2 className="text-3xl font-bold text-[#584D94] mb-4">South Florida Service Areas</h2>
-        <p className="text-slate-500 mb-8">We proudly serve homeowners and condo owners across these South Florida communities:</p>
+        <h2 className="text-3xl font-bold text-[#584D94] mb-4">Broward County Service Areas</h2>
+        <p className="text-slate-500 mb-8">We proudly serve homeowners and condo owners across these Broward County communities:</p>
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {neighborhoods.map((area, i) => (
             <span key={i} className="bg-white text-slate-700 px-5 py-3 rounded-full text-sm font-semibold border border-slate-200 shadow-sm inline-flex items-center gap-2 hover:border-[#64CEBB] transition-colors">
@@ -203,9 +198,9 @@ export default function SouthFloridaPage() {
       {/* FINAL CTA */}
       <section className="py-24 bg-gradient-to-br from-[#584D94] via-[#7B6FCC] to-[#453A75] text-white text-center px-4">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started in South Florida?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started in Broward County?</h2>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Professional home repair with clean results.<br />Now serving Miami-Dade & Broward counties.
+            Professional home repair with clean results.<br />Now serving Broward County counties.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="tel:9543003043" className="btn-gradient-primary btn-gradient-shimmer">

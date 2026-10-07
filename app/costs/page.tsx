@@ -98,7 +98,7 @@ const costCategories = [
         icon: Wind,
         popular: false,
         southFL: true,
-        href: "/hurricane-damage-repair-miami/"
+        href: "/hurricane-damage-repair-broward/"
     },
     {
         title: "Stucco Repair",
@@ -108,7 +108,7 @@ const costCategories = [
         icon: Hammer,
         popular: false,
         southFL: true,
-        href: "/stucco-repair-miami/"
+        href: "/stucco-repair-broward/"
     },
     {
         title: "Screen Enclosure Repair",
@@ -118,7 +118,7 @@ const costCategories = [
         icon: Shield,
         popular: false,
         southFL: true,
-        href: "/screen-enclosure-repair-miami/"
+        href: "/screen-enclosure-repair-broward/"
     }
 ];
 
@@ -140,7 +140,7 @@ export default function CostsPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-6">
-                            <DollarSign size={16} /> 2026 South Florida Pricing Guide
+                            <DollarSign size={16} /> 2026 Broward County Pricing Guide
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -149,8 +149,8 @@ export default function CostsPage() {
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Get transparent pricing for home repairs and renovations across South Florida.
-                            We use South Florida project factors to help you budget accurately.
+                            Get transparent pricing for home repairs and renovations across Broward County.
+                            We use Broward County project factors to help you budget accurately.
                         </p>
 
                         {/* Stats */}
@@ -256,7 +256,7 @@ export default function CostsPage() {
                             Why We Show Our Prices (When Others Won't)
                         </h2>
                         <p className="text-white/80 text-lg mb-6 max-w-2xl mx-auto">
-                            We researched every major property maintenance company in South Florida. They all hide their pricing behind
+                            We researched every major property maintenance company in Broward County. They all hide their pricing behind
                             "request a quote" buttons and phone-first sales tactics. We believe you deserve better.
                         </p>
                         <Link
@@ -277,7 +277,7 @@ export default function CostsPage() {
                             Why Trust Our Cost Estimates?
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Our pricing data comes from real projects completed across South Florida.
+                            Our pricing data comes from real projects completed across Broward County.
                         </p>
                     </div>
 
@@ -288,7 +288,7 @@ export default function CostsPage() {
                             </div>
                         <h3 className="font-bold text-lg mb-2">Real Florida Data</h3>
                             <p className="text-slate-500 text-sm">
-                                Prices based on actual projects completed across South Florida.
+                                Prices based on actual projects completed across Broward County.
                             </p>
                         </div>
 

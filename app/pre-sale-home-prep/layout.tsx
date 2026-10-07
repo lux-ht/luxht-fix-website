@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pre-Sale Home Prep in South Florida | LUXHT Fix',
+  title: "Pre-Sale Home Prep in Broward County | LUXHT Fix",
   description:
-    'Selling your home? LUXHT Fix helps you repair, refresh, and prepare your property before listing photos, showings, and inspections. Pre-Sale Home Prep Walkthrough starting at $295. South Florida.',
+    "Selling your home? LUXHT Fix helps you repair, refresh, and prepare your property before listing photos, showings, and inspections. Pre-Sale Home Prep Walkthrough starting at $295. Broward County.",
   alternates: {
     canonical: 'https://fix.luxht.com/pre-sale-home-prep/',
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pre-Sale Home Prep — Get Your Home Listing-Ready | LUXHT Fix',
     description:
-      'Repairs, refreshes, and smart improvements before your home hits the market. Starting at $295. South Florida.',
+      "Repairs, refreshes, and smart improvements before your home hits the market. Starting at $295. Broward County.",
     images: ['/images/logo-wide-hammers.png'],
   },
   robots: {

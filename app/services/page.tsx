@@ -7,33 +7,34 @@ import {
     Shield, Briefcase, Key, Droplets, Wind, Layers
 } from 'lucide-react';
 import type { Metadata } from 'next';
+import { SERVICE_CITIES } from '@/lib/service-area';
 
 export const metadata: Metadata = {
-    title: 'Property Maintenance & Improvement Services | LUXHT Fix — South Florida',
-    description: 'Professional property maintenance, repairs, installations, and improvement services across South Florida. Drywall, flooring, decks, kitchens, baths, TV mounting & more. Family-Owned. Fully Insured.',
+    title: "Property Maintenance & Improvement Services | LUXHT Fix — Broward County",
+    description: "Professional property maintenance, repairs, installations, and improvement services across Broward County. Drywall, flooring, decks, kitchens, baths, TV mounting & more. Family-Owned. Fully Insured.",
     alternates: { canonical: 'https://fix.luxht.com/services/' },
 };
 
 export default function ServicesPage() {
     const allServices = [
-        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-miami/" },
-        { title: "Property Maintenance", desc: "Scheduled preventative & seasonal property maintenance.", price: "$195", icon: Shield, link: "/property-maintenance-miami/" },
-        { title: "Commercial Maintenance", desc: "General facility maintenance and repairs for commercial spaces.", price: "$95/hr", icon: Briefcase, link: "/commercial-property-maintenance-miami/" },
-        { title: "Rental Turnover Repairs", desc: "Tenant prep, rapid wall repair, paint touch-ups, hardware.", price: "$250", icon: Key, link: "/rental-turnover-repairs-miami/" },
-        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-miami/" },
-        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-miami/" },
-        { title: "Septic & Sewer Repair", desc: "Underground line repair, pipe replacement, and septic installation.", price: "Custom quote", icon: Droplets, link: "/septic-sewer-repair-miami/" },
-        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-miami/" },
-        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-miami/" },
-        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-miami/" },
-        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-miami/" },
-        { title: "Fence & Gate Repair", desc: "Fixing sagging gates, broken posts, and damaged panels.", price: "$175", icon: Hammer, link: "/fence-gate-repair-miami/" },
-        { title: "Gutter Guard & Cleaning", desc: "Keep gutters clear and install professional leaf guards.", price: "$150", icon: Droplets, link: "/gutter-maintenance-miami/" },
-        { title: "Pressure Washing", desc: "Remove mold, algae, and grime from siding, driveways, patios.", price: "$199", icon: Wind, link: "/pressure-washing-miami/" },
-        { title: "Accent Walls & Custom Trim", desc: "Custom woodwork, shiplap, wainscoting, and trim updates.", price: "$450", icon: Layers, link: "/accent-walls-miami/" },
-        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-miami/" },
-        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-miami/" },
-        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-miami/" },
+        { title: "Drywall Repair", desc: "Seamless patches and water damage repair.", price: "$150", icon: Hammer, link: "/drywall-broward/" },
+        { title: "Property Maintenance", desc: "Scheduled preventative & seasonal property maintenance.", price: "$195", icon: Shield, link: "/property-maintenance-broward/" },
+        { title: "Commercial Maintenance", desc: "General facility maintenance and repairs for commercial spaces.", price: "$95/hr", icon: Briefcase, link: "/commercial-property-maintenance-broward/" },
+        { title: "Rental Turnover Repairs", desc: "Tenant prep, rapid wall repair, paint touch-ups, hardware.", price: "$250", icon: Key, link: "/rental-turnover-repairs-broward/" },
+        { title: "Door, Lock & Trim", desc: "Fix squeaky doors, install locks, replace trim.", price: "$85", icon: DoorOpen, link: "/door-lock-trim-broward/" },
+        { title: "Faucet & Fixtures", desc: "Leak-free installations for kitchens and baths.", price: "$95", icon: Wrench, link: "/faucet-fixtures-broward/" },
+        { title: "Septic & Sewer Repair", desc: "Underground line repair, pipe replacement, and septic installation.", price: "Custom quote", icon: Droplets, link: "/septic-sewer-repair-broward/" },
+        { title: "TV Mounting", desc: "Secure setups with hidden cables.", price: "$120", icon: Tv, link: "/tv-mounting-broward/" },
+        { title: "Smart Home", desc: "Ring, Nest, cameras, and smart locks.", price: "$95", icon: Zap, link: "/smart-home-installation-broward/" },
+        { title: "Furniture Assembly", desc: "Fast assembly from any retailer.", price: "$75", icon: Monitor, link: "/furniture-assembly-broward/" },
+        { title: "Flooring Installation", desc: "Hardwood, laminate, vinyl, and tile.", price: "$3/sf", icon: Grid, link: "/flooring-installation-broward/" },
+        { title: "Fence & Gate Repair", desc: "Fixing sagging gates, broken posts, and damaged panels.", price: "$175", icon: Hammer, link: "/fence-gate-repair-broward/" },
+        { title: "Gutter Guard & Cleaning", desc: "Keep gutters clear and install professional leaf guards.", price: "$150", icon: Droplets, link: "/gutter-maintenance-broward/" },
+        { title: "Pressure Washing", desc: "Remove mold, algae, and grime from siding, driveways, patios.", price: "$199", icon: Wind, link: "/pressure-washing-broward/" },
+        { title: "Accent Walls & Custom Trim", desc: "Custom woodwork, shiplap, wainscoting, and trim updates.", price: "$450", icon: Layers, link: "/accent-walls-broward/" },
+        { title: "Deck Building", desc: "Custom outdoor deck design and repair.", price: "$8,000", icon: Ruler, link: "/deck-building-broward/" },
+        { title: "Kitchen Refacing", desc: "Cabinet door upgrades and modernizing.", price: "$4,500", icon: Paintbrush, link: "/kitchen-refacing-broward/" },
+        { title: "Bath Remodel", desc: "Complete bathroom renovations and tile.", price: "$8,500", icon: Bath, link: "/bath-remodel-broward/" },
     ];
 
     const serviceSchema = {
@@ -46,16 +47,11 @@ export default function ServicesPage() {
         "priceRange": "$$-$$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Miami",
+            "addressLocality": "Pembroke Pines",
             "addressRegion": "FL",
             "addressCountry": "US"
         },
-        "areaServed": [
-            { "@type": "State", "name": "Florida" },
-            { "@type": "City", "name": "Miami" },
-            { "@type": "City", "name": "Fort Lauderdale" },
-            { "@type": "City", "name": "Coral Gables" }
-        ],
+        "areaServed": SERVICE_CITIES.map(name => ({ '@type': 'City', name })),
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Home Services",
@@ -83,13 +79,13 @@ export default function ServicesPage() {
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">Property Maintenance & Improvement Services</h1>
                     <p className="text-xl md:text-2xl text-blue-100 mb-4 max-w-2xl mx-auto font-light">
-                        Professional repairs, maintenance, installations, and property improvements for residential and commercial properties across Miami-Dade, Broward, and Palm Beach counties.
+                        Professional repairs, maintenance, installations, and property improvements for residential and commercial properties across the seven cities in our Broward service area.
                     </p>
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md py-2 px-6 rounded-full border border-white/20 text-white/90 font-bold text-sm mb-4">
                         Family-Owned. Not a Lead App.
                     </div>
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md py-2 px-6 rounded-full border border-white/20 text-[#64CEBB] font-bold mb-8">
-                        <CheckCircle size={18} /> Fully Insured • South Florida Property Specialists
+                        <CheckCircle size={18} /> Fully Insured • Broward County Property Specialists
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="tel:9543003043" className="bg-[#64CEBB] text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
@@ -126,7 +122,7 @@ export default function ServicesPage() {
                         </p>
                         <div className="flex items-center gap-4">
                             <span className="text-2xl font-bold text-slate-800">Starting at $150</span>
-                            <Link href="/drywall-miami/" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
+                            <Link href="/drywall-broward/" className="bg-[#584D94] text-white font-bold py-3 px-6 rounded-full hover:bg-[#483d7a] transition-colors inline-flex items-center gap-2">
                                 Learn More <ArrowRight size={18} />
                             </Link>
                         </div>
@@ -139,7 +135,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[#584D94] mb-4">All Property Services</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides professional property maintenance, repairs, installations, and improvement services throughout South Florida. Every project is completed with attention to detail.</p>
+                        <p className="text-slate-600 max-w-2xl mx-auto">LUXHT Fix provides professional property maintenance, repairs, installations, and improvement services throughout Broward County. Every project is completed with attention to detail.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -173,7 +169,7 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                         {[
                             { text: "Fully Insured", icon: CheckCircle },
-                            { text: "South Florida Focus", icon: Star },
+                            { text: "Broward County Focus", icon: Star },
                             { text: "Same-Week Service", icon: CalendarImage },
                             { text: "Quality Materials", icon: Hammer },
                             { text: "Clean Execution", icon: Paintbrush },
@@ -193,18 +189,18 @@ export default function ServicesPage() {
             {/* Service Areas */}
             <section className="py-20 bg-white px-4 border-t border-slate-100">
                 <div className="container mx-auto max-w-4xl text-center">
-                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving South Florida</h2>
+                    <h2 className="text-3xl font-bold text-[#584D94] mb-8">Serving Broward County</h2>
                     <div className="flex flex-wrap justify-center gap-3 mb-4">
-                        <span className="px-4 py-2 bg-[#64CEBB]/10 rounded-full text-[#64CEBB] text-sm font-bold border border-[#64CEBB]/20">🌴 South Florida</span>
+                        <span className="px-4 py-2 bg-[#64CEBB]/10 rounded-full text-[#64CEBB] text-sm font-bold border border-[#64CEBB]/20">🌴 Broward County</span>
                     </div>
                     <div className="flex flex-wrap justify-center gap-3 mb-8">
-                        {["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Cooper City", "Aventura", "Miramar", "Davie", "Coral Gables", "Doral", "Sunny Isles Beach", "North Miami"].map((area, i) => (
+                        {["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"].map((area, i) => (
                             <span key={`sf-${i}`} className="px-4 py-2 bg-slate-50 rounded-full text-slate-600 text-sm font-medium border border-slate-200 flex items-center gap-2">
                                 <MapPin size={14} className="text-[#64CEBB]" /> {area}
                             </span>
                         ))}
                     </div>
-                    <p className="text-slate-500">Not listed? Call us - we likely serve your area!</p>
+                    <p className="text-slate-500">We currently serve only the seven cities listed above.</p>
                 </div>
             </section>
 

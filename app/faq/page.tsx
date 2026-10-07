@@ -2,10 +2,11 @@ import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { Phone, HelpCircle, DollarSign, Calendar, Mail } from 'lucide-react';
 import type { Metadata } from 'next';
+import { SERVICE_AREA_TEXT } from '@/lib/service-area';
 
 export const metadata: Metadata = {
-    title: 'Frequently Asked Questions | LUXHT Fix — South Florida',
-    description: 'Common questions about pricing, scheduling, and our property maintenance and improvement services across South Florida. Learn how LUXHT Fix provides transparent, professional service.',
+    title: "Frequently Asked Questions | LUXHT Fix — Broward County",
+    description: "Common questions about pricing, scheduling, and our property maintenance and improvement services across Broward County. Learn how LUXHT Fix provides transparent, professional service.",
     alternates: { canonical: 'https://fix.luxht.com/faq/' },
 };
 
@@ -16,8 +17,8 @@ export default function FAQPage() {
             icon: HelpCircle,
             items: [
                 { q: "Are you fully insured?", a: "Yes, LUXHT Fix is fully insured in the state of Florida. We carry comprehensive liability insurance for your protection and peace of mind." },
-                { q: "What areas do you serve?", a: "We serve homeowners and businesses across South Florida, including Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, Aventura, and surrounding communities in Miami-Dade, Broward, and Palm Beach counties." },
-                { q: "Do you serve the Miami area?", a: "Yes! In 2025 we expanded to South Florida. We now serve Miami, Fort Lauderdale, Pembroke Pines, Hollywood, Coral Gables, and 14+ cities across Miami-Dade and Broward counties." },
+                { q: "What areas do you serve?", a: `We currently serve these seven Broward cities: ${SERVICE_AREA_TEXT}.` },
+                { q: "Do you currently serve Orlando or Miami?", a: "No. Our current service area is Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, and Miramar." },
                 { q: "Do you offer free estimates?", a: "Yes! For most standard jobs, we can provide a free estimate over the phone or via message if you send us photos. For larger renovations, we offer in-home consultations." },
                 { q: "Are you a handyman service?", a: "Many clients find us while searching for a handyman, but LUXHT Fix is built as a professional property maintenance and improvement company. We are a local, family-owned company \u2014 not a lead generation app or outsourced workers. You call us, you get us." }
             ]
@@ -29,8 +30,8 @@ export default function FAQPage() {
                 { q: "How quickly can I get an appointment?", a: "We pride ourselves on 'Same-Week Service' for most repairs. Often, we can fit small jobs in within 24-48 hours." },
                 { q: "Do I need to supply the materials?", a: "It depends. For repairs like drywall, we bring everything. For installations like light fixtures or faucets, you typically buy the item you want, and we install it. We can confirm this during booking." },
                 { q: "Do you clean up after the job?", a: "Absolutely. We treat your home with respect, which means leaving the work area cleaner than we found it." },
-                { q: "Do you handle hurricane damage repair?", a: "Yes, we provide hurricane damage repair services in South Florida including drywall, stucco, screen enclosure, and impact window prep. We respond quickly after storms to help get your home back in shape." },
-                { q: "Do you do stucco repair?", a: "Yes, stucco repair is one of our South Florida specialties. We handle crack repair, color matching, and exterior patching for homes across Miami-Dade and Broward counties." }
+                { q: "Do you handle hurricane damage repair?", a: "Yes, we provide hurricane damage repair services in Broward County including drywall, stucco, screen enclosure, and impact window prep. We respond quickly after storms to help get your home back in shape." },
+                { q: "Do you do stucco repair?", a: "Yes, stucco repair is one of our Broward County specialties. We handle crack repair, color matching, and exterior patching for homes across our Broward service area." }
             ]
         },
         {
@@ -40,7 +41,7 @@ export default function FAQPage() {
                 { q: "How do you charge?", a: "We offer flat-rate pricing for many common tasks (like TV mounting or faucet installation) so you know exactly what to pay. Larger projects are estimated by the job, not just by the hour." },
                 { q: "What forms of payment do you accept?", a: "We accept all major credit cards, debit cards, cash, and digital payments like Venmo or Zelle for your convenience." },
                 { q: "Is there a warranty on your work?", a: "Yes, we stand behind our craftsmanship. We offer a 1-year workmanship warranty on all installations and repairs." },
-                { q: "Does pricing vary by city?", a: "Material costs, access conditions, and project scope can vary throughout South Florida. We provide a project-specific estimate for accuracy." }
+                { q: "Does pricing vary by city?", a: "Material costs, access conditions, and project scope can vary throughout Broward County. We provide a project-specific estimate for accuracy." }
             ]
         }
     ];

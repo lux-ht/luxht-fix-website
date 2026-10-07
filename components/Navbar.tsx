@@ -31,7 +31,7 @@ export default function Navbar() {
     return (
         <nav
             className={clsx(
-                "fixed w-full z-50 transition-all duration-300",
+                "fixed top-0 w-full z-50 transition-all duration-300",
                 isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
             )}
             aria-label="Main navigation"
@@ -67,7 +67,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden lg:flex items-center gap-6">
                     <Link
                         href="/"
                         className={clsx(
@@ -85,10 +85,10 @@ export default function Navbar() {
                     <div className="relative group">
                         <button className={clsx(
                             "flex items-center gap-1 font-medium transition-colors",
-                            pathname.includes("-miami") || pathname === "/services" || pathname === "/south-florida" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-[#64CEBB]")
+                            pathname.includes("-broward") || pathname === "/services" || pathname === "/south-florida" ? "text-[#64CEBB]" : (useDarkText ? "text-[#584D94] hover:text-[#64CEBB]" : "text-white hover:text-[#64CEBB]")
                         )}>
                             Services <ChevronDown size={14} />
-                            {(pathname.includes("-miami") || pathname === "/services" || pathname === "/south-florida") && (
+                            {(pathname.includes("-broward") || pathname === "/services" || pathname === "/south-florida") && (
                                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#64CEBB] rounded-full"></span>
                             )}
                         </button>
@@ -99,21 +99,21 @@ export default function Navbar() {
 
                             <div>
                                 <h3 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-4 border-b border-[#584D94]/20 pb-2 flex items-center gap-1.5">
-                                    <Palmtree size={16} className="text-[#64CEBB]" /> South Florida
+                                    <Palmtree size={16} className="text-[#64CEBB]" /> Broward County
                                 </h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <Link href="/drywall-miami/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
+                                        <Link href="/drywall-broward/" className="block font-semibold text-[#584D94] hover:text-[#64CEBB] transition-colors">
                                             Drywall Repair <span className="text-xs font-normal text-slate-400 ml-1">★ Popular</span>
                                         </Link>
                                     </li>
-                                    <li><Link href="/property-maintenance-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block font-medium">Property Maintenance</Link></li>
-                                    <li><Link href="/commercial-property-maintenance-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block font-medium">Commercial Maintenance</Link></li>
-                                    <li><Link href="/tv-mounting-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
-                                    <li><Link href="/flooring-installation-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring</Link></li>
-                                    <li><Link href="/bath-remodel-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
-                                    <li><Link href="/hurricane-damage-repair-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Hurricane Repair</Link></li>
-                                    <li><Link href="/stucco-repair-miami/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Stucco Repair</Link></li>
+                                    <li><Link href="/property-maintenance-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block font-medium">Property Maintenance</Link></li>
+                                    <li><Link href="/commercial-property-maintenance-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block font-medium">Commercial Maintenance</Link></li>
+                                    <li><Link href="/tv-mounting-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">TV Mounting</Link></li>
+                                    <li><Link href="/flooring-installation-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Flooring</Link></li>
+                                    <li><Link href="/bath-remodel-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Bath Remodel</Link></li>
+                                    <li><Link href="/hurricane-damage-repair-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Hurricane Repair</Link></li>
+                                    <li><Link href="/stucco-repair-broward/" className="text-slate-600 hover:text-[#64CEBB] transition-colors block">Stucco Repair</Link></li>
                                 </ul>
                                 <div className="mt-4 pt-3 border-t border-slate-100">
                                     <Link href="/south-florida/" className="text-sm font-bold text-[#64CEBB] hover:text-[#4daea0] flex items-center gap-1">
@@ -176,7 +176,7 @@ export default function Navbar() {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="hidden md:flex items-center gap-4">
+                <div className="hidden lg:flex items-center gap-4">
                     <a href="tel:9543003043" className={clsx("font-bold flex items-center gap-2 transition-colors hidden xl:flex", useDarkText ? "text-[#584D94]" : "text-white")}>
                         <Phone size={18} /> (954) 300-3043
                     </a>
@@ -200,7 +200,7 @@ export default function Navbar() {
 
                 {/* Mobile Toggle */}
                 <button
-                    className={clsx("md:hidden p-2 rounded-lg transition-colors", useDarkText ? "text-[#584D94]" : "text-white")}
+                    className={clsx("lg:hidden p-2 rounded-lg transition-colors", useDarkText ? "text-[#584D94]" : "text-white")}
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label={isOpen ? "Close menu" : "Open menu"}
                     aria-expanded={isOpen}
@@ -214,7 +214,7 @@ export default function Navbar() {
             <div
                 id="mobile-menu"
                 className={clsx(
-                    "md:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl transition-all duration-300 overflow-hidden",
+                    "lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl transition-all duration-300 overflow-hidden",
                     isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
                 )}
                 aria-hidden={!isOpen}
@@ -233,38 +233,38 @@ export default function Navbar() {
                             {/* South Florida */}
                             <div>
                                 <h4 className="text-xs font-bold text-[#584D94] uppercase tracking-wider mb-3 flex items-center gap-1.5">
-                                    <Palmtree size={14} className="text-[#64CEBB]" /> South Florida
+                                    <Palmtree size={14} className="text-[#64CEBB]" /> Broward County
                                 </h4>
                                 <div className="grid grid-cols-3 gap-2">
-                                    <Link href="/drywall-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/drywall-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Layers size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-[#584D94] leading-tight">Drywall Repair</span>
                                     </Link>
-                                    <Link href="/property-maintenance-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/property-maintenance-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Shield size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Property Maint.</span>
                                     </Link>
-                                    <Link href="/commercial-property-maintenance-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/commercial-property-maintenance-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Briefcase size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Commercial</span>
                                     </Link>
-                                    <Link href="/tv-mounting-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/tv-mounting-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Tv size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">TV Mounting</span>
                                     </Link>
-                                    <Link href="/flooring-installation-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/flooring-installation-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <GridIcon size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Flooring</span>
                                     </Link>
-                                    <Link href="/bath-remodel-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/bath-remodel-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Bath size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Bath Remodel</span>
                                     </Link>
-                                    <Link href="/hurricane-damage-repair-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/hurricane-damage-repair-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Wind size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Hurricane</span>
                                     </Link>
-                                    <Link href="/stucco-repair-miami/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
+                                    <Link href="/stucco-repair-broward/" className="flex flex-col items-center justify-center p-3 bg-slate-50 hover:bg-slate-100 active:scale-95 border border-slate-100 rounded-2xl aspect-square transition-all text-center gap-2" onClick={() => setIsOpen(false)}>
                                         <Hammer size={22} className="text-[#584D94]" />
                                         <span className="text-[10px] font-bold text-slate-700 leading-tight">Stucco</span>
                                     </Link>

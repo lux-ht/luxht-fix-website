@@ -6,12 +6,15 @@ import { X, CheckCircle, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AddressAutocomplete from './AddressAutocomplete';
 import { supabase } from '@/lib/supabase';
+import ServiceCityField from './ServiceCityField';
+import { SERVICE_CITIES } from '@/lib/service-area';
 
 export default function QuoteModal() {
     const { isOpen, closeModal, mode } = useModal();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [selectedImage, setSelectedImage] = useState<File | null>(null);
+    const [serviceCity, setServiceCity] = useState('');
 
     // Form State
     const [formData, setFormData] = useState({
@@ -54,6 +57,7 @@ export default function QuoteModal() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!SERVICE_CITIES.some(city => city === serviceCity)) return;
         setIsSubmitting(true);
 
         try {
@@ -80,6 +84,7 @@ export default function QuoteModal() {
 
             // 2. Insert Lead Data
             const detailsText = [
+                `Property city: ${serviceCity}`,
                 formData.comments ? `Details: ${formData.comments}` : '',
                 formData.ruthSupport ? `Ruth Support: ${formData.ruthSupport}` : ''
             ].filter(Boolean).join(' | ');
@@ -111,6 +116,7 @@ export default function QuoteModal() {
                 ruthSupport: 'No need, regular scheduling is fine'
             });
             setSelectedImage(null);
+            setServiceCity('');
 
             // Close after delay
             setTimeout(() => {
@@ -308,6 +314,8 @@ export default function QuoteModal() {
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
+
+                                        <ServiceCityField id="quote-city" value={serviceCity} onChange={setServiceCity} />
 
                                         {/* Name */}
                                         <motion.div

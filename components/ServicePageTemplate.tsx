@@ -82,7 +82,7 @@ export default function ServicePageTemplate({
     }, [openModal]);
 
     const loc: LocationConfig = LOCATIONS[location] || LOCATIONS.miami;
-    const locationLabel = 'South Florida';
+    const locationLabel = "Broward County";
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],

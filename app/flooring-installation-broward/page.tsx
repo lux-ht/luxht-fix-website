@@ -1,0 +1,41 @@
+import ServicePageTemplate from '@/components/ServicePageTemplate';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Flooring Installation Broward County | Pembroke Pines, Fort Lauderdale - LUXHT Fix",
+  description: "Expert flooring installation in Broward County. Hardwood, laminate, vinyl, and tile. Serving Pembroke Pines, Fort Lauderdale, Hollywood & more. Call today!",
+  alternates: { canonical: 'https://fix.luxht.com/flooring-installation-broward/' },
+  openGraph: { title: "Flooring Installation Broward County | LUXHT Fix", description: "Professional flooring in Broward County. Hardwood, laminate, vinyl & tile.", url: 'https://fix.luxht.com/flooring-installation-broward/', type: 'website', siteName: 'LUXHT Fix' },
+};
+
+export default function FlooringMiamiPage() {
+  return (
+    <ServicePageTemplate serviceName="Flooring Installation" slug="flooring-installation-broward" location="miami"
+      neighborhoods={["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"]}
+      parentCategory="Flooring" parentSlug="flooring-installation-broward"
+      heroSubtitle="Hardwood, laminate, vinyl, and tile flooring installed with precision."
+      heroDescription="Transform your Broward County home's foundation with professional results."
+      introParagraph="Broward County's climate demands flooring that can handle humidity, moisture, and heavy foot traffic. LUXHT Fix installs hardwood, luxury vinyl plank, laminate, and tile flooring across our Broward service area — from waterfront condos in Fort Lauderdale to sprawling homes in Cooper City. We recommend moisture-resistant materials ideal for the tropical climate and ensure every installation includes proper subfloor preparation and acclimation."
+      serviceDetails={['Hardwood flooring (solid and engineered)',"Luxury Vinyl Plank (LVP) — ideal for Broward County humidity",'Laminate flooring installation','Ceramic and porcelain tile','Wood-look tile for tropical durability','Floating floor systems']}
+      processSteps={['Measure room dimensions and assess subfloor condition','Remove existing flooring if needed','Prepare and level subfloor for proper installation',"Acclimate materials to Broward County temperature and humidity",'Install flooring with proper spacing and alignment','Install trim, transitions, and finishing touches','Clean workspace and protect new floor']}
+      whyChooseUs={['Flooring specialists with humidity-resistant expertise','All materials: hardwood, LVP, laminate, tile',"Proper subfloor preparation for Broward County conditions",'Warranty-compliant installation methods','Clean execution with minimal disruption','Fully insured and background-checked']}
+      faqs={[
+        {q:"Which flooring is best for Broward County humidity?",a:"Luxury vinyl plank (LVP) and porcelain tile are our top recommendations for Broward County. Engineered hardwood also performs well. We'll recommend the best material for your specific space and lifestyle."},
+        {q:'How much does flooring installation cost in Broward County?',a:'Professional installation starts at $3 per square foot for labor. Total cost depends on material type and square footage. Contact us for a personalized quote.'},
+        {q:'Can you install flooring in a condo?',a:"Yes. We serve condos throughout Broward County with building-compliant installations. We handle HOA requirements and maintain clean, quiet work practices."},
+        {q:'How long does flooring installation take?',a:'Most single-room installations take 1-2 days. Whole-home projects typically require 3-5 days depending on square footage and material type.'}
+      ]}
+      relatedServices={[{title:'Bath Remodel',href:'/bath-remodel-broward/'},{title:'Kitchen Refacing',href:'/kitchen-refacing-broward/'},{title:'Drywall Repair',href:'/drywall-broward/'},{title:'Baseboard Installation',href:'/baseboard-installation-broward/'},{title:'Patio & Lanai Repair',href:'/patio-lanai-repair-broward/'}]}
+      startingPrice="Professional installation starts at $3 per sq ft"
+      statsText="Fully Insured • Humidity-Resistant Expertise"
+      galleryImages={[
+        { src: "/images/services/flooring/ceramic-and-porcelain-before.jpg", title: "Tile Flooring", subtitle: "Before: Old Surface" },
+        { src: "/images/services/flooring/ceramic-and-porcelain-after.jpg", title: "Tile Flooring", subtitle: "After: Premium Porcelain" },
+        { src: "/images/services/flooring/laminate-flooring-before.jpg", title: "Laminate Install", subtitle: "Before: Subfloor Prep" },
+        { src: "/images/services/flooring/laminate-flooring-after.jpg", title: "Laminate Install", subtitle: "After: Seamless Finish" },
+        { src: "/images/services/flooring/hardwood-flooring-in-progress.jpg", title: "Hardwood", subtitle: "In Progress: Installation" },
+        { src: "/images/services/flooring/hardwood-flooring-complete.jpg", title: "Hardwood", subtitle: "After: Finished Look" },
+      ]}
+    />
+  );
+}

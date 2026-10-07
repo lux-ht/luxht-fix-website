@@ -27,7 +27,7 @@ export default function DrywallRepairCostPage() {
     const faqData = [
         {
             question: "How much does it cost to fix a small hole in drywall?",
-            answer: "Small drywall holes (under 4 inches) typically cost $75 to $150 to repair professionally in South Florida. This includes patching, sanding, and preparing for paint. DIY repairs can cost $10-30 in materials, but professional results require skill and proper tools."
+            answer: "Small drywall holes (under 4 inches) typically cost $75 to $150 to repair professionally in Broward County. This includes patching, sanding, and preparing for paint. DIY repairs can cost $10-30 in materials, but professional results require skill and proper tools."
         },
         {
             question: "Is it worth hiring a professional for drywall repair?",
@@ -70,11 +70,11 @@ export default function DrywallRepairCostPage() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-                            How Much Does Drywall Repair Cost in South Florida?
+                            How Much Does Drywall Repair Cost in Broward County?
                         </h1>
 
                         <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
-                            Get accurate pricing for drywall repair services in South Florida.
+                            Get accurate pricing for drywall repair services in Broward County.
                             From small hole patches to full wall restoration.
                         </p>
 
@@ -206,7 +206,7 @@ export default function DrywallRepairCostPage() {
                             </table>
                         </div>
                         <p className="text-slate-500 text-sm mt-4 italic">
-                            * Prices are estimates for the South Florida. Actual costs may vary based on specific project requirements.
+                            * Prices are estimates for the Broward County. Actual costs may vary based on specific project requirements.
                         </p>
                     </section>
 

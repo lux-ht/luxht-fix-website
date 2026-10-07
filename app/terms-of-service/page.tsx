@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Terms of Service | LUXHT Fix',
-    description: 'Read the terms of service for LUXHT Fix. Learn about our service agreements, estimates, scheduling, and warranty policies for home repairs across South Florida.',
+    description: "Read the terms of service for LUXHT Fix. Learn about our service agreements, estimates, scheduling, and warranty policies for home repairs across Broward County.",
     alternates: { canonical: 'https://fix.luxht.com/terms-of-service/' },
 };
 
@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
                                     <h2 className="text-2xl font-bold">Services Description</h2>
                                 </div>
                                 <p className="text-slate-300 leading-relaxed">
-                                    LUXHT Fix provides professional property maintenance, repair, installation, and improvement services across South Florida. Our services include, but are not limited to:
+                                    LUXHT Fix provides professional property maintenance, repair, installation, and improvement services across Broward County. Our services include, but are not limited to:
                                 </p>
                                 <ul className="text-slate-300 space-y-2 list-disc list-inside">
                                     <li>Drywall repair and installation</li>

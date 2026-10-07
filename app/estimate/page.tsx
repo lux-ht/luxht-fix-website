@@ -9,6 +9,8 @@ import {
     PaintRoller, Shield, Building2, Key, Fence, CloudRain, Sparkles, Layers, Bath
 } from 'lucide-react';
 import StarBorder from '@/components/StarBorder';
+import ServiceCityField from '@/components/ServiceCityField';
+import { SERVICE_CITIES } from '@/lib/service-area';
 
 /* ─────────────────────────────────────────
    MODERN SVG ICONS (LUCIDE REACT)
@@ -327,6 +329,7 @@ export default function EstimatePage() {
     }, []);
 
     const [msgName, setMsgName] = useState('');
+    const [serviceCity, setServiceCity] = useState('');
     const [msgPhone, setMsgPhone] = useState('');
     const [msgNote, setMsgNote] = useState('');
     const [ruthSupport, setRuthSupport] = useState('No need, regular scheduling is fine');
@@ -372,6 +375,7 @@ export default function EstimatePage() {
 
     const handleMessageSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!SERVICE_CITIES.some(city => city === serviceCity)) return;
         setIsSubmitting(true);
         try {
             let imageUrl: string | null = null;
@@ -389,14 +393,15 @@ export default function EstimatePage() {
                 }
             }
             const details = [
+                `Property city: ${serviceCity}`,
                 activeService ? `Service: ${activeService.label}` : '',
                 selectedSubs.length ? `Details: ${selectedSubs.join(', ')}` : '',
                 msgNote ? `Note: ${msgNote}` : '',
                 ruthSupport ? `Ruth Support: ${ruthSupport}` : '',
-                'Source: QR Magnet / estimate page (South Florida)',
+                "Source: QR Magnet / estimate page (Broward County)",
             ].filter(Boolean).join(' | ');
 
-            await supabase.from('leads').insert([{
+            const { error } = await supabase.from('leads').insert([{
                 name: msgName,
                 phone: msgPhone,
                 service: activeService?.supabaseService ?? 'General Repair',
@@ -404,6 +409,7 @@ export default function EstimatePage() {
                 image_url: imageUrl,
                 referral_source: 'QR-magnet-south-florida',
             }]);
+            if (error) throw error;
             setScreen('success');
         } catch (err) {
             console.error(err);
@@ -443,7 +449,7 @@ export default function EstimatePage() {
                             ← Back to Home Page
                         </Link>
                     </div>
-                    <div className="est-hero__badge">📍 Miami-Dade · Broward · Palm Beach</div>
+                    <div className="est-hero__badge">Broward service area</div>
                     <h1 className="est-hero__title">What needs<br /><span className="est-gradient-text">fixing today?</span></h1>
                     <p className="est-hero__sub">Tap a service → get a free estimate 👇</p>
                 </div>
@@ -506,7 +512,7 @@ export default function EstimatePage() {
                     <span className="est-trust__dot">·</span>
                     <span>⭐ 5-Star Rated</span>
                     <span className="est-trust__dot">·</span>
-                    <span>🏠 South Florida Projects</span>
+                    <span>🏠 Broward County Projects</span>
                 </div>
             </div>
 
@@ -605,6 +611,9 @@ export default function EstimatePage() {
                 </header>
                 <div className="est-form-body">
                     <form onSubmit={handleMessageSubmit} className="est-form">
+                        <div className="est-field est-field--full">
+                            <ServiceCityField id="estimate-city" value={serviceCity} onChange={setServiceCity} />
+                        </div>
                         {activeService && (
                             <div className="est-form-service-badge" style={{ background: activeService.gradient }}>
                                 <div className="est-form-badge-icon">{icons[activeService.icon as keyof typeof icons]}</div>
@@ -624,7 +633,7 @@ export default function EstimatePage() {
                         </div>
                         <div className="est-field est-field--half">
                             <label className="est-field__label">Phone Number *</label>
-                            <input type="tel" required placeholder="(305) 000-0000"
+                            <input type="tel" required placeholder="(954) 000-0000"
                                 value={msgPhone} onChange={e => setMsgPhone(e.target.value)}
                                 className="est-field__input" autoComplete="tel" inputMode="tel" />
                         </div>

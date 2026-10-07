@@ -1,3 +1,5 @@
+import { SERVICE_CITIES } from '@/lib/service-area';
+
 export default function SEOStruct() {
     const mainBusinessSchema = {
         '@context': 'https://schema.org',
@@ -14,7 +16,7 @@ export default function SEOStruct() {
             height: 800,
         },
         image: 'https://fix.luxht.com/images/logo-wide-hammers.png',
-        description: 'Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across South Florida. Family-owned. Fully insured.',
+        description: "Professional property maintenance, repairs, installations, and improvement services for residential and commercial properties across Broward County. Family-owned. Fully insured.",
         slogan: 'Property Maintenance & Improvement. Family-Owned. Not a Lead App.',
         foundingDate: '2024',
         email: 'info@luxht.com',
@@ -47,17 +49,7 @@ export default function SEOStruct() {
                 closes: '18:00',
             },
         ],
-        areaServed: [
-            {
-                '@type': 'GeoCircle',
-                geoMidpoint: {
-                    '@type': 'GeoCoordinates',
-                    latitude: '26.0031',
-                    longitude: '-80.2241',
-                },
-                geoRadius: '60000',
-            },
-        ],
+        areaServed: SERVICE_CITIES.map(name => ({ '@type': 'City', name })),
         sameAs: [
             'https://www.facebook.com/luxht',
             'https://www.instagram.com/luxht',
@@ -71,10 +63,7 @@ export default function SEOStruct() {
             '@type': 'ContactPoint',
             telephone: '+1-954-300-3043',
             contactType: 'customer service',
-            areaServed: {
-                '@type': 'AdministrativeArea',
-                name: 'South Florida'
-            },
+            areaServed: SERVICE_CITIES.map(name => ({ '@type': 'City', name })),
             availableLanguage: ['English', 'Spanish'],
         },
     };

@@ -10,8 +10,8 @@ import { useState } from 'react';
 // SEO-optimized FAQ data for schema markup and user interaction
 const faqData = [
     {
-        question: "How much does property maintenance cost in South Florida?",
-        answer: "Property maintenance costs in South Florida range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
+        question: "How much does property maintenance cost in Broward County?",
+        answer: "Property maintenance costs in Broward County range from $75 for small repairs like drywall patches to $50,000+ for major renovations like bathroom remodels. Most common services like TV mounting ($100-$400), faucet installation ($75-$400), and furniture assembly ($40-$400) have predictable pricing. LUXHT Fix publishes all pricing online so you can budget before calling."
     },
     {
         question: "Why don't most property maintenance companies show their prices?",
@@ -27,7 +27,7 @@ const faqData = [
     },
     {
         question: "How accurate are your online pricing guides?",
-        answer: "Our pricing guides are based on real projects completed across South Florida. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
+        answer: "Our pricing guides are based on real projects completed across Broward County. Most customers find their final quote falls within our published ranges. Complex or unique projects may vary, which is why we always provide a personalized estimate."
     }
 ];
 
@@ -37,13 +37,13 @@ const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "LUXHT Fix",
-    "description": "Professional property maintenance, repairs, installations, and improvement services across South Florida with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
+    "description": "Professional property maintenance, repairs, installations, and improvement services across Broward County with transparent pricing. Drywall repair, TV mounting, bathroom remodels, and more.",
     "url": "https://fix.luxht.com",
     "telephone": "+1-954-300-3043",
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Miami",
+        "addressLocality": "Pembroke Pines",
         "addressRegion": "FL",
         "addressCountry": "US"
     },
@@ -52,7 +52,7 @@ const organizationSchema = {
         "latitude": 28.5383,
         "longitude": -81.3792
     },
-    "areaServed": ["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Aventura", "Coral Gables", "Miramar", "Davie", "Doral", "Miami Beach"],
+    "areaServed": ["Pembroke Pines","Hollywood","Fort Lauderdale","Wilton Manors","Davie","Cooper City","Miramar"],
     "sameAs": ["https://www.instagram.com/luxhtfix"]
 };
 
@@ -378,7 +378,7 @@ export default function PricingTransparencyPage() {
                                 <HelpCircle className="w-8 h-8" /> Frequently Asked Questions
                             </h2>
                             <p className="text-slate-600 mb-6">
-                                Get answers to common questions about property maintenance pricing and costs in South Florida.
+                                Get answers to common questions about property maintenance pricing and costs in Broward County.
                             </p>
                             <div className="bg-white border border-slate-200 rounded-xl divide-y divide-slate-200">
                                 {faqData.map((faq, index) => (
@@ -393,7 +393,7 @@ export default function PricingTransparencyPage() {
                                 Experience the Difference
                             </h2>
                             <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-                                Join South Florida property owners who appreciate honest pricing and quality work.
+                                Join Broward County property owners who appreciate honest pricing and quality work.
                                 Browse our transparent cost guides or get a personalized quote today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

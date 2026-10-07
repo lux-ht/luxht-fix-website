@@ -30,8 +30,8 @@ export default function AnnouncementBanner() {
                 <div className="flex items-center gap-2 flex-1 justify-center text-sm md:text-base">
                     <span className="text-lg hidden sm:inline">🌴</span>
                     <MapPin size={14} className="text-[#64CEBB] sm:hidden" />
-                    <span className="font-bold">Now Available in Miami & South Florida!</span>
-                    <span className="hidden md:inline text-blue-200">— Serving Miami, Fort Lauderdale, Hollywood, Pembroke Pines & more</span>
+                    <span className="font-bold">Serving our seven Broward cities</span>
+                    <span className="hidden md:inline text-blue-200">— Serving Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, Miramar</span>
                     <Link
                         href="/south-florida/"
                         className="hidden sm:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1 rounded-full ml-2 transition-colors"

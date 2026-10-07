@@ -36,7 +36,7 @@ export default function SmartHomeCostPage() {
                     <div className="max-w-4xl">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 py-2 px-4 rounded-full text-sm font-semibold text-white/90 mb-4"><Clock size={16} /> Updated January 2026</div>
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">How Much Does Smart Home Installation Cost?</h1>
-                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for smart thermostats, doorbells, locks, and full home automation in South Florida.</p>
+                        <p className="text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">Get pricing for smart thermostats, doorbells, locks, and full home automation in Broward County.</p>
                         <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
                             <div className="w-14 h-14 bg-[#64CEBB] rounded-xl flex items-center justify-center"><DollarSign className="w-8 h-8 text-white" /></div>
                             <div><div className="text-white/70 text-sm">Average Cost Range</div><div className="text-3xl font-bold text-white">$150 - $5,000+</div></div>

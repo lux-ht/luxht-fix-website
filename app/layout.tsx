@@ -7,18 +7,18 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://fix.luxht.com'),
   title: {
-    default: 'LUXHT Fix | Property Maintenance & Improvement in South Florida',
+    default: "LUXHT Fix | Property Maintenance & Improvement in Broward County",
     template: '%s | LUXHT Fix',
   },
   description:
-    'Professional property maintenance, repairs, installations, and improvement services across South Florida. Serving Miami, Fort Lauderdale, Pembroke Pines, and surrounding communities. Family-Owned. Fully Insured. Call (954) 300-3043.',
+    "Professional property maintenance, repairs, installations, and improvement services across Broward County. Serving Pembroke Pines, Hollywood, Fort Lauderdale, Wilton Manors, Davie, Cooper City, Miramar. Family-Owned. Fully Insured. Call (954) 300-3043.",
   alternates: {
     canonical: 'https://fix.luxht.com/',
   },
   openGraph: {
-    title: 'LUXHT Fix | Property Maintenance & Improvement — South Florida',
+    title: "LUXHT Fix | Property Maintenance & Improvement — Broward County",
     description:
-      'Professional property maintenance and improvement services across South Florida. Drywall, flooring, TV mounting, installations & more. Family-Owned. Fully Insured.',
+      "Professional property maintenance and improvement services across Broward County. Drywall, flooring, TV mounting, installations & more. Family-Owned. Fully Insured.",
     url: 'https://fix.luxht.com/',
     siteName: 'LUXHT Fix',
     locale: 'en_US',
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
         url: '/images/logo-wide-hammers.png',
         width: 800,
         height: 800,
-        alt: 'LUXHT Fix - Property Maintenance & Improvement in South Florida',
+        alt: "LUXHT Fix - Property Maintenance & Improvement in Broward County",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LUXHT Fix | Property Maintenance & Improvement — South Florida',
+    title: "LUXHT Fix | Property Maintenance & Improvement — Broward County",
     description:
-      'Professional property maintenance and improvement services across South Florida. Family-Owned. Fully Insured. Call (954) 300-3043.',
+      "Professional property maintenance and improvement services across Broward County. Family-Owned. Fully Insured. Call (954) 300-3043.",
     images: ['/images/logo-wide-hammers.png'],
   },
   robots: {
